@@ -1,0 +1,9 @@
+header{
+    height: 100px;
+    background-color: #0d1b2a;
+}
+header img{
+    display: block;
+    margin: auto;
+    height: 90%;
+}
