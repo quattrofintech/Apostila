@@ -27,6 +27,12 @@ section header h1{
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.coment{
+    color: green;
+    padding: 2px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    wra
+}
 pre{
     margin-top: 0;
     padding: 10px;

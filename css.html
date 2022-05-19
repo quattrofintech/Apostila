@@ -4,10 +4,420 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/miniLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/apotila.css">
     <title>CSS</title>
 </head>
 <body>
+    <header>
+        <a href="index.html"><img src="assets/img/logoteste.png" alt="Logo Quattro fintech branca" title="Logo Quattro"></a>
+    </header>
+    <section>
+        <header>
+            <h1>CSS</h1>
+        </header>
+    </section>
+    <div>
+        <aside class="flex-item">
+            <section class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#intro">INTRODUÇÃO</a></li>
+                        <li><a href="#comentario">COMENTÁRIO</a></li>
+                    </ul>
+                </nav>
+            </section> 
+        </aside>
+        <main class="flex-item">         
+            <section>
+                <article>
+                    <h2 id="intro">Introdução</h2>
+                    <p>CSS é a linguagem que usamos para estilizar uma página da Web.</p>
+                    <h3>O que é CSS?</h3>
+                    <ul>
+                        <li>CSS significa Cascading Style SheetsHTML significa Hyper Text Markup Language</li>
+                        <li>CSS descreve como os elementos HTML devem ser exibidos na tela, papel ou em outra mídia</li>
+                        <li>CSS economiza muito trabalho. Ele pode controlar o layout de várias páginas da web de uma só vez</li>
+                        <li>As folhas de estilo externas são armazenadas em arquivos CSS</li>
+                        <li>Elementos HTML informam ao navegador como exibir o conteúdo</li>
+                    </ul>
+                    <h3>Por que usar CSS?</h3>
+                    <p>CSS é usado para definir estilos para suas páginas da web, incluindo design, layout e variações de exibição para diferentes dispositivos e tamanhos de tela.</p>
+                    <p class="exemplo">Exemplo</p>
+                    <pre>
+    <code>
+        body {
+            background-color: lightblue;
+        }
+        
+        h1 {
+          color: white;
+          text-align: center;
+        }
+        
+        p {
+          font-family: verdana;
+          font-size: 20px;
+        }
+    </code>
+                    </pre>
+
+                    <h3>Sintaxe CSS</h3>
+                    <p>Uma regra CSS consiste em um seletor e um bloco de declaração.</p>
+                    <p><mark>h1</mark> <mark>{color:blue; font-size:12px;}</mark></p>
+                    <br>
+                    <dt>
+                        <dl>Seletor</dl>
+                        <dd><mark>h1</mark></dd>
+                        <dl>Declaração</dl>
+                        <dd><mark>{color:blue; font-size:12px;}</mark></dd>
+                        <dl>Propriedade</dl>
+                        <dd><mark>color:</mark> <mark>font-size:</mark></dd>
+                        <dl>Valor</dl>
+                        <dd><mark>blue;</mark> <mark>12px;</mark></dd>
+                    </dt>
+                    <br>
+                    <p>O seletor aponta para o elemento HTML que você deseja estilizar.</p>
+
+                    <p>O bloco de declaração contém uma ou mais declarações separadas por ponto e vírgula.</p>
+                        
+                    <p>Cada declaração inclui um nome de propriedade CSS e um valor, separados por dois pontos.</p>
+                        
+                    <p>Várias declarações CSS são separadas por ponto e vírgula e os blocos de declaração são cercados por chaves.</p>
+                    <p class="exemplo">Exemplo 
+                        <br>
+                        Neste exemplo, todos os elementos &lt;p&gt; serão alinhados ao centro, com uma cor de texto vermelha:</p>
+                    <pre> 
+    <code>
+        p {
+            color: red;
+            text-align: center;
+        }
+    </code>
+                    </pre>
+                    <h4>Exemplo explicado</h4>
+                    <ul>
+                        <li>p é um seletor em CSS (ele aponta para o elemento HTML que você deseja estilizar: &lt;p&gt;).</li>
+                        <li>color é uma propriedade, e redé o valor da propriedade</li>
+                        <li>text-align é uma propriedade, e center é o valor da propriedade</li>
+                    </ul>
+                    <h3>Seletores CSS</h3>
+                    <p>Um seletor CSS seleciona o(s) elemento(s) HTML que você deseja estilizar.</p>
+                    <p>Seletores CSS são usados ​​para "encontrar" (ou selecionar) os elementos HTML que você deseja estilizar.</p>
+                    <p>Podemos dividir os seletores CSS em cinco categorias:</p>
+                    <ul>
+                        
+                        <li>Seletores simples (selecione elementos com base no nome, id, classe)</li>
+                        <li>Seletores de combinação (selecione elementos com base em um relacionamento específico entre eles)</li>
+                        <li>Seletores de pseudo-classe (selecionar elementos com base em um determinado estado)</li>
+                        <li>Seletores de pseudo-elementos (selecione e estilize uma parte de um elemento)</li>
+                        <li>Seletores de atributo (selecione elementos com base em um atributo ou valor de atributo)</li>
+                    </ul>
+                    <p>Esta página explicará os seletores CSS mais básicos.</p>
+                    <h3>O seletor de elementos CSS</h3>
+                    <p>O seletor de elemento seleciona elementos HTML com base no nome do elemento.</p>
+                    
+                    <p class="exemplo">Exemplo 
+                        <br>
+                        Aqui, todos os elementos &lt;p&gt; na página serão alinhados ao centro, com uma cor de texto vermelha:</p>
+                    <pre> 
+    <code>
+        p {
+          text-align: center;
+          color: red;
+        }
+    </code>
+                    </pre> 
+                    <h3>O seletor de id CSS</h3>
+                    <p>O seletor id usa o atributo id de um elemento HTML para selecionar um elemento específico.</p>
+
+                    <p>O id de um elemento é único dentro de uma página, então o seletor de id é usado para selecionar um elemento único!</p>
+                        
+                    <p>Para selecionar um elemento com um id específico, escreva um caractere hash (#), seguido do id do elemento.</p>
+
+                    <p class="exemplo">Exemplo 
+                        <br>
+                        A regra CSS abaixo será aplicada ao elemento HTML com id="para1": </p>
+                    <pre> 
+    <code>
+        #para1 {
+          text-align: center;
+          color: red;
+        }
+    </code>
+                    </pre> 
+
+                    <h3>O seletor de classe CSS</h3>
+                    <p>O seletor de classe seleciona elementos HTML com um atributo de classe específico.</p>
+
+                    <p>Para selecionar elementos com uma classe específica, escreva um caractere ponto (.), seguido do nome da classe.</p>
+
+                    <p class="exemplo">Exemplo 
+                        <br>
+                        Neste exemplo, todos os elementos HTML com class="center" serão vermelhos e alinhados ao centro: </p>
+                    <pre> 
+    <code>
+        .center {
+          text-align: center;
+          color: red;
+        }
+    </code>
+                    </pre> 
+                    <p>Você também pode especificar que apenas elementos HTML específicos devem ser afetados por uma classe.</p>
+                    <p class="exemplo">Exemplo 
+                        <br>
+                        Neste exemplo, apenas os elementos &lt;p&gt; com class="center" serão vermelhos e alinhados ao centro:</p>
+                    <pre> 
+    <code>
+        p.center {
+          text-align: center;
+          color: red;
+        }
+    </code>
+                    </pre>
+                    <p>Elementos HTML também podem se referir a mais de uma classe.</p>
+
+                    <p class="exemplo">Exemplo 
+                        <br>
+                        Neste exemplo, o elemento &lt;p&gt; será estilizado de acordo com class="center" e class="large": </p>
+                    <pre> 
+    <code>
+        &lt;p class="center large"&gt;
+            Este parágrafo refere-se a duas classes.
+        &lt;/p&gt;
+    </code>
+                    </pre>
+                    <h3>O seletor universal CSS</h3>
+                    <p>O seletor universal (*) seleciona todos os elementos HTML na página.</p>
+                    <p class="exemplo">Exemplo 
+                        <br>
+                        A regra CSS abaixo afetará todos os elementos HTML na página: </p>
+                    <pre> 
+    <code>
+        * {
+          text-align: center;
+          color: blue;
+        }
+    </code>
+                    </pre>
+                    <h3>O seletor de agrupamento CSS</h3>
+                    <p>O seletor de agrupamento seleciona todos os elementos HTML com as mesmas definições de estilo.</p>
+
+                   <p>Veja o seguinte código CSS (os elementos h1, h2 e p têm as mesmas definições de estilo):</p>
+                   <p class="exemplo">Exemplo</p>
+                <pre> 
+    <code>
+        h1 {
+            text-align: center;
+            color: red;
+        }
+        
+        h2 {
+            text-align: center;
+            color: red;
+        }
+        
+        p {
+            text-align: center;
+            color: red;
+        }
+    </code>
+                </pre>
+                    <p>Será melhor agrupar os seletores, para minimizar o código.</p>
+                    <p>Para agrupar seletores, separe cada seletor com uma vírgula.</p>
+                    <p class="exemplo">Exemplo
+                        <br>
+                        Neste exemplo agrupamos os seletores do código acima: 
+                    </p>
+                <pre> 
+    <code>
+        h1, h2, p {
+            text-align: center;
+            color: red;
+        }
+    </code>
+                </pre>
+                <h3>Como adicionar CSS</h3>
+                <p>Quando um navegador lê uma folha de estilo, ele formata o documento HTML de acordo com as informações da folha de estilo.</p>
+                <h4>Três maneiras de inserir CSS</h4>
+                <p>Existem três maneiras de inserir uma folha de estilo:</p>
+                <ul>
+                    <li>CSS embutido</li>
+                    <li>CSS interno</li>
+                    <li>CSS externo</li>                  
+                </ul>
+                <h4>CSS embutido</h4>
+                <p>Um estilo embutido pode ser usado para aplicar um estilo único para um único elemento.</p>
+
+                <p>Para usar estilos embutidos, adicione o atributo style ao elemento relevante. O atributo style pode conter qualquer propriedade CSS.</p>
+
+                <p class="exemplo">Exemplo
+                    <br>
+                    Estilos internos são definidos dentro do elemento &lt;style&gt;, dentro da seção &lt;head&gt; de uma página HTML:
+                </p>
+                <pre> 
+    <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;CSS embutido&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;            
+                &lt;h1 style="color:blue;text-align:center;"&gt;
+                    Este é um Cabeçalho.
+                &lt;/h1&gt;
+                &lt;p style="color:red;"&gt;Este é um parágrafo&lt;/p&gt;            
+            &lt;/body&gt;
+        &lt;/html&gt;
+    </code>
+                </pre>
+
+                <h4>CSS interno</h4>
+                <p>Uma folha de estilo interna pode ser usada se uma única página HTML tiver um estilo único.</p>
     
+                <p>O estilo interno é definido dentro do elemento &lt;style&gt;, dentro da seção head.</p>
+                <p class="exemplo">Exemplo
+                    <br>
+                    Estilos internos são definidos dentro do elemento &lt;style&gt;, dentro da seção &lt;head&gt; de uma página HTML:
+                </p>
+                <pre> 
+    <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;style&gt;
+                    body {
+                        background-color: linen;
+                    }
+                    
+                    h1 {
+                        color: maroon;
+                        margin-left: 40px;
+                    }
+                &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;            
+                &lt;h1&gt;Este é um Cabeçalho.&lt;/h1&gt;
+                &lt;p&gt;Este é um parágrafo&lt;/p&gt;            
+            &lt;/body&gt;
+        &lt;/html&gt;
+    </code>
+                </pre>
+
+                <h4>CSS externo</h4>
+                <p>Com uma folha de estilo externa, você pode alterar a aparência de um site inteiro alterando apenas um arquivo!</p>
+                <p>Cada página HTML deve incluir uma referência ao arquivo de folha de estilo externo dentro do elemento &lt;link&gt;, dentro da seção head.</p>
+                <p class="exemplo">Exemplo
+                    <br>
+                    Estilos externos são definidos dentro do elemento &lt;link&gt;, dentro da seção &lt;head&gt; de uma página HTML: 
+                </p>
+            <pre> 
+    <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;link rel="stylesheet" href="mystyle.css"&gt;
+            &lt;/head&gt;
+            &lt;body&gt;            
+                &lt;h1&gt;Este é um Cabeçalho.&lt;/h1&gt;
+                &lt;p&gt;Este é um parágrafo&lt;/p&gt;            
+            &lt;/body&gt;
+        &lt;/html&gt;
+    </code>
+            </pre>
+            <p>Uma folha de estilo externa pode ser escrita em qualquer editor de texto e deve ser salva com uma extensão .css.</p>
+
+            <p>O arquivo .css externo não deve conter tags HTML.</p>
+                
+            <p>Aqui está a aparência do arquivo "mystyle.css":</p>
+            <p class="exemplo">Exemplo: "meuestilo.css"</p>
+            <pre> 
+    <code>
+        body {
+            background-color: lightblue;
+          }
+          
+          h1 {
+            color: navy;
+            margin-left: 20px;
+          }
+    </code>
+            </pre>
+            <h4>Ordem em cascata</h4>
+            <p>Qual estilo será usado quando houver mais de um estilo especificado para um elemento HTML?</p>
+            <p>Todos os estilos em uma página serão "cascatados" em uma nova folha de estilo "virtual" de acordo com as seguintes regras, onde o número um tem a prioridade mais alta:</p>
+            <ol>
+                <li>Estilo embutido (dentro de um elemento HTML)</li>
+                <li>Folhas de estilo externas e internas (na seção principal)</li>
+                <li>Padrão do navegador</li>
+
+            </ol>
+            <p>Portanto, um estilo embutido tem a prioridade mais alta e substituirá os estilos externos e internos e os padrões do navegador.</p>
+            
+                    <div class="separacao"></div>
+
+                    <h2 id="comentario">Comentários CSS</h2>
+                    <p>Os comentários CSS não são exibidos no navegador, mas podem ajudar a documentar seu código-fonte.</p>
+                    <h3>Comentários CSS</h3>
+                    <p>Os comentários são usados ​​para explicar o código e podem ajudar quando você editar o código-fonte posteriormente.</p>
+                    <p>Os comentários são ignorados pelos navegadores.</p>
+                    <p>Um comentário CSS é colocado dentro do &lt;style&gt; elemento e começa /*e termina com */:</p>
+                    <p class="exemplo">Exemplo</p>
+            <pre> 
+    <code>
+        <span class="coment">  
+        /* Esta é uma linha de comentário */</span>
+        p {
+            color: red;
+        }
+    </code>
+            </pre>
+                    <p>Você pode adicionar comentários onde quiser no código:</p>
+                    <p class="exemplo">Exemplo</p>
+            <pre> 
+    <code>
+        p {
+            color: red; <span class="coment"> /* Colocando a cor como vermelha */ </span>
+        }
+    </code>
+            </pre>
+            <p>Os comentários também podem abranger várias linhas: </p>
+            <p class="exemplo">Exemplo</p>
+            <pre> 
+    <code>
+        <span class="coment">
+        /* Esta é uma
+        multilinhas de 
+        comentários */ 
+        </span>
+        p {
+          color: red;
+        }
+    </code>
+            </pre>
+
+                    <div class="separacao"></div>
+
+                </article>
+            </section>      
+        </main>
+    </div>
+    <footer>
+        <header>
+            <p>2019 - © Quattro Edtech todos os direitos reservados.</p>
+            <p>quattrofintech@gmail.com</p>
+        </header>
+        <section>
+            <ul>
+                <li><a target="_blank" href="https://wa.me/5521991731632">WhatsApp</a></li>
+                <li><a target="_blank" href="https://www.instagram.com/quattrofintech/">Instagram</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/channel/UC6OBlD9wvUxn9K-f5UWHN1w">Youtube</a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/quattro-fintech-4336771b6/">Linkedin</a></li>
+            </ul>
+        </section>
+    </footer>
 </body>
 </html>

@@ -18,6 +18,10 @@ aside{
 aside .nav{
     width: auto;
 }
+aside .menu{
+    position: sticky;
+    top: 10px;
+}
 
 aside section nav ul li{
     list-style: none;
@@ -50,4 +54,13 @@ main article{
 main article h2{
     text-align: center;
     text-shadow: 1px 1px 2px #0d1b2a7e;
+}
+
+mark{
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: seagreen;
+    font-size: 14pt;
+    margin: 5px;
 }
