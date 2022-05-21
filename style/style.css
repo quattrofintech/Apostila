@@ -52,3 +52,14 @@ pre code{
     margin-top: 30%;
     margin-bottom: 30%;
 }
+
+.img-exemplo{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+.img-exemplo img{
+    width: 100%;
+    height: auto;
+    margin: 20px;
+}
