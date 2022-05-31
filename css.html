@@ -27,6 +27,9 @@
                     <ul>
                         <li><a href="#intro">INTRODUÇÃO</a></li>
                         <li><a href="#comentario">COMENTÁRIO</a></li>
+                        <li><a href="#display">DISPLAY</a></li>
+                        <li><a href="#position">POSITION</a></li>
+                        <li><a href="#mediaqueries">MEDIA QUERIES</a></li>
                     </ul>
                 </nav>
             </section> 
@@ -359,6 +362,7 @@
             
                     <div class="separacao"></div>
 
+                    <!-- COMENTARIO -->
                     <h2 id="comentario">Comentários CSS</h2>
                     <p>Os comentários CSS não são exibidos no navegador, mas podem ajudar a documentar seu código-fonte.</p>
                     <h3>Comentários CSS</h3>
@@ -400,7 +404,213 @@
             </pre>
 
                     <div class="separacao"></div>
+                    
+                    <!-- DISPLAY -->
+                    <h2 id="display">Display CSS</h2>
+                    <p>A <span>display</span> propriedade especifica o comportamento de exibição (o tipo de caixa de renderização) de um elemento.</p>
+                    <p>Em HTML, o valor da propriedade de exibição padrão é obtido das especificações HTML ou da folha de estilo padrão do navegador/usuário. O valor padrão em XML é embutido, incluindo elementos SVG.</p>
+                    <p class="exemplo">Exemplo <br />
+                        <pre> 
+        <code>
+            p.ex1 {display: none;}
+            p.ex2 {display: inline;}
+            p.ex3 {display: block;}
+            p.ex4 {display: inline-block;}
+        </code>
+                        </pre>
+                    </p>
 
+                    
+                    <div class="separacao"></div>
+                    <!-- POSITION -->
+                    <h2 id="position">Layout Position</h2>
+                    <p>A <span class="vermelho">position</span> propriedade especifica o tipo de método de posicionamento usado para um elemento (static, relative, fixed, absolute ou sticky)</p>
+                    <p>Os elementos são então posicionados usando as propriedades superior, inferior, esquerda e direita. No entanto, essas propriedades não funcionarão a menos que a <span class="vermelho">position</span> propriedade seja definida primeiro. Eles também funcionam de forma diferente dependendo do valor da posição.</p>
+
+                    <h3>Position Static</h3>
+                    <p>Os elementos HTML são posicionados estáticos por padrão.</p>
+                    <p>Elementos estáticos posicionados não são afetados pelas propriedades superior, inferior, esquerda e direita.</p>
+                    <p>Um elemento com position: static;não está posicionado de forma especial; é sempre posicionado de acordo com o fluxo normal da página.</p>
+                    <p class="exemplo">Exemplo <br />
+                        <pre> 
+        <code>
+            div.static {
+                position: static;
+                border: 3px solid #73AD21;
+            }
+        </code>
+                        </pre>
+                    </p>
+                    
+                    <h3>Position Fixed</h3>
+                    <p>Um elemento com <span tag="vermelho">position: fixed;</span> é posicionado em relação à janela de visualização, o que significa que ele sempre permanece no mesmo lugar, mesmo que a página seja rolada. As propriedades top, right, bottom e left são usadas para posicionar o elemento.</p>
+                    <p>Um elemento fixo não deixa uma lacuna na página onde normalmente estaria localizado.</p>
+                    <p class="exemplo">Exemplo <br />
+                        <pre> 
+        <code>
+            div.fixed {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                width: 300px;
+                border: 3px solid #73AD21;
+            }
+        </code>
+                        </pre>
+                    </p>
+                    <h3>Position Relative</h3>
+                    <p>Um elemento com <span>position: relative;</span>é posicionado em relação à sua posição normal.</p>
+                    <p>Definir as propriedades superior, direita, inferior e esquerda de um elemento relativamente posicionado fará com que ele seja ajustado para fora de sua posição normal. Outros conteúdos não serão ajustados para caber em qualquer lacuna deixada pelo elemento.</p>
+                    <p class="exemplo">Exemplo <br />
+                        <pre> 
+        <code>
+            div.relative {
+                position: relative;
+                left: 30px;
+                border: 3px solid #73AD21;
+            }
+        </code>
+                        </pre>
+                    </p>
+
+                    <h3>Position Absolute</h3>
+                    <p>Um elemento com position: absolute;é posicionado em relação ao ancestral posicionado mais próximo (em vez de posicionado em relação à janela de visualização, como fixo).</p>
+                    <p>No entanto; se um elemento posicionado absoluto não tiver ancestrais posicionados, ele usará o corpo do documento e se moverá junto com a rolagem da página.</p>
+                    <p><strong>Nota:</strong> Elementos posicionados absolutos são removidos do fluxo normal e podem sobrepor elementos.</p>
+                    <p class="exemplo">Exemplo <br />
+                        <pre> 
+        <code>
+            div.relative {
+                position: relative;
+                width: 400px;
+                height: 200px;
+                border: 3px solid #73AD21;
+            }
+              
+            div.absolute {
+                position: absolute;
+                top: 80px;
+                right: 0;
+                width: 200px;
+                height: 100px;
+                border: 3px solid #73AD21;
+            }
+        </code>
+                        </pre>
+                    </p>
+                    <h3>Position Sticky</h3>
+                    <p>Um elemento com <span>position: sticky; </span> é posicionado com base na posição de rolagem do usuário.</p>
+                    <p>Um elemento adesivo alterna entre relativee fixed, dependendo da posição de rolagem. Ele é posicionado em relação até que uma determinada posição de deslocamento seja encontrada na viewport - então ele "gruda" no lugar (como position:fixed).</p>
+                    <p><strong>Nota:</strong> Elementos posicionados absolutos são removidos do fluxo normal e podem sobrepor elementos.</p>
+                    <p class="exemplo">Exemplo <br />
+                        <pre> 
+        <code>
+            div.sticky {
+                position: -webkit-sticky; /* Safari */
+                position: sticky;
+                top: 0;
+                background-color: green;
+                border: 2px solid #4CAF50;
+            }
+        </code>
+                        </pre>
+                    </p>
+
+                    <div class="separacao"></div>
+
+                    <!-- MEDIAS QUERIES -->
+                    <h2 id="mediaqueries">Media Queries</h2>
+                    <p>Media query é uma técnica CSS introduzida no CSS3.</p>
+                    <p>Ele usa a <span>@media</span> regra para incluir um bloco de propriedades CSS somente se uma determinada condição for verdadeira.</p>
+                    <p class="exemplo">Exemplo <br />
+                        <pre> 
+        <code>
+            @media only screen and (max-width: 600px) {
+                body {
+                  background-color: lightblue;
+              }
+            }
+        </code>
+                        </pre>
+                    </p>
+
+                    <h3>Pontos de Mudanças</h3>
+                    <p>Você pode adicionar quantos pontos de interrupção desejar.</p>
+                    <p>Também vamos inserir um breakpoint entre tablets e celulares.</p>
+                    <p>Fazemos isso adicionando mais uma consulta de mídia (em 600px) e um conjunto de novas classes para dispositivos maiores que 600px (mas menores que 768px):</p>
+                    <p class="tag">Projetar para dispositivos móveis antes de projetar para desktop ou qualquer outro dispositivo (isso fará com que a página seja exibida mais rapidamente em dispositivos menores).</p>
+                    <p class="tag">Isso significa que devemos fazer algumas alterações em nosso CSS</p>
+                    <p class="tag">Em vez de alterar estilos quando a largura for menor que 768px, devemos alterar o design quando a largura for maior que 768px. Isso tornará nosso design Mobile First:</p>
+                    <p class="exemplo">Exemplo <br />
+                        Observe que os dois conjuntos de classes são quase idênticos, a única diferença é o nome ( col-e col-s-): <br />
+                        <pre> 
+        <code>
+            <span class="coment">/* Para Celulares: */</span>
+            [class*="col-"] {
+                width: 100%;
+            }
+
+            @media only screen and (min-width: 600px) {
+            <span class="coment">/* Para Tablets: */</span>
+                .col-s-1 {width: 8.33%;}
+                .col-s-2 {width: 16.66%;}
+                .col-s-3 {width: 25%;}
+                .col-s-4 {width: 33.33%;}
+                .col-s-5 {width: 41.66%;}
+                .col-s-6 {width: 50%;}
+                .col-s-7 {width: 58.33%;}
+                .col-s-8 {width: 66.66%;}
+                .col-s-9 {width: 75%;}
+                .col-s-10 {width: 83.33%;}
+                .col-s-11 {width: 91.66%;}
+                .col-s-12 {width: 100%;}
+            }
+
+            @media only screen and (min-width: 768px) {
+            <span class="coment">/* Para Desktops: */</span>
+                .col-1 {width: 8.33%;}
+                .col-2 {width: 16.66%;}
+                .col-3 {width: 25%;}
+                .col-4 {width: 33.33%;}
+                .col-5 {width: 41.66%;}
+                .col-6 {width: 50%;}
+                .col-7 {width: 58.33%;}
+                .col-8 {width: 66.66%;}
+                .col-9 {width: 75%;}
+                .col-10 {width: 83.33%;}
+                .col-11 {width: 91.66%;}
+                .col-12 {width: 100%;}
+            }
+        </code>
+                        </pre>
+                    </p>
+                    
+                    <h3>Pontos de interrupção típicos do dispositivo</h3>
+                    <p>Existem várias telas e dispositivos com diferentes alturas e larguras, por isso é difícil criar um ponto de interrupção exato para cada dispositivo. Para manter as coisas simples, você pode segmentar cinco grupos:</p>
+                    <p class="exemplo">Exemplo <br />
+                        <pre> 
+        <code>
+            <span class="coment">/* Extra small devices (phones, 600px and down) */</span>
+            @media only screen and (max-width: 600px) {...}
+
+            <span class="coment">/* Small devices (portrait tablets and large phones, 600px and up) */</span>
+            @media only screen and (min-width: 600px) {...}
+
+            <span class="coment">/* Medium devices (landscape tablets, 768px and up) */</span>
+            @media only screen and (min-width: 768px) {...}
+
+            <span class="coment">/* Large devices (laptops/desktops, 992px and up) */</span>
+            @media only screen and (min-width: 992px) {...}
+
+            <span class="coment">/* Extra large devices (large laptops and desktops, 1200px and up) */</span>
+            @media only screen and (min-width: 1200px) {...}
+        </code>
+                        </pre>
+                    </p>
+                    
+                    <div class="separacao"></div>
+
+                    <!-- TODO MUNDO DENTRO DO ARTICLE-->
                 </article>
             </section>      
         </main>
