@@ -62,3 +62,32 @@ pre code{
     height: auto;
     margin: 20px;
 }
+span.azul{
+    color: rgb(34, 8, 138);
+}
+span.vermelho{
+    color: rgb(138, 32, 8);
+}
+span.vermelhoClaro{
+    color: rgb(184, 29, 29);
+}
+
+mark.tag{
+    padding: 1px;
+    margin: 0;
+    background-color: #c3c3c3;
+    color: red;
+    border-radius: 0;
+}
+
+/* DIV EXEMPLO*/
+div.exemplo{
+    padding: 2px;
+    background-color: #778da9;
+    word-wrap: normal;
+}
+
+div.exemplo p{
+    text-align: left;
+    margin-bottom: 5px;
+}
