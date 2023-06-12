@@ -3,3 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.menuLateral{
+    max-height: 35px;
+}
+.menuMaterias{
+    padding: 10px;
+}
+
+/*mobile phone*/
+@media all and (max-width: 768px) {
+ 
+    .menuMaterias{
+        background-color: yellowgreen;
+        display: flex;
+        max-width: 100%;
+        height: 40px;
+        overflow-x: auto;
+        
+    }
+    .menuMaterias a {
+        padding-right: 10px;
+        text-align: center;
+        
+    }
+}
