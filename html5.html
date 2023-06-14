@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/style/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <title>HTML5</title>
+</head>
+
+<body>
+  <h1>HTML5</h1>
+
+  <header>
+
+    <!--Menu Lateral-->
+
+    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+      aria-controls="offcanvasWithBackdrop">
+      <img src="/img/menu lateral 1.png" alt="menu" class="menuLateral">
+    </button>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+      aria-labelledby="offcanvasWithBackdropLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Apostila Quattro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <!--
+    <button type="button" class="btn btn-outline-primary">HTML</button>
+    <button type="button" class="btn btn-outline-primary">CSS</button>
+    <button type="button" class="btn btn-outline-warning">JavaScript</button>
+    <button type="button" class="btn btn-outline-info">Git</button>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    -->
+      </div>
+      <br>
+      <div class="menuMaterias">
+        <a href="/html5.html">HTML</a>
+        <a href="/css3.html">CSS</a>
+        <a href="/javascript.html">JavaScript</a>
+        <a href="/git.html">GIT</a>
+        <a href="#">React</a>
+        <a href="#">C#</a>
+        <a href="#">Python</a>
+        <a href="#">Lua</a>
+        <a href="#">Java</a>
+        <a href="#">Vue.Js</a>
+        <a href="#">C++</a>
+        <a href="#">.Net</a>
+        <a href="#">Php</a>
+        <a href="#">Kottlin</a>
+        <a href="#">Angular</a>
+        <a href="#">Ionic</a>
+        <a href="#"></a>
+      </div>
+      <hr>
+      <div class="offcanvas-body">
+        <p>* CONTEUDO *</p>
+      </div>
+    </div>
+    <!--Fim Menu Lateral-->
+  </header>
+
+  <br>
+
+  <main>
+
+    <section>
+      <div>
+
+        <h1><strong>Introdução</strong></h1><br>
+
+        <p>O que é HTML?
+          HTML significa Hyper Text Markup Language (Linguagem de Marcação de Hipertexto).
+          HTML é a linguagem de marcação padrão para a criação de páginas da Web.
+          HTML descreve a estrutura de uma página da Web.
+          HTML consiste em uma série de elementos.
+          Elementos HTML informam ao navegador como exibir o conteúdo.
+          Elementos HTML rotulam partes do conteúdo, como "este é um cabeçalho", "este é um parágrafo", "este é um
+          link", etc.
+        </p>
+
+        <h2>Um documento simples de HTML:</h2>
+        <pre>
+          <code>
+            
+&lt;!DOCTYPE html>
+  &lt;html&gt;
+
+    &lt;head&gt;
+      &lt;title&gt;Título da Página&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+      &lt;h1&gt;Título Principal&lt;/h1&gt;
+      &lt;p&gt;Este é um parágrafo.&lt;/p&gt;
+    &lt;/body&gt;
+
+ &lt;/html&gt;
+
+          </code>
+        </pre>
+
+        <h3>Exemplo explicado:</h3>
+        <p>
+          <br>
+          A declaração &lt;!DOCTYPE html&gt; define que este documento é um documento HTML5.
+          <br>
+          O elemento &lt;html&gt; é o elemento raiz de uma página HTML.
+          <br>
+          O elemento &lt;head&gt; contém informações meta sobre a página HTML.
+          <br>
+          O elemento &lt;title&gt; especifica um título para a página HTML (que é exibido na barra de título do
+          navegador ou na guia da página).
+          <br>
+          O elemento &lt;body&gt; define o corpo do documento e é um container para todo o conteúdo visível, como
+          cabeçalhos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.
+          <br>
+          O elemento &lt;h1&gt; define um cabeçalho grande.
+          <br>
+          O elemento &lt;p&gt; define um parágrafo.
+          <br>
+        </p>
+
+        <h2>O que é um Elemento HTML?</h2>
+        Um elemento HTML é definido por uma tag de abertura, algum conteúdo e uma tag de fechamento:
+        <br><br>
+        <strong>
+          &lt;tagname&gt; Conteúdo vai aqui... &lt;/tagname&gt;
+        </strong>
+        <br><br>
+        O elemento HTML é tudo desde a tag de abertura até a tag de fechamento:
+        <pre>
+
+         &lt;h1&gt;Meu primeiro cabeçalho &lt;/h1&gt;
+      
+            &lt;p&gt;Meu primeiro parágrafo. &lt;/p&gt;
+
+Tag de abertura          Conteúdo do elemento             Tag de fechamento
+
+ &lt;h1&gt;	              Meu primeiro cabeçalho		          &lt;/h1&gt;
+ &lt;p&gt;	              Meu primeiro parágrafo.		          &lt;/p&gt;
+ &lt;br&gt;			     	  Nenhum                          &lt;br&gt;
+</pre>
+        <br><br>
+        Observação: Alguns elementos HTML não possuem conteúdo (como o elemento &lt;br&gt;). Esses elementos são
+        chamados de elementos vazios. Elementos vazios não têm uma tag de fechamento!
+
+      </div>
+      <br><br><br><br>
+
+
+
+
+      <div>
+
+        <h1><strong>HTML Estrutura da Página</strong></h1>
+        <p>Abaixo está uma visualização da estrutura de uma página HTML:</p>
+
+        <pre>
+        <code>
+&lt;html&gt;
+
+      &lt;head&gt;
+            &lt;title&gt;Page title&lt;/title&gt;
+      &lt;/head&gt;
+
+      &lt;body&gt;
+          &lt;h1&gt;Esse é o cabeçalho&lt;/h1&gt;
+
+          &lt;p&gt;Isso é um parágrafo.&lt;/p&gt;
+
+          &lt;p&gt;Isto é outro parágrafo.&lt;/p&gt;
+      &lt;/body&gt;
+
+&lt;/html&gt;
+
+      </code>
+  </pre>
+  <p>Observação: O conteúdo dentro da seção &lt;body&gt; será exibido em um navegador. O conteúdo dentro do elemento &lt;title&gt; será mostrado na barra de título do navegador ou na guia da página.</p>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+
+  <footer>
+
+  </footer>
+
+
+
+</body>
+
+</html>
