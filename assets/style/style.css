@@ -4,11 +4,21 @@
     box-sizing: border-box;
 }
 
+:root{
+    --main-color: #254893;
+}
+
 .menuLateral{
     max-height: 35px;
 }
 .menuMaterias{
     padding: 10px;
+}
+.spacing-y{
+    margin: 8px 0px;
+}
+.background{
+    background-color: var(--main-color);
 }
 
 /*mobile phone*/
