@@ -16,28 +16,17 @@
 
 <body>
   <h1>HTML5</h1>
-
   <header>
-
     <!--Menu Lateral-->
-
     <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
       aria-controls="offcanvasWithBackdrop">
       <img src="/img/menu lateral 1.png" alt="menu" class="menuLateral">
     </button>
-
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
       aria-labelledby="offcanvasWithBackdropLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Apostila Quattro</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        <!--
-    <button type="button" class="btn btn-outline-primary">HTML</button>
-    <button type="button" class="btn btn-outline-primary">CSS</button>
-    <button type="button" class="btn btn-outline-warning">JavaScript</button>
-    <button type="button" class="btn btn-outline-info">Git</button>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    -->
       </div>
       <br>
       <div class="menuMaterias">
@@ -61,20 +50,25 @@
       </div>
       <hr>
       <div class="offcanvas-body">
-        <p>* CONTEUDO *</p>
+        <div class="list-group">
+          <a href="?t=introducao" class="list-group-item">Introdução</a>
+          <a href="?t=estruturahtml" class="list-group-item">Estrutura HTML5</a>
+        </div>
       </div>
     </div>
     <!--Fim Menu Lateral-->
   </header>
-
-  <br>
-
   <main>
+    <article>
+      <header>
+        <nav class="d-flex justify-content-around">
+          <button class="btn-pages-previous btn btn-primary" type="button" onclick="clickButton(this)">Previous</button>
+          <button class="btn-pages-next btn btn-primary" type="button" onclick="clickButton(this)">Next</button>
+        </nav>
+      </header>
+      <section class="theme" data-title="introducao" data-index="1" hidden>
 
-    <section>
-      <div>
-
-        <h1><strong>Introdução</strong></h1><br>
+        <h1 class="fw-bold">Introdução</h1>
 
         <p>O que é HTML?
           HTML significa Hyper Text Markup Language (Linguagem de Marcação de Hipertexto).
@@ -152,18 +146,12 @@ Tag de abertura          Conteúdo do elemento             Tag de fechamento
         Observação: Alguns elementos HTML não possuem conteúdo (como o elemento &lt;br&gt;). Esses elementos são
         chamados de elementos vazios. Elementos vazios não têm uma tag de fechamento!
 
-      </div>
-      <br><br><br><br>
-
-
-
-
-      <div>
-
-        <h1><strong>HTML Estrutura da Página</strong></h1>
-        <p>Abaixo está uma visualização da estrutura de uma página HTML:</p>
-
-        <pre>
+        </div>
+        <br><br><br><br>
+        <div>
+          <h1><strong>HTML Estrutura da Página</strong></h1>
+          <p>Abaixo está uma visualização da estrutura de uma página HTML:</p>
+          <pre>
         <code>
 &lt;html&gt;
 
@@ -183,40 +171,21 @@ Tag de abertura          Conteúdo do elemento             Tag de fechamento
 
       </code>
   </pre>
-  <p>Observação: O conteúdo dentro da seção &lt;body&gt; será exibido em um navegador. O conteúdo dentro do elemento &lt;title&gt; será mostrado na barra de título do navegador ou na guia da página.</p>
+          <p>Observação: O conteúdo dentro da seção &lt;body&gt; será exibido em um navegador. O conteúdo dentro do
+            elemento &lt;title&gt; será mostrado na barra de título do navegador ou na guia da página.</p>
 
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    </section>
+      </section>
+      <section class="theme" data-title="estruturahtml" data-index="2" hidden>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus molestias tenetur eius quos corporis? Reiciendis debitis enim laboriosam aspernatur corporis molestias voluptatem facilis sint beatae minima esse vero, velit aperiam.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, explicabo provident. Enim, nulla veritatis? Dolorem deserunt, tenetur deleniti accusamus consectetur dicta voluptatum architecto neque autem harum? Nihil, beatae. Maiores, dolores.
+      </section>
+    </article>
   </main>
-
-
-
-
-
-
-
-
-
 
   <footer>
 
   </footer>
-
-
-
+  <script src="./assets/js/pagination.js"></script>
 </body>
 
 </html>
