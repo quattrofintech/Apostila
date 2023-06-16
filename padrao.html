@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS INTERNO DEPOIS DO CSS DO BOOTSTRAP -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Padrão</title>
+</head>
+
+<body class="background">
+    <main>
+        <article>
+            <section class="theme" data-title="introducao" data-index="1">
+                <h1 class="fw-bold spacing-y">h1 Título Principal (1 por tema)</h1>
+                <h2 class="spacing-y">O que é HTML? Todo h2 será assim</h2>
+                <h1 style="color: green; margin: 20px 0px;">LISTA DESORDENADA</h1>
+                <ul class="spacing-left">
+                    <li>HTML significa Hyper Text Markup Language (Linguagem de Marcação de Hipertexto).</li>
+                    <li>HTML é a linguagem de marcação padrão para a criação de páginas da Web.</li>
+                    <li>HTML descreve a estrutura de uma página da Web.</li>
+                    <li>HTML consiste em uma série de elementos.</li>
+                    <li>Elementos HTML informam ao navegador como exibir o conteúdo.</li>
+                    <li>Elementos HTML rotulam partes do conteúdo, como "este é um cabeçalho", "este é um parágrafo",
+                        "este é um
+                        link", etc.</li>
+                </ul>
+
+                <h1 style="color: green; margin: 20px 0px;">BLOCO DE CODIGO</h1>
+                <h2 class="spacing-y">Um documento simples de HTML:</h2>
+                <div class="example-code">
+                    <div class="code-title d-flex justify-content-between">
+                        <div>
+                            <p>Exemplo Estrutura HTML</p>
+                        </div>
+                        <div class="btn-group" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-outline-info">Tentar</button>
+                            <button type="button" class="btn btn-outline-info">Copiar</button>
+                        </div>
+                    </div>
+                    <div class="code-body">
+                        <pre>
+                            <code>
+<div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">!DOCTYPE html</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+</div>
+    <div class="code-line">
+        <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+    </div>
+        <div class="code-line">
+            <span class="code-punctuation">&lt;</span><span class="code-tag">title</span><span class="code-punctuation">&gt;</span><span class="code-text">Título da Página</span><span class="code-punctuation">&lt;</span><span class="code-tag">/title</span><span class="code-punctuation">&gt;</span>
+        </div>
+    <div class="code-line">
+        <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+    </div>
+    <div class="code-line">
+        <span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+    </div>
+        <div class="code-line">
+            <span class="code-punctuation">&lt;</span><span class="code-tag">h1</span><span class="code-attribute"> class</span><span class="code-value">="class-name"</span><span class="code-punctuation">&gt;</span><span class="code-text">Título Principal.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/h1</span><span class="code-punctuation">&gt;</span>
+        </div>
+        <div class="code-line">
+            <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Este é um paragráfo.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+        </div>
+    <div class="code-line">
+        <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+    </div>
+<div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+</div>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <h1 style="color: green; margin: 20px 0px;">CODIGO INLINE</h1>
+                <h3 class="spacing-y">Exemplo explicado:</h3>
+                <ul class="spacing-left">
+                    <li>A declaração <code class="code-inline">&lt;!DOCTYPE html&gt;</code> define que este documento é
+                        um documento HTML5.</li>
+                    <li>O elemento <code class="code-inline">&lt;html&gt;</code> é o elemento raiz de uma página HTML.
+                    </li>
+                    <li>O elemento <code class="code-inline">&lt;head&gt;</code> contém informações meta sobre a página
+                        HTML.</li>
+                    <li>O elemento &lt;title&gt;</code> especifica um título para a página HTML (que é exibido na barra
+                        de título
+                        do
+                        navegador ou na guia da página).</li>
+                    <li>O elemento <code class="code-inline">&lt;body&gt;</code> define o corpo do documento e é um
+                        container para todo o conteúdo visível,
+                        como
+                        cabeçalhos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.</li>
+                    <li>O elemento <code class="code-inline">&lt;h1&gt;</code> define um cabeçalho grande.</li>
+                    <li>O elemento <code class="code-inline">&lt;p&gt;</code> define um parágrafo.</li>
+
+                </ul>
+
+                <h1 style="color: green; margin: 20px 0px;">TABELA</h1>
+                <table class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Tag de abertura</th>
+                            <th scope="col">Conteúdo do elemento</th>
+                            <th scope="col">Tag de fechamento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>&lt;h1&gt;</td>
+                            <td>Meu primeiro cabeçalho</td>
+                            <td>&lt;/h1&gt;</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>&lt;p&gt;</td>
+                            <td>Meu primeiro parágrafo.</td>
+                            <td>&lt;/p&gt;</td>
+                        </tr>  
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>&lt;br/&gt;</td>
+                            <td colspan="2" class="text-center">Nenhum</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h1 style="color: green; margin: 20px 0px;">IMAGEM</h1>
+                <img src="./assets/img/menu lateral 1.png" class="img-fluid" alt="imagem responsiva">
+            </section>
+
+
+
+        </article>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
