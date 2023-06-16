@@ -75,6 +75,11 @@ pre {
     border: none;
 }
 
+.menuMaterias a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 /* CODE */
 code {
     font-family: 'Roboto Mono', monospace;
