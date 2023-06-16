@@ -13,12 +13,78 @@
 </head>
 
 <body class="background">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="btn btn-light navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-toggle="collapse" aria-expanded="false"
+                data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false"
+                aria-label="Toggle navigation" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+                aria-controls="offcanvasWithBackdrop">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Hidden brand</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Apostila Quattro</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <br>
+        <div class="menuMaterias">
+            <a href="/html5.html">HTML</a>
+            <a href="/css3.html">CSS</a>
+            <a href="/javascript.html">JavaScript</a>
+            <a href="/git.html">GIT</a>
+            <a href="#">React</a>
+            <a href="#">C#</a>
+            <a href="#">Python</a>
+            <a href="#">Lua</a>
+            <a href="#">Java</a>
+            <a href="#">Vue.Js</a>
+            <a href="#">C++</a>
+            <a href="#">.Net</a>
+            <a href="#">Php</a>
+            <a href="#">Kottlin</a>
+            <a href="#">Angular</a>
+            <a href="#">Ionic</a>
+            <a href="#"></a>
+        </div>
+        <hr>
+        <div class="offcanvas-body">
+            <div class="list-group">
+                <a href="?t=introducao" class="list-group-item">Introdução</a>
+                <a href="?t=estruturahtml" class="list-group-item">Estrutura HTML5</a>
+            </div>
+        </div>
+    </div>
+    <!--Fim Menu Lateral-->
     <main>
         <article>
             <section class="theme" data-title="introducao" data-index="1">
                 <h1 class="fw-bold spacing-y">h1 Título Principal (1 por tema)</h1>
-                <h2 class="spacing-y">O que é HTML? Todo h2 será assim</h2>
                 <h1 style="color: green; margin: 20px 0px;">LISTA DESORDENADA</h1>
+                <h2 class="spacing-y">O que é HTML? Todo h2 será assim</h2>
                 <ul class="spacing-left">
                     <li>HTML significa Hyper Text Markup Language (Linguagem de Marcação de Hipertexto).</li>
                     <li>HTML é a linguagem de marcação padrão para a criação de páginas da Web.</li>
@@ -30,48 +96,54 @@
                         link", etc.</li>
                 </ul>
 
-                <h1 style="color: green; margin: 20px 0px;">BLOCO DE CODIGO</h1>
+                <h1 style="color: green; margin: 20px 0px;">BLOCO DE CODIGO SIMPLES</h1>
                 <h2 class="spacing-y">Um documento simples de HTML:</h2>
                 <div class="example-code">
-                    <div class="code-title d-flex justify-content-between">
+                    <div class="code-title d-flex align-items-center justify-content-between">
                         <div>
                             <p>Exemplo Estrutura HTML</p>
                         </div>
                         <div class="btn-group" role="group" aria-label="First group">
-                            <button type="button" class="btn btn-outline-info">Tentar</button>
-                            <button type="button" class="btn btn-outline-info">Copiar</button>
+                            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
+                            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Copiar o codigo">Copiar</button>
                         </div>
                     </div>
                     <div class="code-body">
                         <pre>
                             <code>
+                                
+<div class="code-line">
+    <span class="code-comment">&lt;!-- Isto é um comentario no html --&gt;</span>
+</div>
 <div class="code-line">
     <span class="code-punctuation">&lt;</span><span class="code-tag">!DOCTYPE html</span><span class="code-punctuation">&gt;</span>
 </div>
 <div class="code-line">
     <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
 </div>
-    <div class="code-line">
+<div class="code-line">
         <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
-    </div>
-        <div class="code-line">
+</div>
+<div class="code-line">
             <span class="code-punctuation">&lt;</span><span class="code-tag">title</span><span class="code-punctuation">&gt;</span><span class="code-text">Título da Página</span><span class="code-punctuation">&lt;</span><span class="code-tag">/title</span><span class="code-punctuation">&gt;</span>
-        </div>
-    <div class="code-line">
+</div>
+<div class="code-line">
         <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
-    </div>
-    <div class="code-line">
+</div>
+<div class="code-line">
         <span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
-    </div>
-        <div class="code-line">
+</div>
+<div class="code-line">
             <span class="code-punctuation">&lt;</span><span class="code-tag">h1</span><span class="code-attribute"> class</span><span class="code-value">="class-name"</span><span class="code-punctuation">&gt;</span><span class="code-text">Título Principal.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/h1</span><span class="code-punctuation">&gt;</span>
-        </div>
-        <div class="code-line">
+</div>
+<div class="code-line">
             <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Este é um paragráfo.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
-        </div>
-    <div class="code-line">
+</div>
+<div class="code-line">
         <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
-    </div>
+</div>
 <div class="code-line">
     <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
 </div>
@@ -89,7 +161,8 @@
                     </li>
                     <li>O elemento <code class="code-inline">&lt;head&gt;</code> contém informações meta sobre a página
                         HTML.</li>
-                    <li>O elemento &lt;title&gt;</code> especifica um título para a página HTML (que é exibido na barra
+                    <li>O elemento <code class="code-inline">&lt;title&gt;</code> especifica um título para a página
+                        HTML (que é exibido na barra
                         de título
                         do
                         navegador ou na guia da página).</li>
@@ -124,7 +197,7 @@
                             <td>&lt;p&gt;</td>
                             <td>Meu primeiro parágrafo.</td>
                             <td>&lt;/p&gt;</td>
-                        </tr>  
+                        </tr>
                         <tr>
                             <th scope="row">3</th>
                             <td>&lt;br/&gt;</td>
@@ -133,7 +206,29 @@
                     </tbody>
                 </table>
                 <h1 style="color: green; margin: 20px 0px;">IMAGEM</h1>
-                <img src="./assets/img/menu lateral 1.png" class="img-fluid" alt="imagem responsiva">
+
+                <figure class="figure">
+                    <img src="./assets/img/menu lateral 1.png" class="figure-img img-fluid rounded" alt="Imamge">
+                    <figcaption class="figure-caption text-end">Legenda.</figcaption>
+                </figure>
+
+
+                <h2>O que é um Elemento HTML?</h2>
+                <p>Um elemento HTML é definido por uma tag de abertura, algum conteúdo e uma tag de fechamento:</p>
+
+                <code class="code-inline">&lt;tagname&gt; Conteúdo vai aqui... &lt;/tagname&gt;</code>
+                <p>O elemento HTML é tudo desde a tag de abertura até a tag de fechamento:</p>
+
+                <p>
+                    Utilizamos a tag <code class="code-inline">&lt;p&gt;</code> para inserir paragrafos ao site
+                </p>
+
+                <h1 style="color: green; margin: 20px 0px;">TOOLTIP</h1>
+
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Tooltip on top">
+                    Tooltip on top
+                </button>
             </section>
 
 
@@ -144,6 +239,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 </body>
 
 </html>
