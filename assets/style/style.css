@@ -10,13 +10,29 @@
 
 :root{
     --main-color: #254893;
+    --main-background-color: #c9c8c8;
     --punctuation-color: #fff;
     --tag-color: #0ff;
     --attribute-color: #9ead16;
     --value-color: #ad1616;
     --text-color: #000;
+    --pre-background-color: #222;
     --code-font: 'monospace';
     --font-size: 14px
+}
+
+main{
+    text-align: center;
+    width: 95vw;
+    margin: auto;
+}
+pre{
+    background-color: var(--pre-background-color);
+    color: #fff;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: pre-wrap;
 }
 
 .menuLateral{
@@ -28,16 +44,22 @@
 .spacing-y{
     margin: 8px 0px;
 }
+.spacing-left{
+    margin-left: 8px;
+}
 .background{
-    background-color: var(--main-color);
+    background-color: var(--main-background-color);
 }
 
 code{
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
 }
-.code-line{
+.code-inline{
     margin: 0px auto;
+    font-size: 12px;
+    padding: 2px; 
+    background-color: var(--pre-background-color);
 }
 .code-punctuation{
     color: var(--punctuation-color);
