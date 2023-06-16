@@ -67,6 +67,14 @@ pre {
     background-color: var(--main-background-color);
 }
 
+.theme{
+    margin-top: 60px;
+}
+
+.list-group a{
+    border: none;
+}
+
 /* CODE */
 code {
     font-family: 'Roboto Mono', monospace;
