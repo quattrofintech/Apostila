@@ -214,18 +214,35 @@
         <p>Um elemento HTML é definido por uma tag de abertura, algum conteúdo e uma tag de fechamento:</p>
         <code class="code-inline">&lt;tagname&gt; Conteúdo vai aqui... &lt;/tagname&gt;</code>
         <p>O elemento HTML é tudo desde a tag de abertura até a tag de fechamento:</p>
-        <pre>
-
-         &lt;h1&gt;Meu primeiro cabeçalho &lt;/h1&gt;
-      
-            &lt;p&gt;Meu primeiro parágrafo. &lt;/p&gt;
-
-Tag de abertura          Conteúdo do elemento             Tag de fechamento
-
- &lt;h1&gt;	              Meu primeiro cabeçalho		          &lt;/h1&gt;
- &lt;p&gt;	              Meu primeiro parágrafo.		          &lt;/p&gt;
- &lt;br&gt;			     	  Nenhum                          &lt;br&gt;
-</pre>
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Tag de abertura</th>
+                    <th scope="col">Conteúdo do elemento</th>
+                    <th scope="col">Tag de fechamento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>&lt;h1&gt;</td>
+                    <td>Meu primeiro cabeçalho</td>
+                    <td>&lt;/h1&gt;</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>&lt;p&gt;</td>
+                    <td>Meu primeiro parágrafo.</td>
+                    <td>&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>&lt;br/&gt;</td>
+                    <td colspan="2" class="text-center">Nenhum</td>
+                </tr>
+            </tbody>
+        </table>
         <br><br>
         Observação: Alguns elementos HTML não possuem conteúdo (como o elemento &lt;br&gt;). Esses elementos são
         chamados de elementos vazios. Elementos vazios não têm uma tag de fechamento!
