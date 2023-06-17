@@ -142,12 +142,12 @@
                   <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
                       data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
                   <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                      data-bs-placement="top" title="Copiar o codigo">Copiar</button>
+                      data-bs-placement="top" title="Copiar o codigo" id="btncopiar">Copiar</button>
               </div>
           </div> 
         <div class="code-body">
         <pre>
-          <code>
+          <code class="textocod">
             <div class="code-line">
               <span class="code-comment">&lt;!-- Isto é um comentario no html --&gt;</span>
           </div>
@@ -272,6 +272,13 @@ Tag de abertura          Conteúdo do elemento             Tag de fechamento
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script src="./assets/js/pagination.js"></script>
+  <script src="./assets/js/copycode.js"></script>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>
 
 </body>
 
