@@ -129,25 +129,26 @@
           <li>HTML descreve a estrutura de uma página da Web.</li>
           <li>HTML consiste em uma série de elementos.</li>
           <li>Elementos HTML informam ao navegador como exibir o conteúdo.</li>
-          <li>Elementos HTML rotulam partes do conteúdo, como "este é um cabeçalho", "este é um parágrafo", "este é um link", etc.</li>
+          <li>Elementos HTML rotulam partes do conteúdo, como "este é um cabeçalho", "este é um parágrafo", "este é um
+            link", etc.</li>
         </ul>
 
         <h2 class="spacing-y">Um documento simples de HTML:</h2>
         <div class="example-code">
           <div class="code-title d-flex align-items-center justify-content-between">
-              <div>
-                  <p>Exemplo Estrutura HTML</p>
-              </div>
-              <div class="btn-group" role="group" aria-label="First group">
-                  <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                      data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
-                  <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                      data-bs-placement="top" title="Copiar o codigo" id="btncopiar">Copiar</button>
-              </div>
-          </div> 
-        <div class="code-body">
-        <pre>
-          <code class="textocod">
+            <div>
+              <p>Exemplo Estrutura HTML</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar">Copiar</button>
+            </div>
+          </div>
+          <div class="code-body textocod">
+            <pre>
+          <code>
             <div class="code-line">
               <span class="code-comment">&lt;!-- Isto é um comentario no html --&gt;</span>
           </div>
@@ -184,30 +185,35 @@
 
           </code>
         </pre>
-      </div>
-    </div>
+          </div>
+        </div>
 
         <h3>Exemplo explicado:</h3>
         <ul class="spacing-left">
-          <li>A declaração &lt;!DOCTYPE html&gt; define que este documento é um documento HTML5.</li>
-          <li>O elemento &lt;html&gt; é o elemento raiz de uma página HTML.</li>      
-          <li>O elemento &lt;head&gt; contém informações meta sobre a página HTML.</li>
-          <li> O elemento &lt;title&gt; especifica um título para a página HTML (que é exibido na barra de título do
-          navegador ou na guia da página).</li>
-          <li>O elemento &lt;body&gt; define o corpo do documento e é um container para todo o conteúdo visível, como
-          cabeçalhos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.</li>
-          <li>O elemento &lt;h1&gt; define um cabeçalho grande.</li>
-          <li>O elemento &lt;p&gt; define um parágrafo.</li>
+          <li>A declaração <code class="code-inline">&lt;!DOCTYPE html&gt;</code> define que este documento é
+            um documento HTML5.</li>
+          <li>O elemento <code class="code-inline">&lt;html&gt;</code> é o elemento raiz de uma página HTML.
+          </li>
+          <li>O elemento <code class="code-inline">&lt;head&gt;</code> contém informações meta sobre a página
+            HTML.</li>
+          <li>O elemento <code class="code-inline">&lt;title&gt;</code> especifica um título para a página
+            HTML (que é exibido na barra
+            de título
+            do
+            navegador ou na guia da página).</li>
+          <li>O elemento <code class="code-inline">&lt;body&gt;</code> define o corpo do documento e é um
+            container para todo o conteúdo visível,
+            como
+            cabeçalhos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.</li>
+          <li>O elemento <code class="code-inline">&lt;h1&gt;</code> define um cabeçalho grande.</li>
+          <li>O elemento <code class="code-inline">&lt;p&gt;</code> define um parágrafo.</li>
+
         </ul>
 
         <h2 class="spacing-y">O que é um Elemento HTML?</h2>
-        Um elemento HTML é definido por uma tag de abertura, algum conteúdo e uma tag de fechamento:
-        <br><br>
-        <strong>
-          &lt;tagname&gt; Conteúdo vai aqui... &lt;/tagname&gt;
-        </strong>
-        <br><br>
-        O elemento HTML é tudo desde a tag de abertura até a tag de fechamento:
+        <p>Um elemento HTML é definido por uma tag de abertura, algum conteúdo e uma tag de fechamento:</p>
+        <code class="code-inline">&lt;tagname&gt; Conteúdo vai aqui... &lt;/tagname&gt;</code>
+        <p>O elemento HTML é tudo desde a tag de abertura até a tag de fechamento:</p>
         <pre>
 
          &lt;h1&gt;Meu primeiro cabeçalho &lt;/h1&gt;
@@ -276,9 +282,9 @@ Tag de abertura          Conteúdo do elemento             Tag de fechamento
   <script>
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
+      return new bootstrap.Tooltip(tooltipTriggerEl)
     })
-</script>
+  </script>
 
 </body>
 
