@@ -16,7 +16,7 @@
 <body class="background">
 
   <header>
-    <!-- NavBar -->
+    <!-- NavBar Principal -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <button class="btn btn-light navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-toggle="collapse"
@@ -48,17 +48,18 @@
         </div>
       </div>
     </nav>
+    <!-- Fim da Navbar Principal -->
     <!-- NavBar de Matérias -->
-    <article>
-      <ul class="nav nav-pills">
+    <article>  
+      <ul class="nav nav-pills spacing-y fixed-top">
         <li class="nav-item">
-          <a class="nav-link active" data-bs-toggle="pill" href="#home">Home</a>
+          <a class="nav-link active" data-bs-toggle="pill" href="#home">HTML5</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="pill" href="#menu1">Menu 1</a>
+          <a class="nav-link" data-bs-toggle="pill" href="#menu1">CSS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="pill" href="#menu2">Menu 2</a>
+          <a class="nav-link" data-bs-toggle="pill" href="#menu2">JAVASCRIPT</a>
         </li>
       </ul>
       <!-- Tab panes -->
@@ -68,6 +69,7 @@
         <div class="tab-pane container fade" id="menu2">...</div>
       </div>
     </article>
+    <!-- Fim da Navbar de Matérias -->
     <!--Menu Lateral-->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
       aria-labelledby="offcanvasWithBackdropLabel">
@@ -108,7 +110,6 @@
   <main>
     <article>
       <header>
-        <h1 class="fw-bold spacing-y">HTML5</h1>
         <nav class="d-flex justify-content-around">
           <button class="btn-pages-previous btn btn-primary" type="button" onclick="clickButton(this)">Previous</button>
           <button class="btn-pages-next btn btn-primary" type="button" onclick="clickButton(this)">Next</button>
