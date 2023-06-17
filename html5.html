@@ -14,40 +14,61 @@
 </head>
 
 <body class="background">
-  <h1>HTML5</h1>
+
   <header>
-    <!--Menu Lateral-->
+    <!-- NavBar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <div class="container-fluid">
-          <button class="btn btn-light navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-toggle="collapse" aria-expanded="false"
-              data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false"
+        <button class="btn btn-light navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-toggle="collapse"
+          aria-expanded="false" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false"
               aria-label="Toggle navigation" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
               aria-controls="offcanvasWithBackdrop">
               <span class="navbar-toggler-icon"></span>
           </button> -->
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <a class="navbar-brand" href="#">Hidden brand</a>
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>
-              </ul>
-              <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">Hidden brand</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
       </div>
-  </nav>
+    </nav>
+    <!-- NavBar de Matérias -->
+    <article>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="pill" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#menu1">Menu 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#menu2">Menu 2</a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane container active" id="home">...</div>
+        <div class="tab-pane container fade" id="menu1">...</div>
+        <div class="tab-pane container fade" id="menu2">...</div>
+      </div>
+    </article>
+    <!--Menu Lateral-->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
       aria-labelledby="offcanvasWithBackdropLabel">
       <div class="offcanvas-header">
@@ -87,12 +108,15 @@
   <main>
     <article>
       <header>
+        <h1 class="fw-bold spacing-y">HTML5</h1>
         <nav class="d-flex justify-content-around">
           <button class="btn-pages-previous btn btn-primary" type="button" onclick="clickButton(this)">Previous</button>
           <button class="btn-pages-next btn btn-primary" type="button" onclick="clickButton(this)">Next</button>
         </nav>
       </header>
+
       <section class="theme" data-title="introducao" data-index="1" hidden>
+
 
         <h1 class="fw-bold spacing-y">Introdução</h1>
 
