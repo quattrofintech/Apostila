@@ -90,9 +90,10 @@ pre {
     height: auto;
 }
 
-.container-matter{
+.nav-matter{
     display: block;
     width: 100%;
+    margin-top: 40px;
 }
 
 /* CODE */
