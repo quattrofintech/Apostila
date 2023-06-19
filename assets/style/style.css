@@ -100,6 +100,10 @@ pre {
     background-color: var(--main-color);
 }
 
+.margin-toast-top {
+    margin-top: 24px;
+}
+
 /* CODE */
 .example-code {
     background: var(--pre-background-color);
@@ -216,4 +220,8 @@ code {
         display: block;
     }
 
+
+    .margin-toast-top {
+        margin-top: 112px;
+    }
 }

@@ -317,21 +317,24 @@
                     Tooltip on top
                 </button>
 
-                <h1 style="color: green; margin: 20px 0px;">TOAST</h1>
+                <h1 style="color: green; margin: 20px 0px;">TOAST (Apenas 1 toast e pode usar varios botões para o mesmo toast, alterear apenas a msg no btn)</h1>
 
-                <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+                <button type="button" class="btn btn-primary"
+                    onclick="openToast('Aqui vai a mensagem que vai aparecer no toast')">Show live toast1</button>
+                <button type="button" class="btn btn-primary"
+                    onclick="openToast('Mensagem diferente')">Show live toast2</button>
 
-                <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
-                    <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
-                        <div class="d-flex">
-                            <div class="toast-body">
-                                Hello, world! This is a toast message.
-                            </div>
-                            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
-                                aria-label="Close"></button>
+                    <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
+                        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                          <div class="toast-header">
+                            <strong class="me-auto">Quattro Edtech</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                          </div>
+                          <div class="toast-body">
+                            Hello, world! This is a toast message.
+                          </div>
                         </div>
-                    </div>
-                </div>
+                      </div>
             </section>
 
 
@@ -351,10 +354,12 @@
         })
 
         // TOAST
-        var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-        var toastList = toastElList.map(function (toastEl) {
-            return new bootstrap.Toast(toastEl, option)
-        })
+        const openToast = (msg) => {
+            let myAlert = document.querySelector('.toast')
+            let btnAlert = new bootstrap.Toast(myAlert)
+            document.querySelector('.toast-body').innerText = msg
+            btnAlert.show()
+        }
     </script>
 </body>
 
