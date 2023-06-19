@@ -96,8 +96,12 @@ pre {
     margin-top: 40px;
 }
 
-.nav-principal{
+.bg-opacity-50{
     background-color: var(--main-color);
+}
+
+.no-padding{
+    padding: 0px;
 }
 
 /* CODE */
