@@ -33,7 +33,7 @@
 }
 
 .menuMaterias a {
-    padding: 8px 8px ;
+    padding: 8px 8px;
     text-align: center;
 }
 
@@ -68,39 +68,43 @@ pre {
     background-color: var(--main-background-color);
 }
 
-.theme{
+.theme {
     margin-top: 0px;
 }
 
-.list-group a{
+.list-group a {
     border: none;
 }
 
-.menuMaterias a{
+.menuMaterias a {
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.btn-pag{
+.btn-pag {
     margin: 24px auto;
 }
 
-.img-logo{
+.img-logo {
     width: 100px;
     height: auto;
 }
 
-.nav-matter{
+.nav-matter {
     display: none;
     width: 100%;
     margin-top: 52px;
 }
 
-.bg-opacity-50{
+.bg-opacity-50 {
     background-color: var(--main-color);
 }
 
 /* CODE */
+.example-code {
+    background: var(--pre-background-color);
+}
+
 code {
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
@@ -146,11 +150,33 @@ code {
     color: var(--text-color);
 }
 
-.code-comment{
+.code-comment {
     color: var(--comment-color);
     font-style: italic;
     font-weight: 200;
 }
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 /* DESKTOP */
 @media all and (min-width: 768px) {
@@ -161,32 +187,32 @@ code {
     .menuMaterias {
         padding: 10px;
     }
-    
+
     ::-webkit-scrollbar {
-        width: 8px; 
+        width: 8px;
     }
-    
-    
+
+
     ::-webkit-scrollbar-thumb {
-        background-color: #888; 
-        border-radius: 4px; 
+        background-color: #888;
+        border-radius: 4px;
     }
-    
-    
+
+
     ::-webkit-scrollbar-thumb:hover {
-        background-color: #555; 
+        background-color: #555;
     }
 
     main {
-        
+
         margin-top: 108px;
     }
 
-    .no-padding{
+    .no-padding {
         padding: 0px;
     }
 
-    .nav-matter{
+    .nav-matter {
         display: block;
     }
 
