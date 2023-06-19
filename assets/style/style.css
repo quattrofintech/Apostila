@@ -40,13 +40,14 @@
 main {
     width: 95vw;
     margin: auto;
+    margin-top: 52px;
 }
 
 pre {
     background-color: var(--pre-background-color);
     color: #fff;
     max-width: 100%;
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: auto;
     white-space: pre-wrap;
     font-family: 'Roboto Mono', monospace;
@@ -68,7 +69,7 @@ pre {
 }
 
 .theme{
-    margin-top: 60px;
+    margin-top: 0px;
 }
 
 .list-group a{
@@ -78,6 +79,20 @@ pre {
 .menuMaterias a{
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.btn-pag{
+    margin: 24px auto;
+}
+
+.img-logo{
+    width: 100px;
+    height: auto;
+}
+
+.container-matter{
+    display: block;
+    width: 100%;
 }
 
 /* CODE */
