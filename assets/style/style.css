@@ -9,7 +9,7 @@
 }
 
 :root {
-    --main-color: #254893;
+    --main-color: #25489380;
     --main-background-color: #c9c8c8;
     --punctuation-color: #fff;
     --tag-color: rgb(74, 142, 206);
@@ -40,6 +40,7 @@
 main {
     width: 95vw;
     margin: auto;
+    margin-top: 52px;
 }
 
 pre {
@@ -93,6 +94,10 @@ pre {
     display: block;
     width: 100%;
     margin-top: 40px;
+}
+
+.nav-principal{
+    background-color: var(--main-color);
 }
 
 /* CODE */
