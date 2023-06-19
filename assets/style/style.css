@@ -40,7 +40,6 @@
 main {
     width: 95vw;
     margin: auto;
-    margin-top: 52px;
 }
 
 pre {
@@ -171,6 +170,11 @@ code {
     /* Mudando a cor do thumb quando hover */
     ::-webkit-scrollbar-thumb:hover {
         background-color: #555; /* Cor de fundo do thumb ao passar o mouse */
+    }
+
+    main {
+        
+        margin-top: 92px;
     }
 
 }
