@@ -91,7 +91,7 @@ pre {
 }
 
 .nav-matter{
-    display: block;
+    display: none;
     width: 100%;
     margin-top: 52px;
 }
@@ -184,6 +184,12 @@ code {
 
     .no-padding{
         padding: 0px;
+    }
+
+    .nav-matter{
+        display: block;
+        width: 100%;
+        margin-top: 52px;
     }
 
 }
