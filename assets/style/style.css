@@ -9,7 +9,23 @@
 }
 
 :root {
-    --main-color: #25489380;
+    /* Dark */
+    --main-color: #7A7265;
+    --main-background-color: #433e3f;
+    --punctuation-color: #fff;
+    --tag-color: rgb(74, 142, 206);
+    --comment-color: rgb(20, 96, 27);
+    --attribute-color: #9ead16;
+    --value-color: #ad1616;
+    --text-color: #C0B7B1;
+    --title-color: #dedede;
+    --link-color: #D9CBBF;
+    --pre-background-color: #222;
+    --code-font: 'monospace';
+    --font-size: 14px
+
+    /* Light */
+    /* --main-color: #25489380;
     --main-background-color: #c9c8c8;
     --punctuation-color: #fff;
     --tag-color: rgb(74, 142, 206);
@@ -20,7 +36,7 @@
     --title-color: #dedede;
     --pre-background-color: #222;
     --code-font: 'monospace';
-    --font-size: 14px
+    --font-size: 14px */
 }
 
 /* MENU */
@@ -41,6 +57,7 @@ main {
     width: 95vw;
     margin: auto;
     margin-top: 52px;
+    color: var(--text-color);
 }
 
 pre {
@@ -83,6 +100,7 @@ aside{
 .menuMaterias a {
     text-decoration: none;
     text-transform: uppercase;
+    color: var();
 }
 
 .btn-pag {
@@ -188,12 +206,21 @@ code {
 
 /* DESKTOP */
 @media all and (min-width: 768px) {
+    main{
+        color: var(--text-color);
+    }
+
+    .nav-link{
+        color: var(--link-color);
+    }
+
     .menuLateral {
         max-height: 35px;
     }
 
     .menuMaterias {
         padding: 10px;
+        color: var(--text-color);
     }
 
     ::-webkit-scrollbar {
