@@ -65,16 +65,17 @@ const darkTheme = {
 }
 // Variavel light
 const lightTheme = {
-    '--main-color': '#25109380',
-    '--main-background-color': '#4ac8c8',
-    '--punctuation-color': '#000',
-    '--tag-color': 'rgb(10, 120, 001)',
+    '--main-color': '#25489380',
+    '--main-background-color': '#c9c8c8',
+    '--punctuation-color': '#fff',
+    '--tag-color': 'rgb(74, 142, 206)',
     '--comment-color': 'rgb(20, 96, 27)',
     '--attribute-color': '#9ead16',
     '--value-color': '#ad1616',
-    '--text-color': '#fff',
+    '--text-color': '#bd5713',
     '--title-color': '#dedede',
-    '--pre-background-color': '#fff'
+    '--link-color': '#333',
+    '--pre-background-color': '#222'
 }
 
 updateIcon()
