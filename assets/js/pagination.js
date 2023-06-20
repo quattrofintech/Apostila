@@ -41,6 +41,7 @@ const viewButton = (index, themes) => {
         btnNext.setAttribute('data-href', themes[index + 1].dataset.title)
     }
 }
+
 const clickButton = (btn) => {
     const urlParams = new URLSearchParams(window.location.search);
     urlParams.set('t', btn.dataset.href);
