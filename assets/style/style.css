@@ -197,7 +197,7 @@ code {
     }
 
     ::-webkit-scrollbar {
-        width: 8px;
+        width: 4px;
     }
 
 
@@ -218,6 +218,11 @@ code {
 
     aside{
         display: block;
+        position: sticky;
+        top: 108px;
+        max-height: calc(100vh - 100px);
+        width: 15%;
+        overflow-y: scroll;
     }
 
     .no-padding {
