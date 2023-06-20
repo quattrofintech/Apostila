@@ -41,7 +41,7 @@
     <!-- NavBar de Matérias -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light nav-matter bg-opacity-50 no-padding">
       <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">        
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul class="nav mx-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./html5.html">HTML 5</a>
@@ -98,8 +98,22 @@
     <!--Fim Menu Lateral-->
   </header>
 
-  <main>
-    <article>
+  <main class="d-flex flex-nowrap">
+    <aside class="p-2 mx-4 ">
+      <ul>
+        <li>teste</li>
+        <li>teste</li>
+        <li>teste</li>
+        <li>teste teste teste teste</li>
+        <li>teste</li>
+        <li>teste</li>
+        <li>teste</li>
+        <li>teste</li>
+        <li>teste</li>
+        <li>teste</li>
+      </ul>
+    </aside>
+    <article class="p-2 flex-grow-1">
       <header>
         <nav class="d-flex justify-content-around">
           <button class="btn-pages-previous btn btn-primary" type="button" onclick="clickButton(this)">Previous</button>
@@ -205,52 +219,53 @@
         <code class="code-inline">&lt;tagname&gt; Conteúdo vai aqui... &lt;/tagname&gt;</code>
         <p>O elemento HTML é tudo desde a tag de abertura até a tag de fechamento:</p>
         <table class="table table-dark table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Tag de abertura</th>
-                    <th scope="col">Conteúdo do elemento</th>
-                    <th scope="col">Tag de fechamento</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>&lt;h1&gt;</td>
-                    <td>Meu primeiro cabeçalho</td>
-                    <td>&lt;/h1&gt;</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>&lt;p&gt;</td>
-                    <td>Meu primeiro parágrafo.</td>
-                    <td>&lt;/p&gt;</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>&lt;br/&gt;</td>
-                    <td colspan="2" class="text-center">Nenhum</td>
-                </tr>
-            </tbody>
-          </table>
-        <p>Observação: Alguns elementos HTML não possuem conteúdo (como o elemento <code class="code-inline">&lt;br&gt;</code>).</p> 
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Tag de abertura</th>
+              <th scope="col">Conteúdo do elemento</th>
+              <th scope="col">Tag de fechamento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>&lt;h1&gt;</td>
+              <td>Meu primeiro cabeçalho</td>
+              <td>&lt;/h1&gt;</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>&lt;p&gt;</td>
+              <td>Meu primeiro parágrafo.</td>
+              <td>&lt;/p&gt;</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>&lt;br/&gt;</td>
+              <td colspan="2" class="text-center">Nenhum</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Observação: Alguns elementos HTML não possuem conteúdo (como o elemento <code
+            class="code-inline">&lt;br&gt;</code>).</p>
         <p>Esses elementos são chamados de elementos vazios. Elementos vazios não têm uma tag de fechamento!</p>
-          <h1 class="fw-bold spacing-y">HTML Estrutura da Página</h1>
-          <p>Abaixo está uma visualização da estrutura de uma página HTML:</p>
-          <div class="example-code">
-            <div class="code-title d-flex align-items-center justify-content-between">
-                <div>
-                    <p>Exemplo Estrutura HTML</p>
-                </div>
-                <div class="btn-group" role="group" aria-label="First group">
-                    <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                        data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
-                    <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                        data-bs-placement="top" title="Copiar o codigo">Copiar</button>
-                </div>
+        <h1 class="fw-bold spacing-y">HTML Estrutura da Página</h1>
+        <p>Abaixo está uma visualização da estrutura de uma página HTML:</p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo Estrutura HTML</p>
             </div>
-            <div class="code-body">
-                <pre>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo">Copiar</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre>
                     <code>
 <div class="code-line">
 <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
@@ -284,10 +299,12 @@
 </div>
                     </code>
                 </pre>
-            </div>
+          </div>
         </div>
-          <p>Observação: O conteúdo dentro da seção <code class="code-inline">&lt;body&gt;</code> será exibido em um navegador. O conteúdo dentro do
-            elemento <code class="code-inline">&lt;title&gt;</code> será mostrado na barra de título do navegador ou na guia da página.</p>
+        <p>Observação: O conteúdo dentro da seção <code class="code-inline">&lt;body&gt;</code> será exibido em um
+          navegador. O conteúdo dentro do
+          elemento <code class="code-inline">&lt;title&gt;</code> será mostrado na barra de título do navegador ou na
+          guia da página.</p>
 
       </section>
       <section class="theme" data-title="estruturahtml" data-index="2" hidden>
