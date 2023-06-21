@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 14px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 :root {
@@ -212,6 +212,8 @@ code {
 
     .nav-link{
         color: var(--link-color);
+        font-size: 20px;
+        font-weight: bold;
     }
 
     .menuLateral {

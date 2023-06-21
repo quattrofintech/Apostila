@@ -51,31 +51,33 @@ const updateThemeColor = (theme) => {
 }
 // Variavel Dark 
 const darkTheme = {
-    '--main-color': '#7A7265',
-    '--main-background-color': '#433e3f',
+    '--main-color': '#823b74',
+    '--main-background-color': '#34383e',
     '--punctuation-color': '#fff',
     '--tag-color': 'rgb(74, 142, 206)',
     '--comment-color': 'rgb(20, 96, 27)',
     '--attribute-color': '#9ead16',
     '--value-color': '#ad1616',
-    '--text-color': '#C0B7B1',
+    '--text-color': '#ffffff',
     '--title-color': '#dedede',
-    '--link-color': '#D9CBBF',
+    '--link-color': '#b62f27',
     '--pre-background-color': '#222'
+    
 }
 // Variavel light
 const lightTheme = {
-    '--main-color': '#25489380',
-    '--main-background-color': '#c9c8c8',
+    '--main-color': '#b62f27',
+    '--main-background-color': '#ffffff',
     '--punctuation-color': '#fff',
     '--tag-color': 'rgb(74, 142, 206)',
     '--comment-color': 'rgb(20, 96, 27)',
     '--attribute-color': '#9ead16',
     '--value-color': '#ad1616',
-    '--text-color': '#bd5713',
+    '--text-color': '#823b74',
     '--title-color': '#dedede',
-    '--link-color': '#333',
+    '--link-color': '#34383e',
     '--pre-background-color': '#222'
+    
 }
 
 updateIcon()
