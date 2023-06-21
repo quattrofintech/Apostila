@@ -41,16 +41,27 @@
 
 /* MENU */
 
+.offcanvas-header{
+    background-color: var(--main-color);
+}
+
+.offcanvas-body{
+    background-color: var(--main-background-color);
+}
+
 .menuMaterias {
     display: flex;
     max-width: 100%;
     height: auto;
     overflow-x: auto;
+    background-color: var(--main-background-color);
+    
 }
 
 .menuMaterias a {
     padding: 8px 8px;
     text-align: center;
+    color: var(--link-color);
 }
 
 main {
@@ -91,6 +102,11 @@ aside{
 
 .theme {
     margin-top: 0px;
+}
+
+.list-group-item{
+    background-color: var(--main-background-color);
+    color: var(--text-color);
 }
 
 .list-group a {
