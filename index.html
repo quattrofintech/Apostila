@@ -13,53 +13,93 @@
 </head>
 
 <body>
+  <header>
   <h1>Quattro</h1>
 
   <!--Menu LAteral-->
-
-  <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
-    aria-controls="offcanvasWithBackdrop">
-    <img src="./img/menu lateral 1.png" alt="menu" class="menuLateral">
-  </button>
-
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <button class="btn btn-light navbar-toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#offcanvasWithBackdrop"
+            aria-controls="offcanvasWithBackdrop">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false"
+            aria-label="Toggle navigation" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+            aria-controls="offcanvasWithBackdrop">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Hidden brand</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button type="button" class="btn btn-theme">
+                    <span class="material-icons icon-theme">
+                        nightlight
+                    </span>
+                </button>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
     aria-labelledby="offcanvasWithBackdropLabel">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Apostila Quattro</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      <!--
-    <button type="button" class="btn btn-outline-primary">HTML</button>
-    <button type="button" class="btn btn-outline-primary">CSS</button>
-    <button type="button" class="btn btn-outline-warning">JavaScript</button>
-    <button type="button" class="btn btn-outline-info">Git</button>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    -->
+        <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Apostila Quattro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <br>
     <div class="menuMaterias">
-      <a href="/html5.html">HTML</a>
-      <a href="/css3.html">CSS</a>
-      <a href="/javascript.html">JavaScript</a>
-      <a href="/git.html">GIT</a>
-      <a href="#">React</a>
-      <a href="#">C#</a>
-      <a href="#">Python</a>
-      <a href="#">Lua</a>
-      <a href="#">Java</a>
-      <a href="#">Vue.Js</a>
-      <a href="#">C++</a>
-      <a href="#">.Net</a>
-      <a href="#">Php</a>
-      <a href="#">Kottlin</a>
-      <a href="#">Angular</a>
-      <a href="#">Ionic</a>
-      <a href="#"></a>
+        <a href="/html5.html">HTML</a>
+        <a href="/css3.html">CSS</a>
+        <a href="/javascript.html">JavaScript</a>
+        <a href="/git.html">GIT</a>
+        <a href="#">React</a>
+        <a href="#">C#</a>
+        <a href="#">Python</a>
+        <a href="#">Lua</a>
+        <a href="#">Java</a>
+        <a href="#">Vue.Js</a>
+        <a href="#">C++</a>
+        <a href="#">.Net</a>
+        <a href="#">Php</a>
+        <a href="#">Kottlin</a>
+        <a href="#">Angular</a>
+        <a href="#">Ionic</a>
+        <a href="#"></a>
     </div>
     <hr>
     <div class="offcanvas-body">
-      <p>* CONTEUDO *</p>
+        <div class="list-group">
+            <a href="?t=introducao" class="list-group-item">Introdução</a>
+            <a href="?t=estruturahtml" class="list-group-item">Estrutura HTML5</a>
+        </div>
     </div>
-  </div>
+</div>
+</header>
+
+<main>
+    <div class="embed-container">
+        <iframe src="https://www.youtube.com/embed/470yqRacB0o" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+</main>
+<!-- Fim Menu lateral/Navbar -->
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
