@@ -78,9 +78,11 @@ pre {
     max-width: 100%;
     overflow-x: scroll;
     overflow-y: auto;
-    white-space: pre-wrap;
+    padding: 0px 8px;
+    font-size: 1em;
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
+    max-height: 500px;
 }
 
 aside{
@@ -229,7 +231,7 @@ code {
 
     .nav-link{
         color: var(--link-color);
-        font-size: 20px;
+        font-size: 0.8em;
         font-weight: bold;
     }
 
@@ -246,6 +248,10 @@ code {
         width: 4px;
     }
 
+    pre::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
 
     ::-webkit-scrollbar-thumb {
         background-color: #888;
@@ -278,7 +284,6 @@ code {
     .nav-matter {
         display: block;
     }
-
 
     .margin-toast-top {
         margin-top: 112px;
