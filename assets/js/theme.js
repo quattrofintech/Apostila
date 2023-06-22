@@ -60,9 +60,11 @@ const darkTheme = {
     '--value-color': '#ad1616',
     '--text-color': '#ffffff',
     '--title-color': '#dedede',
-    '--link-color': '#b62f27',
-    '--pre-background-color': '#222'
-    
+    '--link-color': '#ffffff',
+    '--pre-background-color': '#222',
+    '--active-color': '#b62f27',
+    '--active-text-color:': '#b62f27'
+
 }
 // Variavel light
 const lightTheme = {
@@ -75,8 +77,10 @@ const lightTheme = {
     '--value-color': '#ad1616',
     '--text-color': '#823b74',
     '--title-color': '#dedede',
-    '--link-color': '#34383e',
-    '--pre-background-color': '#222'
+    '--link-color': '#0d2f4f',
+    '--pre-background-color': '#222',
+    '--active-color': '#823b74',
+    '--active-text-color:': '#823b74'
     
 }
 

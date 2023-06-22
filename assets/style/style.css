@@ -21,8 +21,10 @@
     --title-color: #dedede;
     --link-color: #D9CBBF;
     --pre-background-color: #222;
+    --active-color: #433e3f;
+    --active-text-color: #fff;
     --code-font: 'monospace';
-    --font-size: 14px
+    --font-size: 14px;
 
     /* Light */
     /* --main-color: #25489380;
@@ -146,8 +148,8 @@ aside{
 }
 
 .active{
-    background-color: var(--text-color)!important;
-    
+    background-color: var(--active-color)!important;
+    color: var(--main-background-color);
 }
 
 /* CODE */
@@ -321,5 +323,6 @@ code {
         max-height: calc(100vh - 100px);
         width: 15%;
         overflow-y: scroll;
+        border-right: 2px solid var(--main-color);
     }
 }
