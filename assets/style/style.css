@@ -146,7 +146,8 @@ aside{
 }
 
 .active{
-    background-color: var(--text-color);
+    background-color: var(--text-color)!important;
+    
 }
 
 /* CODE */
@@ -268,7 +269,6 @@ code {
     }
 
     main {
-
         margin-top: 108px;
     }
 
