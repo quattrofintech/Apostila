@@ -65,12 +65,11 @@ const asideActive = (title) => {
 const offCanvasActive = (title) => {
     const menuLateral = document.querySelectorAll('.list-group a')
     console.log(menuLateral)
-    menuLateral.forEach(a => {
+    menuLateral?.forEach(a => {
         if(a.href.split('t=')[1] === title){
             a.classList.add('active')
         }else{
             a.classList.remove('active')
-
         }
     })
 }
