@@ -145,6 +145,10 @@ aside{
     margin-top: 24px;
 }
 
+.active{
+    background-color: var(--text-color);
+}
+
 /* CODE */
 .example-code {
     background: var(--pre-background-color);
