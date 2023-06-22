@@ -20,7 +20,9 @@ const viewTheme = () => {
             index = i
         }
     }
-   viewButton(index, themes)
+    viewButton(index, themes)
+    asideActive(title)
+    offCanvasActive(title)
 }
 
 const viewButton = (index, themes) => {
@@ -47,4 +49,30 @@ const clickButton = (btn) => {
     urlParams.set('t', btn.dataset.href);
     return window.location.search = urlParams;
 }
+
+const asideActive = (title) => {
+    const menuLateral = document.querySelectorAll('aside ul li')
+    menuLateral?.forEach(li => {
+        const a = li.children[0]
+        if(a.href.split('t=')[1] === title){
+            li.classList.add('active')
+        }else{
+            li.classList.remove('active')
+        }
+    })
+}
+
+const offCanvasActive = (title) => {
+    const menuLateral = document.querySelectorAll('.list-group a')
+    console.log(menuLateral)
+    menuLateral.forEach(a => {
+        if(a.href.split('t=')[1] === title){
+            a.classList.add('active')
+        }else{
+            a.classList.remove('active')
+
+        }
+    })
+}
+
 viewTheme();
