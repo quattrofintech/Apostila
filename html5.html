@@ -108,7 +108,7 @@
             </div>
         <div class="list-group">
           <a href="?t=introducao" class="list-group-item">Introdução</a>
-          <a href="?t=estruturahtml" class="list-group-item">Estrutura HTML5</a>
+          <a href="?t=elementoshtml" class="list-group-item">Elementos HTML5</a>
         </div>
       </div>
     </div>
@@ -119,10 +119,10 @@
     <aside class="p-2 mx-4 ">
       <ul class="navbar-nav pe-4 mb-4 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="?t=introducao">Home</a>
+          <a class="nav-link" aria-current="page" href="?t=introducao">Introdução</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="?t=estruturahtml">Estrutura HTML5</a>
+          <a class="nav-link" href="?t=elementoshtml">Elementos HTML5</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="?t=trocar valor">Outro</a>
@@ -163,7 +163,7 @@
               <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
                 title="Tentar fazer este exercicio">Tentar</button>
               <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-                title="Copiar o codigo" id="btncopiar">Copiar</button>
+                title="Copiar o codigo" id="btncopiar" onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
             </div>
           </div>
           <div class="code-body textocod">
@@ -276,7 +276,7 @@
               <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
                 title="Tentar fazer este exercicio">Tentar</button>
               <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-                title="Copiar o codigo" id="btncopiar">Copiar</button>
+                title="Copiar o codigo" id="btncopiar" onclick="openToast('Copiado para àrea de tranferência!')">Copiar</button>
             </div>
           </div>
           <div class="code-body textocod">
@@ -322,22 +322,83 @@
           guia da página.</p>
 
       </section>
-      <section class="theme" data-title="estruturahtml" data-index="2" hidden>
-        <h1 class="fw-bold spacing-y">Estrutura HTML 5</h1>
+      <section class="theme" data-title="elementoshtml" data-index="2" hidden>
+        <h1 class="fw-bold spacing-y">Elementos HTML</h1>
+        <p>Um elemento HTML é definido por uma tag de abertura, algum conteúdo e uma tag de fechamento.</p>
+        <h2 class="spacing-y">Elementos HTML</h2>
+        <p>O elemento HTML é tudo desde a tag de abertura até a tag de fechamento:</p>
+        <code class="code-inline">&lt;tagname&gt; Conteúdo vai aqui... &lt;/tagname&gt;</code>
+        <table class="table table-dark table-hover spacing-y">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Tag de abertura</th>
+              <th scope="col">Conteúdo do elemento</th>
+              <th scope="col">Tag de fechamento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>&lt;h1&gt;</td>
+              <td>Meu primeiro cabeçalho</td>
+              <td>&lt;/h1&gt;</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>&lt;p&gt;</td>
+              <td>Meu primeiro parágrafo.</td>
+              <td>&lt;/p&gt;</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>&lt;br/&gt;</td>
+              <td colspan="2" class="text-center">Nenhum</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Observação: Alguns elementos HTML não possuem conteúdo (como o elemento <code
+            class="code-inline">&lt;br&gt;</code>).</p>
+        <p>Esses elementos são chamados de elementos vazios. Elementos vazios não têm uma tag de fechamento!</p>
+        <h2 class="spacing-y">Elementos HTML Aninhados</h2>
+        <p>Elementos HTML podem ser aninhados (isso significa que os elementos podem conter outros elementos).
+        </p>
+        <p>Todos os documentos HTML consistem em elementos HTML aninhados.</p>
+        <p>O exemplo a seguir contém quatro elementos HTML (<code class="code-inline">&lt;html&gt;,&lt;body&gt;,&lt;h1&gt;,&lt;p&gt;</code>):
+        </p>
+
       </section>
+      <!-- Toast -->
+      <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Quattro Edtech</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
     </article>
   </main>
 
   <footer>
 
   </footer>
+  <!-- Temas -->
   <script src="./assets/js/theme.js"></script>
+  <!-- Script do Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <!-- Mudar de tema -->
   <script src="./assets/js/pagination.js"></script>
+  <!-- Botão de copiar -->
   <script src="./assets/js/copycode.js"></script>
+  <!-- Utilitys do Bootstrap -->
   <script src="./assets/js/bootstrap.js"></script>
+  <!-- Pesquisa -->
   <script src="./assets/js/search.js"></script>
 
 
