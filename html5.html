@@ -33,18 +33,18 @@
             <li class="nav-item">
             </li>
           </ul>
-          <form class="d-flex">
+          <div class="d-flex" onsubmit="">
             <button type="button" class="btn btn-theme">
               <span class="material-icons icon-theme">
                 nightlight
               </span>
             </button>
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <div class="content-search">
-              
+            <input class="form-control me-2" id="search"  type="search" placeholder="Search" aria-label="Search">
+            <div class="content-search list-group">
+
             </div>
             <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-          </form>
+          </div>
         </div>
       </div>
     </nav>
@@ -102,6 +102,10 @@
         <a href="#"></a>
       </div>
       <div class="offcanvas-body">
+        <input class="form-control me-2 my-2" id="search-mobile"  type="search" placeholder="Search" aria-label="Search">
+            <div class="content-search-mobile list-group">
+
+            </div>
         <div class="list-group">
           <a href="?t=introducao" class="list-group-item">Introdução</a>
           <a href="?t=estruturahtml" class="list-group-item">Estrutura HTML5</a>
@@ -334,6 +338,7 @@
   <script src="./assets/js/pagination.js"></script>
   <script src="./assets/js/copycode.js"></script>
   <script src="./assets/js/bootstrap.js"></script>
+  <script src="./assets/js/search.js"></script>
 
 
 </body>
