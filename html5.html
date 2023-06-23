@@ -108,7 +108,7 @@
         </div>
         <div class="list-group">
           <a href="?t=introducao" class="list-group-item">Introdução</a>
-          <a href="?t=elementoshtml" class="list-group-item">Elementos HTML5</a>
+          <a href="?t=atributoshtml" class="list-group-item">Atributos HTML</a>
         </div>
       </div>
     </div>
@@ -122,7 +122,7 @@
           <a class="nav-link" aria-current="page" href="?t=introducao">Introdução</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="?t=elementoshtml">Elementos HTML5</a>
+          <a class="nav-link" href="?t=atributoshtml">Atributos HTML</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="?t=trocar valor">Outro</a>
@@ -167,7 +167,8 @@
                 onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
             </div>
           </div>
-          <div class="code-body textocod">
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
             <pre>
           <code>
 <div class="code-line">
@@ -206,7 +207,15 @@
 
           </code>
         </pre>
-            <img src="./assets/img/exemplo1.jpg" alt="exemplo1" class="img-fluid">
+    </div>
+    <div class="code-support col">
+      <figure class="figure my-auto">
+          <img src="./assets/img/exemplo1.jpg"
+              class="figure-img img-fluid rounded" alt="Imamge">
+          <figcaption class="figure-caption text-end mx-2">Um título e um parágrafo em HTML.
+          </figcaption>
+      </figure>
+  </div>
           </div>
         </div>
 
@@ -318,7 +327,6 @@
 </div>
                     </code>
                 </pre>
-            <img src="./assets/img/exemplo2.jpg" alt="exemplo1" class="img-fluid">
           </div>
         </div>
         <p>Observação: O conteúdo dentro da seção <code class="code-inline">&lt;body&gt;</code> será exibido em um
@@ -326,9 +334,7 @@
           elemento <code class="code-inline">&lt;title&gt;</code> será mostrado na barra de título do navegador ou na
           guia da página.</p>
 
-      </section>
-      <section class="theme" data-title="elementoshtml" data-index="2" hidden>
-        <h1 class="fw-bold spacing-y">Elementos HTML</h1>
+          <h1 class="fw-bold spacing-y">Elementos HTML</h1>
         <p>Um elemento HTML é definido por uma tag de abertura, algum conteúdo e uma tag de fechamento.</p>
         <h2 class="spacing-y">Elementos HTML</h2>
         <p>O elemento HTML é tudo desde a tag de abertura até a tag de fechamento:</p>
@@ -418,7 +424,18 @@
         </p>
         <p>Em seguida, dentro do elemento<code class="code-inline">&lt;html&gt;</code>, há um elemento <code
             class="code-inline">&lt;body&gt;</code>:</p>
-
+            <div class="code-title d-flex align-items-center justify-content-between">
+              <div>
+                <p>Exemplo</p>
+              </div>
+              <div class="btn-group" role="group" aria-label="First group">
+                <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Tentar fazer este exercicio">Tentar</button>
+                <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Copiar o codigo" id="btncopiar"
+                  onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+              </div>
+            </div>
 <div class="code-body textocod">
             <pre>
             <code>
@@ -437,8 +454,40 @@
 
                     </code>
                 </pre>
+          </div> 
+          <p>O elemento <code class="code-inline">&lt;body&gt;</code> define o corpo do documento.Ele tem uma tag de abertura <code class="code-inline">&lt;body&gt;</code> e uma tag de fechamento <code class="code-inline">&lt;/body&gt;</code>.</p>
+          <p>Em seguida, dentro do elemento <code class="code-inline">&lt;body&gt;</code>, existem outros dois elementos: </p>
+          <p><code class="code-inline">&lt;h1&gt;</code> e <code class="code-inline">&lt;p&gt;</code>:</p>
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
           </div>
+<div class="code-body textocod">
+          <pre>
+          <code>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">h1</span><span class="code-punctuation">&gt;</span><span class="code-text">Meu Primeiro Título</span><span class="code-punctuation">&lt;</span><span class="code-tag">/h1</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Meu primeiro parágrafo.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+
+                  </code>
+              </pre>
+        </div>
       </section>
+
+          <section class="theme" data-title="atributoshtml" data-index="2" hidden>
+            <h1 class="fw-bold spacing-y">Atributos HTML</h1>
+          </section>
       <!-- Toast -->
       <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
         <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
