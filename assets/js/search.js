@@ -1,7 +1,6 @@
 const input = document.querySelector("#search")
 const div = document.querySelector('.content-search')
 
-
 const addItensDesktop = (item) => {
     const a = document.createElement("a")
     item.link ?  a.href = item.link : null
@@ -12,11 +11,11 @@ const addItensDesktop = (item) => {
 
 input.addEventListener("input", function () {
     div.innerHTML = ""
-    if (input.value.toLowerCase()) {
+    if (input.value.toLowerCase().trim()) {
         const filtro = links.filter((item) => 
             item.search.toLowerCase().includes(input.value.toLowerCase())
         )
-        for(var i = 0; i < filtro.length; i++){
+        for(let i = 0; i < filtro.length; i++){
             addItensDesktop(filtro[i])
             if(i >= 6){
                 break
@@ -42,11 +41,11 @@ const addItensMobile = (item) => {
 
 inputMobile.addEventListener("input", function () {
     divMobile.innerHTML = ""
-    if (inputMobile.value.toLowerCase()) {
+    if (inputMobile.value.toLowerCase().trim()) {
         const filtro = links.filter((item) => 
             item.search.toLowerCase().includes(inputMobile.value.toLowerCase())
         )
-        for(var i = 0; i < filtro.length; i++){
+        for(let i = 0; i < filtro.length; i++){
             addItensMobile(filtro[i])
             if(i >= 6){
                 break
@@ -60,9 +59,9 @@ inputMobile.addEventListener("input", function () {
 
 // Criar pesquisas aqui
 const links = [
-    { title: 'HTML5', link: 'html5.html', search: 'html5 site' },
-    { title: 'Introdução - HTML5', link: 'html5.html?t=introducao', search: 'html5 site' },
-    { title: 'Estruturas - HTML5', link: 'html5.html?t=estruturahtml', search: 'html5 site' },
+    { title: 'HTML5', link: 'html5.html', search: 'html5 site div' },
+    { title: 'Introdução - HTML5', link: 'html5.html?t=introducao', search: 'html5 site introdução introducao' },
+    { title: 'Atributos - HTML5', link: 'html5.html?t=atributoshtml', search: 'html5 site atributos' },
     { title: 'CSS3', link: 'css3.html', search: ' site estilo estilizar css' },
     { title: 'Home', link: 'index.html', search: 'home inicio voltar começo' },
 ]
