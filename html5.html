@@ -168,8 +168,8 @@
             </div>
           </div>
           <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-          <div class="code-body col textocod">
-            <pre>
+            <div class="code-body col textocod">
+              <pre>
           <code>
 <div class="code-line">
 <span class="code-comment">&lt;!-- Isto é um comentario no html --&gt;</span>
@@ -207,15 +207,14 @@
 
           </code>
         </pre>
-    </div>
-    <div class="code-support col">
-      <figure class="figure my-auto">
-          <img src="./assets/img/exemplo1.jpg"
-              class="figure-img img-fluid rounded" alt="Imamge">
-          <figcaption class="figure-caption text-end mx-2">Um título e um parágrafo em HTML.
-          </figcaption>
-      </figure>
-  </div>
+            </div>
+            <div class="code-support col">
+              <figure class="figure my-auto">
+                <img src="./assets/img/exemplo1.jpg" class="figure-img img-fluid rounded" alt="Imamge">
+                <figcaption class="figure-caption text-end mx-2">Um título e um parágrafo em HTML.
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
 
@@ -334,7 +333,7 @@
           elemento <code class="code-inline">&lt;title&gt;</code> será mostrado na barra de título do navegador ou na
           guia da página.</p>
 
-          <h1 class="fw-bold spacing-y">Elementos HTML</h1>
+        <h1 class="fw-bold spacing-y">Elementos HTML</h1>
         <p>Um elemento HTML é definido por uma tag de abertura, algum conteúdo e uma tag de fechamento.</p>
         <h2 class="spacing-y">Elementos HTML</h2>
         <p>O elemento HTML é tudo desde a tag de abertura até a tag de fechamento:</p>
@@ -378,20 +377,21 @@
         <p>O exemplo a seguir contém quatro elementos HTML (<code
             class="code-inline">&lt;html&gt;,&lt;body&gt;,&lt;h1&gt;,&lt;p&gt;</code>):
         </p>
-        <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-            <p>Exemplo Elementos HTML alinhados</p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo Elementos HTML alinhados</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de tranferência!')">Copiar</button>
+            </div>
           </div>
-          <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Tentar fazer este exercicio">Tentar</button>
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Copiar o codigo" id="btncopiar"
-              onclick="openToast('Copiado para àrea de tranferência!')">Copiar</button>
-          </div>
-        </div>
-        <div class="code-body">
-          <pre>
+          <div class="code-body">
+            <pre>
             <code>
 <div class="code-line">
 <span class="code-punctuation">&lt;</span><span class="code-tag">!DOCTYPE html</span><span class="code-punctuation">&gt;</span>
@@ -408,6 +408,7 @@
 <div class="code-line">
     <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Meu primeiro Paragráfo.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
 </div>
+<p>O elemento <code class="code-inline">&lt;html&gt;</code> é o elemento raiz e define todo o documento HTML.
 <div class="code-line">
 <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
 </div>
@@ -416,27 +417,28 @@
 </div>
                     </code>
                 </pre>
+          </div>
         </div>
         <h2>Explicação do Exemplo</h2>
-        <p>O elemento <code class="code-inline">&lt;html&gt;</code> é o elemento raiz e define todo o documento HTML.
-          Ele tem uma tag de abertura <code class="code-inline">&lt;html&gt;</code> e uma tag de fechamento <code
-            class="code-inline">&lt;/html&gt;</code>.
+        Ele tem uma tag de abertura <code class="code-inline">&lt;html&gt;</code> e uma tag de fechamento <code
+          class="code-inline">&lt;/html&gt;</code>.
         </p>
         <p>Em seguida, dentro do elemento<code class="code-inline">&lt;html&gt;</code>, há um elemento <code
             class="code-inline">&lt;body&gt;</code>:</p>
-            <div class="code-title d-flex align-items-center justify-content-between">
-              <div>
-                <p>Exemplo</p>
-              </div>
-              <div class="btn-group" role="group" aria-label="First group">
-                <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-                  title="Tentar fazer este exercicio">Tentar</button>
-                <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-                  title="Copiar o codigo" id="btncopiar"
-                  onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
-              </div>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
             </div>
-<div class="code-body textocod">
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="code-body textocod">
             <pre>
             <code>
 <div class="code-line">
@@ -454,10 +456,15 @@
 
                     </code>
                 </pre>
-          </div> 
-          <p>O elemento <code class="code-inline">&lt;body&gt;</code> define o corpo do documento.Ele tem uma tag de abertura <code class="code-inline">&lt;body&gt;</code> e uma tag de fechamento <code class="code-inline">&lt;/body&gt;</code>.</p>
-          <p>Em seguida, dentro do elemento <code class="code-inline">&lt;body&gt;</code>, existem outros dois elementos: </p>
-          <p><code class="code-inline">&lt;h1&gt;</code> e <code class="code-inline">&lt;p&gt;</code>:</p>
+          </div>
+        </div>
+        <p>O elemento <code class="code-inline">&lt;body&gt;</code> define o corpo do documento.Ele tem uma tag de
+          abertura <code class="code-inline">&lt;body&gt;</code> e uma tag de fechamento <code
+            class="code-inline">&lt;/body&gt;</code>.</p>
+        <p>Em seguida, dentro do elemento <code class="code-inline">&lt;body&gt;</code>, existem outros dois elementos:
+        </p>
+        <p><code class="code-inline">&lt;h1&gt;</code> e <code class="code-inline">&lt;p&gt;</code>:</p>
+        <div class="example-code">
           <div class="code-title d-flex align-items-center justify-content-between">
             <div>
               <p>Exemplo</p>
@@ -470,8 +477,8 @@
                 onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
             </div>
           </div>
-<div class="code-body textocod">
-          <pre>
+          <div class="code-body textocod">
+            <pre>
           <code>
 <div class="code-line">
 <span class="code-punctuation">&lt;</span><span class="code-tag">h1</span><span class="code-punctuation">&gt;</span><span class="code-text">Meu Primeiro Título</span><span class="code-punctuation">&lt;</span><span class="code-tag">/h1</span><span class="code-punctuation">&gt;</span>
@@ -482,12 +489,177 @@
 
                   </code>
               </pre>
+          </div>
         </div>
-      </section>
+        <p>O elemento <code class="code-inline">&lt;h1&gt;</code> define um título.</p>
+        <p>Ele tem uma tag de abertura <code class="code-inline">&lt;h1&gt;</code> e uma tag de fechamento <code
+            class="code-inline">&lt;/h1&gt;</code>:</p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="code-body textocod">
+            <pre>
+          <code>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">h1</span><span class="code-punctuation">&gt;</span><span class="code-text">Meu Primeiro Título</span><span class="code-punctuation">&lt;</span><span class="code-tag">/h1</span><span class="code-punctuation">&gt;</span>
+</div>
 
-          <section class="theme" data-title="atributoshtml" data-index="2" hidden>
-            <h1 class="fw-bold spacing-y">Atributos HTML</h1>
-          </section>
+                  </code>
+              </pre>
+          </div>
+        </div>
+        <p>O elemento<code class="code-inline">&lt;p&gt;</code> define um parágrafo.</p>
+        <p>Ele tem uma tag de abertura <code class="code-inline">&lt;p&gt;</code> e uma tag de fechamento <code
+            class="code-inline">&lt;/p&gt;</code>:</p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="code-body textocod">
+            <pre>
+          <code>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Meu Primeiro Parágrafo</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+
+                  </code>
+              </pre>
+          </div>
+        </div>
+        <h2>Nunca ignore a tag de fechamento</h2>
+        <p>Alguns elementos HTML podem ser exibidos corretamente, mesmo se você esquecer a tag de fechamento:</p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="code-body col">
+              <pre>
+                <code>
+              <div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Este é um Paragráfo.</span><span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Este é um Paragráfo.</span><span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+</div>
+            </div>
+          </code>
+        </pre>
+            </div>
+          </div>
+          <p>No entanto, nunca confie nisso! Resultados inesperados e erros podem ocorrer se você esquecer a tag de
+            fechamento!</p>
+          <h2>Elementos HTML Vazios</h2>
+          <p>Elementos HTML sem conteúdo são chamados de elementos vazios.</p>
+          <p>A tag <code class="code-inline">&lt;br&gt;</code> define uma quebra de linha e é um elemento vazio sem uma
+            tag de fechamento:
+          </p>
+          <div class="example-code">
+            <div class="code-title d-flex align-items-center justify-content-between">
+              <div>
+                <p>Exemplo</p>
+              </div>
+              <div class="btn-group" role="group" aria-label="First group">
+                <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Tentar fazer este exercicio">Tentar</button>
+                <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Copiar o codigo">Copiar</button>
+              </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+              <div class="code-body col">
+            <pre>
+              <code>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Este é</span><span class="code-punctuation">&lt;</span><span class="code-tag">br</span><span class="code-punctuation">&gt;</span><span class="code-text">parágrafo com uma quebra de linha.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+              </code>
+            </pre>
+              </div>
+              <div class="code-support col">
+                <figure class="figure my-auto">
+                  <img src="./assets/img/exemplo3.jpg" class="figure-img img-fluid rounded" alt="Imamge">
+                  <figcaption class="figure-caption text-end mx-2">Está é uma quebra de linha.
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <h2>HTML não é sensível a maiúsculas e minúsculas</h2>
+          <p>As tags HTML não são sensíveis a maiúsculas e minúsculas:</p>
+          <div class="example-code">
+            <div class="code-title d-flex align-items-center justify-content-between">
+              <div>
+                <p>Exemplo</p>
+              </div>
+              <div class="btn-group" role="group" aria-label="First group">
+                <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Tentar fazer este exercicio">Tentar</button>
+                <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Copiar o codigo">Copiar</button>
+              </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+              <div class="code-body col">
+                <pre>
+<code>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">P</span><span class="code-punctuation">&gt;</span><span class="code-text">significa a mesma coisa que</span><span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span>
+</div>
+</code>
+</pre>
+              </div>
+              
+            </div>
+          </div>
+          <p>O padrão HTML não exige tags em minúsculas, mas a Quattro recomenda o uso de minúsculas em HTML e exige o uso de minúsculas para tipos de documento mais rigorosos, como XHTML.</p>
+          <p>Na Quattro, sempre usamos nomes de tags em minúsculas.</p>
+          <h2>Referência de Tag HTML</h2>
+          <p>A referência de tag do W3Schools contém informações adicionais sobre estas tags e seus atributos.</p>
+        </section>
+
+      <section class="theme" data-title="atributoshtml" data-index="2" hidden>
+        <h1 class="fw-bold spacing-y">Atributos HTML</h1>
+      </section>
       <!-- Toast -->
       <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
         <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
