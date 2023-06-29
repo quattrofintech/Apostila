@@ -147,6 +147,7 @@ img{
 
 .stand-out-word{
     font-weight: bolder;
+    text-decoration: underline;
 }
 
 /* CODE */
