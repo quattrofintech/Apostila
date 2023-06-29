@@ -145,6 +145,10 @@ img{
     color: var(--main-background-color);
 }
 
+.stand-out-word{
+    font-weight: bolder;
+}
+
 /* CODE */
 .example-code {
     background: var(--pre-background-color);
