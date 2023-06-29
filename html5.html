@@ -665,8 +665,296 @@
           <li>Os atributos geralmente vêm em pares de nome/valor como: name="value"</li>
         </ul>
         <h2 class="spacing-y">O atributo href</h2>
-        <p>A<code class="code-inline">&lt;a&gt;</code>tag define um hiperlink. O atributo <code class="code-inline">href</code> especifica a URL da página para a qual o link vai:
+        <p>A<code class="code-inline">&lt;a&gt;</code>tag define um hiperlink. O atributo <code
+            class="code-inline">href</code> especifica a URL da página para a qual o link vai:
         </p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo">Copiar</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre>
+                  <code>
+                      
+
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">a</span><span class="code-attribute"> href</span><span class="code-value">="Quattro.com.br"</span><span class="code-punctuation">&gt;</span><span class="code-text">Visite a Quattro</span><span class="code-punctuation">&lt;</span><span class="code-tag">/a</span><span class="code-punctuation">&gt;</span>
+</div>
+
+                  </code>
+              </pre>
+          </div>
+        </div>
+        <h2 class="spacing-y">O Atributo src</h2>
+        <p>A<code class="code-inline">&lt;img&gt;</code>tag é usada para incorporar uma imagem em uma página HTML. O
+          atributo <code class="code-inline">src</code> especifica o caminho para a imagem a ser exibida:
+        </p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo">Copiar</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre>
+                <code>
+                    
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">img</span><span class="code-attribute"> src</span><span class="code-value">="img_girl.jpg"</span><span class="code-punctuation">&gt;</span>
+</div>
+                </code>
+            </pre>
+          </div>
+        </div>
+
+        <p>Há duas maneiras de especificar a URL no atributo <code class="code-inline">src</code>:
+        </p>
+        <ol class="spacing-left">
+          <li>
+            URL absoluta - Links para uma imagem externa que está hospedada em outro site. Exemplo:
+            src="https://www.Quattro.com/images/img_girl.jpg"
+          </li>
+          <p>
+            <span class="stand-out-word">Observações:</span> As imagens externas podem estar sob direitos autorais. Se
+            você não obtiver permissão para usá-lo, poderá estar violando as leis de direitos autorais. Além disso, você
+            não pode controlar as imagens externas; ele pode ser removido ou alterado repentinamente.
+          </p>
+          <li>
+            2. URL relativo - Links para uma imagem hospedada no site. Aqui, a URL não inclui o nome de domínio. Se a
+            URL começar sem uma barra, ela será relativa à página atual. Exemplo: src="img_girl.jpg". Se a URL começar
+            com uma barra, ela será relativa ao domínio. Exemplo: src="/images/img_girl.jpg".
+          </li>
+          <p>
+            <span class="stand-out-word">Dica:</span> quase sempre é melhor usar URLs relativos. Eles não vão quebrar se
+            você mudar de domínio.
+          </p>
+        </ol>
+
+        <h2 class="spacing-y">Os atributos de largura e altura</h2>
+        <p>A <code class="code-inline">&lt;img&gt;</code>tag também deve conter os atributos <code
+            class="code-inline">widht</code> e <code class="code-inline">height</code>, que especificam a largura e a
+          altura da imagem (em pixels):</p>
+
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo">Copiar</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre>
+              <code>
+                  
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">img</span><span class="code-attribute"> src</span><span class="code-value">="img_girl.jpg"</span><span class="code-attribute"> width</span><span class="code-value">="500"</span><span class="code-attribute"> height</span><span class="code-value">="600"</span><span class="code-punctuation">&gt;</span>
+</div>
+              </code>
+          </pre>
+          </div>
+        </div>
+
+        <h2 class="spacing-y">O Atributo Alt</h2>
+        <p>O atributo obrigatório <code class="code-inline">alt</code> para a <code
+            class="code-inline">&lt;img&gt;</code> tag especifica um texto alternativo para uma imagem, se a imagem por
+          algum motivo não puder ser exibida. Isso pode ocorrer devido a uma conexão lenta ou a um erro no atributo
+          <code class="code-inline">src</code> ou se o usuário usar um leitor de tela.
+        </p>
+
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo">Copiar</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre>
+              <code>
+                  
+
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">img</span><span class="code-attribute"> src</span><span class="code-value">="img_girl.jpg"</span><span class="code-attribute"> alt</span><span class="code-value">="Garota com Jaqueta"</span></span><span class="code-punctuation">&gt;</span>
+</div>
+              </code>
+          </pre>
+          </div>
+        </div>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+              <p>Veja o que acontece se tentarmos exibir uma imagem que não existe:</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo">Copiar</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre>
+            <code>
+                
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">img</span><span class="code-attribute"> src</span><span class="code-value">="img_strong.jpg"</span><span class="code-attribute"> alt</span><span class="code-value">="Garota com Jaqueta"</span></span><span class="code-punctuation">&gt;</span>
+</div>
+            </code>
+        </pre>
+          </div>
+        </div>
+
+        <h2 class="spacing-y">O atributo de estilo</h2>
+        <p>O atributo <code class="code-inline">style</code> é usado para adicionar estilos a um elemento, como cor,
+          fonte, tamanho e muito mais.</p>
+
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo">Copiar</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre>
+              <code>
+                  
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-attribute"> style</span><span class="code-value">="color:red;"</span><span class="code-text">Isso é um parágrafo vermelho</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+              </code>
+          </pre>
+          </div>
+        </div>
+
+        <h2 class="spacing-y">O atributo Lang</h2>
+        <p>Você deve sempre incluir o atributo <code class="code-inline">lang</code> dentro da tag <code
+            class="code-inline">&lt;html&gt;</code>, para declarar o idioma da página da Web. Isso se destina a ajudar
+          os motores de busca e navegadores.</p>
+        <p>O exemplo a seguir especifica o português como o idioma:</p>
+
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo">Copiar</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre>
+                    <code>
+                        
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">!DOCTYPE html</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-attribute"> lang</span><span class="code-value">="pt"</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+</div>
+<p>.  .  .</p>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+</div>
+                    </code>
+                </pre>
+          </div>
+        </div>
+
+        <p>Os códigos de país também podem ser adicionados ao código de idioma no atributo <code
+            class="code-inline">lang</code>. Assim, os dois primeiros caracteres definem o idioma da página HTML e os
+          dois últimos caracteres definem o país.</p>
+        <p>O exemplo a seguir especifica português como idioma e Brasil como país:</p>
+
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo">Copiar</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre>
+                  <code>
+                      
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">!DOCTYPE html</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-attribute"> lang</span><span class="code-value">="pt-br"</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+</div>
+<p>.  .  .</p>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+</div>
+                  </code>
+              </pre>
+          </div>
+        </div>
+
+        <h2 class="spacing-y">O atributo do título</h2>
+        <p>O atributo <code class="code-inline">&lt;tittle&gt;</code> define algumas informações extras sobre um
+          elemento.
+          O valor do atributo title será exibido como uma dica de ferramenta quando você passar o mouse sobre o
+          elemento:
+        </p>
+
         <div class="example-code">
           <div class="code-title d-flex align-items-center justify-content-between">
               <div>
@@ -684,168 +972,14 @@
                   <code>
                       
 
-<div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">a</span><span class="code-attribute"> href</span><span class="code-value">="Quattro.com.br"</span><span class="code-punctuation">&gt;</span><span class="code-text">Visite a Quattro</span><span class="code-punctuation">&lt;</span><span class="code-tag">/a</span><span class="code-punctuation">&gt;</span>
-</div>
 
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-attribute"> tittle</span><span class="code-value">="Eu sou uma ferramenta"</span><span class="code-punctuation">&gt;</span><span class="code-text">Esse é um parágrafo</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
                   </code>
               </pre>
           </div>
       </div>
-      <h2 class="spacing-y">O Atributo src</h2>
-      <p>A<code class="code-inline">&lt;img&gt;</code>tag é usada para incorporar uma imagem em uma página HTML. O atributo <code class="code-inline">src</code> especifica o caminho para a imagem a ser exibida:
-      </p>
-      <div class="example-code">
-        <div class="code-title d-flex align-items-center justify-content-between">
-            <div>
-                <p>Exemplo</p>
-            </div>
-            <div class="btn-group" role="group" aria-label="First group">
-                <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                    data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
-                <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                    data-bs-placement="top" title="Copiar o codigo">Copiar</button>
-            </div>
-        </div>
-        <div class="code-body">
-            <pre>
-                <code>
-                    
-
-<div class="code-line">
-<span class="code-punctuation">&lt;</span><span class="code-tag">img</span><span class="code-attribute"> src</span><span class="code-value">="img_girl.jpg"</span><span class="code-punctuation">&gt;</span>
-</div>
-                </code>
-            </pre>
-        </div>
-    </div>
-
-    <p>Há duas maneiras de especificar a URL no atributo <code class="code-inline">src</code>:
-    </p>
-    <ol class="spacing-left">
-      <li>
-        URL absoluta - Links para uma imagem externa que está hospedada em outro site. Exemplo: src="https://www.Quattro.com/images/img_girl.jpg"
-      </li>
-      <p>
-        <span class="stand-out-word">Observações:</span> As imagens externas podem estar sob direitos autorais. Se você não obtiver permissão para usá-lo, poderá estar violando as leis de direitos autorais. Além disso, você não pode controlar as imagens externas; ele pode ser removido ou alterado repentinamente.
-      </p>
-      <li>
-        2. URL relativo - Links para uma imagem hospedada no site. Aqui, a URL não inclui o nome de domínio. Se a URL começar sem uma barra, ela será relativa à página atual. Exemplo: src="img_girl.jpg". Se a URL começar com uma barra, ela será relativa ao domínio. Exemplo: src="/images/img_girl.jpg".
-      </li>
-      <p>
-        <span class="stand-out-word">Dica:</span> quase sempre é melhor usar URLs relativos. Eles não vão quebrar se você mudar de domínio. 
-      </p>
-    </ol>
-
-    <h2 class="spacing-y">Os atributos de largura e altura</h2>
-    <p>A <code class="code-inline">&lt;img&gt;</code>tag também deve conter os atributos <code class="code-inline">widht</code> e <code class="code-inline">height</code>, que especificam a largura e a altura da imagem (em pixels):</p>
-
-    <div class="example-code">
-      <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-              <p>Exemplo</p>
-          </div>
-          <div class="btn-group" role="group" aria-label="First group">
-              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                  data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
-              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                  data-bs-placement="top" title="Copiar o codigo">Copiar</button>
-          </div>
-      </div>
-      <div class="code-body">
-          <pre>
-              <code>
-                  
-
-<div class="code-line">
-<span class="code-punctuation">&lt;</span><span class="code-tag">img</span><span class="code-attribute"> src</span><span class="code-value">="img_girl.jpg"</span><span class="code-attribute"> width</span><span class="code-value">="500"</span><span class="code-attribute"> height</span><span class="code-value">="600"</span><span class="code-punctuation">&gt;</span>
-</div>
-              </code>
-          </pre>
-      </div>
-  </div>
-
-    <h2 class="spacing-y">O Atributo Alt</h2>
-    <p>O atributo obrigatório <code class="code-inline">alt</code> para a <code class="code-inline">&lt;img&gt;</code> tag especifica um texto alternativo para uma imagem, se a imagem por algum motivo não puder ser exibida. Isso pode ocorrer devido a uma conexão lenta ou a um erro no atributo <code class="code-inline">src</code> ou se o usuário usar um leitor de tela.
-    </p>
-
-    <div class="example-code">
-      <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-              <p>Exemplo</p>
-          </div>
-          <div class="btn-group" role="group" aria-label="First group">
-              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                  data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
-              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                  data-bs-placement="top" title="Copiar o codigo">Copiar</button>
-          </div>
-      </div>
-      <div class="code-body">
-          <pre>
-              <code>
-                  
-
-<div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">img</span><span class="code-attribute"> src</span><span class="code-value">="img_girl.jpg"</span><span class="code-attribute"> alt</span><span class="code-value">="Garota com Jaqueta"</span></span><span class="code-punctuation">&gt;</span>
-</div>
-              </code>
-          </pre>
-      </div>
-  </div>
-  <div class="example-code">
-    <div class="code-title d-flex align-items-center justify-content-between">
-        <div>
-            <p>Exemplo</p>
-            <p>Veja o que acontece se tentarmos exibir uma imagem que não existe:</p>
-        </div>
-        <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                data-bs-placement="top" title="Copiar o codigo">Copiar</button>
-        </div>
-    </div>
-    <div class="code-body">
-        <pre>
-            <code>
-                
-
-<div class="code-line">
-<span class="code-punctuation">&lt;</span><span class="code-tag">img</span><span class="code-attribute"> src</span><span class="code-value">="img_strong.jpg"</span><span class="code-attribute"> alt</span><span class="code-value">="Garota com Jaqueta"</span></span><span class="code-punctuation">&gt;</span>
-</div>
-            </code>
-        </pre>
-    </div>
-</div>
-
-    <h2 class="spacing-y">O atributo de estilo</h2>
-    <p>O atributo <code class="code-inline">style</code> é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.</p>
-
-    <div class="example-code">
-      <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-              <p>Exemplo</p>
-          </div>
-          <div class="btn-group" role="group" aria-label="First group">
-              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                  data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
-              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                  data-bs-placement="top" title="Copiar o codigo">Copiar</button>
-          </div>
-      </div>
-      <div class="code-body">
-          <pre>
-              <code>
-                  
-
-<div class="code-line">
-<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-attribute"> style</span><span class="code-value">="color:red;"</span><span class="code-text">Isso é um parágrafo vermelho</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
-</div>
-              </code>
-          </pre>
-      </div>
-  </div>
 
       </section>
       <!-- Toast -->
