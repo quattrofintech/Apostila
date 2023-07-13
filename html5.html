@@ -1135,9 +1135,46 @@
         <p class="spacing-y">Os cabeçalhos HTML são definidos com as tags <code class="code-inline">&lt;h1&gt;</code> a
           <code class="code-inline">&lt;h6&gt;</code></p>
         <p><code class="code-inline">&lt;h1&gt;</code> define o cabeçalho mais importante. <code
-            class="code-inline">&lt;h6&gt;</code> define o título menos importante.</p>
-
-
+          class="code-inline">&lt;h6&gt;</code> define o título menos importante.</p>            
+        <p class="spacing-y"><span class="stand-out-word">Observação</span>: os navegadores adicionam automaticamente algum espaço em branco 
+          (uma margem) antes e depois de um título.<code class="code-inline">&lt;h1&gt;</code></p>
+          
+        <h2 class="spacing-y">Títulos são importantes</h2>
+        <p class="spacing-y">Os mecanismos de pesquisa usam os cabeçalhos para indexar a estrutura e o conteúdo de suas páginas da web.</p>
+        <p class="spacing-y">Os usuários geralmente percorrem uma página por seus títulos. É importante usar cabeçalhos para mostrar a estrutura do documento.</p>
+        <p class="spacing-y"><code class="code-inline">&lt;h1&gt;</code>os cabeçalhos devem ser usados ​​para os cabeçalhos principais,
+          seguidos pelos <code class="code-inline">&lt;h2&gt;</code>cabeçalhos, depois os menos importantes 
+          <code class="code-inline">&lt;h3&gt;</code>e assim por diante.</p>
+        <p class="spacing-y"><span class="stand-out-word">Nota</span>: Use cabeçalhos HTML apenas para cabeçalhos.
+            Não use títulos para tornar o texto GRANDE ou em negrito.</p>
+            
+        <h2 class="spacing-y">Cabeçalhos Maiores</h2>
+        <p class="spacing-y">Cada título HTML tem um tamanho padrão. 
+          No entanto, você pode especificar o tamanho de qualquer cabeçalho com o <code class="code-inline">style=atributo</code> ,
+          usando a <code class="code-inline">font-size=propriedade</code> CSS:</p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="code-body">
+              <pre>
+                <code>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">h1 style="font-size:60px;"</span><span class="code-punctuation">&gt;</span><span class="code-text">Cabeçalho 1</span><span class="code-punctuation">&lt;</span><span class="code-tag">/h1</span><span class="code-punctuation">&gt;</span>
+    </div>
+      
+        </div>
+                </code>
+              </pre>
+            </div>
+        </div>
       </section>
       <!-- Toast -->
       <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
