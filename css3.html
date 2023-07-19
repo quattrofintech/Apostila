@@ -12,7 +12,105 @@
         crossorigin="anonymous"></script>
         <title>CSS3</title>
     </head>
-<body>
+<body class="background">
+  <header class="nav-principal">
+    <!-- NavBar Principal -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-opacity-50 no-padding">
+      <div class="container-fluid">
+        <button class="btn btn-light navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-toggle="collapse"
+          aria-expanded="false" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="./index.html">
+            <img class="img-fluid img-logo" src="./assets/img/logo_quattro_branca.png" alt="Logo Quattro">
+          </a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            </li>
+          </ul>
+          <div class="d-flex" onsubmit="">
+            <button type="button" class="btn btn-theme">
+              <span class="material-icons icon-theme">
+                nightlight
+              </span>
+            </button>
+            <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search">
+            <div class="content-search list-group">
+
+            </div>
+            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar de Matérias -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light nav-matter bg-opacity-50 no-padding">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="./html5.html">HTML 5</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./css3.html">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./git.html">GIT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./javascript.html">JAVASCRIPT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Menu Lateral MOBILE-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+      aria-labelledby="offcanvasWithBackdropLabel">
+      <div class="offcanvas-header">
+        <img class="img-fluid img-logo" src="./assets/img/logo_quattro_branca.png" alt="Logo Quattro">
+        <button type="button" class="btn btn-theme-mobile">
+          <span class="material-icons icon-theme">
+            nightlight
+          </span>
+        </button>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="menuMaterias">
+        <a class="active" href="/html5.html">HTML</a>
+        <a href="/css3.html">CSS</a>
+        <a href="/javascript.html">JavaScript</a>
+        <a href="/git.html">GIT</a>
+        <a href="#">React</a>
+        <a href="#">C#</a>
+        <a href="#">Python</a>
+        <a href="#">Lua</a>
+        <a href="#">Java</a>
+        <a href="#">Vue.Js</a>
+        <a href="#">C++</a>
+        <a href="#">.Net</a>
+        <a href="#">Php</a>
+        <a href="#">Kottlin</a>
+        <a href="#">Angular</a>
+        <a href="#">Ionic</a>
+        <a href="#"></a>
+      </div>
+      <div class="offcanvas-body">
+        <input class="form-control me-2 my-2" id="search-mobile" type="search" placeholder="Search" aria-label="Search">
+        <div class="content-search-mobile list-group">
+
+        </div>
+        <div class="list-group">
+          <a href="?t=introducao" class="list-group-item">Introdução</a>
+          <a href="?t=atributoshtml" class="list-group-item">Atributos HTML</a>
+          <a href="?t=cabecalhoshtml" class="list-group-item">Cabeçalhos HTML</a>
+        </div>
+      </div>
+    </div>
+    <!--Fim Menu Lateral-->
+  </header>
     <h1>CSS3</h1>
 
       <!--Menu LAteral-->
@@ -58,6 +156,162 @@
     <p>* CONTEUDO *</p>
   </div>
 </div>
-    
+<main class="d-flex flex-nowrap">
+  <aside class="p-2 mx-4 ">
+    <ul class="navbar-nav pe-4 mb-4 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="?t=introducao">Introdução</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=atributoshtml">Atributos HTML</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=cabecalhohtml">Cabeçalhos HTML</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=paragrafohtml">Parágrafos HTML</a>
+      </li>
+    </ul>
+  </aside>
+  <article class="p-2 flex-grow-1">
+    <header>
+      <nav class="d-flex justify-content-around">
+        <button class="btn-pages-previous btn btn-primary" type="button" onclick="clickButton(this)">Previous</button>
+        <button class="btn-pages-next btn btn-primary" type="button" onclick="clickButton(this)">Next</button>
+      </nav>
+    </header>
+
+    <section class="theme" data-title="introducao" data-index="1" hidden>
+
+
+      <h1 class="fw-bold spacing-y">Introdução</h1>
+
+      <ul class="spacing-left">
+        <li>O que é HTML?</li>
+        <li>HTML significa Hyper Text Markup Language (Linguagem de Marcação de Hipertexto).</li>
+        <li>HTML é a linguagem de marcação padrão para a criação de páginas da Web.</li>
+        <li>HTML descreve a estrutura de uma página da Web.</li>
+        <li>HTML consiste em uma série de elementos.</li>
+        <li>Elementos HTML informam ao navegador como exibir o conteúdo.</li>
+        <li>Elementos HTML rotulam partes do conteúdo, como "este é um cabeçalho", "este é um parágrafo", "este é um
+          link", etc.</li>
+      </ul>
+
+      <h2 class="spacing-y">Um documento simples de HTML:</h2>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo Estrutura HTML</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+        <code>
+<div class="code-line">
+<span class="code-comment">&lt;!-- Isto é um comentario no html --&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">!DOCTYPE html</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">title</span><span class="code-punctuation">&gt;</span><span class="code-text">Título da Página</span><span class="code-punctuation">&lt;</span><span class="code-tag">/title</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">h1</span><span class="code-attribute"> class</span><span class="code-value">="class-name"</span><span class="code-punctuation">&gt;</span><span class="code-text">Título Principal.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/h1</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Este é um paragráfo.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+</div>
+
+        </code>
+      </pre>
+          </div>
+          <div class="code-support col">
+            <figure class="figure my-auto">
+              <img src="./assets/img/exemplo1.jpg" class="figure-img img-fluid rounded" alt="Imamge">
+              <figcaption class="figure-caption text-end mx-2">Um título e um parágrafo em HTML.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <h3>Exemplo explicado:</h3>
+      <ul class="spacing-left">
+        <li>A declaração <code class="code-inline">&lt;!DOCTYPE html&gt;</code> define que este documento é
+          um documento HTML5.</li>
+        <li>O elemento <code class="code-inline">&lt;html&gt;</code> é o elemento raiz de uma página HTML.
+        </li>
+        <li>O elemento <code class="code-inline">&lt;head&gt;</code> contém informações meta sobre a página
+          HTML.</li>
+        <li>O elemento <code class="code-inline">&lt;title&gt;</code> especifica um título para a página
+          HTML (que é exibido na barra
+          de título
+          do
+          navegador ou na guia da página).</li>
+        <li>O elemento <code class="code-inline">&lt;body&gt;</code> define o corpo do documento e é um
+          container para todo o conteúdo visível,
+          como
+          cabeçalhos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.</li>
+        <li>O elemento <code class="code-inline">&lt;h1&gt;</code> define um cabeçalho grande.</li>
+        <li>O elemento <code class="code-inline">&lt;p&gt;</code> define um parágrafo.</li>
+
+
+    <!-- Toast -->
+    <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
+      <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Quattro Edtech</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hello, world! This is a toast message.
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer>
+
+</footer>
+<!-- Temas -->
+<script src="./assets/js/theme.js"></script>
+<!-- Script do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
+<!-- Mudar de tema -->
+<script src="./assets/js/pagination.js"></script>
+<!-- Botão de copiar -->
+<script src="./assets/js/copycode.js"></script>
+<!-- Utilitys do Bootstrap -->
+<script src="./assets/js/bootstrap.js"></script>
+<!-- Pesquisa -->
+<script src="./assets/js/search.js"></script>
 </body>
 </html>

@@ -254,6 +254,42 @@ code {
     background-color: var(--main-background-color);
 }
 
+.example-text-color-1{
+    color: red!important
+}
+
+.example-text-color-2{
+    color: blue!important;
+}
+
+.example-background-color-1{
+    background-color: powderblue!important;
+}
+.example-background-color-2{
+    background-color: tomato!important;
+}
+
+.example-font-family-1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.example-font-family-2{
+    font-family: 'Courier New', Courier, monospace
+}
+
+.example-font-size-1{
+    font-size: 300%!important;
+}
+
+.example-font-size-2{
+    font-size: 100%!important;
+}
+
+.example-text-align-1{
+    text-align: center;
+}
+
+
 /* DESKTOP */
 @media all and (min-width: 768px) {
     main{
