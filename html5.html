@@ -112,6 +112,7 @@
           <a href="?t=introducao" class="list-group-item">Introdução</a>
           <a href="?t=atributoshtml" class="list-group-item">Atributos HTML</a>
           <a href="?t=cabecalhoshtml" class="list-group-item">Cabeçalhos HTML</a>
+          <a href="?t=estilohtml" class="list-group-item">Cabeçalhos HTML</a>
         </div>
       </div>
     </div>
@@ -132,6 +133,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="?t=paragrafohtml">Parágrafos HTML</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="?t=estilohtml">Estilo HTML</a>
         </li>
       </ul>
     </aside>
@@ -1239,12 +1243,28 @@
     </div>      
     <div class="code-line">        
       os ignora.
-    </div>      
+    </div>
+    <div class="code-line">      
   <span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
     </div>
                 </code>
               </pre>
             </div>
+            <div class="code-support col">
+              <p>Esse parágrafo 
+                possui muitas 
+                linhas em seu código fonte
+                mas o browser 
+                as ignora</p>
+                <p>
+                  Esse parágrafo       
+                  possui    muitos    espaços em
+                  seu código    fonte mas
+
+                o browser as     ignora
+                </p>
+          </div>
+          </div>
         </div>            
         <h2 class="spacing-y">Regras horizontais de HTML</h2>
         <p>A <code class="code-inline">&lt;hr&gt;</code> tag define uma quebra temática em uma página HTML e geralmente é exibida como uma régua horizontal.</p>
@@ -1269,10 +1289,18 @@
     <div class="code-line"><span class="code-punctuation">&lt;</span><span class="code-tag">hr</span><span class="code-punctuation">&gt;</span></div>      
     <div class="code-line"><span class="code-punctuation">&lt;</span><span class="code-tag">h2</span><span class="code-punctuation">&gt;</span><span class="code-text">Esse é um cabeçalho 2</span><span class="code-punctuation">&lt;</span><span class="code-tag">/21</span><span class="code-punctuation">&gt;</span></div>      
     <div class="code-line"><span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Esse é somente outro texto.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span></div>      
-    <div class="code-line"><span class="code-punctuation">&lt;</span><span class="code-tag">hr</span><span class="code-punctuation">&gt;</span></div>
-    </div>              
+    <div class="code-line"><span class="code-punctuation">&lt;</span><span class="code-tag">hr</span><span class="code-punctuation">&gt;</span></div>            
                 </code>
               </pre>
+            </div>  
+            <div class="code-support col">
+              <h1>Esse é um cabeçalho</h1>
+              <p>isso é um texto</p>
+              <hr>
+              <h1>Esse é um cabeçalho2</h1>
+              <p>Isso é um texto2</p>
+              <hr>
+          </div>
             </div>
         </div>
         <p class="spacing-y">A tag <code class="code-inline">&lt;hr&gt;</code> é uma tag vazia, o que significa que não tem tag final.</p>
@@ -1298,11 +1326,19 @@
     <div class="code-line">
       <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Este é <span class="code-punctuation">&lt;</span><span class="code-tag">br</span><span class="code-punctuation">&gt;</span>um parágrafo <span class="code-punctuation">&lt;</span><span class="code-tag">br</span><span class="code-punctuation">&gt;</span> com quebras de linha.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>    
     </div>      
-        </div>
                 </code>
               </pre>
             </div>
+            <div class="code-support col">
+              <p>Este é <br>um parágrafo <br>com quebras de linha.</p>
+          </div>
+            </div>
         </div>
+      </section>
+
+      <section class="theme" data-title="estilohtml" data-index="5" hidden>
+        <h1 class="fw-bold spacing-y">Estilo HTML</h1>
+
       </section>
       <!-- Toast -->
       <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
