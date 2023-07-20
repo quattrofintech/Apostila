@@ -159,10 +159,10 @@
   <aside class="p-2 mx-4 ">
     <ul class="navbar-nav pe-4 mb-4 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="?t=cssintroducao">Introdução</a>
+        <a class="nav-link" aria-current="page" href="?t=cssintroducao">Introdução CSS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="?t=atributoshtml">Atributos HTML</a>
+        <a class="nav-link" href="?t=sintaxecss">Sintaxe CSS</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=cabecalhohtml">Cabeçalhos HTML</a>
@@ -262,6 +262,120 @@
       <p class="spacing-y">Para resolver esse problema, o World Wide Web Consortium (W3C) criou o CSS.</p>
       <p class="spacing-y">CSS removeu a formatação de estilo da página HTML!</p>
 
+    </section>
+    <section class="theme" data-title="sintaxecss" data-index="2" hidden>
+      <h1 class="fw-bold spacing-y">Sintaxe CSS</h1>
+      <img src="assets/img/Sintaxe css.png" alt="">
+      <ul class="spacing-left">
+        <li>Uma regra CSS consiste em um seletor e um bloco de declaração.</li>
+        <li>O seletor aponta para o elemento HTML que você deseja estilizar.</li>
+        <li>O bloco de declaração contém uma ou mais declarações separadas por ponto e vírgula.</li>
+        <li>Cada declaração inclui um nome de propriedade CSS e um valor, separados por dois pontos.</li>
+        <li>Várias declarações CSS são separadas por ponto e vírgula e os blocos de declaração são cercados por chaves.</li>
+        <li>CSS é a linguagem que usamos para estilizar uma página da Web.</li>
+      </ul>
+
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">&lt;!-- Neste exemplo, todos os elementos &lt;p&gt; </span>
+</div>
+<div class="code-line">
+  <span class="code-comment">serão alinhados ao centro, com uma cor de texto vermelha: --&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+
+      <h3>Explicação do exemplo</h3>
+      <p class="spacing-y">p é um seletor em CSS (aponta para o elemento HTML que você deseja estilizar: <code class="code-inline">&lt;p&gt;</code>).</p>
+      <p class="spacing-y"><code class="code-inline">color</code> é uma propriedade e <code class="code-inline">red</code> é o valor da propriedade</p>
+      <p class="spacing-y"><code class="code-inline">text-align</code> é uma propriedade e <code class="code-inline">center</code> é o valor da propriedade</p>
+    </section>
+    <section class="theme" data-title="sintaxecss" data-index="3" hidden>
+      <h1 class="fw-bold spacing-y">Sintaxe CSS</h1>
+      <img src="assets/img/Sintaxe css.png" alt="">
+      <ul class="spacing-left">
+        <li>Uma regra CSS consiste em um seletor e um bloco de declaração.</li>
+        <li>O seletor aponta para o elemento HTML que você deseja estilizar.</li>
+        <li>O bloco de declaração contém uma ou mais declarações separadas por ponto e vírgula.</li>
+        <li>Cada declaração inclui um nome de propriedade CSS e um valor, separados por dois pontos.</li>
+        <li>Várias declarações CSS são separadas por ponto e vírgula e os blocos de declaração são cercados por chaves.</li>
+        <li>CSS é a linguagem que usamos para estilizar uma página da Web.</li>
+      </ul>
+
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">&lt;!-- Neste exemplo, todos os elementos &lt;p&gt; </span>
+</div>
+<div class="code-line">
+  <span class="code-comment">serão alinhados ao centro, com uma cor de texto vermelha: --&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+
+      <h3>Explicação do exemplo</h3>
+      <p class="spacing-y">p é um seletor em CSS (aponta para o elemento HTML que você deseja estilizar: <code class="code-inline">&lt;p&gt;</code>).</p>
+      <p class="spacing-y"><code class="code-inline">color</code> é uma propriedade e <code class="code-inline">red</code> é o valor da propriedade</p>
+      <p class="spacing-y"><code class="code-inline">text-align</code> é uma propriedade e <code class="code-inline">center</code> é o valor da propriedade</p>
+    </section>
+    
     <!-- Toast -->
     <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
       <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
