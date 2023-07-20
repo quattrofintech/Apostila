@@ -1366,9 +1366,114 @@
               </pre>
           </div>
       </div>
+      <h2 class="spacing-y">Atributos</h2>
+      <p>Este elemento inclui os atributos globais.</p>
+      <p class="stand-out-word">type</p>
+      <p>Este atributo define a linguagem de estilo como um tipo MIME (charset não deve ser especificado). ' text/css' presume se este atributo estiver ausente.</p>
+      <p class="stand-out-word">media</p>
+      <p>Qual mídia deve aplicar-se a este estilo.</p>
+      <p class="stand-out-word">scoped</p>
+      <p>Se este atributo está presente, então o estilo aplica-se apenas ao seu elemento pai. Se está ausente, o estilo aplica-se ao documento inteiro.</p>
+      <p class="stand-out-word">title</p>
+      <p>Especifica os conjuntos de folhas de estilo alternativa.</p>
+      <p class="stand-out-word">disabled</p>
+      <p>Se definido, desativa (não se aplica) às regras de estilo para a Document que são especificadas no elemento.</p>
       
+      <h2 class="spacing-y">Cor de Fundo</h2>
+      <p>A propriedade CSS <code class="code-inline">background-color</code> define a cor de fundo de um elemento HTML.</p>
+      
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+        <div class="code-body textocod">
+          <pre>
+        <code>
+          <p>Defina a cor de fundo de uma página como azul-claro:</p>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">body style="background-color:powerblue;"</span><span class="code-punctuation">&gt;</span>
+</div>
 
-      </section>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">h1</span><span class="code-punctuation">&gt;</span><span class="code-text">Esse é um cabeçalho</span><span class="code-punctuation">&lt;</span><span class="code-tag">/h1</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Esse é um parágrafo</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+</div>
+
+                </code>
+            </pre>
+        </div>
+        <div class="code-support col">
+          <figure class="figure my-auto">
+            <img src="./assets/img/exemploStylesHTML1.webp"
+                class="figure-img img-fluid rounded" alt="Imagem">
+            <figcaption class="figure-caption text-end mx-2">Exemplo com fundo na cor azul claro.
+            </figcaption>
+        </figure>
+      </div>
+      </div>
+      </div>
+
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+        <div class="code-body textocod">
+          <pre>
+        <code>
+          <p>Defina a cor de fundo para dois elementos diferentes:</p>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">h1 style="background-color:powerblue;"</span><span class="code-punctuation">&gt;</span><span class="code-text">Esse é um cabeçalho</span><span class="code-punctuation">&lt;</span><span class="code-tag">/h1</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p style="background-color:tomato;"</span><span class="code-punctuation">&gt;</span><span class="code-text">Esse é um parágrafo</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+</div>
+
+                </code>
+            </pre>
+        </div>
+        <div class="code-support col">
+          <h1 style="background-color: powderblue;">Esse é um cabeçalho</h1>
+          <p style="background-color: tomato;">Esse é um parágrafo</p>
+      </div>
+      </div>
+      </div>
+
+
+      
+    
+    
+    
+    </section>
       <!-- Toast -->
       <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
         <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
