@@ -274,7 +274,6 @@
         <li>Várias declarações CSS são separadas por ponto e vírgula e os blocos de declaração são cercados por chaves.</li>
         <li>CSS é a linguagem que usamos para estilizar uma página da Web.</li>
       </ul>
-
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -291,7 +290,7 @@
       <pre>
         <code>
 <div class="code-line">
-  <span class="code-comment">&lt;!-- Neste exemplo, todos os elementos &lt;p&gt; </span>
+  <span class="code-comment">&lt;!-- Neste exemplo, todos os elementos &lt;p&gt; &gt; </span>
 </div>
 <div class="code-line">
   <span class="code-comment">serão alinhados ao centro, com uma cor de texto vermelha: --&gt;</span>
@@ -316,21 +315,23 @@
 
       <h3>Explicação do exemplo</h3>
       <p class="spacing-y">p é um seletor em CSS (aponta para o elemento HTML que você deseja estilizar: <code class="code-inline">&lt;p&gt;</code>).</p>
-      <p class="spacing-y"><code class="code-inline">color</code> é uma propriedade e <code class="code-inline">red</code> é o valor da propriedade</p>
-      <p class="spacing-y"><code class="code-inline">text-align</code> é uma propriedade e <code class="code-inline">center</code> é o valor da propriedade</p>
+      <p class="spacing-y"><code class="code-inline">color</code> é uma propriedade e <code class="code-inline">red</code> é o valor da propriedade.</p>
+      <p class="spacing-y"><code class="code-inline">text-align</code> é uma propriedade e <code class="code-inline">center</code> é o valor da propriedade.</p>
     </section>
     <section class="theme" data-title="seletorescss" data-index="3" hidden>
-      <h1 class="fw-bold spacing-y">Sintaxe CSS</h1>
-      <img src="assets/img/Sintaxe css.png" alt="">
+      <h1 class="fw-bold spacing-y">Seletores CSS</h1>
+      <p class="spacing-Y">Os seletores CSS são usados ​​para "encontrar" (ou selecionar) os elementos HTML que você deseja estilizar.</p>
+      <p class="spacing-Y">Podemos dividir os seletores CSS em cinco categorias:</p>
       <ul class="spacing-left">
-        <li>Uma regra CSS consiste em um seletor e um bloco de declaração.</li>
-        <li>O seletor aponta para o elemento HTML que você deseja estilizar.</li>
-        <li>O bloco de declaração contém uma ou mais declarações separadas por ponto e vírgula.</li>
+        <li>Seletores simples (selecionar elementos com base no nome, id, classe).</li>
+        <li>Seletores de combinação (selecionam elementos com base em uma relação específica entre eles).</li>
+        <li>Seletores de pseudoclasse (selecionar elementos com base em um determinado estado).</li>
         <li>Cada declaração inclui um nome de propriedade CSS e um valor, separados por dois pontos.</li>
-        <li>Várias declarações CSS são separadas por ponto e vírgula e os blocos de declaração são cercados por chaves.</li>
-        <li>CSS é a linguagem que usamos para estilizar uma página da Web.</li>
+        <li>Seletores de pseudoelementos (selecionar e estilizar uma parte de um elemento).</li>
+        <li>Seletores de atributo (selecionar elementos com base em um atributo ou valor de atributo).</li>
       </ul>
-
+      <h2 class="spacing-y">O seletor de elemento CSS</h2>
+        <p class="spacing-y">O seletor de elemento seleciona elementos HTML com base no nome do elemento.</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -347,7 +348,7 @@
       <pre>
         <code>
 <div class="code-line">
-  <span class="code-comment">&lt;!-- Neste exemplo, todos os elementos &lt;p&gt; </span>
+  <span class="code-comment">&lt;!-- Aqui, todos os elementos &lt;p&gt; na página serão alinhados ao centro, com uma cor de texto vermelha: &lt;p&gt;</span>
 </div>
 <div class="code-line">
   <span class="code-comment">serão alinhados ao centro, com uma cor de texto vermelha: --&gt;</span>
@@ -356,10 +357,10 @@
   <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
 </div>
 <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
 </div>
 <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
 </div>
 <div class="code-line">
   <span class="code-punctuation">&#125;</span>
@@ -369,11 +370,287 @@
           </div>
         </div>
       </div>
+      <h2 class="spacing-y">O seletor de id CSS</h2>      
+      <p class="spacing-y">O seletor id usa o atributo id de um elemento HTML para selecionar um elemento específico.</p>
+      <p class="spacing-y">O id de um elemento é único dentro de uma página, então o seletor de id é usado para selecionar um elemento único!</p>
+      <p class="spacing-y">Para selecionar um elemento com um id específico, escreva um caractere hash (#), seguido do id do elemento.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">&lt;!-- Aqui, todos os elementos &lt;p&gt; na página serão alinhados ao centro, com uma cor de texto vermelha: &lt;p&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-comment">serão alinhados ao centro, com uma cor de texto vermelha: --&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">#para1</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+      <p class="spacing-y"><span class="stand-out-word">Observação</span>: um nome de identificação não pode começar com um número!</p>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-y">O seletor de classe CSS</h2>
+        <p class="spacing-y">O seletor de classe seleciona elementos HTML com um atributo de classe específico.</p>
+        <p class="spacing-y">Para selecionar elementos com uma classe específica, escreva um caractere de ponto (.), seguido do nome da classe.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">&lt;!-- Neste exemplo, todos os elementos HTML com class="center" serão vermelhos e alinhados ao centro: --&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">.center</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+      <p class="spacing-y">Você também pode especificar que apenas elementos HTML específicos devem ser afetados por uma classe.</p>
+          </div>
+        </div>
+      </div>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">&lt;!-- Neste exemplo, apenas os elementos &lt;p&gt; com class="center" serão vermelhos e alinhados ao centro: --&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">p.center</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+      <p class="spacing-y">Os elementos HTML também podem se referir a mais de uma classe.</p>
+          </div>
+        </div>
+      </div>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">&lt;!-- Neste exemplo, o elemento &lt;p&gt; será estilizado de acordo com class="center" e class="large": --&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">&lt;p class="center large"&gt;Esse parágarfo se refere a duas classes.&lt;/p&gt;</span>
+</div>
 
-      <h3>Explicação do exemplo</h3>
-      <p class="spacing-y">p é um seletor em CSS (aponta para o elemento HTML que você deseja estilizar: <code class="code-inline">&lt;p&gt;</code>).</p>
-      <p class="spacing-y"><code class="code-inline">color</code> é uma propriedade e <code class="code-inline">red</code> é o valor da propriedade</p>
-      <p class="spacing-y"><code class="code-inline">text-align</code> é uma propriedade e <code class="code-inline">center</code> é o valor da propriedade</p>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+      <p class="spacing-y">Nota: Um nome de classe não pode começar com um número!</p>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-y">O seletor universal de CSS</h2>
+        <p class="spacing-y">O seletor universal (*) seleciona todos os elementos HTML na página.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">&lt;!-- A regra CSS abaixo afetará todos os elementos HTML da página:--&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">*</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-y">O seletor de agrupamento de CSS</h2>
+        <p class="spacing-y">O seletor de agrupamento seleciona todos os elementos HTML com as mesmas definições de estilo.</p>
+        <p class="spacing-y">Observe o seguinte código CSS (os elementos h1, h2 e p têm as mesmas definições de estilo):</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-tag">h1</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+<div class="code-line">
+  <span class="code-tag">h2</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+<div class="code-line">
+  <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+        </div>
+      </div>
+      </div>
+      <p class="spacing-y">Será melhor agrupar os seletores, para minimizar o código.</p>
+      <p class="spacing-y">Para agrupar seletores, separe cada seletor com uma vírgula.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+<span class="code-comment">&lt;!-- Neste exemplo agrupamos os seletores do código acima: --&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-tag">h1, h2, p</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+  <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+</div>
+<div class="code-line">
+  <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+      <p class="spacing-y">Os elementos HTML também podem se referir a mais de uma classe.</p>
+          </div>
+        </div>
+      </div>
     </section>
     
     <!-- Toast -->
