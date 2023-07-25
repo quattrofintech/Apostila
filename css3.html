@@ -106,6 +106,7 @@
           <a href="?t=sintaxecss" class="list-group-item">Sintaxe CSS</a>
           <a href="?t=seletorescss" class="list-group-item">Seletores CSS</a>
           <a href="?t=adicionandocss" class="list-group-item">Adicionando CSS</a>
+          <a href="?t=ordememcascata" class="list-group-item">Ordem em cascata</a>
         </div>
       </div>
     </div>
@@ -170,6 +171,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=adicionandocss">Adicionando HTML</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=adicionandocss">Ordem em cascata</a>
       </li>
     </ul>
   </aside>
@@ -291,7 +295,7 @@
       <pre>
         <code>
 <div class="code-line">
-  <span class="code-comment">&lt;!-- Neste exemplo, todos os elementos &lt;p&gt; &gt; </span>
+  <span class="code-comment">&lt;!-- Neste exemplo, todos os elementos &lt;p&gt; </span>
 </div>
 <div class="code-line">
   <span class="code-comment">serão alinhados ao centro, com uma cor de texto vermelha: --&gt;</span>
@@ -846,7 +850,7 @@
       </div>
       <h2>CSS embutido</h2>
       <p class="spacing-y">Um estilo embutido pode ser usado para aplicar um estilo único a um único elemento.</p>
-      <p class="spacing-y">CPara usar estilos embutidos, adicione o atributo style ao elemento relevante. O atributo style pode conter qualquer propriedade CSS.</p>
+      <p class="spacing-y">Para usar estilos embutidos, adicione o atributo style ao elemento relevante. O atributo style pode conter qualquer propriedade CSS.</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -937,6 +941,307 @@
   </div>
   <div class="code-line">
   <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- No entanto, se o estilo interno for definido antes do link para a folha de estilo externa, os elementos &lt;h1&gt; serão "navy": --&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">style</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">h1</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: orange;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">h1</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: maroon;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin-left</span>: 40px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/style</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">link <span class="example-text-color-1">rel</span><span class="example-text-color-2">="stylesheet"</span> <span class="example-text-color-1">type</span><span class="example-text-color-2">="text/css"</span> <span class="example-text-color-1">href</span><span class="example-text-color-2">="mystyle.css"</span></span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="theme" data-title="ordememcascata" data-index="5" hidden>
+      <h1 class="fw-bold spacing-y">Ordem em cascata</h1>
+      <p class="spacing-y">Qual estilo será usado quando houver mais de um estilo especificado para um elemento HTML?</p>
+      <p class="spacing-y">Todos os estilos em uma página serão "em cascata" em uma nova folha de estilo "virtual" pelas seguintes regras, onde o número um tem a prioridade mais alta:</p>
+      <ul class="spacing-left">
+        <li>Estilo inline (dentro de um elemento HTML).</li>
+        <li>Folhas de estilo internas e externas (na seção head).</li>
+        <li>Padrão do navegador.</li>
+      </ul>
+      <p class="spacing-y">Portanto, um estilo embutido tem a prioridade mais alta e substituirá os estilos externos e internos e os padrões do navegador.</p>
+      
+      <h2>Comentários CSS</h2>
+      <p class="spacing-y">Os comentários CSS não são exibidos no navegador, mas podem ajudar a documentar seu código-fonte.</p>
+      <p class="spacing-y">Os comentários são usados ​​para explicar o código e podem ajudar quando você editar o código-fonte posteriormente.</p>
+      <p class="spacing-y">Os comentários são ignorados pelos navegadores.</p>
+      <p class="spacing-y">Um comentário CSS é colocado dentro do &lt;style&gt; elemento e começa /* e termina com */:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">/* Está é uma linha única de comentário. */</span>
+  </div>       
+  <div class="code-line">
+    <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    <p class="spacing-y">Você pode adicionar comentários onde quiser no código:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>   
+<div class="code-line">
+  <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span> <span class="code-comment">/* Coloca a cor do texto para vermelho. */</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Os comentários também podem abranger várias linhas:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">/* Essas são */</span>
+  </div>       
+  <div class="code-line">
+    <span class="code-comment">multiplas linhas</span>
+  </div>       
+  <div class="code-line">
+    <span class="code-comment">comentadas */</span>
+  </div>       
+  <div class="code-line">
+    <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <h2>Comentários HTML e CSS</h2>
+      <p class="spacing-y">No tutorial de HTML, você aprendeu que pode adicionar comentários à sua origem HTML usando a &#123;!--...--&#125;sintaxe.</p>
+      <p class="spacing-y">No exemplo a seguir, usamos uma combinação de comentários HTML e CSS:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-inline">         
+  <span class="code-punctuation">&lt;</span><span class="code-tag">!DOCTYPE html</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-inline">         
+  <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">style</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">body</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: linen;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y"><span class="stand-out-word">Dica</span>: Um estilo embutido perde muitas das vantagens de uma folha de estilo (misturando conteúdo com apresentação). Use este método com moderação.</p>
+      
+      <h2>Múltiplas Folhas de Estilo</h2>
+      <p class="spacing-y">Caso algumas propriedades tenham sido definidas para o mesmo seletor (elemento) em diferentes folhas de estilo, será utilizado o valor da última folha de estilo lida.</p>
+      <p class="spacing-y">Suponha que uma folha de estilo externa tenha o seguinte estilo para o elemento <code class="code-inline">&lt;h1&gt;</code> seja de <code class="code-inline">color: navy;</code></p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- Se o estilo interno for definido após o link para a folha de estilo externa, os elementos &lt;h1&gt; serão "laranja":  --&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">link <span class="example-text-color-1">rel</span><span class="example-text-color-2">="stylesheet"</span> <span class="example-text-color-1">type</span><span class="example-text-color-2">="text/css"</span> <span class="example-text-color-1">href</span><span class="example-text-color-2">="mystyle.css"</span></span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">style</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">color</span>: red;</span> <span class="code-comment">/* Coloca a cor do texto para vermelho. */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/style</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-comment">/* Este parágrafo será vermelho. */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Olá, mundo!</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Isso é um paragráfo está embelezado pelo CSS.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Comentários de CSS não são mostrados.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
   </div>
               </code>
             </pre>
