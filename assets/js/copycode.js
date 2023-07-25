@@ -1,8 +1,17 @@
-const btn = document.querySelector('#btncopiar');
-const textocod = document.querySelector('.textocod');
+const btns = document.querySelectorAll('.btn-outline-info');
 
-btn.addEventListener('click', copiaTexto);
+btns.forEach((btn) => {
+  btn.addEventListener('click', copiaTexto);
+})
 
 function copiaTexto(e) {
-  navigator.clipboard.writeText(textocod.innerText);
+  let texto = ''
+  const body = e.target.parentElement.parentElement.parentElement.querySelectorAll('.code-body pre code div')
+  body.forEach((txt) => {
+    texto += txt.textContent.replace('\n', '')
+  })
+  navigator.clipboard.writeText(texto);
 }
+
+
+
