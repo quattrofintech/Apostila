@@ -1678,7 +1678,7 @@
 
       <section class="theme" data-title="formatacaodetextohtml" data-index="6" hidden>
 
-        <h1 class="fw-bold spacing-Y">Formatação de Texto HTML</h1>
+        <h1 class="fw-bold spacing-y">Formatação de Texto HTML</h1>
         <p>O HTML contém vários elementos para definir o texto com um significado especial.</p>
 
         <div class="example-code">
@@ -1703,6 +1703,208 @@
 
         <h2 class="spacing-y">Elementos de Formatação HTML</h2>
         <p>Os elementos de formatação foram projetados para exibir tipos especiais de texto:</p>
+        <ul class="spacing-left">
+          <li><code class="code-inline">&lt;b&gt;</code>- Texto em negrito</li>
+          <li><code class="code-inline">&lt;strong&gt;</code>- Texto importante</li>
+          <li><code class="code-inline">&lt;i&gt;</code>- Texto em itálico</li>
+          <li><code class="code-inline">&lt;em&gt;</code>- Texto enfatizado</li>
+          <li><code class="code-inline">&lt;mark&gt;</code>- Texto marcado</li>
+          <li><code class="code-inline">&lt;small&gt;</code>- Texto em menor</li>
+          <li><code class="code-inline">&lt;del&gt;</code>- Texto deletado</li>
+          <li><code class="code-inline">&lt;ins&gt;</code>- Texto inserido</li>
+          <li><code class="code-inline">&lt;sub&gt;</code>- Texto em subscrito</li>
+          <li><code class="code-inline">&lt;sup&gt;</code>- Texto sobrescrito</li>
+        </ul>
+        <h2 class="spacing-y">Elementos HTML &lt;b&gt; e &lt;strong&gt;</h2>
+        <p>O elemento HTML <b>define o texto em negrito, sem nenhuma importância extra.</p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="code-body textocod">
+              <pre>
+            <code>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">b</span><span class="code-punctuation">&gt;</span><span class="code-text">O texto está em negrito</span><span class="code-punctuation">&lt;</span><span class="code-tag">/b</span><span class="code-punctuation">&gt;</span>
+  </div>
+  
+                    </code>
+                </pre>
+            </div>
+            <div class="code-support col">
+              <b>O texto em negrito</b>
+            </div>
+          </div>
+        </div>
+        <p class="spacing-y">O elemento HTML <code class="code-inline">&lt;strong&gt;</code> define o texto com forte
+          importância. O conteúdo interno geralmente é exibido em negrito</p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="code-body textocod">
+              <pre>
+            <code>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">strong</span><span class="code-punctuation">&gt;</span><span class="code-text">Esse texto é importante</span><span class="code-punctuation">&lt;</span><span class="code-tag">/strong</span><span class="code-punctuation">&gt;</span>
+  </div>
+  
+                    </code>
+                </pre>
+            </div>
+            <div class="code-support col">
+              <strong>Esse texto é importante</strong>
+            </div>
+          </div>
+        </div>
+        <h2 class="spacing-y">Elementos HTML &lt;i&gt; e &lt;em&gt;</h2>
+        <p>O elemento HTML <code class="code-inline">&lt;i&gt;</code> define uma parte do texto em uma voz ou humor
+          alternativo. O conteúdo interno geralmente é exibido em itálico.</p>
+        <p><span class="stand-out-word">Dica:</span> A tag <code class="code-inline">&lt;i&gt;</code> costuma ser usada
+          para indicar um termo técnico, uma
+          frase de outro idioma, um pensamento, o nome de um navio, etc.</p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="code-body textocod">
+              <pre>
+              <code>
+    <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">i</span><span class="code-punctuation">&gt;</span><span class="code-text">Esse texto está em itálico</span><span class="code-punctuation">&lt;</span><span class="code-tag">/i</span><span class="code-punctuation">&gt;</span>
+    </div>
+    
+                      </code>
+                  </pre>
+            </div>
+            <div class="code-support col">
+              <i>Esse texto está em itálico</i>
+            </div>
+          </div>
+        </div>
+        <p>O elemento HTML <code class="code-inline">&lt;em&gt;</code> define o texto enfatizado. O conteúdo interno
+          geralmente é exibido em itálico.</p>
+        <p><span class="stand-out-word">Dica:</span> um leitor de tela pronunciará as palavras com ênfase <code
+            class="code-inline">&lt;em&gt;</code>,
+          usando ênfase verbal.</p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="code-body textocod">
+              <pre>
+              <code>
+    <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">em</span><span class="code-punctuation">&gt;</span><span class="code-text">Esse texto está enfatizado</span><span class="code-punctuation">&lt;</span><span class="code-tag">/em</span><span class="code-punctuation">&gt;</span>
+    </div>
+    
+                      </code>
+                  </pre>
+            </div>
+            <div class="code-support col">
+              <em>Esse texto está enfatizado</em>
+            </div>
+          </div>
+        </div>
+        <h2 class="spacing-y">Elemento HTML &lt;small&gt;</h2>
+        <p>O elemento HTML <code class="code-inline">&lt;em&gt;</code> define um texto menor:</p>
+
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="code-body textocod">
+              <pre>
+              <code>
+    <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">small</span><span class="code-punctuation">&gt;</span><span class="code-text">Esse é um texto pequeno</span><span class="code-punctuation">&lt;</span><span class="code-tag">/small</span><span class="code-punctuation">&gt;</span>
+    </div>
+    
+                      </code>
+                  </pre>
+            </div>
+            <div class="code-support col">
+              <small>Esse é um texto pequeno</small>
+            </div>
+          </div>
+        </div>
+        <h2 class="spacing-y">Elemento HTML &lt;mark&gt;</h2>
+        <p>O elemento HTML <code class="code-inline">&lt;mark&gt;</code> define o texto que deve ser marcado ou destacado:</p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="code-body textocod">
+              <pre>
+              <code>
+    <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Não se esqueça de comprar <span class="code-punctuation">&lt;</span><span class="code-tag">mark</span><span class="code-punctuation">&gt;</span>leite<span class="code-punctuation">&lt;</span><span class="code-tag">/mark</span><span class="code-punctuation">&gt;</span> hoje.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+    </div>
+    
+                      </code>
+                  </pre>
+            </div>
+            <div class="code-support col">
+              <p>Não se esqueça de comprar <mark>leite</mark> hoje.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
 
       </section>
 
