@@ -257,9 +257,17 @@ code {
 .example-text-color-1{
     color: red!important
 }
-
 .example-text-color-2{
     color: yellow!important;
+}
+.example-text-color-3{
+    color: tomato!important;
+}
+.example-text-color-4{
+    color: dodgerblue!important;
+}
+.example-text-color-5{
+    color: mediumseagreen!important;
 }
 
 .example-background-color-1{
@@ -268,6 +276,38 @@ code {
 .example-background-color-2{
     background-color: tomato!important;
 }
+.example-background-color-3{
+    background-color: orange!important;
+}
+.example-background-color-4{
+    background-color: dodgerblue!important;
+}
+.example-background-color-5{
+    background-color: mediumseagreen!important;
+}
+.example-background-color-6{
+    background-color: gray!important;
+}
+.example-background-color-7{
+    background-color: slateblue!important;
+}
+.example-background-color-8{
+    background-color: violet!important;
+}
+.example-background-color-9{
+    background-color: lightgray!important;
+}
+
+.example-border-color-1{
+    border: 2px solid tomato!important;
+}
+.example-border-color-2{
+    border: 2px solid dodgerblue!important;
+}
+.example-border-color-3{
+    border: 2px solid violet!important;
+}
+
 
 .example-font-family-1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
