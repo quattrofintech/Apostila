@@ -298,6 +298,19 @@ code {
     background-color: lightgray!important;
 }
 
+.example-opacity-1{
+    opacity: 1!important;
+}
+.example-opacity-2{
+    opacity: 0.6!important;
+}
+.example-opacity-3{
+    opacity: 0.3!important;
+}
+.example-opacity-4{
+    opacity: 0.1!important;
+}
+
 .example-border-color-1{
     border: 2px solid tomato!important;
 }

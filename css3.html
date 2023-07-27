@@ -107,6 +107,8 @@
           <a href="?t=seletorescss" class="list-group-item">Seletores CSS</a>
           <a href="?t=adicionandocss" class="list-group-item">Adicionando CSS</a>
           <a href="?t=ordememcascata" class="list-group-item">Ordem em cascata</a>
+          <a href="?t=corescss" class="list-group-item">Cores Css</a>
+          <a href="?t=fundoscss" class="list-group-item">Fundos CSS</a>
         </div>
       </div>
     </div>
@@ -177,6 +179,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=corescss">Cores CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=fundoscss">Fundos CSS</a>
       </li>
     </ul>
   </aside>
@@ -591,6 +596,7 @@
 </div>
 <div class="code-line">
   <span class="code-punctuation">&#125;</span>
+</div>
 <div class="code-line">
   <span class="code-tag">h2</span> <span class="code-punctuation">&#123;</span>
 </div>
@@ -657,6 +663,7 @@
           </div>
         </div>
       </div>
+      
     </section>
     <section class="theme" data-title="adicionandocss" data-index="4" hidden>
       <h1 class="fw-bold spacing-y">Adicionando CSS</h1>
@@ -1499,6 +1506,565 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="theme" data-title="fundoscss" data-index="7" hidden>
+      <h1 class="fw-bold spacing-y">Fundos CSS</h1>
+      <p class="spacing-y">As propriedades de plano de fundo do CSS são usadas para adicionar efeitos de plano de fundo aos elementos.</p>
+      <p class="spacing-y">Nestes capítulos, você aprenderá sobre as seguintes propriedades de fundo CSS:</p>
+      <ul class="spacing-left">
+        <li><code class="code-inline">background-color</code></li>
+        <li><code class="code-inline">background-image</code></li>
+        <li><code class="code-inline">background-repeat</code></li>
+        <li><code class="code-inline">background-attachment</code></li>
+        <li><code class="code-inline">background-position</code></li>
+        <li><code class="code-inline">bacground - propriedade abreviada</code></li>
+      </ul>
+      <h2 class="spacing-Y">Cor de fundo do CSS</h2>
+      <p class="spacing-y">A <code class="code-inline">background-color</code> propriedade especifica a cor de fundo de um elemento.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- A cor de fundo de uma página é definida assim: --&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">body</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text">background-color: lightblue;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Com CSS, uma cor é frequentemente especificada por:</p>
+      <ul class="spacing-left">
+        <li>um nome de cor válido - como "vermelho"</li>
+        <li>um valor HEX - como "#ff0000"</li>
+        <li>um valor RGB - como "rgb(255,0,0)</li>
+      </ul>
+      <h2 class="spacing-Y">Outros elementos</h2>
+      <p class="spacing-y">Você pode definir a cor de fundo para qualquer elemento HTML:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- Aqui, os elementos &lt;h1&gt;, &lt;p&gt; e &lt;div&gt; terão cores de fundo diferentes: --&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">h1</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text">background-color: green;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+  <div class="code-line">
+    <span class="code-tag">div</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text">background-color: lightblue;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+  <div class="code-line">
+    <span class="code-tag">p</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text">background-color: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Opacidade / Transparência</h2>
+      <p class="spacing-y">A propriedade <code class="code-inline">opacity</code> especifica a opacidade/transparência de um elemento. Pode assumir um valor de 0,0 - 1,0. Quanto menor o valor, mais transparente:</p>
+      <p class="spacing-y example-text-color-3">Olá Mundo</p>
+      <ul class="spacing-left">
+        <li class="example-background-color-5 example-opacity-1">opacidade 1</li>
+        <li class="example-background-color-5 example-opacity-2">opacidade 0.6</li>
+        <li class="example-background-color-5 example-opacity-3">opacidade 0.3</li>
+        <li class="example-background-color-5 example-opacity-4">opacidade 0.1</li>
+      </ul>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">h1</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text">background-color: green;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text">opacity: 0.3;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>      
+      <p class="spacing-y"><span class="stand-out-word">Observação</span>: ao usar a propriedade <code class="code-inline">opacity</code> para adicionar transparência ao plano de fundo de um elemento, todos os seus elementos filhos herdam a mesma transparência. Isso pode dificultar a leitura do texto dentro de um elemento totalmente transparente.</p>
+      <h2>Transparência usando RGBA</h2>
+      <p class="spacing-y">Se você não deseja aplicar opacidade aos elementos filhos, como no exemplo acima, use valores de cores RGBA . O exemplo a seguir define a opacidade da cor de fundo e não do texto:</p>
+      <ul class="spacing-left">
+        <li class="example-background-color-5 example-opacity-1">100% de opacidade</li>
+        <li class="example-background-color-5 example-opacity-2">60% de opacidade</li>
+        <li class="example-background-color-5 example-opacity-3">30% de opacidade</li>
+        <li class="example-background-color-5 example-opacity-4">10% de opacidade</li>
+      </ul>      
+      <p class="spacing-y">Você aprendeu em nosso Capítulo Cores CSS que pode usar RGB como um valor de cor. Além de RGB, você pode usar um valor de cor RGB com um canal alfa (RGB A ) - que especifica a opacidade de uma cor.</p>
+      <p class="spacing-y">Um valor de cor RGBA é especificado com: rgba(red, green, blue, alpha ). O parâmetro alfa é um número entre 0,0 (totalmente transparente) e 1,0 (totalmente opaco).</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">h1</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-color</span>: rgba(0, 128, 0, 0.3);</span>  <span class="code-comment">/* fundo verde com 30% de opacidade. */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">A propriedade <code class="code-inline">background-color</code> adiciona cor de fundo para o elemento.</p>
+      <h2>Imagem de fundo do CSS</h2>
+      <p class="spacing-y">A propriedade <code class="code-inline">background-image</code> especifica uma imagem a ser usada como plano de fundo de um elemento.</p>
+      <p class="spacing-y">Por padrão, a imagem é repetida para cobrir todo o elemento.</p>   
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">/* Defina a imagem de fundo para uma página: */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">body</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-image</span>: url("paper.gif");</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">/* Este exemplo mostra uma má combinação de texto e imagem de fundo. O texto é quase legível: */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">body</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-image</span>: url("bgdesert.jpg");</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    <p class="spacing-y"><span class="stand-out-word">Nota</span>: Ao usar uma imagem de fundo, use uma imagem que não atrapalhe o texto.</p>
+    <p class="spacing-y">A imagem de fundo também pode ser definida para elementos específicos, como o elemento &lt;p&gt;:</p>
+    <div class="example-code">
+      <div class="code-title d-flex align-items-center justify-content-between">
+        <div>
+          <p>Exemplo CSS</p>
+        </div>
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Copiar o codigo" id="btncopiar"
+            onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+        <div class="code-body col textocod">
+          <pre>
+            <code>
+  <div class="code-line">
+    <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-image</span>: url("paper.gif");</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+    <p class="spacing-y">A propriedade <code class="code-inline">background-image</code> coloca uma imagem no plano de fundo do elemento.</p>
+    <h2>Repetição de plano de fundo do CSS</h2>
+    <p class="spacing-y">Por padrão, a propriedade <code class="code-inline">background-image</code>  repete uma imagem horizontal e verticalmente.</p>
+    <p class="spacing-y">Algumas imagens devem ser repetidas apenas na horizontal ou na vertical, ou ficarão estranhas, como esta:</p>
+    <div class="example-code">
+      <div class="code-title d-flex align-items-center justify-content-between">
+        <div>
+          <p>Exemplo CSS</p>
+        </div>
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Copiar o codigo" id="btncopiar"
+            onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+        <div class="code-body col textocod">
+          <pre>
+            <code>
+  <div class="code-line">
+    <span class="code-tag">body</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-image</span>: url("gradient_bg.png");</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+    <p class="spacing-y">Se a imagem acima for repetida apenas na horizontal (<code class="code-inline">background-repeat: repeat-x;</code>), o fundo ficará melhor:</p>
+    <div class="example-code">
+      <div class="code-title d-flex align-items-center justify-content-between">
+        <div>
+          <p>Exemplo CSS</p>
+        </div>
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Copiar o codigo" id="btncopiar"
+            onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+        <div class="code-body col textocod">
+          <pre>
+            <code>
+  <div class="code-line">
+    <span class="code-tag">body</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-image</span>: url("gradient_bg.png");</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-repeat</span>: repeat-x;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+    <p class="spacing-y">Dica: para repetir uma imagem verticalmente, defina (<code class="code-inline">background-repeat: repeat-y;</code>)</p>
+    <h2>CSS background-repeat: sem repetição</h2>
+    <p class="spacing-y">Mostrar a imagem de fundo apenas uma vez também é especificado pela propriedade <code class="code-inline">background-repeat</code>:</p>
+    <div class="example-code">
+      <div class="code-title d-flex align-items-center justify-content-between">
+        <div>
+          <p>Exemplo CSS</p>
+        </div>
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Copiar o codigo" id="btncopiar"
+            onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+        <div class="code-body col textocod">
+          <pre>
+            <code>
+  <div class="code-line">
+    <span class="code-comment">/* Mostrar a imagem de fundo apenas uma vez: */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">body</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-image</span>: url("img_tree.png");</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-repeat</span>: no-repeat;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+    <p class="spacing-y">No exemplo acima, a imagem de fundo é colocada no mesmo lugar do texto. Queremos mudar a posição da imagem, para que não atrapalhe muito o texto.</p>
+    <h2>Posição de fundo do CSS</h2>
+    <p class="spacing-y">A propriedade <code class="code-inline">background-position</code> é usada para especificar a posição da imagem de fundo.</p>
+    <div class="example-code">
+      <div class="code-title d-flex align-items-center justify-content-between">
+        <div>
+          <p>Exemplo CSS</p>
+        </div>
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Copiar o codigo" id="btncopiar"
+            onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+        <div class="code-body col textocod">
+          <pre>
+            <code>
+  <div class="code-line">
+    <span class="code-comment">/* Posicione a imagem de fundo no canto superior direito: */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">body</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-image</span>: url("img_tree.png");</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-repeat</span>: no-repeat;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-position</span>: right top;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+    <p class="spacing-y">A propiedade <code class="code-inline">background-position</code> coloca a posição inicial da imagem no plano de fundo.</p>
+    <p class="spacing-y">A propiedade <code class="code-inline">background-repeat</code> coloca qunatas vezes a imagem do plano de fundo se repetirá.</p>
+    <h2 class="spacing-Y">Anexo de plano de fundo do CSS</h2>
+    <p class="spacing-y">A propriedade <code class="code-inline">background-attachment</code> especifica se a imagem de fundo deve rolar ou ser fixa (não rolará com o restante da página):</p>
+    <div class="example-code">
+      <div class="code-title d-flex align-items-center justify-content-between">
+        <div>
+          <p>Exemplo CSS</p>
+        </div>
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Copiar o codigo" id="btncopiar"
+            onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+        <div class="code-body col textocod">
+          <pre>
+            <code>
+  <div class="code-line">
+    <span class="code-comment">/* Especifica que a imagem de fundo deve ser corrigida: */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">body</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-image</span>: url("img_tree.png");</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-repeat</span>: no-repeat;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-position</span>: right top;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-attachment</span>: fixed;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+    <div class="example-code">
+      <div class="code-title d-flex align-items-center justify-content-between">
+        <div>
+          <p>Exemplo CSS</p>
+        </div>
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Copiar o codigo" id="btncopiar"
+            onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+        <div class="code-body col textocod">
+          <pre>
+            <code>
+  <div class="code-line">
+    <span class="code-comment">/* Especifica que a imagem de fundo deve rolar com o restante da página: */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">body</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-image</span>: url("img_tree.png");</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-repeat</span>: no-repeat;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-position</span>: right top;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-attachment</span>: scroll;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+    <h2 class="spacing-Y">Plano de fundo CSS - Propriedade abreviada</h2>
+    <p class="spacing-y">Para encurtar o código, também é possível especificar todas as propriedades do plano de fundo em uma única propriedade. Isso é chamado de propriedade abreviada.</p>
+    <div class="example-code">
+      <div class="code-title d-flex align-items-center justify-content-between">
+        <div>
+          <p>Exemplo CSS</p>
+        </div>
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Copiar o codigo" id="btncopiar"
+            onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+        <div class="code-body col textocod">
+          <pre>
+            <code>
+  <div class="code-line">
+    <span class="code-comment">/* Use a propriedade abreviada para definir as propriedades do plano de fundo em uma declaração: */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">body</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background</span>: #ffffff url("img_tree.png") no-repeat right top;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+    <p class="spacing-y">Ao usar a propriedade abreviada, a ordem dos valores da propriedade é:</p>
+    <ul class="spacing-left">
+      <li><code class="code-inline">background-color</code></li>
+      <li><code class="code-inline">background-image</code></li>
+      <li><code class="code-inline">background-repeat</code></li>
+      <li><code class="code-inline">background-attachment</code></li>
+      <li><code class="code-inline">background-position</code></li>
+    </ul>
+    <p class="spacing-y">Não importa se um dos valores da propriedade está faltando, desde que os outros estejam nesta ordem. Observe que não usamos a propriedade background-attachment nos exemplos acima, pois ela não possui um valor.</p>
     </section>
 
     <!-- Toast -->
