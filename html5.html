@@ -1716,7 +1716,7 @@
           <li><code class="code-inline">&lt;sup&gt;</code>- Texto sobrescrito</li>
         </ul>
         <h2 class="spacing-y">Elementos HTML &lt;b&gt; e &lt;strong&gt;</h2>
-        <p>O elemento HTML <b>define o texto em negrito, sem nenhuma importância extra.</p>
+        <p>O elemento HTML<code class="code-inline">&lt;b&gt;</code> define o texto em negrito, sem nenhuma importância extra.</p>
         <div class="example-code">
           <div class="code-title d-flex align-items-center justify-content-between">
             <div>
@@ -1869,7 +1869,8 @@
           </div>
         </div>
         <h2 class="spacing-y">Elemento HTML &lt;mark&gt;</h2>
-        <p>O elemento HTML <code class="code-inline">&lt;mark&gt;</code> define o texto que deve ser marcado ou destacado:</p>
+        <p>O elemento HTML <code class="code-inline">&lt;mark&gt;</code> define o texto que deve ser marcado ou
+          destacado:</p>
         <div class="example-code">
           <div class="code-title d-flex align-items-center justify-content-between">
             <div>
@@ -1897,11 +1898,96 @@
             </div>
           </div>
         </div>
-
-
-
-
-
+        <h2 class="spacing-y">Elemento HTML &lt;del&gt;</h2>
+        <p>O elemento HTML <code class="code-inline">&lt;del&gt;</code> define o texto que foi excluído de um documento.
+          Os navegadores geralmente traçam uma linha através do texto excluído:</p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="code-body textocod">
+              <pre>
+              <code>
+    <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Minha cor favorita é <span class="code-punctuation">&lt;</span><span class="code-tag">del</span><span class="code-punctuation">&gt;</span>azul<span class="code-punctuation">&lt;</span><span class="code-tag">/del</span><span class="code-punctuation">&gt;</span>vermelho</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+    </div>
+    
+                      </code>
+                  </pre>
+            </div>
+            <div class="code-support col">
+              <p>minha cor favorita é <del>azul</del> vermelho</p>
+            </div>
+          </div>
+        </div>
+        <h2 class="spacing-y">Elemento HTML &lt;ins&gt;</h2>
+        <p>O elemento HTML <code class="code-inline">&lt;ins&gt;</code> define um texto que foi inserido em um
+          documento. Os navegadores geralmente sublinham o texto inserido:
+        </p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="code-body textocod">
+              <pre>
+              <code>
+    <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Minha cor favorita é <span class="code-punctuation">&lt;</span><span class="code-tag">del</span><span class="code-punctuation">&gt;</span>azul<span class="code-punctuation">&lt;</span><span class="code-tag">/del</span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">ins</span><span class="code-punctuation">&gt;</span>vermelho<span class="code-punctuation">&lt;</span><span class="code-tag">/ins</span><span class="code-punctuation">&gt;</span>.<span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+    </div>
+    
+                      </code>
+                  </pre>
+            </div>
+            <div class="code-support col">
+              <p>minha cor favorita é <del>azul</del> <ins>vermelho</ins></p>
+            </div>
+          </div>
+        </div>
+        <h2 class="spacing-y">Elemento HTML &lt;sub&gt;</h2>
+        <p>O elemento HTML <code class="code-inline">&lt;sub&gt;</code> define o texto subscrito. O texto subscrito aparece meio caractere abaixo da linha normal e, às vezes, é renderizado em uma fonte menor. O texto subscrito pode ser usado para fórmulas químicas, como H <sub>2</sub> O:</p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="code-body textocod">
+              <pre>
+              <code>
+    <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Esse é um<span class="code-punctuation">&lt;</span><span class="code-tag">sub</span><span class="code-punctuation">&gt;</span>texto<span class="code-punctuation">&lt;</span><span class="code-tag">/sub</span><span class="code-punctuation">&gt;</span>subscrito</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+    </div>
+    
+                      </code>
+                  </pre>
+            </div>
+            <div class="code-support col">
+              <p>Esse é um <sub>texto</sub> subscrito</p>
+            </div>
+          </div>
+        </div>
 
 
 
