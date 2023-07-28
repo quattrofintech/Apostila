@@ -109,6 +109,7 @@
           <a href="?t=ordememcascata" class="list-group-item">Ordem em cascata</a>
           <a href="?t=corescss" class="list-group-item">Cores Css</a>
           <a href="?t=fundoscss" class="list-group-item">Fundos CSS</a>
+          <a href="?t=bordascss" class="list-group-item">Bordas CSS</a>
         </div>
       </div>
     </div>
@@ -182,6 +183,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=fundoscss">Fundos CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=bordascss">Bordas CSS</a>
       </li>
     </ul>
   </aside>
@@ -1517,7 +1521,7 @@
         <li><code class="code-inline">background-repeat</code></li>
         <li><code class="code-inline">background-attachment</code></li>
         <li><code class="code-inline">background-position</code></li>
-        <li><code class="code-inline">bacground - propriedade abreviada</code></li>
+        <li><code class="code-inline">background - propriedade abreviada</code></li>
       </ul>
       <h2 class="spacing-Y">Cor de fundo do CSS</h2>
       <p class="spacing-y">A <code class="code-inline">background-color</code> propriedade especifica a cor de fundo de um elemento.</p>
@@ -2065,6 +2069,779 @@
       <li><code class="code-inline">background-position</code></li>
     </ul>
     <p class="spacing-y">Não importa se um dos valores da propriedade está faltando, desde que os outros estejam nesta ordem. Observe que não usamos a propriedade background-attachment nos exemplos acima, pois ela não possui um valor.</p>
+    </section>
+    <section class="theme" data-title="bordascss" data-index="8" hidden>
+      <h1 class="fw-bold spacing-y">Bordas CSS</h1>
+      <p class="spacing-y">As propriedades de borda do CSS permitem que você especifique o estilo, a largura e a cor da borda de um elemento.</p>
+      <p class="spacing-y example-border-type-11">Tenho fronteiras por todos os lados.</p>
+      <p class="spacing-y example-border-type-12">Eu tenho uma borda inferior vermelha.</p>
+      <p class="spacing-y example-border-type-13">Eu tenho bordas arredondadas.</p>
+      <p class="spacing-y example-border-type-14">Eu tenho uma borda esquerda amarela.</p>      
+      <h2 class="spacing-Y">Estilo de Borda CSS</h2>
+      <p class="spacing-y">A propriedade <code class="code-inline">border-style</code>  especifica que tipo de borda exibir.</p>
+      <p class="spacing-y">Os seguintes valores são permitidos:</p>
+      <ul class="spacing-left">
+        <li><code class="code-inline">dotted</code> - Define uma borda pontilhada.</li>
+        <li><code class="code-inline">dashed</code> - Define uma borda tracejada</li>
+        <li><code class="code-inline">solid</code> - Define uma borda sólida</li>
+        <li><code class="code-inline">double</code> - Define uma borda dupla</li>
+        <li><code class="code-inline">groove</code> - Define uma borda ranhurada 3D. O efeito depende do valor da cor da borda</li>
+        <li><code class="code-inline">ridge</code> - Define uma borda ondulada 3D. O efeito depende do valor da cor da borda</li>
+        <li><code class="code-inline">inset</code> - Define uma borda de inserção 3D. O efeito depende do valor da cor da borda</li>
+        <li><code class="code-inline">outset</code> - Define uma borda inicial 3D. O efeito depende do valor da cor da borda</li>
+        <li><code class="code-inline">none</code> - Não define borda</li>
+        <li><code class="code-inline">hidden</code> - Define uma borda oculta</li>
+      </ul>
+      <p class="spacing-y">A propriedade  border-style pode ter de um a quatro valores (para a borda superior, borda direita, borda inferior e borda esquerda).</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- Demonstração dos diferentes estilos de borda: --&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.dotted {<span class="example-text-color-1">border-style</span>: dotted;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.dashed {<span class="example-text-color-1">border-style</span>: dashed;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.solid {<span class="example-text-color-1">border-style</span>: solid;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.double {<span class="example-text-color-1">border-style</span>: double;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.groove {<span class="example-text-color-1">border-style</span>: groove;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.ridge {<span class="example-text-color-1">border-style</span>: ridge;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.inset {<span class="example-text-color-1">border-style</span>: inset;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.outset {<span class="example-text-color-1">border-style</span>: outset;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.none {<span class="example-text-color-1">border-style</span>: none;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.hidden {<span class="example-text-color-1">border-style</span>: hidden;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.mix {<span class="example-text-color-1">border-style</span>: dotted dashed solid double;}</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>
+            <span class="code-text example-border-type-1">Borda pontilhada</span>
+            <span class="code-text example-border-type-2">Borda traçada</span>
+            <span class="code-text example-border-type-3">Borda sólida</span>
+            <span class="code-text example-border-type-4">Borda dupla</span>
+            <span class="code-text example-border-type-5">Borda Estreita(Sulco), o efeito depende do valor de border-color</span>
+            <span class="code-text example-border-type-6">Borda do cume, o efeito depende do valor de border-color</span>
+            <span class="code-text example-border-type-7">Borda embutida, o efeito depende do valor de border-color</span>
+            <span class="code-text example-border-type-8">Borda inicial, o efeito depende do valor de border-color</span>
+            <span class="code-text example-border-type-9">Sem borda</span>
+            <span class="code-text example-border-type-10">Borda oculta</span>
+            <span class="code-text example-border-type-15">Bordas mixadas</span>           
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y"><span class="stand-out-word">Nota</span>: Nenhuma das OUTRAS propriedades de borda CSS (sobre as quais você aprenderá mais nos próximos capítulos) terá QUALQUER efeito, a menos que a propriedade <code class="code-inline">border-style</code> seja definida!</p>
+      <h2 class="spacing-Y">Largura da Borda do CSS</h2>
+      <p class="spacing-y">A propriedade <code class="code-inline">border-width</code> especifica a largura das quatro bordas.</p>
+      <p class="spacing-y"> largura pode ser definida como um tamanho específico (em px, pt, cm, em, etc) ou usando um dos três valores predefinidos: fino, médio ou grosso:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">/* Demonstração das diferentes larguras de borda: */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-width</span>: 5px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+  <div class="code-line">
+    <span class="code-tag">p.two</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-width</span>: medium;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+  <div class="code-line">
+    <span class="code-tag">p.three</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: dotted;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-width</span>: 2px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+  <div class="code-line">
+    <span class="code-tag">p.four</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: dotted;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-width</span>: thick;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>  
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-text example-border-type-16">5px border-width</span>            
+            <span class="code-text example-border-type-17">medium border-width</span>
+            <span class="code-text example-border-type-18">2px border-width</span>
+            <span class="code-text example-border-type-19">thick border-width</span>            
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Larguras Laterais Específicas</h2>
+      <p class="spacing-y">A propriedade <code class="code-inline">border-width</code> pode ter de um a quatro valores (para a borda superior, borda direita, borda inferior e borda esquerda):</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-width</span>: 5px 20px;</span> <span class="code-comment">/* 5px top and bottom, 20px on the sides */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+  <div class="code-line">
+    <span class="code-tag">p.two</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-width</span>: 20px 5px;</span> <span class="code-comment">/* 20px top and bottom, 5px on the sides */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+  <div class="code-line">
+    <span class="code-tag">p.three</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-width</span>: 25px 10px 4px 35px;</span> <span class="code-comment">/* 25px top, 10px right, 4px bottom and 35px left */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>      
+      <h2>Cor da Borda do CSS</h2>
+      <p class="spacing-y">A propriedade <code class="code-inline">border-color</code> é usada para definir a cor das quatro bordas.</p>
+      <p class="spacing-y">A cor pode ser definida por:</p>
+      <ul class="spacing-left">
+        <li>nome - especifique um nome de cor, como "vermelho"</li>
+        <li>HEX - especifique um valor HEX, como "#ff0000"</li>
+        <li>RGB - especifique um valor RGB, como "rgb(255,0,0)"</li>
+        <li>HSL - especifique um valor HSL, como "hsl(0, 100%, 50%)"</li>
+        <li>transparente</li>        
+      </ul>      
+      <p class="spacing-y"><span class="stand-out-word">Nota</span>: Caso <code class="code-inline">border-color</code> não estiver definido, herda a cor do elemento.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">/* Demonstração das diferentes larguras de borda: */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-color</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+  <div class="code-line">
+    <span class="code-tag">p.two</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-color</span>: green;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+  <div class="code-line">
+    <span class="code-tag">p.three</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: dotted;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-color</span>: blue;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>  
+              </code>
+            </pre>
+          </div>
+        <div class="code-support row">       
+          <span class="code-text example-border-color-4">Borda vermelha</span>            
+          <span class="code-text example-border-color-5">Borda verde</span>
+          <span class="code-text example-border-color-6">Borda amarela</span>     
+        </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Cores Laterais Específicas</h2>
+      <p class="spacing-y">A propriedade <code class="code-inline">border-color</code> pode ter de um a quatro valores (para a borda superior, borda direita, borda inferior e borda esquerda).</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-color</span>: red green blue yellow;</span> <span class="code-comment">/* red top, green right, blue bottom and yellow left */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>      
+      <h2>Valores HEX</h2>
+      <p class="spacing-y">A cor da borda também pode ser especificada usando um valor hexadecimal (HEX):</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-color</span>: #ff0000;</span> <span class="code-comment">/* red */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>  
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <h2>Valores RGB</h2>
+      <p class="spacing-y">Ou usando valores RGB:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-color</span>: rgb(255, 0, 0);</span> <span class="code-comment">/* red */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>  
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <h2>Valores HSL</h2>
+      <p class="spacing-y">Você também pode usar valores HSL:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-color</span>: hsl(0, 100%, 50%);</span> <span class="code-comment">/* red */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>  
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Lados da Borda CSS</h2>
+      <p class="spacing-y">Pelos exemplos das páginas anteriores, você viu que é possível especificar uma borda diferente para cada lado.</p>
+      <p class="spacing-y">No CSS, também existem propriedades para especificar cada uma das bordas (superior, direita, inferior e esquerda):</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-top-style</span>: dotted;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-right-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-bottom-style</span>: dotted;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-left-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>  
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-text example-border-1">Diferentes estilos de borda</span>            
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">O exemplo acima dá o mesmo resultado que este:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: dotted solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>  
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-text example-border-1">Diferentes estilos de borda</span>            
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Então, aqui está como funciona:</p>
+      <p class="spacing-y">Se a propriedade <code class="code-inline">border-style</code> tiver quatro valores:</p>
+      <p class="spacing-y"><code class="code-inline">border-style</code>: dotted solid double dashed;</p>
+      <ul class="spacing-left">
+        <li>borda superior é pontilhada</li>
+        <li>borda direita é sólida</li>
+        <li>borda inferior é dupla</li>
+        <li>borda esquerda é tracejada</li>        
+      </ul>      
+      <p class="spacing-y">Se a propriedade <code class="code-inline">border-style</code> tiver três valores:</p>
+      <p class="spacing-y"><code class="code-inline">border-style</code>: dottes solid double;</p>
+      <ul class="spacing-left">
+        <li>borda superior é pontilhada</li>
+        <li>as bordas direita e esquerda são sólidas</li>
+        <li>borda inferior é dupla</li>      
+      </ul>      
+      <p class="spacing-y">Se a propriedade <code class="code-inline">border-style</code> tiver dois valores:</p>
+      <p class="spacing-y"><code class="code-inline">border-style</code>: dotted solid;</p>
+      <ul class="spacing-left">
+        <li>as bordas superior e inferior são pontilhadas</li>
+        <li>as bordas direita e esquerda são sólidas</li>     
+      </ul>     
+      <p class="spacing-y">Se a propriedade <code class="code-inline">border-style</code> tiver um valor:</p> 
+      <p class="spacing-y"><code class="code-inline">border-style</code>: dotted;</p>
+      <ul class="spacing-left">
+        <li>todas as quatro bordas são pontilhadas</li>      
+      </ul>   
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">/* Quatro valores */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: dotted solid double dashed;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-comment">/* Três valores */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: dotted solid double ;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-comment">/* Dois valores */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: dotted solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-comment">/* Um valor */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-style</span>: dotted;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>   
+      <p class="spacing-y">A propriedade <code class="code-inline">border-style</code> é usada no exemplo acima. No entanto, também funciona com <code class="code-inline">border-width</code> e <code class="code-inline">border-color</code>.</p>
+      <h2 class="spacing-Y">Borda CSS - Propriedade abreviada</h2>
+      <p class="spacing-y">Como você viu na página anterior, há muitas propriedades a serem consideradas ao lidar com bordas.</p>
+      <p class="spacing-y">Para encurtar o código, também é possível especificar todas as propriedades de borda individuais em uma propriedade.</p>
+      <p class="spacing-y">A propriedade <code class="code-inline">border</code> é uma propriedade abreviada para as seguintes propriedades de borda individuais:</p>
+      <ul class="spacing-left">
+        <li><code class="code-inline">border-width</code></li>
+        <li><code class="code-inline">border-style</code>(origatório)</li>
+        <li><code class="code-inline">border-color</code></li>      
+      </ul>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 5px solid red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-text example-border-2">Olá Mundo</span>            
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Você também pode especificar todas as propriedades de borda individuais para apenas um lado:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">/* Borda esquerda */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-left</span>: 6px solid red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-text example-border-3">Olá Mundo</span>            
+          </div>
+        </div>
+      </div>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">/* Borda inferior */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-bottom</span>: 6px solid red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-text example-border-4">Olá Mundo</span>            
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Bordas arredondadas CSS</h2>
+      <p class="spacing-y">A propriedade <code class="code-inline">border-radius</code>é usada para adicionar bordas arredondadas a um elemento:</p>
+      <p class="spacing-y example-border-radius-1">borda normal.</p>
+      <p class="spacing-y example-border-radius-2">borda redonda.</p>
+      <p class="spacing-y example-border-radius-3">borda mais arredondada.</p>
+      <p class="spacing-y example-border-radius-4">Borda ainda mais arredondada.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 2px solid red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-radius</span>: 5px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>  
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Toast -->
