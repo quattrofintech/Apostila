@@ -114,6 +114,7 @@
           <a href="?t=cabecalhoshtml" class="list-group-item">Cabeçalhos HTML</a>
           <a href="?t=estilohtml" class="list-group-item">Cabeçalhos HTML</a>
           <a href="?t=formatacaodetextohtml" class="list-group-item">Formatação de Texto HTML</a>
+          <a href="?t=cotacaohtml" class="list-group-item">Cotação HTML e Elementos de Citação</a>
         </div>
       </div>
     </div>
@@ -140,6 +141,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="?t=formatacaodetextohtml">Formatação de Texto HTML</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="?t=cotacaohtml">Cotação HTML e Elementos de Citação</a>
         </li>
       </ul>
     </aside>
@@ -1716,7 +1720,8 @@
           <li><code class="code-inline">&lt;sup&gt;</code>- Texto sobrescrito</li>
         </ul>
         <h2 class="spacing-y">Elementos HTML &lt;b&gt; e &lt;strong&gt;</h2>
-        <p>O elemento HTML<code class="code-inline">&lt;b&gt;</code> define o texto em negrito, sem nenhuma importância extra.</p>
+        <p>O elemento HTML<code class="code-inline">&lt;b&gt;</code> define o texto em negrito, sem nenhuma importância
+          extra.</p>
         <div class="example-code">
           <div class="code-title d-flex align-items-center justify-content-between">
             <div>
@@ -1960,7 +1965,9 @@
           </div>
         </div>
         <h2 class="spacing-y">Elemento HTML &lt;sub&gt;</h2>
-        <p>O elemento HTML <code class="code-inline">&lt;sub&gt;</code> define o texto subscrito. O texto subscrito aparece meio caractere abaixo da linha normal e, às vezes, é renderizado em uma fonte menor. O texto subscrito pode ser usado para fórmulas químicas, como H <sub>2</sub> O:</p>
+        <p>O elemento HTML <code class="code-inline">&lt;sub&gt;</code> define o texto subscrito. O texto subscrito
+          aparece meio caractere abaixo da linha normal e, às vezes, é renderizado em uma fonte menor. O texto subscrito
+          pode ser usado para fórmulas químicas, como H <sub>2</sub> O:</p>
         <div class="example-code">
           <div class="code-title d-flex align-items-center justify-content-between">
             <div>
@@ -1989,7 +1996,9 @@
           </div>
         </div>
         <h2 class="spacing-y">Elemento HTML &lt;sup&gt;</h2>
-        <p>O elemento HTML <code class="code-inline">&lt;sup&gt;</code> define o texto sobrescrito. O texto sobrescrito aparece meio caractere acima da linha normal e, às vezes, é renderizado em uma fonte menor. O texto sobrescrito pode ser usado para notas de rodapé, como WWW<sup>[1]</sup> :</p>
+        <p>O elemento HTML <code class="code-inline">&lt;sup&gt;</code> define o texto sobrescrito. O texto sobrescrito
+          aparece meio caractere acima da linha normal e, às vezes, é renderizado em uma fonte menor. O texto
+          sobrescrito pode ser usado para notas de rodapé, como WWW<sup>[1]</sup> :</p>
         <div class="example-code">
           <div class="code-title d-flex align-items-center justify-content-between">
             <div>
@@ -2019,77 +2028,140 @@
         </div>
         <table class="table table-dark table-hover spacing-y">
           <thead>
-              <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Elemento HTML</th>
-                  <th scope="col">Para que serve</th>
-                  <th scope="col">Exemplo</th>
-              </tr>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Elemento HTML</th>
+              <th scope="col">Para que serve</th>
+              <th scope="col">Exemplo</th>
+            </tr>
           </thead>
           <tbody>
-              <tr>
-                  <th scope="row">1</th>
-                  <td>&lt;b&gt;</td>
-                  <td>Define o texto em negrito</td>
-                  <td><b>Quattro Fintech</b></td>
-              </tr>
-              <tr>
-                  <th scope="row">2</th>
-                  <td>&lt;em&gt;</td>
-                  <td>Define o texto enfatizado</td>
-                  <td><em>Quattro Fintech</em></td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                  <td>&lt;i&gt;</td>
-                  <td>Define uma parte do texto em uma voz ou humor alternativo</td>
-                  <td><i>Quattro Fintech</i></td>  
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                  <td>&lt;small&gt;</td>
-                  <td>Define um texto menor</td>
-                  <td><small>Quattro Fintech</small></td>  
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                  <td>&lt;strong&gt;</td>
-                  <td>Define o texto importante</td>
-                  <td><strong>Quattro Fintech</strong></td>  
-              </tr>
-              <tr>
-                <th scope="row">6</th>
-                  <td>&lt;sub&gt;</td>
-                  <td>Define o texto subscrito</td>
-                  <td><sub>Quattro Fintech</sub></td>  
-              </tr>
-              <tr>
-                <th scope="row">7</th>
-                  <td>&lt;sup&gt;</td>
-                  <td>Define um texto sobrescrito</td>
-                  <td><sup>Quattro Fintech</sup></td>  
-              </tr>
-              <tr>
-                <th scope="row">8</th>
-                  <td>&lt;ins&gt;</td>
-                  <td>Define o texto inserido</td>
-                  <td><ins>Quattro Fintech</ins></td>  
-              </tr>
-              <tr>
-                <th scope="row">9</th>
-                  <td>&lt;del&gt;</td>
-                  <td>Define o texto deletado</td>
-                  <td><del>Quattro Fintech</del></td>  
-              </tr>
-              <tr>
-                <th scope="row">10</th>
-                  <td>&lt;mark&gt;</td>
-                  <td>Define o texto marcado/destacado</td>
-                  <td><marK>Quattro Fintech</marK></td>  
-              </tr>
-              
+            <tr>
+              <th scope="row">1</th>
+              <td>&lt;b&gt;</td>
+              <td>Define o texto em negrito</td>
+              <td><b>Quattro Fintech</b></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>&lt;em&gt;</td>
+              <td>Define o texto enfatizado</td>
+              <td><em>Quattro Fintech</em></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>&lt;i&gt;</td>
+              <td>Define uma parte do texto em uma voz ou humor alternativo</td>
+              <td><i>Quattro Fintech</i></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>&lt;small&gt;</td>
+              <td>Define um texto menor</td>
+              <td><small>Quattro Fintech</small></td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>&lt;strong&gt;</td>
+              <td>Define o texto importante</td>
+              <td><strong>Quattro Fintech</strong></td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>&lt;sub&gt;</td>
+              <td>Define o texto subscrito</td>
+              <td><sub>Quattro Fintech</sub></td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>&lt;sup&gt;</td>
+              <td>Define um texto sobrescrito</td>
+              <td><sup>Quattro Fintech</sup></td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>&lt;ins&gt;</td>
+              <td>Define o texto inserido</td>
+              <td><ins>Quattro Fintech</ins></td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>&lt;del&gt;</td>
+              <td>Define o texto deletado</td>
+              <td><del>Quattro Fintech</del></td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>&lt;mark&gt;</td>
+              <td>Define o texto marcado/destacado</td>
+              <td><marK>Quattro Fintech</marK></td>
+            </tr>
+
           </tbody>
-      </table>
+        </table>
+
+      </section>
+      <section class="theme" data-title="cotacaohtml" data-index="7" hidden>
+        <h1 class="fw-bold spacing-y">Cotação HTML e Elementos de Citação</h1>
+        <p>Neste capítulo, veremos os elementos HTML <code class="code-inline">&lt;bloquote&gt;</code>, <code
+            class="code-inline">&lt;q&gt;</code>, <code class="code-inline">&lt;abbr&gt;</code>, <code
+            class="code-inline">&lt;adress&gt;</code>, <code class="code-inline">&lt;cite&gt;</code> e <code
+            class="code-inline">&lt;bdo&gt;</code></p>
+        <h2 class="spacing-y">HTML &lt;blockquote&gt; para cotações</h2>
+        <p>O elemento HTML <code class="code-inline">&lt;blockquote&gt;</code> define uma seção que é citada de outra
+          fonte.</p>
+        <p>Os navegadores geralmente indentam elementos <code class="code-inline">&lt;blockquotes&gt;</code>
+        </p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="code-body textocod">
+              <pre>
+              <code>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Aqui está uma citação do site WWF's<span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">blockquote cite="http://www.worldwildlife.org/who/indext.html"</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<p>
+Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
+</p>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/blockquote</span><span class="code-punctuation">&gt;</span>
+</div>    
+                      </code>
+                  </pre>
+            </div>
+            <div class="code-support col">
+              <p>Esse texto texto é <sup>sobrescrito</sup> </p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
