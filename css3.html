@@ -110,6 +110,7 @@
           <a href="?t=corescss" class="list-group-item">Cores Css</a>
           <a href="?t=fundoscss" class="list-group-item">Fundos CSS</a>
           <a href="?t=bordascss" class="list-group-item">Bordas CSS</a>
+          <a href="?t=margenscss" class="list-group-item">Margens CSS</a>
         </div>
       </div>
     </div>
@@ -186,6 +187,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=bordascss">Bordas CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=margenscss">Margens CSS</a>
       </li>
     </ul>
   </aside>
@@ -365,10 +369,10 @@
       <pre>
         <code>
 <div class="code-line">
-  <span class="code-comment">&lt;!-- Aqui, todos os elementos &lt;p&gt; na página serão alinhados ao centro, com uma cor de texto vermelha: &lt;p&gt;</span>
+  <span class="code-comment">/* Aqui, todos os elementos &lt;p&gt; na página serão alinhados ao centro, com uma cor de texto vermelha: &lt;p&gt;</span>
 </div>
 <div class="code-line">
-  <span class="code-comment">serão alinhados ao centro, com uma cor de texto vermelha: --&gt;</span>
+  <span class="code-comment">serão alinhados ao centro, com uma cor de texto vermelha: */</span>
 </div>
 <div class="code-line">
   <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
@@ -2842,6 +2846,434 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="theme" data-title="margenscss" data-index="9" hidden>
+      <h1 class="fw-bold spacing-y">Margens CSS</h1>
+      <p class="spacing-Y">As margens são usadas para criar espaço ao redor dos elementos, fora de qualquer borda definida.</p>
+      <p class="spacing-Y">As propriedades <code class="code-inline">margin</code>margin CSS são usadas para criar espaço ao redor dos elementos, fora de qualquer borda definida.</p>
+      <p class="spacing-Y">Com CSS, você tem controle total sobre as margens. Existem propriedades para definir a margem para cada lado de um elemento (superior, direita, inferior e esquerda).</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+    <span class="code-text" style="margin: 70px;">Este elemento tem uma margem de 70px.</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Margem - Lados Individuais</h2>
+        <p class="spacing-y">CSS tem propriedades para especificar a margem para cada lado de um elemento:</p>
+        <ul class="spacing-left">
+          <li><code class="code-inline">margin-top</code></li>
+          <li><code class="code-inline">margin-right</code></li>
+          <li><code class="code-inline">margin-bottom</code></li>
+          <li><code class="code-inline">margin-left</code></li>
+        </ul>
+        <p class="spacing-y">Todas as propriedades de margem podem ter os seguintes valores:</p>
+        <ul class="spacing-left">
+          <li>auto - o navegador calcula a margem.</li>
+          <li>comprimento - especifica uma margem em px, pt, cm, etc.</li>
+          <li>% - especifica uma margem em % da largura do elemento recipiente.</li>
+          <li>herdar - especifica que a margem deve ser herdada do elemento pai.</li>          
+        </ul>
+        <p class="spacing-y"><span class="stand-out-word">Dica</span>: Valores negativos são permitidos.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* Defina margens diferentes para todos os quatro lados de um elemento &lt;p&gt;: */</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin-top</span>: 100px;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin-bottom</span>: 100px;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin-right</span>: 150px;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin-left</span>: 80px;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-y">Margem - Propriedade abreviada</h2>      
+      <p class="spacing-y">Para encurtar o código, é possível especificar todas as propriedades de margem em uma propriedade.</p>
+      <p class="spacing-y">A propriedade <code class="code-inline">margin</code> é uma propriedade abreviada para as seguintes propriedades de margem individuais:</p>
+      <ul class="spacing-left">
+        <li><code class="code-inline">margin-top</code></li>
+        <li><code class="code-inline">margin-right</code></li>
+        <li><code class="code-inline">margin-bottom</code></li>
+        <li><code class="code-inline">margin-left</code></li>
+      </ul>
+      <p class="spacing-y">Veja como funciona, se a propriedade <code class="code-inline">margin</code> tiver quatro valores:</p>
+      <p class="spacing-y">margem: 25px 50px 75px 100px;</p>
+      <ul class="spacing-left">
+        <li>margem superior é 25px.</li>
+        <li>margem direita é 50px.</li>
+        <li>margem inferior é 75px.</li>
+        <li>margem esquerda é 100px.</li>        
+      </ul>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* Use a propriedade abreviada de margem com quatro valores: */;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 25px 50px 75px 100px;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+      <p class="spacing-y"><span class="stand-out-word">Observação</span>: um nome de identificação não pode começar com um número!</p>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Se a propriedade <code class="code-inline">margin</code> tiver três valores:</p>
+      <p class="spacing-y">margem: 25px 50px 75px;</p>
+      <ul class="spacing-left">
+        <li>margem superior é 25px.</li>
+        <li>as margens direita e esquerda são 50px.</li>
+        <li>margem inferior é 75px.</li>       
+      </ul>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* Use a propriedade abreviada de margem com três valores: */;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 25px 50px 75px;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+      <p class="spacing-y"><span class="stand-out-word">Observação</span>: um nome de identificação não pode começar com um número!</p>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Se a propriedade <code class="code-inline">margin</code> tiver dois valores:</p>
+      <p class="spacing-y">margem: 25px 50px;</p>
+      <ul class="spacing-left">
+        <li>as margens superior e inferior são 25px.</li>
+        <li>as margens direita e esquerda são 50px.</li>
+      </ul>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* Use a propriedade abreviada de margem com dois valores: */;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 25px 50px;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+      <p class="spacing-y"><span class="stand-out-word">Observação</span>: um nome de identificação não pode começar com um número!</p>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Se a propriedade <code class="code-inline">margin</code> tiver um valor:</p>
+      <p class="spacing-y">margem: 25px;</p>
+      <ul class="spacing-left">
+        <li>todas as quatro margens são 25px.</li>
+      </ul>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* Use a propriedade abreviada de margem com um valor: */;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 25px;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+      <p class="spacing-y"><span class="stand-out-word">Observação</span>: um nome de identificação não pode começar com um número!</p>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-y">O valor automático</h2>
+        <p class="spacing-y">Você pode definir a propriedade margin para <code class="code-inline">auto</code> centralizar horizontalmente o elemento em seu contêiner.</p>
+        <p class="spacing-y">O elemento ocupará a largura especificada e o espaço restante será dividido igualmente entre as margens esquerda e direita.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* Usar margem: auto: */</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">div</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 300px;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: auto;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid red;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-y">O valor herdado</h2>
+        <p class="spacing-y">Este exemplo permite que a margem esquerda do elemento &lt;p class="ex1"&gt; seja herdada do elemento pai (&lt;div&gt;):</p>
+        <p class="spacing-y">O elemento ocupará a largura especificada e o espaço restante será dividido igualmente entre as margens esquerda e direita.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* Usar margem: auto: */</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">div</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 300px;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: auto;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid red;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-y">O seletor universal de CSS</h2>
+        <p class="spacing-y">O seletor universal (*) seleciona todos os elementos HTML na página.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* A regra CSS abaixo afetará todos os elementos HTML da página: */</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">div</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+  <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid red;</span>
+</div>
+<div class="code-line">
+  <span class="code-text"><span class="example-text-color-1">margin-left</span>: 100px;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">p.ex1</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+  <span class="code-text"><span class="example-text-color-1">margin-left</span>: inherit;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-y">Colapso da Margem CSS</h2>
+        <p class="spacing-y">Às vezes, duas margens colapsam em uma única margem.</p>
+        <p class="spacing-y">Às vezes, as margens superior e inferior dos elementos são recolhidas em uma única margem que é igual à maior das duas margens.</p>
+        <p class="spacing-y">Isso não acontece nas margens esquerda e direita! Apenas as margens superior e inferior!</p>
+        <p class="spacing-y">Observe o seguinte exemplo:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* Demonstração de colapso de margem: */</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">h1</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 0 0 50px 0;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">h2</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 20px 0 0 0;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+        </code>
+      </pre>
+        </div>
+      </div>
+      </div>
+      <p class="spacing-y">No exemplo acima, o elemento &lt;h1&gt; tem uma margem inferior de 50px e o elemento &lt;h2&gt; tem uma margem superior definida como 20px.</p>
+      <p class="spacing-y">O senso comum parece sugerir que a margem vertical entre &lt;h1&gt; e &lt;h2&gt; seria um total de 70px (50px + 20px). Mas devido ao colapso da margem, a margem real acaba sendo 50px.</p>     
     </section>
 
     <!-- Toast -->
