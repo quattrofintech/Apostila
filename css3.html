@@ -111,6 +111,7 @@
           <a href="?t=fundoscss" class="list-group-item">Fundos CSS</a>
           <a href="?t=bordascss" class="list-group-item">Bordas CSS</a>
           <a href="?t=margenscss" class="list-group-item">Margens CSS</a>
+          <a href="?t=paddingcss" class="list-group-item">Preenchimento(padding) CSS</a>
         </div>
       </div>
     </div>
@@ -190,6 +191,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=margenscss">Margens CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=paddingcss">Preenchimento(padding) CSS</a>
       </li>
     </ul>
   </aside>
@@ -2850,7 +2854,7 @@
     <section class="theme" data-title="margenscss" data-index="9" hidden>
       <h1 class="fw-bold spacing-y">Margens CSS</h1>
       <p class="spacing-Y">As margens são usadas para criar espaço ao redor dos elementos, fora de qualquer borda definida.</p>
-      <p class="spacing-Y">As propriedades <code class="code-inline">margin</code>margin CSS são usadas para criar espaço ao redor dos elementos, fora de qualquer borda definida.</p>
+      <p class="spacing-Y">As propriedades <code class="code-inline">margin</code> CSS são usadas para criar espaço ao redor dos elementos, fora de qualquer borda definida.</p>
       <p class="spacing-Y">Com CSS, você tem controle total sobre as margens. Existem propriedades para definir a margem para cada lado de um elemento (superior, direita, inferior e esquerda).</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
@@ -3274,6 +3278,335 @@
       </div>
       <p class="spacing-y">No exemplo acima, o elemento &lt;h1&gt; tem uma margem inferior de 50px e o elemento &lt;h2&gt; tem uma margem superior definida como 20px.</p>
       <p class="spacing-y">O senso comum parece sugerir que a margem vertical entre &lt;h1&gt; e &lt;h2&gt; seria um total de 70px (50px + 20px). Mas devido ao colapso da margem, a margem real acaba sendo 50px.</p>     
+    </section>
+    <section class="theme" data-title="paddingcss" data-index="10" hidden>
+      <h1 class="fw-bold spacing-y">Preenchimento CSS</h1>
+      <p class="spacing-Y">O preenchimento é usado para criar espaço ao redor do conteúdo de um elemento, dentro de qualquer borda definida.</p>
+      <p class="spacing-Y">As propriedades <code class="code-inline">padding </code> CSS são usadas para gerar espaço ao redor do conteúdo de um elemento, dentro de qualquer borda definida.</p>
+      <p class="spacing-Y">Com CSS, você tem controle total sobre o preenchimento. Existem propriedades para definir o preenchimento de cada lado de um elemento (superior, direito, inferior e esquerdo).</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+    <span class="code-text" style="padding: 70px;">Este elemento tem uma padding de 70px.</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Preenchimento  - Lados Individuais</h2>
+        <p class="spacing-y">CSS tem propriedades para especificar o preenchimento de cada lado de um elemento:</p>
+        <ul class="spacing-left">
+          <li><code class="code-inline">padding-top</code></li>
+          <li><code class="code-inline">padding-right</code></li>
+          <li><code class="code-inline">padding-bottom</code></li>
+          <li><code class="code-inline">padding-left</code></li>
+        </ul>
+        <p class="spacing-y">Todas as propriedades de preenchimento podem ter os seguintes valores:</p>
+        <ul class="spacing-left">
+          <li>length - especifica um preenchimento em px, pt, cm, etc.</li>
+          <li>% - especifica um preenchimento em % da largura do elemento que o contém</li>
+          <li>herdar - especifica que o preenchimento deve ser herdado do elemento pai</li>        
+        </ul>
+        <p class="spacing-y"><span class="stand-out-word">Nota</span>: Valores negativos são permitidos.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* Defina um preenchimento diferente para todos os quatro lados de um elemento &lt;div&gt;: */</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding-top</span>: 50px;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding-bottom</span>: 30px;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding-right</span>: 50px;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding-left</span>: 80px;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-y">Preenchimento  - Propriedade abreviada</h2>      
+      <p class="spacing-y">Para encurtar o código, é possível especificar todas as propriedades de preenchimento em uma propriedade.</p>
+      <p class="spacing-y">A propriedade <code class="code-inline">padding</code> é uma propriedade abreviada para as seguintes propriedades de preenchimento individuais:</p>
+      <ul class="spacing-left">
+        <li><code class="code-inline">padding-top</code></li>
+        <li><code class="code-inline">padding-right</code></li>
+        <li><code class="code-inline">padding-bottom</code></li>
+        <li><code class="code-inline">padding-left</code></li>
+      </ul>
+      <p class="spacing-y">Veja como funciona, se a propriedade <code class="code-inline">padding</code> tiver quatro valores:</p>
+      <p class="spacing-y">padding: 25px 50px 75px 100px;</p>
+      <ul class="spacing-left">
+        <li>padding superior é 25px.</li>
+        <li>padding direito é 50px.</li>
+        <li>padding inferior é 75px.</li>
+        <li>padding esquerdo é 100px.</li>        
+      </ul>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* Use a propriedade abreviada de preenchimento com quatro valores: */;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">div</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 25px 50px 75px 100px;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Se a propriedade <code class="code-inline">padding</code> tiver três valores:</p>
+      <p class="spacing-y">padding: 25px 50px 75px;</p>
+      <ul class="spacing-left">
+        <li>padding superior é 25px.</li>
+        <li>padding direito e esquerdo são 50px</li>
+        <li>padding inferior é 75px.</li>       
+      </ul>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* Use a propriedade abreviada de preenchimento com três valores: */;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 25px 50px 75px;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Se a propriedade <code class="code-inline">padding</code> tiver dois valores:</p>
+      <p class="spacing-y">margem: 25px 50px;</p>
+      <ul class="spacing-left">
+        <li>padding superior e inferior são 25px.</li>
+        <li>padding direita e esquerda são 50px.</li>
+      </ul>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* Use a propriedade abreviada de preenchimento com dois valores: */;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 25px 50px;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+      <p class="spacing-y"><span class="stand-out-word">Observação</span>: um nome de identificação não pode começar com um número!</p>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Se a propriedade <code class="code-inline">padding</code> tiver um valor:</p>
+      <p class="spacing-y">padding: 25px;</p>
+      <ul class="spacing-left">
+        <li>todos os quatro padding são 25px.</li>
+      </ul>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* Use a propriedade abreviada de preenchimento com um valor: */;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 25px;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-y">Preenchimento e largura do elemento</h2>
+        <p class="spacing-y">A propriedade CSS <code class="code-inline">width</code> especifica a largura da área de conteúdo do elemento. A área de conteúdo é a parte dentro do preenchimento, borda e margem de um elemento ( o modelo de caixa ).</p>
+        <p class="spacing-y">Portanto, se um elemento tiver uma largura especificada, o preenchimento adicionado a esse elemento será adicionado à largura total do elemento. Isso geralmente é um resultado indesejável.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* Aqui, o elemento &lt;div&gt; recebe uma largura de 300px. No entanto, a largura real do elemento &lt;div&gt; será 350px (300px + 25px de preenchimento esquerdo + 25px de preenchimento direito): */</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">div</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 300px;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 25px;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+        <p class="spacing-y">Para manter a largura em 300px, independentemente da quantidade de preenchimento, você pode usar a propriedade <code class="code-inline">box-sizing</code>. Isso faz com que o elemento mantenha sua largura real; se você aumentar o preenchimento, o espaço de conteúdo disponível diminuirá.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* Use a propriedade box-sizing para manter a largura em 300px,</span>
+</div>
+<div class="code-line">
+  <span class="code-comment">independentemente da quantidade de preenchimento: */</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">div</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 300px;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 25px;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">box-sizing</span>: border-box;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Toast -->
