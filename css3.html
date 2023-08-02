@@ -112,6 +112,7 @@
           <a href="?t=bordascss" class="list-group-item">Bordas CSS</a>
           <a href="?t=margenscss" class="list-group-item">Margens CSS</a>
           <a href="?t=paddingcss" class="list-group-item">Preenchimento(padding) CSS</a>
+          <a href="?t=heightwidthcss" class="list-group-item">Altura e largura(height, width) CSS</a>
         </div>
       </div>
     </div>
@@ -194,6 +195,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=paddingcss">Preenchimento(padding) CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=heightwidthcss">Altura e largura(height, width) CSS</a>
       </li>
     </ul>
   </aside>
@@ -3602,6 +3606,145 @@
 <div class="code-line">
   <span class="code-punctuation">&#125;</span>
 </div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="theme" data-title="heightwidthcss" data-index="11" hidden>
+      <h1 class="fw-bold spacing-y">Configurando altura e largura CSS</h1>
+      <p class="spacing-Y">As propriedades <code class="code-inline">height</code> e <code class="code-inline">width</code> são usadas para definir a altura e a largura de um elemento.</p>
+      <p class="spacing-Y">As propriedades de altura e largura não incluem preenchimento, bordas ou margens. Ele define a altura/largura da área dentro do preenchimento, borda e margem do elemento.</p>
+      <h2 class="spacing-Y">Valores de altura e largura do CSS</h2>
+      <p class="spacing-y">As propriedades <code class="code-inline">height</code> e <code class="code-inline">width</code> podem ter os seguintes valores:</p>
+      <ul class="spacing-left">
+        <li>auto - Este é o padrão. O navegador calcula a altura e a largur.a</li>
+        <li>length- Define a altura/largura em px, cm, etc.</li>
+        <li>%- Define a altura/largura em porcentagem do bloco que o contém.</li>        
+        <li>initial- Define a altura/largura para seu valor padrão.</li>        
+        <li>inherit- A altura/largura será herdada de seu valor pai.</li>        
+      </ul>
+      <h2 class="spcing-Y">Exemplos de altura e largura de CSS</h2>
+      <div class="spacing-y" style="width: 200px; height: 50%;">Este elemento tem uma altura de 200 pixels e uma largura de 50%</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+  <div class="code-line">
+    <span class="code-comment">/* Defina a altura e a largura de um elemento &lt;div&gt;: */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">div</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">height</span>: 200px;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">width</span>: 50%;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-color</span>: powderblue;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+      <div class="spacing-y" style="width: 500px; height: 100px;">Este elemento tem uma altura de 100 pixels e uma largura de 500 pixels.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+<div class="code-line">
+  <span class="code-comment">/* Defina a altura e a largura de outro elemento &lt;div&gt;: */</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">div</span> <span class="code-punctuation">&#123;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">height</span>: 100px;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 500px;</span>
+</div>
+<div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: powderblue;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&#125;</span>
+</div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y"><span class="stand-out-word">Observação</span>: lembre-se de que as propriedades heighte widthnão incluem preenchimento, bordas ou margens! Eles definem a altura/largura da área dentro do preenchimento, borda e margem do elemento!</p>
+      <h2 class="spacing-y">Configurando a largura máxima</h2>      
+      <p class="spacing-y">A <code class="code-inline">max-width</code> pode ser especificado em valores de comprimento , como px, cm, etc., ou em porcentagem (%) do bloco que o contém, ou definido como nenhum (este é o padrão. Significa que não há largura máxima).</p>
+      <p class="spacing-y">O problema &lt;div&gt; acima ocorre quando a janela do navegador é menor que a largura do elemento (500px). O navegador então adiciona uma barra de rolagem horizontal à página.</p>
+      <p class="spacing-y">Usar <code class="code-inline">max-width</code> em vez disso, nessa situação, melhorará o manuseio de janelas pequenas pelo navegador.</p>
+      <p class="spacing-y"><span class="stand-out-word">Dica</span>: arraste a janela do navegador para menos de 500px de largura, para ver a diferença entre os dois divs!</p>
+      <div class="spacing-y" style="max-width: 500px; height: 100px;">Este elemento tem uma altura de 100 pixels e uma largura máxima de 500 pixels.</p>
+      <p class="spacing-y"><span class="stand-out-word">Observação</span>: se por algum motivo você usar a <code class="code-inline">width</code> propriedade e a propriedade <code class="code-inline">max-width</code> no mesmo elemento e o valor da propriedade <code class="code-inline">width</code> for maior que a propriedade <code class="code-inline">max-width</code> ; a propriedade <code class="code-inline">max-width</code> será usada (e a propriedade <code class="code-inline">width</code> será ignorada).</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+  <div class="code-line">
+    <span class="code-comment">/* Este elemento &lt;div&gt; tem uma altura de 100 pixels e uma largura máxima de 500 pixels: */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">div</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">max-width</span>: 500px;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">height</span>: 100px;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-color</span>: powderblue;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
         </code>
       </pre>
           </div>
