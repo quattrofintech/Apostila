@@ -113,6 +113,8 @@
           <a href="?t=margenscss" class="list-group-item">Margens CSS</a>
           <a href="?t=paddingcss" class="list-group-item">Preenchimento(padding) CSS</a>
           <a href="?t=heightwidthcss" class="list-group-item">Altura e largura(height, width) CSS</a>
+          <a href="?t=boxmodelcss" class="list-group-item">Modelo de Caixa(box model) CSS</a>
+          <a href="?t=contornocss" class="list-group-item">Contorno(Outline) CSS</a>
         </div>
       </div>
     </div>
@@ -198,6 +200,12 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=heightwidthcss">Altura e largura(height, width) CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=boxmodelcss">Modelo de Caixa(box model) CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=contornocss">Contorno(Outline) CSS</a>
       </li>
     </ul>
   </aside>
@@ -2854,7 +2862,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>    
     <section class="theme" data-title="margenscss" data-index="9" hidden>
       <h1 class="fw-bold spacing-y">Margens CSS</h1>
       <p class="spacing-Y">As margens são usadas para criar espaço ao redor dos elementos, fora de qualquer borda definida.</p>
@@ -3619,7 +3627,7 @@
       <h2 class="spacing-Y">Valores de altura e largura do CSS</h2>
       <p class="spacing-y">As propriedades <code class="code-inline">height</code> e <code class="code-inline">width</code> podem ter os seguintes valores:</p>
       <ul class="spacing-left">
-        <li>auto - Este é o padrão. O navegador calcula a altura e a largur.a</li>
+        <li>auto - Este é o padrão. O navegador calcula a altura e a largura.</li>
         <li>length- Define a altura/largura em px, cm, etc.</li>
         <li>%- Define a altura/largura em porcentagem do bloco que o contém.</li>        
         <li>initial- Define a altura/largura para seu valor padrão.</li>        
@@ -3747,6 +3755,631 @@
   </div>
         </code>
       </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="theme" data-title="boxmodelcss" data-index="12" hidden>
+      <h1 class="fw-bold spacing-y">Modelo de Caixa(box model) CSS</h1>
+      <p class="spacing-Y">Todos os elementos HTML podem ser considerados como caixas.</p>
+      <p class="spacing-Y">Em CSS, o termo "modelo de caixa" é usado quando se fala em design e layout.</p>
+      <h2 class="spacing-Y">O modelo de caixa CSS é essencialmente uma caixa que envolve cada elemento HTML. Consiste em: margens, bordas, preenchimento e o conteúdo real. A imagem abaixo ilustra o modelo da caixa:</h2>
+      <p class="spacing-y">Explicação das diferentes partes:</p>
+      <ul class="spacing-left">
+        <li>Conteúdo - O conteúdo da caixa, onde aparecem texto e imagens.</li>
+        <li>Padding - Limpa uma área ao redor do conteúdo. O enchimento é transparente.</li>
+        <li>%- Define a altura/largura em porcentagem do bloco que o contém.</li>        
+        <li>Border - Uma borda que contorna o preenchimento e o conteúdo.</li>        
+        <li>Margin - Limpa uma área fora da borda. A margem é transparente.</li>        
+      </ul>
+      <p class="spacing-y">O modelo de caixa nos permite adicionar uma borda ao redor dos elementos e definir o espaço entre os elementos.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+  <div class="code-line">
+    <span class="code-comment">/* Demonstração do modelo de caixa: */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">div</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">width</span>: 300px;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">border</span>: 15px solid green;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">padding</span>: 50px;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">margin</span>: 20px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-y">Largura e altura de um elemento</h2>      
+      <p class="spacing-y">Para definir a largura e a altura de um elemento corretamente em todos os navegadores, você precisa saber como funciona o box model.</p>
+      <p class="spacing-y"><span class="stand-out-word">Importante</span>: Ao definir as propriedades de largura e altura de um elemento com CSS, basta definir a largura e a altura da área de conteúdo . Para calcular o tamanho total de um elemento, você também deve adicionar preenchimento, bordas e margens.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+      <pre>
+        <code>
+  <div class="code-line">
+    <span class="code-comment">/* Este elemento &lt;div&gt; terá uma largura total de 350px: */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">div</span> <span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">width</span>: 320px;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">padding</span>: 10px;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">border</span>: 5px solid gray;</span>
+  </div>
+  <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">margin</span>: 0;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+        </code>
+      </pre>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Aqui está o cálculo:</p>
+      <ul class="spacing-left">
+        <li>320px (largura)</li>
+        <li>+ 20px (preenchimento esquerdo + direito)</li>
+        <li>+ 10px (borda esquerda + direita)</li>        
+        <li>+ 0px (margem esquerda + direita)</li>        
+        <li>= 350px</li>        
+      </ul>
+      <p class="spacing-y">A largura total de um elemento deve ser calculada assim:</p>
+      <p class="spacing-y">Largura total do elemento = largura + preenchimento esquerdo + preenchimento direito + borda esquerda + borda direita + margem esquerda + margem direita.</p>
+      <p class="spacing-y">A altura total de um elemento deve ser calculada assim:</p>
+      <p class="spacing-y">Altura total do elemento = altura + preenchimento superior + preenchimento inferior + borda superior + borda inferior + margem superior + margem inferior.</p>
+    </section>
+    <section class="theme" data-title="contornocss" data-index="13" hidden>
+      <h1 class="fw-bold spacing-y">Contorno do CSS</h1>
+      <p class="spacing-y">Um contorno é uma linha desenhada fora da borda do elemento.</p>
+      <div class="spacing-y" style="border: 1px solid black; outline: 1px solid green; width: fit-content 10px; ">Este elemento tem uma borda preta e um contorno verde com largura de 10px.</div>    
+      <p class="spacing-y">Um contorno é uma linha desenhada ao redor dos elementos, FORA das bordas, para fazer o elemento "se destacar".</p>
+      <p class="spacing-y">CSS tem as seguintes propriedades de contorno:</p>
+      <ul class="spacing-left">
+        <li><code class="code-inline">outline-style</code>.</li>
+        <li><code class="code-inline">outline-color</code>.</li>
+        <li><code class="code-inline">outline-width</code>.</li>
+        <li><code class="code-inline">outline-offset</code>.</li>
+        <li><code class="code-inline">outline</code>.</li>
+      </ul>
+      <p class="spacing-y">Observação: o contorno é diferente do <span class="code-inline">border</span> ! Ao contrário da borda, o contorno é desenhado fora da borda do elemento e pode se sobrepor a outro conteúdo. Além disso, o contorno NÃO faz parte das dimensões do elemento; a largura e a altura totais do elemento não são afetadas pela largura do contorno.</p>
+      <p class="spacing-y">A propriedade <code class="code-inline">outline-style</code> especifica o estilo do contorno e pode ter um dos seguintes valores:</p>
+      <ul class="spacing-left">
+        <li><code class="code-inline">dotted</code> - Define um contorno pontilhado.</li>
+        <li><code class="code-inline">dashed</code> - Define uma contorno tracejada</li>
+        <li><code class="code-inline">solid</code> - Define uma contorno sólida</li>
+        <li><code class="code-inline">double</code> - Define uma contorno dupla</li>
+        <li><code class="code-inline">groove</code> - Define uma contorno ranhurada 3D.</li>
+        <li><code class="code-inline">ridge</code> - Define uma contorno ondulada 3D. </li>
+        <li><code class="code-inline">inset</code> - Define uma contorno de inserção 3D.</li>
+        <li><code class="code-inline">outset</code> - Define uma esboço inicial 3D.</li>
+        <li><code class="code-inline">none</code> - Não define contorno /li>
+        <li><code class="code-inline">hidden</code> - Define uma contorno oculta</li>
+      </ul>
+      <p class="spacing-y">O exemplo a seguir mostra os diferentes valores <code class="code-inline">outline-style</code>:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- Demonstração dos diferentes estilos de esboço: --&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.dotted {<span class="example-text-color-1">outline-style</span>: dotted;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.dashed {<span class="example-text-color-1">outline-style</span>: dashed;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.solid {<span class="example-text-color-1">outline-style</span>: solid;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.double {<span class="example-text-color-1">outline-style</span>: double;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.groove {<span class="example-text-color-1">outline-style</span>: groove;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.ridge {<span class="example-text-color-1">outline-style</span>: ridge;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.inset {<span class="example-text-color-1">outline-style</span>: inset;}</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">p.outset {<span class="example-text-color-1">outline-style</span>: outset;}</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>
+            <span class="code-text" style="outline-style: 5px dotted red;">Contorno pontilhada</span>
+            <span class="code-text" style="outline-style: 5px dashed red;">Contorno traçada</span>
+            <span class="code-text" style="outline-style: 5px solid red;">Contorno sólida</span>
+            <span class="code-text" style="outline-style: 5px double red;">Contorno dupla</span>
+            <span class="code-text" style="outline-style: 5px groove red;">Contorno Estreita(Sulco), o efeito depende do valor de outline-color</span>
+            <span class="code-text" style="outline-style: 5px ridge red;">Contorno do cume, o efeito depende do valor de outline-color</span>
+            <span class="code-text" style="outline-style: 5px inset red;">Contorno embutida, o efeito depende do valor de outline-color</span>
+            <span class="code-text" style="outline-style: 5px outset red;">Contorno inicial, o efeito depende do valor de outline-color</span>    
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y"><span class="stand-out-word">Nota</span>: Nenhuma das outras propriedades do contorno (sobre as quais você aprenderá mais nos próximos capítulos) terá QUALQUER efeito, a menos que a propriedade <code class="code-inline">outline-style</code> seja definida!</p>
+      <h2 class="spacing-Y">Largura da Contorno do CSS</h2>
+      <p class="spacing-y">A propriedade <code class="code-inline">outline-width</code> especifica a largura do contorno e pode ter um dos seguintes valores:</p>
+      <ul class="spacing-left">
+        <li>fino (normalmente 1px).</li>
+        <li>médio (normalmente 3px).</li>
+        <li>espessura (normalmente 5px).</li>
+        <li>Um tamanho específico (em px, pt, cm, em, etc).</li>
+      </ul>
+      <p class="spacing-y">O exemplo a seguir mostra alguns contornos com diferentes larguras:</p>
+      <div class="spacing-y" style="outline-width: 1px solid red;">Um contorno fino.</div>
+      <div class="spacing-y" style="outline-width: 3px solid red;">Um contorno médio.</div>
+      <div class="spacing-y" style="outline-width: 5px solid red;">Um contorno grosso.</div>
+      <div class="spacing-y" style="outline-width: 4px solid red;">Um contorno de 4px de espessura.</div>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">/* Demonstração das diferentes larguras de borda: */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p.ex1</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-color</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-width</span>: thin;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-color</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-width</span>: medium;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+  <div class="code-line">
+    <span class="code-tag">p.ex3</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-color</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-width</span>: thick;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+  <div class="code-line">
+    <span class="code-tag">p.ex4</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-color</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-width</span>: 4px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>  
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-text" style="outline: thin solid red;">thin outline-width</span>            
+            <span class="code-text" style="outline: medium solid red;">medium outline-width</span>
+            <span class="code-text" style="outline: thick solid red;">thick outline-width</span>
+            <span class="code-text" style="outline: 4px solid red;">4px outline-width</span>            
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Cor do Contorno do CSS</h2>
+      <p class="spacing-y">A propriedade <code class="code-inline">outline-color</code> é usada para definir a cor do contorno.</p>
+      <ul class="spacing-left">
+        <li>nome - especifique um nome de cor, como "vermelho".</li>
+        <li>HEX - especifique um valor hexadecimal, como "#ff0000".</li>
+        <li>RGB - especifique um valor RGB, como "rgb(255,0,0)".</li>
+        <li>HSL - especifique um valor HSL, como "hsl(0, 100%, 50%)".</li>
+        <li>inverter - realiza uma inversão de cores (o que garante que o contorno fique visível, independentemente da cor do fundo)</li>
+      </ul>
+      <p class="spacing-y">O exemplo a seguir mostra alguns contornos diferentes com cores diferentes. Observe também que esses elementos também possuem uma borda preta fina dentro do contorno:</p>
+      <div class="spacing-y" style="outline-color: 1px solid red;">Um contorno vermelho sólido.</div>
+      <div class="spacing-y" style="outline-color: 1px dotted yellow;">Um contorno amarelo pontilhado.</div>
+      <div class="spacing-y" style="outline-color: 1px outset gray;">Um contorno cinza inicial.</div>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p.ex1</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 2px solid gray;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-color</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+  <div class="code-line">
+    <span class="code-tag">p.ex2</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 2px solid gray;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-style</span>: dotted;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+  <div class="code-line">
+    <span class="code-tag">p.ex3</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 2px solid gray;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-style</span>: outset;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-color</span>: green;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>      
+      <h2>Valores HEX</h2>
+      <p class="spacing-y">A cor do contorno também pode ser especificada usando um valor hexadecimal (HEX):</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">/* Demonstração das diferentes larguras de borda: */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-color</span>: #ff0000;  <span class="code-comment">/* vermelho */</span></span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Valores RGB</h2>
+      <p class="spacing-y">Ou usando valores RGB:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-color</span>: rgb(255, 0, 0);</span> <span class="code-comment">/* vermelho */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>      
+      <h2>Valores HSL</h2>
+      <p class="spacing-y">Você também pode usar valores HSL:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-color</span>: #hsl(0, 100%, 50%);</span> <span class="code-comment">/* vermelho */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>  
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">CSS Outline - Propriedade abreviada</h2>
+      <p class="spacing-y">A propriedade <code class="code-inline">outline</code> é uma propriedade abreviada para definir as seguintes propriedades de contorno individuais:</p>
+      <ul class="spacing-left">
+        <li><code class="code-inline">outline-style</code>(Obrigatório).</li>
+        <li><code class="code-inline">outline-color</code>.</li>
+        <li><code class="code-inline">outline-width</code>.</li>
+      </ul>
+      <p class="spacing-y">A propriedade <code class="code-inline">outline</code> é especificada como um, dois ou três valores da lista acima. A ordem dos valores não importa.</p>
+      <p class="spacing-y">O exemplo a seguir mostra alguns contornos especificados com a <code class="code-inline">outline</code> propriedade abreviada:</p>
+      <div class="spacing-y" style="outline: 1px dashed gray;">Um contorno tracejado.</div>
+      <div class="spacing-y" style="outline: 1px dotted red;">Um contorno vermelho pontilhado.</div>
+      <div class="spacing-y" style="outline: 5px solid yellow;">Um contorno amarelo sólido de 5px.</div>
+      <div class="spacing-y" style="outline: thick ridge pink;">Um contorno rosa grosso cume.</div>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p.ex1</span> <span class="code-punctuation">&#123;</span><span class="code-text"><span class="example-text-color-1">outline</span>: dashed;</span> <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p.ex2</span> <span class="code-punctuation">&#123;</span><span class="code-text"><span class="example-text-color-1">outline</span>: dotted red;</span> <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p.ex3</span> <span class="code-punctuation">&#123;</span><span class="code-text"><span class="example-text-color-1">outline</span>: 5px solid yellow;</span> <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p.ex4</span> <span class="code-punctuation">&#123;</span><span class="code-text"><span class="example-text-color-1">outline</span>: thick ridge pink;</span> <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Deslocamento do Contorno do CSS</h2>
+      <p class="spacing-y">A propriedade <code class="code-inline">outline-offset</code> adiciona espaço entre um contorno e a borda/borda de um elemento. O espaço entre um elemento e seu contorno é transparente.</p>
+      <p class="spacing-y">O exemplo a seguir especifica um contorno 15px fora da borda da borda:</p>
+      <div class="spacing-y" style="margin: 30px; border: 1px solid yellow; outline: 1px solid red; outline-offset: 15px;">Este parágrafo tem um contorno de 15px fora da borda da borda.</div>     
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 30px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid black;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline</span>: 1px solid red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-offset</span>: 15px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>   
+      <p class="spacing-y">O exemplo a seguir mostra que o espaço entre um elemento e seu contorno é transparente:</p>
+      <div class="spacing-y" style="margin: 30px; background: yellow; border: 1px solid red; outline: 1px solid gray; outline-offset: 15px;">Este parágrafo tem um contorno de 15px fora da borda da borda.</div>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 30px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline</span>: 1px solid gray;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">outline-offset</span>: 15px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
           </div>
         </div>
       </div>
