@@ -2288,7 +2288,8 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
         <p><span class="stand-out-word">Nota:</span> O nome de uma pessoa não é o título de uma obra.
         </p>
         <p>O texto no elemento <code class="code-inline">&lt;quote&gt;</code> geralmente é renderizado em
-          <i>itálico</i>.</p>
+          <i>itálico</i>.
+        </p>
         <div class="example-code">
           <div class="code-title d-flex align-items-center justify-content-between">
             <div>
@@ -2402,8 +2403,8 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
             </div>
           </div>
           <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-          <div class="code-body textocod">
-            <pre>
+            <div class="code-body textocod">
+              <pre>
           <code>
 <div class="code-line">
 <span class="code-comment">&lt;!-- Isto é um comentario no html --&gt;</span>
@@ -2412,13 +2413,104 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
 <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Isso é um parágrafo</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
 </div>
 <div class="code-line">
-  <span class="code-comment">&lt;!-- Lembre de adicionar mais informações aqui --&gt;</span>
+<span class="code-comment">&lt;!-- Lembre de adicionar mais informações aqui --&gt;</span>
   </div>
 
                   </code>
               </pre>
+            </div>
           </div>
         </div>
+        <h2 class="spacing-y">Ocultar Conteúdo</h2>
+        <p>Os comentários podem ser usados para ocultar o conteúdo.
+        </p>
+        <p>Isso pode ser útil se você ocultar o conteúdo temporariamente:
+        </p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="code-body textocod">
+              <pre>
+          <code>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Isso é um parágrafo</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-comment">&lt;!-- &lt;p&gt;Isso é outro parágrafo&lt;/p&gt; --&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Isso é um parágrafo também</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+  <p>Você também pode ocultar mais de uma linha. Tudo entre o <span class="code-comment">&lt;!-- </span>e o <span class="code-comment">--&gt;</span> ficará oculto na tela.</p>
+</div>
+
+                  </code>
+              </pre>
+            </div>
+            <div class="code-support col">
+              <p>Isso é um parágrafo</p>
+              <!-- <p>Isso é outro parágrafo</p> -->
+              <p>Isso é um parágrafo também</p>
+            </div>
+          </div>
+        </div>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="code-body textocod">
+              <pre>
+          <code>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Isso é um parágrafo</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-comment">&lt;!--</span>
+</div>
+<div class="code-line">
+<span class="code-comment">&lt;p&gt;Isso é outro parágrafo&lt;/p&gt;</span>
+</div> 
+<div class="code-line">
+<span class="code-comment">&lt;img border="0" src="pic_trulli.jpg" alt="Trulli"&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-comment">
+--&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Isso é um parágrafo também</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+  <p>Comentários também são ótimos para depurar HTML, porque você pode comentar linhas de código HTML, uma de cada vez, para procurar erros.</p>
+</div>
+
+                  </code>
+              </pre>
+            </div>
+            <div class="code-support col">
+              <p>Isso é um parágrafo</p>
+              <!-- <p>Isso é outro parágrafo</p> -->
+              <p>Isso é um parágrafo também</p>
+            </div>
+          </div>
         </div>
 
       </section>
