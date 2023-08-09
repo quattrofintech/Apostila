@@ -2551,7 +2551,8 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       <section class="theme" data-title="coreshtml" data-index="9" hidden>
 
         <h1 class="fw-bold spacing-y">Cores HTML</h1>
-        <p>As cores HTML são especificadas com nomes de cores predefinidos ou com valores RGB, HEX, HSL, RGBA ou HSLA.</p>
+        <p>As cores HTML são especificadas com nomes de cores predefinidos ou com valores RGB, HEX, HSL, RGBA ou HSLA.
+        </p>
         <h2 class="spacing-y">Nome de Cores</h2>
         <p>Em HTML, uma cor pode ser especificada usando um nome de cor:</p>
         <div class="example-code">
@@ -2590,16 +2591,48 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
      <span class="code-text" style="background-color: violet;">Rosa</span>
     </div>
     <div class="code-line">
-     <span class="code-text" style="background-color: lightgray;">Cinza</span>
+     <span class="code-text" style="background-color: lightgray;">Cinza Claro</span>
     </div>
                 </code>
               </pre>
             </div>
-         </div>
+          </div>
         </div>
         <p>O HTML suporta <span class="stand-out-word">140 nomes de cores padrão.</span></p>
-
-
+        <h2 class="spacing-y">Cores HTML RGB e RGBA</h2>
+        <p>Um valor de cor RGB representa as fontes de luz VERMELHA, VERDE e AZUL.</p>
+        <p>Um valor de cor RGBA é uma extensão de RGB com um canal Alfa (opacidade).</p>
+        <h2 class="spacing-y">Valores de cores RGB</h2>
+        <p>Em HTML, uma cor pode ser especificada como um valor RGB, usando esta fórmula:</p>
+        <p class="stand-out-word">rgb ( vermelho, verde , azul )</p>
+        <p>Cada parâmetro (vermelho, verde e azul) define a intensidade da cor com um valor entre 0 e 255.</p>
+        <p>Isso significa que existem 256 x 256 x 256 = 16777216 cores possíveis!</p>
+        <p>Por exemplo, rgb(255, 0, 0) é exibido como vermelho, porque o vermelho é definido como seu valor mais alto (255) e os outros dois (verde e azul) são definidos como 0.</p>
+        <p>Outro exemplo, rgb(0, 255, 0) é exibido como verde, porque o verde é definido como seu valor mais alto (255) e os outros dois (vermelho e azul) são definidos como 0.</p>
+        <p>Para exibir preto, defina todos os parâmetros de cor como 0, assim: rgb(0, 0, 0).</p>
+        <p>Para exibir branco, defina todos os parâmetros de cor para 255, assim: rgb(255, 255, 255).</p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-support row" style="margin-left: auto; margin-right: auto;">
+            <span style="background-color: rgb(255, 0, 0); width: 300px; height: 30px; text-align: center;">rgb(255, 0, 0)</span>
+            <span style="background-color: rgb(0, 0, 255);width: 300px; height: 30px; text-align: center;">rgb(0, 0, 255)</span>
+            <span style="background-color: rgb(60, 179, 113);width: 300px; height: 30px; text-align: center;">rgb(60, 179, 113)</span>
+            <span style="background-color: rgb(238, 130, 238);width: 300px; height: 30px; text-align: center;">rgb(238, 130, 238)</span>
+            <span style="background-color: rgb(255, 165, 0);width: 300px; height: 30px; text-align: center;">rgb(255, 165, 0)</span>
+            <span style="background-color: rgb(106, 90, 205);width: 300px; height: 30px; text-align: center;">rgb(106, 90, 205)</span>
+        </div>
+        </div>
+        </div>
 
 
 
