@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;500;700&display=swap%27');
+@font-face {
+    font-family: 'Copperplate';
+    src: url('caminho/para/copperplate.ttf') format('truetype');
+    font-family: 'Papyrus';
+    src: url('caminho/para/papyrus.ttf') format('truetype');
+    font-family: 'Copperplate';
+    src: url('caminho/para/copperplate.ttf') format('truetype');
+    font-family: 'Lucida Handwriting';
+    src: url('caminho/para/lucida-handwriting.ttf') format('truetype');
+    font-family: 'Brush Script MT';
+    src: url('caminho/para/brush-script-mt.ttf') format('truetype');
+    font-family: 'Monaco';
+    src: url('caminho/para/monaco.ttf') format('truetype');
+  }
 
 * {
     margin: 0;
