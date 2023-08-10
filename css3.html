@@ -5698,18 +5698,12 @@
         </div>
       </div>
       <h2 class="spacing-Y">Fontes CSS seguras da Web</h2>
-      <p class="spacing-y">A propriedade <code class="code-inline">outline-width</code> especifica a largura do contorno e pode ter um dos seguintes valores:</p>
-      <ul class="spacing-left">
-        <li>fino (normalmente 1px).</li>
-        <li>médio (normalmente 3px).</li>
-        <li>espessura (normalmente 5px).</li>
-        <li>Um tamanho específico (em px, pt, cm, em, etc).</li>
-      </ul>
-      <p class="spacing-y">O exemplo a seguir mostra alguns contornos com diferentes larguras:</p>
-      <div class="spacing-y" style="outline-width: 1px solid red;">Um contorno fino.</div>
-      <div class="spacing-y" style="outline-width: 3px solid red;">Um contorno médio.</div>
-      <div class="spacing-y" style="outline-width: 5px solid red;">Um contorno grosso.</div>
-      <div class="spacing-y" style="outline-width: 4px solid red;">Um contorno de 4px de espessura.</div>
+      <h3 class="spacing-y">O que são fontes seguras da Web?</h3>
+      <p class="spacing-y">Fontes seguras da Web são fontes instaladas universalmente em todos os navegadores e dispositivos.</p>
+      <h3 class="spacing-y">Fontes Alternativas</h3>
+      <p class="spacing-y">No entanto, não existem fontes 100% totalmente seguras para a Web. Sempre existe a chance de uma fonte não ser encontrada ou instalada corretamente.</p>
+      <p class="spacing-y">Portanto, é muito importante sempre usar fontes alternativas.</p>
+      <p class="spacing-y">Isso significa que você deve adicionar uma lista de "fontes de backup" semelhantes na <code class="code-inline">font-family</code> propriedade. Se a primeira fonte não funcionar, o navegador tentará a próxima, a próxima e assim por diante. Sempre termine a lista com um nome de família de fonte genérico.</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -5726,102 +5720,358 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-comment">/* Demonstração das diferentes larguras de borda: */</span>
+    <span class="code-comment">/* Aqui, existem três tipos de fonte: Tahoma, Verdana e sans-serif. A segunda e terceira fontes são backups, caso a primeira não seja encontrada. */</span>
   </div>
   <div class="code-line">
-    <span class="code-tag">p.ex1</span><span class="code-punctuation">&#123;</span>
+    <span class="code-tag">p</span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid red;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-color</span>: red;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-width</span>: thin;</span>
+    <span class="code-text"><span class="example-text-color-1">font-family</span>: Tahoma, Verdana, sans-serif;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">Melhores fontes seguras da Web para HTML e CSS</h3>
+      <p class="spacing-y">A lista a seguir apresenta as melhores fontes seguras da Web para HTML e CSS:</p>
+      <ul class="spacing-left">
+        <li>Arial (sans serif).</li>
+        <li>Verdana (sans serif).</li>
+        <li>Tahoma (sans serif).</li>
+        <li>Trebuchet MS (sans serif).</li>
+        <li>Times New Roman (serif).</li>
+        <li>Geórgia  (serif).</li>
+        <li>Garamond  (serif).</li>
+        <li>Courier New (monospace).</li>
+        <li>Brush Script MT (cursiva).</li>
+      </ul>
+      <p class="spacing-y"><span class="stand-out-word">Observação</span>: antes de publicar seu site, sempre verifique como suas fontes aparecem em diferentes navegadores e dispositivos e sempre use fontes alternativas !</p>
+      <h2 class="spacing-Y">Arial (sans-serif)</h2>
+      <p class="spacing-y">Arial é a fonte mais amplamente usada para mídia online e impressa. Arial também é a fonte padrão no Google Docs.</p>
+      <p class="spacing-y">Arial é uma das fontes da web mais seguras e está disponível em todos os principais sistemas operacionais.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-text" style="font-size: 28px; font-family: Arial, Helvetica, sans-serif;">Lorem ipsum dolor sit amet</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text" style="font-family: Arial, Helvetica, sans-serif;">Lorem ipsum dolor sit amet</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text" style="font-family: Arial, Helvetica, sans-serif;" >0 1 2 3 4 5 6 7 8 9</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div> 
+      <h2 class="spacing-Y">Verdana (sans-serif)</h2>
+      <p class="spacing-y">Verdana é uma fonte muito popular. Verdana é facilmente legível, mesmo para tamanhos de fonte pequenos.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-text" style="font-size: 28px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Lorem ipsum dolor sit amet</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Lorem ipsum dolor sit amet</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">0 1 2 3 4 5 6 7 8 9</span>
   </div>   
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div> 
+      <h2 class="spacing-Y">Tahoma (sans-serif)</h2>
+      <p class="spacing-y">A fonte Tahoma tem menos espaço entre os caracteres.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid red;</span>
+    <span class="code-text" style="font-size: 28px; font-family: Tahoma, Verdana, sans-serif;">Lorem ipsum dolor sit amet</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
+    <span class="code-text" style="font-family: Tahoma, Geneva, Verdana, sans-serif;">Lorem ipsum dolor sit amet</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-color</span>: red;</span>
+    <span class="code-text" style="font-family: Tahoma, Geneva, Verdana, sans-serif;">0 1 2 3 4 5 6 7 8 9</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div> 
+      <h2 class="spacing-Y">Trebuchet MS (sans-serif)</h2>
+      <p class="spacing-y">Trebuchet MS foi desenvolvido pela Microsoft em 1996. Use esta fonte com cuidado. Não suportado por todos os sistemas operacionais móveis.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-text" style="font-size: 28px; font-family: 'Trebuchet MS', sans-serif;">Lorem ipsum dolor sit amet</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-width</span>: medium;</span>
+    <span class="code-text" style="font-family: 'Trebuchet MS', sans-serif;">Lorem ipsum dolor sit amet</span>
   </div>
   <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>   
+    <span class="code-text" style="font-family: 'Trebuchet MS', sans-serif">0 1 2 3 4 5 6 7 8 9</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div> 
+      <h2 class="spacing-Y">Times New Roman (serif)</h2>
+      <p class="spacing-y">A Times New Roman é uma das fontes mais conhecidas do mundo. Parece profissional e é usado em muitos jornais e sites de "notícias".</p>
+      <p class="spacing-y">Também é a fonte principal para dispositivos e aplicativos do Windows.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
   <div class="code-line">
-    <span class="code-tag">p.ex3</span><span class="code-punctuation">&#123;</span>
+    <span class="code-text" style="font-size: 28px; font-family: 'Times New Roman', Times, serif!important;">Lorem ipsum dolor sit amet</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid red;</span>
+    <span class="code-text" style="font-family: 'Times New Roman', Times, serif;">Lorem ipsum dolor sit amet</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
+    <span class="code-text" style="font-family: 'Times New Roman', Times, serif;">0 1 2 3 4 5 6 7 8 9</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div> 
+      <h2 class="spacing-Y">Georgia (serif)</h2>
+      <p class="spacing-y">Georgia é uma fonte elegante com serifa. É muito legível em diferentes tamanhos de fonte, por isso é um bom candidato para design responsivo para dispositivos móveis.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-text" style="font-size: 28px; font-family: Georgia, 'Times New Roman', Times, serif!important;">Lorem ipsum dolor sit amet</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-color</span>: red;</span>
+    <span class="code-text" style="font-family: Georgia, 'Times New Roman', Times, serif!important;">Lorem ipsum dolor sit amet</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-width</span>: thick;</span>
+    <span class="code-text" style="font-family: Georgia, 'Times New Roman', Times, serif!important;">0 1 2 3 4 5 6 7 8 9</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div> 
+      <h2 class="spacing-Y">Garamond (serif)</h2>
+      <p class="spacing-y">Garamond é uma fonte clássica usada para muitos livros impressos. Tem uma aparência atemporal e boa legibilidade.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-text" style="font-size: 28px; font-family: 'Garamond', serif">Lorem ipsum dolor sit amet</span>
   </div>
   <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>   
-  <div class="code-line">
-    <span class="code-tag">p.ex4</span><span class="code-punctuation">&#123;</span>
+    <span class="code-text" style="font-family: 'Garamond', serif;">Lorem ipsum dolor sit amet</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid red;</span>
+    <span class="code-text" style="font-family: 'Garamond', serif;">0 1 2 3 4 5 6 7 8 9</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div> 
+      <h2 class="spacing-Y">Courier New (monospace)</h2>
+      <p class="spacing-y">Courier New é a fonte serif monoespaçada mais usada. Courier New é frequentemente usado com exibições de codificação e muitos provedores de e-mail o usam como fonte padrão. Courier New também é a fonte padrão para roteiros de filmes.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-text" style="font-size: 28px; font-family: 'Courier New', Courier, monospace;">Lorem ipsum dolor sit amet</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
+    <span class="code-text" style="font-family: 'Courier New', Courier, monospace;">Lorem ipsum dolor sit amet</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-color</span>: red;</span>
+    <span class="code-text" style="font-family: 'Courier New', Courier, monospace;">0 1 2 3 4 5 6 7 8 9</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div> 
+      <h2 class="spacing-Y">Brush Script MT (Cursiva)</h2>
+      <p class="spacing-y">A fonte Brush Script MT foi projetada para imitar a caligrafia. É elegante e sofisticado, mas pode ser difícil de ler. Use-o com cuidado.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-text" style="font-size: 28px; font-family: 'Brush Script MT', cursive;">Lorem ipsum dolor sit amet</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-width</span>: 4px;</span>
+    <span class="code-text" style="font-family: 'Brush Script MT', cursive;">Lorem ipsum dolor sit amet</span>
   </div>
   <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>  
+    <span class="code-text" style="font-family: 'Brush Script MT', cursive;">0 1 2 3 4 5 6 7 8 9</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div> 
+      <h2>Alternativas de fontes CSS</h2>
+      <h3 class="spacing-Y">Fallbacks de fonte normalmente usados</h3>
+      <p class="spacing-y">Abaixo estão alguns fallbacks de fontes normalmente usados, organizados pelas 5 famílias de fontes genéricas:</p>
+      <ul class="spacing-left">
+        <li>serif.</li>
+        <li>sans-serif.</li>
+        <li>Monospace.</li>
+        <li>Cursive</li>
+        <li>Fantasy.</li>
+      </ul>
+      <h3>Fontes serif</h3>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">font-family</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">"Times New Roman", Times, serif</span>
+  </div>
               </code>
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
-            <span class="code-text" style="outline: thin solid red;">thin outline-width</span>            
-            <span class="code-text" style="outline: medium solid red;">medium outline-width</span>
-            <span class="code-text" style="outline: thick solid red;">thick outline-width</span>
-            <span class="code-text" style="outline: 4px solid red;">4px outline-width</span>            
+            <span class="code-text" style="font-family: 'Times New Roman', Times, serif; font-size: 25px; font-weight: bold;">Esse é um cabeçalho</span>
+            <span class="code-text" style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">Esse é um parágrafo</span>   
           </div>
         </div>
       </div>
-      <h2 class="spacing-Y">Cor do Contorno do CSS</h2>
-      <p class="spacing-y">A propriedade <code class="code-inline">outline-color</code> é usada para definir a cor do contorno.</p>
-      <ul class="spacing-left">
-        <li>nome - especifique um nome de cor, como "vermelho".</li>
-        <li>HEX - especifique um valor hexadecimal, como "#ff0000".</li>
-        <li>RGB - especifique um valor RGB, como "rgb(255,0,0)".</li>
-        <li>HSL - especifique um valor HSL, como "hsl(0, 100%, 50%)".</li>
-        <li>inverter - realiza uma inversão de cores (o que garante que o contorno fique visível, independentemente da cor do fundo)</li>
-      </ul>
-      <p class="spacing-y">O exemplo a seguir mostra alguns contornos diferentes com cores diferentes. Observe também que esses elementos também possuem uma borda preta fina dentro do contorno:</p>
-      <div class="spacing-y" style="outline-color: 1px solid red;">Um contorno vermelho sólido.</div>
-      <div class="spacing-y" style="outline-color: 1px dotted yellow;">Um contorno amarelo pontilhado.</div>
-      <div class="spacing-y" style="outline-color: 1px outset gray;">Um contorno cinza inicial.</div>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -5838,57 +6088,321 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-tag">p.ex1</span><span class="code-punctuation">&#123;</span>
+    <span class="code-tag">font-family</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 2px solid gray;</span>
+    <span class="code-tag">Georgia, serif;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-text" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 25px; font-weight: bold;">Esse é um cabeçalho</span>
+            <span class="code-text" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 16px;">Esse é um parágrafo</span>   
+          </div>
+        </div>
+      </div>      
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">font-family</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
+    <span class="code-tag">Garamond, serif</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-text" style="font-family: 'Garamond', serif; font-size: 25px; font-weight: bold;">Esse é um cabeçalho</span>
+            <span class="code-text" style="font-family: 'Garamond', serif; font-size: 16px;">Esse é um parágrafo</span>   
+          </div>
+        </div>
+      </div>      
+      <h3>Fontes sans-serif</h3>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">font-family</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-color</span>: red;</span>
+    <span class="code-tag">Arial, Helvetica, sans-serif</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-text" style="font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: bold;">Esse é um cabeçalho</span>
+            <span class="code-text" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Esse é um parágrafo</span>   
+          </div>
+        </div>
+      </div>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">font-family</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">Tahoma, Verdana, sans-serif</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-text" style="font-family: Tahoma, Verdana, sans-serif; font-size: 25px; font-weight: bold;">Esse é um cabeçalho</span>
+            <span class="code-text" style="font-family: Tahoma, Verdana, sans-serif; font-size: 16px;">Esse é um parágrafo</span>   
+          </div>
+        </div>
+      </div>      
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">font-family</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">'Trebuchet MS', Helvetica, sans-serif</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-text" style="font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 25px; font-weight: bold;">Esse é um cabeçalho</span>
+            <span class="code-text" style="font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 16px;">Esse é um parágrafo</span>   
+          </div>
+        </div>
+      </div>      
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">font-family</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">Geneva, Verdana, sans-serif</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-text" style="font-family: Geneva, Verdana, sans-serif; font-size: 25px; font-weight: bold;">Esse é um cabeçalho</span>
+            <span class="code-text" style="font-family: Geneva, Verdana, sans-serif; font-size: 16px;">Esse é um parágrafo</span>   
+          </div>
+        </div>
+      </div>    
+      <h3>Fontes monospace</h3>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">font-family</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">"Courier New", Courier, monospace</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-text" style="font-family: 'Courier New', Courier, monospace; font-size: 25px; font-weight: bold;">Esse é um cabeçalho</span>
+            <span class="code-text" style="font-family: 'Courier New', Courier, monospace; font-size: 16px;">Esse é um parágrafo</span>   
+          </div>
+        </div>
+      </div>  
+      <h3>Fontes cursivas</h3>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">font-family</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">"Brush Script MT", cursive</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-text" style="font-family: 'Brush Script MT', cursive; font-size: 25px; font-weight: bold;">Esse é um cabeçalho</span>
+            <span class="code-text" style="font-family: 'Brush Script MT', cursive; font-size: 16px;">Esse é um parágrafo</span>   
+          </div>
+        </div>
+      </div>  
+      <h3>Fontes fantasia</h3>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">font-family</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">Copperplate, Papyrus, fantasy</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-text" style="font-family: Copperplate, Papyrus, fantasy; font-size: 25px; font-weight: bold;">Esse é um cabeçalho</span>
+            <span class="code-text" style="font-family: Copperplate, Papyrus, fantasy; font-size: 16px;">Esse é um parágrafo</span>   
+          </div>
+        </div>
+      </div>  
+      <h2 class="spacing-Y">Estilo de fonte CSS</h2>
+      <p class="spacing-y">A propriedade <code class="code-inline">font-style</code> é usada principalmente para especificar texto em itálico.</p>
+      <p class="spacing-y">Esta propriedade tem três valores:</p>
+      <ul class="spacing-left">
+        <li>normal - O texto é mostrado normalmente.</li>
+        <li>itálico - O texto é mostrado em itálico.</li>
+        <li>oblíquo - O texto está "inclinado" (oblíquo é muito semelhante ao itálico, mas menos suportado).</li>
+      </ul>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p.normal</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-style</span>: normal;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
   </div>   
   <div class="code-line">
-    <span class="code-tag">p.ex2</span><span class="code-punctuation">&#123;</span>
+    <span class="code-tag">p.italic</span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 2px solid gray;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-style</span>: dotted;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-color</span>: yellow;</span>
+    <span class="code-text"><span class="example-text-color-1">font-style</span>: italic;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
   </div>   
   <div class="code-line">
-    <span class="code-tag">p.ex3</span><span class="code-punctuation">&#123;</span>
+    <span class="code-tag">p.oblique</span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 2px solid gray;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-style</span>: outset;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-color</span>: green;</span>
+    <span class="code-text"><span class="example-text-color-1">font-style</span>: oblique;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
-  </div>
+  </div>   
               </code>
             </pre>
           </div>
         </div>
       </div>      
-      <h2>Valores HEX</h2>
-      <p class="spacing-y">A cor do contorno também pode ser especificada usando um valor hexadecimal (HEX):</p>
+      <h2>Espessura da fonte</h2>
+      <p class="spacing-y">A propriedade <code class="code-inline">font-weight</code> especifica o peso de uma fonte:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -5905,50 +6419,19 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-comment">/* Demonstração das diferentes larguras de borda: */</span>
+    <span class="code-tag">p.normal</span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-color</span>: #ff0000;  <span class="code-comment">/* vermelho */</span></span>
+    <span class="code-text"><span class="example-text-color-1">font-weight</span>: normal;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
-  </div>
-              </code>
-            </pre>
-          </div>
-        </div>
-      </div>
-      <h2 class="spacing-Y">Valores RGB</h2>
-      <p class="spacing-y">Ou usando valores RGB:</p>
-      <div class="example-code">
-        <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-            <p>Exemplo CSS</p>
-          </div>
-          <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Copiar o codigo" id="btncopiar"
-              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-          <div class="code-body col textocod">
-            <pre>
-              <code>
+  </div>   
   <div class="code-line">
-    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
+    <span class="code-tag">p.thick</span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-color</span>: rgb(255, 0, 0);</span> <span class="code-comment">/* vermelho */</span>
+    <span class="code-text"><span class="example-text-color-1">font-weight</span>: bold;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
@@ -5957,9 +6440,10 @@
             </pre>
           </div>
         </div>
-      </div>      
-      <h2>Valores HSL</h2>
-      <p class="spacing-y">Você também pode usar valores HSL:</p>
+      </div> 
+      <h2 class="spacing-Y">Variante de fonte</h2>
+      <p class="spacing-y">A propriedade <code class="code-inline">font-variant</code> especifica se um texto deve ou não ser exibido em uma fonte minúscula.</p>
+      <p class="spacing-y">Em uma fonte minúscula, todas as letras minúsculas são convertidas em maiúsculas. No entanto, as letras maiúsculas convertidas aparecem em um tamanho de fonte menor do que as letras maiúsculas originais no texto.</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -5976,35 +6460,47 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-tag">p.one</span><span class="code-punctuation">&#123;</span>
+    <span class="code-tag">p.normal</span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-color</span>: #hsl(0, 100%, 50%);</span> <span class="code-comment">/* vermelho */</span>
+    <span class="code-text"><span class="example-text-color-1">font-variant</span>: normal;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
-  </div>  
+  </div>   
+  <div class="code-line">
+    <span class="code-tag">p.small</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-variant</span>: small-caps;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>   
               </code>
             </pre>
           </div>
         </div>
       </div>
-      <h2 class="spacing-Y">CSS Outline - Propriedade abreviada</h2>
-      <p class="spacing-y">A propriedade <code class="code-inline">outline</code> é uma propriedade abreviada para definir as seguintes propriedades de contorno individuais:</p>
+      <h2 class="spacing-Y">Tamanho da fonte CSS</h2>
+      <p class="spacing-y">A propriedade <code class="code-inline">font-size</code> define o tamanho do texto.</p>
+      <p class="spacing-y">Ser capaz de gerenciar o tamanho do texto é importante em web design. No entanto, você não deve usar ajustes de tamanho de fonte para fazer parágrafos parecerem títulos ou títulos parecerem parágrafos.</p>
+      <p class="spacing-y">Sempre use as tags HTML apropriadas, como &lt;h1&gt; - &lt;h6&gt; para títulos e &lt;p&gt; para parágrafos.</p>
+      <p class="spacing-y">O valor do tamanho da fonte pode ser um tamanho absoluto ou relativo.</p>
+      <p class="spacing-y">Tamanho absoluto:</p>
       <ul class="spacing-left">
-        <li><code class="code-inline">outline-style</code>(Obrigatório).</li>
-        <li><code class="code-inline">outline-color</code>.</li>
-        <li><code class="code-inline">outline-width</code>.</li>
+        <li>Define o texto para um tamanho especificado.</li>
+        <li>Não permite que um usuário altere o tamanho do texto em todos os navegadores (ruim por motivos de acessibilidade)</li>
+        <li>O tamanho absoluto é útil quando o tamanho físico da saída é conhecido.</li>
       </ul>
-      <p class="spacing-y">A propriedade <code class="code-inline">outline</code> é especificada como um, dois ou três valores da lista acima. A ordem dos valores não importa.</p>
-      <p class="spacing-y">O exemplo a seguir mostra alguns contornos especificados com a <code class="code-inline">outline</code> propriedade abreviada:</p>
-      <div class="spacing-y" style="outline: 1px dashed gray;">Um contorno tracejado.</div>
-      <div class="spacing-y" style="outline: 1px dotted red;">Um contorno vermelho pontilhado.</div>
-      <div class="spacing-y" style="outline: 5px solid yellow;">Um contorno amarelo sólido de 5px.</div>
-      <div class="spacing-y" style="outline: thick ridge pink;">Um contorno rosa grosso cume.</div>
+      <p class="spacing-y">Tamanho relativo:</p>
+      <ul class="spacing-left">
+        <li>Define o tamanho relativo aos elementos circundantes.</li>
+        <li>Permite que um usuário altere o tamanho do texto nos navegadores.</li>
+      </ul>
+      <p class="spacing-y"><span class="stand-out-word">Nota</span>: Se você não especificar um tamanho de fonte, o tamanho padrão para texto normal, como parágrafos, é 16px (16px=1em).</p>
+      <h3 class="spacing-Y">Definir tamanho da fonte com pixels</h3>
+      <p class="spacing-y">Definir o tamanho do texto com pixels oferece controle total sobre o tamanho do texto:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -6021,55 +6517,28 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-tag">p.ex1</span> <span class="code-punctuation">&#123;</span><span class="code-text"><span class="example-text-color-1">outline</span>: dashed;</span> <span class="code-punctuation">&#125;</span>
+    <span class="code-tag">h1 </span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-tag">p.ex2</span> <span class="code-punctuation">&#123;</span><span class="code-text"><span class="example-text-color-1">outline</span>: dotted red;</span> <span class="code-punctuation">&#125;</span>
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: 40px;</span>
   </div>
   <div class="code-line">
-    <span class="code-tag">p.ex3</span> <span class="code-punctuation">&#123;</span><span class="code-text"><span class="example-text-color-1">outline</span>: 5px solid yellow;</span> <span class="code-punctuation">&#125;</span>
+    <span class="code-punctuation">&#125;</span>
   </div>
   <div class="code-line">
-    <span class="code-tag">p.ex4</span> <span class="code-punctuation">&#123;</span><span class="code-text"><span class="example-text-color-1">outline</span>: thick ridge pink;</span> <span class="code-punctuation">&#125;</span>
+    <span class="code-tag">h2 </span><span class="code-punctuation">&#123;</span>
   </div>
-              </code>
-            </pre>
-          </div>
-        </div>
-      </div>
-      <h2 class="spacing-Y">Deslocamento do Contorno do CSS</h2>
-      <p class="spacing-y">A propriedade <code class="code-inline">outline-offset</code> adiciona espaço entre um contorno e a borda/borda de um elemento. O espaço entre um elemento e seu contorno é transparente.</p>
-      <p class="spacing-y">O exemplo a seguir especifica um contorno 15px fora da borda da borda:</p>
-      <div class="spacing-y" style="margin: 30px; border: 1px solid yellow; outline: 1px solid red; outline-offset: 15px;">Este parágrafo tem um contorno de 15px fora da borda da borda.</div>     
-      <div class="example-code">
-        <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-            <p>Exemplo CSS</p>
-          </div>
-          <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Copiar o codigo" id="btncopiar"
-              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-          <div class="code-body col textocod">
-            <pre>
-              <code>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: 30px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
   <div class="code-line">
     <span class="code-tag">p </span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">margin</span>: 30px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid black;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline</span>: 1px solid red;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-offset</span>: 15px;</span>
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: 14px;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
@@ -6079,8 +6548,11 @@
           </div>
         </div>
       </div>   
-      <p class="spacing-y">O exemplo a seguir mostra que o espaço entre um elemento e seu contorno é transparente:</p>
-      <div class="spacing-y" style="margin: 30px; background: yellow; border: 1px solid red; outline: 1px solid gray; outline-offset: 15px;">Este parágrafo tem um contorno de 15px fora da borda da borda.</div>
+      <p class="spacing-y"><span class="stand-out-word">Dica</span>: Se você usar pixels, ainda poderá usar a ferramenta de zoom para redimensionar a página inteira.</p>
+      <h3 class="spacing-Y">Definir tamanho da fonte com <code class="code-inline">em</code></h3>
+      <p class="spacing-y">Para permitir que os usuários redimensionem o texto (no menu do navegador), muitos desenvolvedores usam em em vez de pixels.</p>
+      <p class="spacing-y">1em é igual ao tamanho da fonte atual. O tamanho de texto padrão nos navegadores é 16px. Portanto, o tamanho padrão de 1em é 16px.</p>
+      <p class="spacing-y">O tamanho pode ser calculado de pixels para em usando esta fórmula: pixels /16= em</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -6097,22 +6569,28 @@
             <pre>
               <code>
   <div class="code-line">
+    <span class="code-tag">h1 </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: 2.5em;</span> <span class="code-comment">/* 40px/16=2.5em */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">h2 </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: 1.875em;</span> <span class="code-comment">/* 30px/16=1.875em */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
     <span class="code-tag">p </span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">margin</span>: 30px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background</span>: yellow;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid red;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline</span>: 1px solid gray;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-offset</span>: 15px;</span>
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: 0.875em;</span> <span class="code-comment">/* 14px/16=0.875em */</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
@@ -6122,6 +6600,94 @@
           </div>
         </div>
       </div>
+      <p class="spacing-y">No exemplo acima, o tamanho do texto em em é o mesmo do exemplo anterior em pixels. Porém, com o tamanho em, é possível ajustar o tamanho do texto em todos os navegadores.</p>
+      <p class="spacing-y">Infelizmente, ainda há um problema com versões mais antigas do Internet Explorer. O texto fica maior do que deveria quando aumentado e menor do que deveria quando reduzido.</p>
+      <h3 class="spacing-Y">Use uma combinação de porcentagem e <code class="code-inline">em</code></h3>
+      <p class="spacing-y">A solução que funciona em todos os navegadores é definir um tamanho de fonte padrão em porcentagem para o elemento &lt;body&gt;:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">body </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: 100%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">h1 </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: 2.5em;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">h2 </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: 1.875em;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: 0.875em;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">O tamanho do texto pode ser definido com uma <code class="code-inline">vw</code> unidade, o que significa a "largura da janela de visualização".</p>
+      <p class="spacing-y">Dessa forma, o tamanho do texto seguirá o tamanho da janela do navegador:</p>
+      <div class="spacing-Y"><h1 style="font-size:10vw">Olá Mundo</h1></div>
+      <p class="spacing-y">Redimensione a janela do navegador para ver como o tamanho da fonte é dimensionado.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">&lt;h1 <span class="example-text-color-1">style</span>="font-size:10vw"&gt;Olá Mundo&lt;/h1&gt;</span><span class="code-punctuation">&#123;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Viewport é o tamanho da janela do navegador. 1vw = 1% da largura da janela de visualização. Se a janela de visualização tiver 50 cm de largura, 1vw é 0,5 cm.</p>
     </section>
     <!-- Toast -->
     <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
