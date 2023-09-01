@@ -125,6 +125,7 @@
           <a href="?t=contornocss" class="list-group-item">Contorno(Outline) CSS</a>
           <a href="?t=textocss" class="list-group-item">Texto CSS</a>
           <a href="?t=fontescss" class="list-group-item">Fontes CSS</a>
+          <a href="?t=iconecss" class="list-group-item">Icones CSS</a>
         </div>
       </div>
     </div>
@@ -222,6 +223,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=fontescss">Fontes CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=iconecss">Icones CSS</a>
       </li>
     </ul>
   </aside>
@@ -7417,6 +7421,212 @@
   </div>
               </code>
             </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="theme" data-title="iconecss" data-index="16" hidden>
+      <h1 class="fw-bold spacing-y">Ícones de CSS</h1>
+      <p class="spacing-y">Os ícones podem ser facilmente adicionados à sua página HTML, usando uma biblioteca de ícones.</p>
+      <h3 class="spacing-Y">Como adicionar ícones</h3>
+      <p class="spacing-y">A maneira mais simples de adicionar um ícone à sua página HTML é com uma biblioteca de ícones, como Font Awesome.</p>
+      <p class="spacing-y">Adicione o nome da classe de ícone especificada a qualquer elemento HTML embutido (como <code class="code-inline">&lt;i&gt;</code> ou <code class="code-inline">&lt;span&gt;</code>).</p>
+      <p class="spacing-y">Todos os ícones nas bibliotecas de ícones abaixo são vetores escaláveis ​​que podem ser personalizados com CSS (tamanho, cor, sombra, etc.)</p>
+      <h2 class="spacing-Y">Ícones Incríveis de Fonte</h2>
+      <p class="spacing-y">Para usar os ícones do Font Awesome, acesse fontawesome.com , faça login e obtenha um código para adicionar na &lt;head&gt; seção de sua página HTML:</p>
+      <p class="spacing-y">&lt;script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"&gt;&lt;/script&gt;</p>
+      <p class="spacing-y">Nota: Nenhum download ou instalação é necessário!</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>    
+  <div class="code-inline">         
+  <span class="code-punctuation">&lt;</span><span class="code-tag">!DOCTYPE html</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-inline">         
+  <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">script <span class="example-background-color-1">src</span><span class="example-background-color-2">="https://kit.fontawesome.com/a076d05399.js"</span> <span class="example-background-color-1">crossorigin</span><span class="example-background-color-2">="anonymous"</span></span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">/script><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">i <span class="example-background-color-1">class</span><span class="example-background-color-2">="fas fa-cloud"</span></span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">/i</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">i <span class="example-background-color-1">class</span><span class="example-background-color-2">="fas fa-heart"</span></span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">/i</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">i <span class="example-background-color-1">class</span><span class="example-background-color-2">="fas fa-car"</span></span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">/i</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">i <span class="example-background-color-1">class</span><span class="example-background-color-2">="fas fa-file"</span></span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">/i</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">i <span class="example-background-color-1">class</span><span class="example-background-color-2">="fas fa-bars"</span></span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">/i</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div>
+            Resultado
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Ícones do Bootstrap</h2>
+      <p class="spacing-y">Para usar os glyphicons do Bootstrap, adicione a seguinte linha dentro da <code class="code-inline">&lt;head&gt;</code> seção de sua página HTML:</p>
+      <p class="spacing-y">&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;</p>
+      <p class="spacing-y">Nota: Nenhum download ou instalação é necessário!</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>    
+  <div class="code-inline">         
+  <span class="code-punctuation">&lt;</span><span class="code-tag">!DOCTYPE html</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-inline">         
+  <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">link <span class="example-background-color-1">rel</span><span class="example-background-color-2">="stylesheet"</span> <span class="example-background-color-1">href</span><span class="example-background-color-2">="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"</span></span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">i <span class="example-background-color-1">class</span><span class="example-background-color-2">="glyphicon glyphicon-cloud"</span></span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">/i</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">i <span class="example-background-color-1">class</span><span class="example-background-color-2">="glyphicon glyphicon-remove"</span></span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">/i</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">i <span class="example-background-color-1">class</span><span class="example-background-color-2">="glyphicon glyphicon-user"</span></span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">/i</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">i <span class="example-background-color-1">class</span><span class="example-background-color-2">="glyphicon glyphicon-envelope"</span></span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">/i</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">i <span class="example-background-color-1">class</span><span class="example-background-color-2">="glyphicon glyphicon-thumbs-up"</span></span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">/i</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div>
+            Resultado
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Ícones do Google</h2>
+      <p class="spacing-y">Para usar os ícones do Google, adicione a seguinte linha dentro da <code class="code-inline">&lt;head&gt;</code> seção de sua página HTML:</p>
+      <p class="spacing-y">&lt;link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"&gt;</p>
+      <p class="spacing-y">Nota: Nenhum download ou instalação é necessário!</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>    
+  <div class="code-inline">         
+  <span class="code-punctuation">&lt;</span><span class="code-tag">!DOCTYPE html</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-inline">         
+  <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">link <span class="example-background-color-1">rel</span><span class="example-background-color-2">="stylesheet"</span> <span class="example-background-color-1">href</span><span class="example-background-color-2">="https://fonts.googleapis.com/icon?family=Material+Icons"</span></span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">i <span class="example-background-color-1">class</span><span class="example-background-color-2">="material-icons"</span></span><span class="code-punctuation">&gt;</span>cloud<span class="code-punctuation">&lt;</span><span class="code-tag">/i</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">i <span class="example-background-color-1">class</span><span class="example-background-color-2">="material-icons"</span></span><span class="code-punctuation">&gt;</span>favorite<span class="code-punctuation">&lt;</span><span class="code-tag">/i</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">i <span class="example-background-color-1">class</span><span class="example-background-color-2">="material-icons"</span></span><span class="code-punctuation">&gt;</span>attachment<span class="code-punctuation">&lt;</span><span class="code-tag">/i</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">i <span class="example-background-color-1">class</span><span class="example-background-color-2">="material-icons"</span></span><span class="code-punctuation">&gt;</span>computer<span class="code-punctuation">&lt;</span><span class="code-tag">/i</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">i <span class="example-background-color-1">class</span><span class="example-background-color-2">="material-icons"</span></span><span class="code-punctuation">&gt;</span>traffic<span class="code-punctuation">&lt;</span><span class="code-tag">/i</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div>
+            Resultado
           </div>
         </div>
       </div>
