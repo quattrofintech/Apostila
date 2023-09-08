@@ -475,6 +475,25 @@ code {
 .example-text-align-1{
     text-align: center;
 }
+.example-list-1{
+    background: #ff9999;
+    padding: 20px;
+}
+.example-list-2{
+    background: #3399ff;
+    padding: 20px;
+}
+.example-list-3{
+    background: #ffe5e5;
+    color: darkred;
+    padding: 5px;
+    margin-left: 35px;
+}
+.example-list-4{
+    background: #cce5ff;
+    color: darkblue;
+    padding: 5px;
+}
 
 /* DESKTOP */
 @media all and (min-width: 768px) {

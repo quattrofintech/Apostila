@@ -127,6 +127,7 @@
           <a href="?t=fontescss" class="list-group-item">Fontes CSS</a>
           <a href="?t=iconecss" class="list-group-item">Icones CSS</a>
           <a href="?t=linkscss" class="list-group-item">Links CSS</a>
+          <a href="?t=listascss" class="list-group-item">Listas de CSS</a>
         </div>
       </div>
     </div>
@@ -230,6 +231,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=linkscss">Links CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=listascss">Listas de CSS</a>
       </li>
     </ul>
   </aside>
@@ -7936,6 +7940,350 @@
           </div>
         </div>
       </div>       
+    </section>
+    <section class="theme" data-title="listascss" data-index="18" hidden>
+      <h1 class="fw-bold spacing-y">Listas de CSS</h1>
+      <p class="spacing-y">Em HTML, existem dois tipos principais de listas:</p>
+      <ul class="spacing-left">
+        <li>listas não ordenadas (<span class="code-inline">&lt;ul&gt;</span>) - os itens da lista são marcados com marcadores.</li>
+        <li>listas ordenadas (<span class="code-inline">&lt;ol&gt;</span>) - os itens da lista são marcados com números ou letras.</li>
+      </ul>
+      <p class="spacing-y">As propriedades da lista CSS permitem:</p>
+      <ul class="spacing-left">
+        <li>Definir diferentes marcadores de itens de lista para listas ordenadas.</li>
+        <li>Definir diferentes marcadores de itens de lista para listas não ordenadas.</li>
+        <li>Definir uma imagem como marcador de item da lista.</li>
+        <li>Adicionar cores de fundo a listas e itens de lista.</li>
+      </ul>
+      <h2 class="spacing-Y">Marcadores de itens de lista diferentes</h2>
+      <p class="spacing-y">A propriedade <span class="code-inline">list-style-type</span> especifica o tipo de marcador de item de lista.</p>
+      <p class="spacing-y">O exemplo a seguir mostra alguns dos marcadores de item de lista disponíveis:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">ul.a </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">list-style-type</span>: circle;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">ul.b </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">list-style-type</span>: square;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">ul.c </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">list-style-type</span>: upper-roman;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">ul.d </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">list-style-type</span>: lower-alpha;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">               
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Nota: Alguns dos valores são para listas não ordenadas e alguns para listas ordenadas.</p>
+      <h2 class="spacing-Y">Uma imagem como marcador de item de lista</h2>
+      <p class="spacing-y">A propriedade <span class="code-inline">list-style-image</span> especifica uma imagem como o marcador de item da lista:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">ul</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">list-style-image</span>: url('sqpurple.gif');</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Posicione os Marcadores de Item da Lista</h2>
+      <p class="spacing-y">A propriedade <span class="code-inline">list-style-position</span> especifica a posição dos marcadores de item de lista (marcadores).</p>
+      <p class="spacing-y">A propiedade "list-style-position: outside;" significa que os marcadores estarão fora do item da lista. O início de cada linha de um item de lista será alinhado verticalmente. Este é o padrão:</p>
+      <ul class="spacing-left" style="list-style-position: outside;">
+        <li>Café - Uma bebida preparada a partir de grãos de café torrados...</li>
+        <li>Chá</li>
+        <li>Coca cola</li>
+      </ul>
+      <p class="spacing-y">A propriedade "list-style-position: inside;" significa que os marcadores estarão dentro do item da lista. Como faz parte do item da lista, ele fará parte do texto e colocará o texto no início:</p>
+      <ul class="spacing-left" style="list-style-position: inside;">
+        <li>Café - Uma bebida preparada a partir de grãos de café torrados...</li>
+        <li>Chá</li>
+        <li>Coca cola</li>
+      </ul>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">ul.a</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">list-style-position</span>: outside;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">ul.b</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">list-style-position</span>: inside;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div> 
+      <h2 class="spacing-Y">Remover configurações padrão</h2>
+      <p class="spacing-y">A propriedade <span class="code-inline">list-style-type:none</span> também pode ser usada para remover os marcadores/marcadores. Observe que a lista também possui margem e preenchimento padrão. Para remover isso, adicione <span class="code-inline">margin:0</span> e <span class="code-inline">padding:0</span> a <span class="code-inline">&lt;ul&gt;</span> ou <span class="code-inline">&lt;ol&gt;</span>:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">ul</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">list-style-type</span>: none;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 0;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 0;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div> 
+      <h2 class="spacing-Y">Lista - Propriedade abreviada</h2>
+      <p class="spacing-y">A propriedade <span class="code-inline">list-style</span>list-style é uma propriedade abreviada. É usado para definir todas as propriedades da lista em uma declaração:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">ul</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">list-style</span>: square inside url("sqpurple.gif");</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Ao usar a propriedade abreviada, a ordem dos valores da propriedade é:</p>
+      <ul class="spacing-left">
+        <li><span class="code-inline">list-style-type</span> (se uma imagem de estilo de lista for especificada, o valor desta propriedade será exibido se a imagem por algum motivo não puder ser exibida)</li>
+        <li><span class="code-inline">list-style-position</span> (especifica se os marcadores de itens de lista devem aparecer dentro ou fora do fluxo de conteúdo)</li>
+        <li><span class="code-inline">list-style-image</span> (especifica uma imagem como marcador de item da lista)</li>
+      </ul>
+      <p class="spacing-y">Se um dos valores de propriedade acima estiver faltando, o valor padrão para a propriedade ausente será inserido, se houver.</p>
+      <h2 class="spacing-Y">Lista de estilos com cores</h2>
+      <p class="spacing-y">Também podemos estilizar listas com cores, para torná-las um pouco mais interessantes.</p>
+      <p class="spacing-y">Qualquer coisa adicionada à tag <span class="code-inline">&lt;ol&gt;</span><ol> ou <span class="code-inline">&lt;ul&gt;</span><ul> afeta a lista inteira, enquanto as propriedades adicionadas à tag <span class="code-inline">&lt;li&gt;</span> afetarão os itens individuais da lista:</p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo CSS</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo" id="btncopiar"
+                onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="code-body col textocod">
+              <pre>
+                <code>
+    <div class="code-line">
+      <span class="code-tag">ol</span><span class="code-punctuation">&#123;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background</span>: #ff9999;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">padding</span>: 20px;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">ul</span><span class="code-punctuation">&#123;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background</span>: #3399ff;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">padding</span>: 20px;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">ol li</span><span class="code-punctuation">&#123;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background</span>: #ffe5e5;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">color</span>: darkred;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">margin-left</span>: 35px;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">ul li</span><span class="code-punctuation">&#123;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background</span>: #ffe5e5;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">color</span>: darkred;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">margin-left</span>: 35px;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&#125;</span>
+    </div>
+  
+                </code>
+              </pre>
+            </div>
+            <div class="code-support row">           
+              <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+              <ol class="example-list-1">
+                <li class="example-list-3">Café</li>
+                <li class="example-list-3">Chá</li>
+                <li class="example-list-3">Coca cola</li>
+              </ol>     
+              <ul class="example-list-2">
+                <li class="example-list-4">Café</li>
+                <li class="example-list-4">Chá</li>
+                <li class="example-list-4">Coca cola</li>
+              </ul>     
+            </div>
+          </div>
+        </div>
     </section>
 
     <!-- Toast -->
