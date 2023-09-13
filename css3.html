@@ -128,6 +128,7 @@
           <a href="?t=iconecss" class="list-group-item">Icones CSS</a>
           <a href="?t=linkscss" class="list-group-item">Links CSS</a>
           <a href="?t=listascss" class="list-group-item">Listas de CSS</a>
+          <a href="?t=tabelascss" class="list-group-item">Tabelas CSS</a>
         </div>
       </div>
     </div>
@@ -234,6 +235,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=listascss">Listas de CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=tabelascss">Tabelas CSS</a>
       </li>
     </ul>
   </aside>
@@ -8147,7 +8151,7 @@
         </div>
       </div> 
       <h2 class="spacing-Y">Lista - Propriedade abreviada</h2>
-      <p class="spacing-y">A propriedade <span class="code-inline">list-style</span>list-style é uma propriedade abreviada. É usado para definir todas as propriedades da lista em uma declaração:</p>
+      <p class="spacing-y">A propriedade <span class="code-inline">list-style</span> é uma propriedade abreviada. É usado para definir todas as propriedades da lista em uma declaração:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -8284,6 +8288,588 @@
             </div>
           </div>
         </div>
+    </section>
+    <section class="theme" data-title="tabelascss" data-index="19" hidden>
+      <h1 class="fw-bold spacing-y">Tabelas CSS</h1>
+      <p class="spacing-y">A aparência de uma tabela HTML pode ser muito melhorada com CSS:</p>
+      <table class="spacing-left">
+        <thead>
+          <tr>
+              <th>Empresa</th>
+              <th>Contato</th>
+              <th>País</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Alemanha</td>
+          </tr>
+          <tr>
+              <td>Berglunds snabbköp</td>
+              <td>Cristina Berglund</td>
+              <td>Suécia</td>
+          </tr>
+          <tr>
+              <td>Centro Comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>México</td>
+          </tr>
+          <tr>
+              <td>Ernst Handel</td>
+              <td>Roland Mendel</td>
+              <td>Áustria</td>
+          </tr>
+          <tr>
+              <td>Ilha de Comércio</td>
+              <td>Helen Bennet</td>
+              <td>Reino Unido</td>
+          </tr>
+          <tr>
+              <td>Königlich Essen</td>
+              <td>Philip Cramer</td>
+              <td>Alemanha</td>
+          </tr>
+          <tr>
+              <td>Caves do Baco Risonho</td>
+              <td>Yoshi Tannamuri</td>
+              <td>Canadá</td>
+          </tr>
+          <tr>
+              <td>Magazzini Alimentari Riuniti</td>
+              <td>Giovanni Rovelli</td>
+              <td>Itália</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="spacing-Y">Bordas da tabela</h2>
+      <p class="spacing-y">Para especificar as bordas da tabela em CSS, use a propriedade <span class="code-inline">border</span>.</p>
+      <p class="spacing-y">O exemplo abaixo especifica uma borda sólida para os elementos &lt;table&gt; &lt;th&gt; &lt;td&gt;:</p>
+      <table class="spacing-left example-table-1" >
+        <thead class="example-table-1">
+          <tr class="example-table-1">
+              <th class="example-table-1">Primeiro nome</th>
+              <th class="example-table-1">Sobrenome</th>
+          </tr>
+        </thead>
+        <tbody class="example-table-1">
+          <tr>
+              <td class="example-table-1">Peter</td>
+              <td class="example-table-1">Grifo</td>
+          </tr>
+          <tr>
+              <td class="example-table-1">Loius</td>
+              <td class="example-table-1">Grifo</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">table, th, td </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">               
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Tabela de largura total</h2>
+      <p class="spacing-y">A tabela acima pode parecer pequena em alguns casos. Se você precisar de uma tabela que ocupe toda a tela (largura total), adicione <span class="code-inline">width: 100%</span> ao elemento &lt;table&gt;:</p>
+      <table class="spacing-left example-table-1" style="width: 100%;">
+        <thead class="example-table-1">
+          <tr class="example-table-1">
+              <th class="example-table-1">Primeiro nome</th>
+              <th class="example-table-1">Sobrenome</th>
+          </tr>
+        </thead>
+        <tbody class="example-table-1">
+          <tr>
+              <td class="example-table-1">Peter</td>
+              <td class="example-table-1">Grifo</td>
+          </tr>
+          <tr>
+              <td class="example-table-1">Loius</td>
+              <td class="example-table-1">Grifo</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">table</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 100%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Bordas Duplas</h2>
+      <p class="spacing-y">Observe que a tabela nos exemplos acima tem bordas duplas. Isso ocorre porque a tabela e os elementos &lt;th&gt; e &lt;td&gt; têm bordas separadas.</p>
+      <p class="spacing-y">Para remover bordas duplas, dê uma olhada no exemplo abaixo.</p>
+      <h2 class="spacing-Y">Recolher bordas da tabela</h2>
+      <p class="spacing-y">A propriedade <span class="code-inline">border-collapse</span> define se as bordas da tabela devem ser recolhidas em uma única borda:</p>
+      <table class="spacing-left example-table-1" style="width: 100%;">
+        <thead class="example-table-1">
+          <tr class="example-table-1">
+              <th class="example-table-1">Primeiro nome</th>
+              <th class="example-table-1">Sobrenome</th>
+          </tr>
+        </thead>
+        <tbody class="example-table-1">
+          <tr>
+              <td class="example-table-1">Peter</td>
+              <td class="example-table-1">Grifo</td>
+          </tr>
+          <tr>
+              <td class="example-table-1">Loius</td>
+              <td class="example-table-1">Grifo</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">table </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-collapse</span>: collapse;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div> 
+      <p class="spacing-y">Se você deseja apenas uma borda ao redor da tabela, especifique apenas a propriedade <span class="code-inline">border</span> para &lt;table&gt;:</p>
+      <table class="spacing-left example-table-1" style="width: 100%; border-collapse: collapse;">
+        <thead class="example-table-1">
+          <tr class="example-table-1">
+              <th class="example-table-1">Primeiro nome</th>
+              <th class="example-table-1">Sobrenome</th>
+          </tr>
+        </thead>
+        <tbody class="example-table-1">
+          <tr>
+              <td class="example-table-1">Peter</td>
+              <td class="example-table-1">Grifo</td>
+          </tr>
+          <tr>
+              <td class="example-table-1">Loius</td>
+              <td class="example-table-1">Grifo</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">table</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div> 
+      <h2 class="spacing-Y">Tamanho da Tabela CSS</h2>
+      <p class="spacing-y">A largura e a altura de uma tabela são definidas pelas propriedades <span class="code-inline">width</span> e <span class="code-inline">height</span>.</p>
+      <p class="spacing-y">O exemplo abaixo define a largura da tabela para 100% e a altura dos elementos &lt;th&gt; para 70px:</p>
+      <table class="spacing-left example-table-1" style="width: 100%;">
+        <thead class="example-table-1">
+          <tr class="example-table-1">
+              <th class="example-table-1" style="height: 70px;">Primeiro nome</th>
+              <th class="example-table-1" style="height: 70px;">Sobrenome</th>
+              <th class="example-table-1" style="height: 70px;">Poupança</th>
+          </tr>
+        </thead>
+        <tbody class="example-table-1">
+          <tr>
+              <td class="example-table-1">Peter</td>
+              <td class="example-table-1">Grifo</td>
+              <td class="example-table-1">$ 100</td>
+          </tr>
+          <tr>
+              <td class="example-table-1">Loius</td>
+              <td class="example-table-1">Grifo</td>
+              <td class="example-table-1">$ 150</td>
+          </tr>
+          <tr>
+              <td class="example-table-1">Joe</td>
+              <td class="example-table-1">Swanson</td>
+              <td class="example-table-1">$ 300</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">table</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 100%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">th</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">height</span>: 70px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Para criar uma tabela que deve abranger apenas metade da página, use <span class="code-inline">width: 50%</span>:</p>
+      <table class="spacing-left example-table-1" style="width: 50%;">
+        <thead class="example-table-1">
+          <tr class="example-table-1">
+              <th class="example-table-1" style="height: 70px;">Primeiro nome</th>
+              <th class="example-table-1" style="height: 70px;">Sobrenome</th>
+              <th class="example-table-1" style="height: 70px;">Poupança</th>
+          </tr>
+        </thead>
+        <tbody class="example-table-1">
+          <tr>
+              <td class="example-table-1">Peter</td>
+              <td class="example-table-1">Grifo</td>
+              <td class="example-table-1">$ 100</td>
+          </tr>
+          <tr>
+              <td class="example-table-1">Loius</td>
+              <td class="example-table-1">Grifo</td>
+              <td class="example-table-1">$ 150</td>
+          </tr>
+          <tr>
+              <td class="example-table-1">Joe</td>
+              <td class="example-table-1">Swanson</td>
+              <td class="example-table-1">$ 300</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">table</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 50%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Alinhamento de Tabela CSS</h2>
+      <h3 class="spacing-Y">Alinhamento horizontal</h3>
+      <p class="spacing-y">A propriedade <span class="code-inline">text-align</span> define o alinhamento horizontal (como esquerda, direita ou centro) do conteúdo em &lt;th&gt; ou &lt;td&gt;.</p>
+      <p class="spacing-y">Por padrão, o conteúdo dos elementos &lt;th&gt; é alinhado ao centro e o conteúdo dos elementos &lt;td&gt; é alinhado à esquerda.</p>
+      <p class="spacing-y">Para centralizar o conteúdo dos elementos &lt;td&gt; também, use <span class="code-inline">text-align: center</span>:</p>
+      <table class="spacing-left example-table-1" style="width: 100%;">
+        <thead class="example-table-1">
+          <tr class="example-table-1" style="text-align: center;">
+              <th class="example-table-1" style="height: 70px;">Primeiro nome</th>
+              <th class="example-table-1" style="height: 70px;">Sobrenome</th>
+              <th class="example-table-1" style="height: 70px;">Poupança</th>
+          </tr>
+        </thead>
+        <tbody class="example-table-1">
+          <tr style="text-align: center;">
+              <td class="example-table-1">Peter</td>
+              <td class="example-table-1">Grifo</td>
+              <td class="example-table-1">$ 100</td>
+          </tr>
+          <tr style="text-align: center;">
+              <td class="example-table-1">Loius</td>
+              <td class="example-table-1">Grifo</td>
+              <td class="example-table-1">$ 150</td>
+          </tr>
+          <tr style="text-align: center;">
+              <td class="example-table-1">Joe</td>
+              <td class="example-table-1">Swanson</td>
+              <td class="example-table-1">$ 300</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">td</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>      
+      <p class="spacing-y">Para alinhar o conteúdo à esquerda, force o alinhamento dos elementos <th> a serem alinhados à esquerda, com a propriedade text-align: left :</p>
+      <table class="spacing-left example-table-1" style="width: 100%;">
+        <thead class="example-table-1">
+          <tr class="example-table-1" style="text-align: left;">
+              <th class="example-table-1" style="height: 70px;">Primeiro nome</th>
+              <th class="example-table-1" style="height: 70px;">Sobrenome</th>
+              <th class="example-table-1" style="height: 70px;">Poupança</th>
+          </tr>
+        </thead>
+        <tbody class="example-table-1">
+          <tr style="text-align: left;">
+              <td class="example-table-1">Peter</td>
+              <td class="example-table-1">Grifo</td>
+              <td class="example-table-1">$ 100</td>
+          </tr>
+          <tr style="text-align: left;">
+              <td class="example-table-1">Loius</td>
+              <td class="example-table-1">Grifo</td>
+              <td class="example-table-1">$ 150</td>
+          </tr>
+          <tr style="text-align: left;">
+              <td class="example-table-1">Joe</td>
+              <td class="example-table-1">Swanson</td>
+              <td class="example-table-1">$ 300</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">td</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: left;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">Alinhamento vertical</h3>
+      <p class="spacing-y">define o alinhamento vertical (como superior, inferior ou central) do conteúdo em &lt;th&gt; ou &lt;td&gt;.</p>
+      <p class="spacing-Y">Por padrão, o alinhamento vertical do conteúdo em uma tabela é o meio (para os elementos &lt;th&gt; e &lt;td&gt;).</p>
+      <p class="spacing-y">O exemplo a seguir define o alinhamento do texto vertical como inferior para elementos &lt;td&gt;:</p>
+      <table class="spacing-left example-table-1" style="width: 100%;">
+        <thead class="example-table-1">
+          <tr class="example-table-1" style="height: 50px;">
+              <th class="example-table-1" style="height: 70px;">Primeiro nome</th>
+              <th class="example-table-1" style="height: 70px;">Sobrenome</th>
+              <th class="example-table-1" style="height: 70px;">Poupança</th>
+          </tr>
+        </thead>
+        <tbody class="example-table-1">
+          <tr style="height: 50px; vertical-align: bottom;">
+              <td class="example-table-1">Peter</td>
+              <td class="example-table-1">Grifo</td>
+              <td class="example-table-1">$ 100</td>
+          </tr>
+          <tr style="height: 50px; vertical-align: bottom;">
+              <td class="example-table-1">Loius</td>
+              <td class="example-table-1">Grifo</td>
+              <td class="example-table-1">$ 150</td>
+          </tr>
+          <tr style="height: 50px; vertical-align: bottom;">
+              <td class="example-table-1">Joe</td>
+              <td class="example-table-1">Swanson</td>
+              <td class="example-table-1">$ 300</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">td</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">height</span>: 50px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">vertical-align</span>: bottom;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Estilo de Tabela CSS</h2>
     </section>
 
     <!-- Toast -->
