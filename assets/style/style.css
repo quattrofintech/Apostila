@@ -499,6 +499,14 @@ code {
     border: 1px solid var(--text-color);
 }
 
+.example-table-2{
+    border-bottom: 1px solid var(--text-color);
+}
+
+.example-table-3:hover{
+    background-color: coral;
+}
+
 /* DESKTOP */
 @media all and (min-width: 768px) {
     main{
