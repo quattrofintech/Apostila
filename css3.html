@@ -9013,7 +9013,202 @@
         </div>
       </div>
       <h3 class="spacing-Y">Mesas listradas</h3>
+      <table class="spacing-left example-table-2" style="width: 100%;">
+        <thead class="example-table-2">
+          <tr class="example-table-2 example-table-3" style="padding: 15px; text-align: left;">
+              <th class="example-table-2">Primeiro nome</th>
+              <th class="example-table-2">Sobrenome</th>
+              <th class="example-table-2">Poupança</th>
+          </tr>
+        </thead>
+        <tbody class="example-table-2">
+          <tr class="example-table-3" style="padding: 15px; text-align: left; background-color: #f2f2f2;">
+              <td class="example-table-2">Peter</td>
+              <td class="example-table-2">Grifo</td>
+              <td class="example-table-2">$ 100</td>
+          </tr>
+          <tr class="example-table-3" style="padding: 15px; text-align: left;">
+              <td class="example-table-2">Loius</td>
+              <td class="example-table-2">Grifo</td>
+              <td class="example-table-2">$ 150</td>
+          </tr>
+          <tr class="example-table-3" style="padding: 15px; text-align: left; background-color: #f2f2f2;">
+              <td class="example-table-2">Joe</td>
+              <td class="example-table-2">Swanson</td>
+              <td class="example-table-2">$ 300</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="spacing-y">Para tabelas listradas, use o seletor <span class="code-inline">nth-child()</span> e adicione um <span class="code-inline">background-color</span> a todas as linhas pares (ou ímpares) da tabela:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">tr:nth-child(odd) </span><span class="code-punctuation">&#123;</span><span class="code-text"><span class="example-text-color-1">background-color</span>: #f2f2f2;</span><span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">Cor da tabela</h3>
+      <p class="spacing-y">O exemplo abaixo especifica a cor de fundo e a cor do texto dos elementos &lt;th&gt;:</p>
+      <table class="spacing-left example-table-2" style="width: 100%;">
+        <thead class="example-table-2">
+          <tr class="example-table-2 example-table-3" style="padding: 15px; text-align: left;">
+              <th class="example-table-2" style="background-color: #04AA6D; color: red;">Primeiro nome</th>
+              <th class="example-table-2" style="background-color: #04AA6D; color: red;">Sobrenome</th>
+              <th class="example-table-2" style="background-color: #04AA6D; color: red;">Poupança</th>
+          </tr>
+        </thead>
+        <tbody class="example-table-2">
+          <tr class="example-table-3" style="padding: 15px; text-align: left;">
+              <td class="example-table-2">Peter</td>
+              <td class="example-table-2">Grifo</td>
+              <td class="example-table-2">$ 100</td>
+          </tr>
+          <tr class="example-table-3" style="padding: 15px; text-align: left;">
+              <td class="example-table-2">Loius</td>
+              <td class="example-table-2">Grifo</td>
+              <td class="example-table-2">$ 150</td>
+          </tr>
+          <tr class="example-table-3" style="padding: 15px; text-align: left;">
+              <td class="example-table-2">Joe</td>
+              <td class="example-table-2">Swanson</td>
+              <td class="example-table-2">$ 300</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="spacing-y">Para tabelas listradas, use o seletor <span class="code-inline">nth-child()</span> e adicione um <span class="code-inline">background-color</span> a todas as linhas pares (ou ímpares) da tabela:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">td</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #04AA6D;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Tabela responsiva CSS</h2>
+      <p class="spacing-y">Uma tabela responsiva exibirá uma barra de rolagem horizontal se a tela for muito pequena para exibir o conteúdo completo:</p>
+      <div style="overflow-x: auto;">
+        <table class="spacing-left example-table-2" style="width: 100%;">
+          <thead class="example-table-2">
+            <tr class="example-table-2" style="padding: 15px; text-align: left;">
+                <th class="example-table-2">Primeiro nome</th>
+                <th class="example-table-2">Sobrenome</th>
+                <th class="example-table-2">Poupança</th>
+            </tr>
+          </thead>
+          <tbody class="example-table-2">
+            <tr style="padding: 15px; text-align: left;">
+                <td class="example-table-2">Peter</td>
+                <td class="example-table-2">Grifo</td>
+                <td class="example-table-2">$ 100</td>
+            </tr>
+            <tr style="padding: 15px; text-align: left;">
+                <td class="example-table-2">Loius</td>
+                <td class="example-table-2">Grifo</td>
+                <td class="example-table-2">$ 150</td>
+            </tr>
+            <tr style="padding: 15px; text-align: left;">
+                <td class="example-table-2">Joe</td>
+                <td class="example-table-2">Swanson</td>
+                <td class="example-table-2">$ 300</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="spacing-y">Adicione um elemento container (como &lt;div&gt;) ao <span class="code-inline">overflow-x:auto</span> redor do elemento &lt;table&gt; para torná-lo responsivo:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag"><span class="code-punctuation">&lt;</span>div <span class="example-text-color-1">style</span>="overflow-x:auto"<span class="code-punctuation">&gt;</span></span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">&lt;table&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">... table content ...</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text">&lt;/table&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;/div&gt;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Observação: no OS X Lion (no Mac), as barras de rolagem ficam ocultas por padrão e são exibidas apenas quando usadas (mesmo que "overflow:scroll" esteja definido).</p>
     </section>
+    <h2 class="spacing-Y">A propriedade de exibição</h2>
+      <p class="spacing-y">A propriedade <span class="code-inline">display</span> é a propriedade CSS mais importante para controlar o layout.</p>
+      <p class="spacing-y">A propriedade <span class="code-inline">display</span> especifica se/como um elemento é exibido.</p>
+      <p class="spacing-y">Cada elemento HTML tem um valor de exibição padrão, dependendo do tipo de elemento. O valor de exibição padrão para a maioria dos elementos é <span class="code-inline">block</span> ou <span class="code-inline">inline</span>.</p>
+      <h2 class="spacing-Y"></h2>
 
     <!-- Toast -->
     <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
