@@ -129,6 +129,7 @@
           <a href="?t=linkscss" class="list-group-item">Links CSS</a>
           <a href="?t=listascss" class="list-group-item">Listas de CSS</a>
           <a href="?t=tabelascss" class="list-group-item">Tabelas CSS</a>
+          <a href="?t=displaycss" class="list-group-item">Layout(display) CSS</a>
         </div>
       </div>
     </div>
@@ -238,6 +239,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=tabelascss">Tabelas CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=displaycss">Layout(display) CSS</a>
       </li>
     </ul>
   </aside>
@@ -9204,11 +9208,224 @@
       </div>
       <p class="spacing-y">Observação: no OS X Lion (no Mac), as barras de rolagem ficam ocultas por padrão e são exibidas apenas quando usadas (mesmo que "overflow:scroll" esteja definido).</p>
     </section>
-    <h2 class="spacing-Y">A propriedade de exibição</h2>
+    <section class="theme" data-title="displaycss" data-index="20" hidden>
+      <h1 class="fw-bold spacing-y">Layout(display) CSS</h1>
+      <h2 class="spacing-Y">A propriedade de exibição</h2>
       <p class="spacing-y">A propriedade <span class="code-inline">display</span> é a propriedade CSS mais importante para controlar o layout.</p>
       <p class="spacing-y">A propriedade <span class="code-inline">display</span> especifica se/como um elemento é exibido.</p>
       <p class="spacing-y">Cada elemento HTML tem um valor de exibição padrão, dependendo do tipo de elemento. O valor de exibição padrão para a maioria dos elementos é <span class="code-inline">block</span> ou <span class="code-inline">inline</span>.</p>
-      <h2 class="spacing-Y"></h2>
+      <h2 class="spacing-Y">Elementos de nível de bloco</h2>
+      <p class="spacing-y">Um elemento de nível de bloco sempre começa em uma nova linha e ocupa toda a largura disponível (estende-se para a esquerda e para a direita o máximo possível).</p>
+      <p class="spacing-y">O elemento &lt;div&gt; é um elemento de nível de bloco.</p>
+      <p class="spacing-y">Exemplos de elementos de nível de bloco:</p>
+      <ul class="spacing-left">
+        <li>&lt;div&gt;</li>
+        <li>&lt;h1&gt; - &lt;h6&gt;</li>
+        <li>&lt;p&gt;</li>
+        <li>&lt;forma&gt;</li>
+        <li>&lt;cabeçalho&gt;</li>
+        <li>&lt;rodapé&gt;</li>
+        <li>&lt;seção&gt;</li>
+      </ul>
+      <h2 class="spacing-Y">Elementos embutidos</h2>
+      <p class="spacing-y">Um elemento inline não começa em uma nova linha e ocupa apenas a largura necessária.</p>
+      <p class="spacing-y">Este é um elemento &lt;span&gt; embutido dentro de um parágrafo.</p>
+      <p class="spacing-y">Exemplos de elementos embutidos:</p>
+      <ul class="spacing-left">
+        <li>&lt;período&gt;</li>
+        <li>&lt;a&gt;</li>
+        <li>&lt;img&gt;</li>
+      </ul>
+      <h2 class="spacing-Y">Mostrar nenhum</h2>
+      <p class="spacing-y"><span class="code-inline">display: none;</span> é comumente usado com JavaScript para ocultar e mostrar elementos sem excluí-los e recriá-los. Dê uma olhada em nosso último exemplo nesta página se quiser saber como isso pode ser alcançado.</p>
+      <p class="spacing-y">O <span class="code-inline">&lt;script&gt;</span> elemento usa <span class="code-inline">display: none;</span> como padrão.</p>
+      <h2 class="spacing-Y">Substituir o valor de exibição padrão</h2>
+      <p class="spacing-y">Conforme mencionado, cada elemento tem um valor de exibição padrão. No entanto, você pode substituir isso.</p>
+      <p class="spacing-y">Alterar um elemento inline para um elemento de bloco, ou vice-versa, pode ser útil para fazer a página parecer de uma maneira específica e ainda seguir os padrões da web.</p>
+      <p class="spacing-y">Um exemplo comum é criar &lt;li&gt; elementos embutidos para menus horizontais:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag"><li></li> </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: inline;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">               
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Observação: Definir a propriedade de exibição de um elemento altera apenas como o elemento é exibido , NÃO o tipo de elemento. Portanto, um elemento inline com <span class="code-inline">display: block;</span> não pode ter outros elementos de bloco dentro dele.</p>
+      <p class="spacing-y">O exemplo a seguir exibe elementos &lt;span&gt; como elementos de bloco:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">span</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: block;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">O exemplo a seguir exibe elementos &lt;a&gt; como elementos de bloco:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">a</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: block;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Ocultar um elemento - exibição: nenhum ou visibilidade: oculto?</h2>
+      <div class="spacing-y">
+        <div>
+          <p class="spacing-y"><span class="code-inline">display: none;</span></p>
+          <button>Remover</button>
+        </div>
+        <div>
+          <p class="spacing-y"><span class="code-inline">visibility: hidden;</span></p>
+          <button>Esconder</button>
+        </div>
+        <div>
+          <p class="spacing-y"><span class="code-inline">reset</span></p>
+          <button></button>
+        </div>
+
+      </div>
+      <p class="spacing-y">Ocultar um elemento pode ser feito definindo a propriedade ><span class="code-inline">display</span> como <span class="code-inline">none;</span>. O elemento ficará oculto e a página será exibida como se o elemento não estivesse lá:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">h1.hidden </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: none;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div> 
+      <p class="spacing-y"><span class="code-inline">visibility: hidden;</span> também esconde um elemento.</p>
+      <p class="spacing-y">No entanto, o elemento ainda ocupará o mesmo espaço de antes. O elemento ficará oculto, mas ainda afetará o layout:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">h1.hidden </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">visibility</span>: hidden;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+    </section>
+    
 
     <!-- Toast -->
     <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
