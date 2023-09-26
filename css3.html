@@ -133,6 +133,7 @@
           <a href="?t=maxwidthcss" class="list-group-item">Layout(maxwidth) CSS</a>
           <a href="?t=positioncss" class="list-group-item">Layout(position) CSS</a>
           <a href="?t=zindexcss" class="list-group-item">Layout(z-index) CSS</a>
+          <a href="?t=overflowcss" class="list-group-item">Layout(overflow) CSS</a>
         </div>
       </div>
     </div>
@@ -254,6 +255,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=zindexcss">Layout(z-index) CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=overflowcss">Layout(overflow) CSS</a>
       </li>
     </ul>
   </aside>
@@ -10177,7 +10181,211 @@
         </div>
       </div>
     </section>
-    
+    <section class="theme" data-title="overflowcss" data-index="24" hidden>
+      <h1 class="spacing-Y">Layout CSS - overflow</h1>
+      <p class="spacing-y">A propriedade <span class="code-inline">overflow</span> CSS controla o que acontece com o conteúdo que é grande demais para caber em uma área.</p>
+      <p class="spacing-y">A propriedade <span class="code-inline">overflow</span> especifica se deve cortar o conteúdo ou adicionar barras de rolagem quando o conteúdo de um elemento for muito grande para caber na área especificada.</p>
+      <h2 class="spacing-Y">Overflow CSS</h2>
+      <p class="spacing-y">A propriedade <span class="code-inline">overflow</span> tem os seguintes valores:</p>
+      <ul class="spacing-left">
+        <li><span class="code-inline">visible</span> - Padrão. O estouro não é cortado. O conteúdo renderiza fora da caixa do elemento.</li>
+        <li><span class="code-inline">hidden</span> - O estouro é cortado e o restante do conteúdo ficará invisível.</li>
+        <li><span class="code-inline">scroll</span> - O estouro é cortado e uma barra de rolagem é adicionada para ver o restante do conteúdo.</li>
+        <li><span class="code-inline">auto</span> - Semelhante ao scroll, mas adiciona barras de rolagem somente quando necessário.</li>
+      </ul>
+      <p class="spacing-y">Nota: A propriedade <span class="code-inline">overflow</span> só funciona para elementos de bloco com uma altura especificada.</p>
+      <p class="spacing-y">Observação: no OS X Lion (no Mac), as barras de rolagem ficam ocultas por padrão e são exibidas apenas quando usadas (mesmo que "overflow:scroll" esteja definido).</p>
+      <h3 class="spacing-Y">overflow: visible</h3>
+      <p class="spacing-y">Por padrão, o overflow é <span class="code-inline">visible</span>, o que significa que não é recortado e é renderizado fora da caixa do elemento:</p>
+      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">div</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 200px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">height</span>: 65px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: coral;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">overflow</span>: visible;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">overflow: hidden</h3>
+      <p class="spacing-y">Com o valor <span class="code-inline">hidden</span>, o overflow é recortado e o restante do conteúdo é ocultado:</p>
+      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">div</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">overflow</span>: hidden;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">overflow: scroll</h3>
+      <p class="spacing-y">Definindo o valor como <span class="code-inline">scroll</span>, o overflow é cortado e uma barra de rolagem é adicionada para rolar dentro da caixa. Observe que isso adicionará uma barra de rolagem horizontal e verticalmente (mesmo que você não precise dela):</p>
+      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">div</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">overflow</span>: scroll;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">overflow: scroll</h3>
+      <p class="spacing-y">O valor <span class="code-inline">auto</span> é semelhante a <span class="code-inline">scroll</span>, mas adiciona barras de rolagem somente quando necessário:</p>
+      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">div</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">overflow</span>: auto;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">overflow-x e overflow-y</h3>
+      <p class="spacing-y">As propriedades <span class="code-inline">overflow-x</span> e <span class="code-inline">overflow-y</span> especificam se o estouro do conteúdo deve ser alterado apenas horizontalmente ou verticalmente (ou ambos):</p>
+      <p class="spacing-y"><span class="code-inline">overflow-x</span> especifica o que fazer com as bordas esquerda/direita do conteúdo.</p>
+      <p class="spacing-y"><span class="code-inline">overflow-y</span> especifica o que fazer com as bordas superior/inferior do conteúdo.</p>
+      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">div</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">overflow-x</span>: hidden;</span> <span class="code-comment">/* esconde a barra de rolagem horizontal*/</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">overflow-y</span>: scroll;</span> <span class="code-comment">/* adiciona uma barra de rolagem vertical*/</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>      
+    </section>
+
     <!-- Toast -->
     <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
       <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
