@@ -10391,21 +10391,21 @@
     </section>
     <section class="theme" data-title="floatcss" data-index="25" hidden>
       <h1 class="spacing-Y">Layout CSS - float</h1>
-      <p class="spacing-y">A propriedade <span class="code-inline">overflow</span> CSS controla o que acontece com o conteúdo que é grande demais para caber em uma área.</p>
-      <p class="spacing-y">A propriedade <span class="code-inline">overflow</span> especifica se deve cortar o conteúdo ou adicionar barras de rolagem quando o conteúdo de um elemento for muito grande para caber na área especificada.</p>
-      <h2 class="spacing-Y">Overflow CSS</h2>
+      <p class="spacing-y">A propriedade <span class="code-inline">float</span> especifica como um elemento deve flutuar.</p>
+      <p class="spacing-y">A propriedade <span class="code-inline">clear</span> CSS especifica quais elementos podem flutuar ao lado do elemento limpo e de que lado.</p>
+      <h2 class="spacing-Y">A propriedade flutuante(float)</h2>
+      <p class="spacing-y">A propriedade <span class="code-inline">float</span> é usada para posicionar e formatar o conteúdo, por exemplo, deixar uma imagem flutuar à esquerda do texto em um contêiner.</p>
+      <p class="spacing-y">A propriedade <span class="code-inline">float</span> pode ter um dos seguintes valores:</p>
       <p class="spacing-y">A propriedade <span class="code-inline">overflow</span> tem os seguintes valores:</p>
       <ul class="spacing-left">
-        <li><span class="code-inline">visible</span> - Padrão. O estouro não é cortado. O conteúdo renderiza fora da caixa do elemento.</li>
-        <li><span class="code-inline">hidden</span> - O estouro é cortado e o restante do conteúdo ficará invisível.</li>
-        <li><span class="code-inline">scroll</span> - O estouro é cortado e uma barra de rolagem é adicionada para ver o restante do conteúdo.</li>
-        <li><span class="code-inline">auto</span> - Semelhante ao scroll, mas adiciona barras de rolagem somente quando necessário.</li>
+        <li><span class="code-inline">left</span> - O elemento flutua à esquerda de seu contêiner</li>
+        <li><span class="code-inline">right</span> - O elemento flutua à direita de seu contêiner</li>
+        <li><span class="code-inline">none</span> - O elemento não flutua (será exibido apenas onde ocorre no texto). Isso é padrão</li>
+        <li><span class="code-inline">inherit</span> - O elemento herda o valor float de seu pai</li>
       </ul>
-      <p class="spacing-y">Nota: A propriedade <span class="code-inline">overflow</span> só funciona para elementos de bloco com uma altura especificada.</p>
-      <p class="spacing-y">Observação: no OS X Lion (no Mac), as barras de rolagem ficam ocultas por padrão e são exibidas apenas quando usadas (mesmo que "overflow:scroll" esteja definido).</p>
-      <h3 class="spacing-Y">overflow: visible</h3>
-      <p class="spacing-y">Por padrão, o overflow é <span class="code-inline">visible</span>, o que significa que não é recortado e é renderizado fora da caixa do elemento:</p>
-      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
+      <p class="spacing-y">Em seu uso mais simples, a propriedade <span class="code-inline">float</span> pode ser usada para quebrar texto em torno de imagens.</p>
+      <h3 class="spacing-Y">float: right</h3>
+      <p class="spacing-y">O exemplo a seguir especifica que uma imagem deve flutuar à direita em um texto:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -10422,19 +10422,10 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-tag">div</span><span class="code-punctuation">&#123;</span>
+    <span class="code-tag">img</span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">width</span>: 200px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">height</span>: 65px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-color</span>: coral;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">overflow</span>: visible;</span>
+    <span class="code-text"><span class="example-text-color-1">float</span>: right;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
@@ -10443,13 +10434,122 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <img src="" alt="">     
+            <p>Falta a imagem e um lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">float: left</h3>
+      <p class="spacing-y">O exemplo a seguir especifica que uma imagem deve flutuar à esquerda em um texto:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">img</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">float</span>: left;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <img src="" alt="">     
+            <p>Falta a imagem e depois um lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">float: none</h3>
+      <p class="spacing-y">No exemplo a seguir, a imagem será exibida exatamente onde ela ocorre no texto (float: none;):</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">img</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">float</span>: none;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <img src="" alt="">     
+            <p>Falta a imagem e depois um lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">Exemplo - Flutuar(float) um ao lado do outro</h3>
+      <p class="spacing-y">No exemplo a seguir, a imagem será exibida exatamente onde ela ocorre no texto (float: none;):</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">img</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">float</span>: none;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <img src="" alt="">     
+            <p>Falta a imagem e depois um lorem ipsum</p>
           </div>
         </div>
       </div>
       <h3 class="spacing-Y">overflow: hidden</h3>
-      <p class="spacing-y">Com o valor <span class="code-inline">hidden</span>, o overflow é recortado e o restante do conteúdo é ocultado:</p>
-      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
+      <p class="spacing-y">Normalmente, os elementos div serão exibidos um sobre o outro. No entanto, se usarmos, <span class="code-inline">float: left</span> podemos deixar os elementos flutuarem um ao lado do outro:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -10469,7 +10569,37 @@
     <span class="code-tag">div</span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">overflow</span>: hidden;</span>
+    <span class="code-text"><span class="example-text-color-1">float</span>: left;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 15px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">.div1</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">.div2</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">.div3</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background</span>: green;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
@@ -10482,7 +10612,7 @@
           </div>
         </div>
       </div>
-      <h3 class="spacing-Y">overflow: scroll</h3>
+      <h2 class="spacing-Y">Layout CSS - clear e clearfix</h2>
       <p class="spacing-y">Definindo o valor como <span class="code-inline">scroll</span>, o overflow é cortado e uma barra de rolagem é adicionada para rolar dentro da caixa. Observe que isso adicionará uma barra de rolagem horizontal e verticalmente (mesmo que você não precise dela):</p>
       <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
       <div class="example-code">
