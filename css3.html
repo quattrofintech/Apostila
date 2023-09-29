@@ -10613,8 +10613,18 @@
         </div>
       </div>
       <h2 class="spacing-Y">Layout CSS - clear e clearfix</h2>
-      <p class="spacing-y">Definindo o valor como <span class="code-inline">scroll</span>, o overflow é cortado e uma barra de rolagem é adicionada para rolar dentro da caixa. Observe que isso adicionará uma barra de rolagem horizontal e verticalmente (mesmo que você não precise dela):</p>
-      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
+      <h3 class="spacing-Y">A propriedade clara(clear)</h3>
+      <p class="spacing-y">Quando usarmos a propriedade <span class="code-inline">float</span>, e quisermos o próximo elemento abaixo (não à direita ou à esquerda), teremos que usar a clear propriedade.</p>
+      <p class="spacing-y">A propriedade <span class="code-inline">float</span> especifica o que deve acontecer com o elemento próximo a um elemento flutuante.</p>
+      <p class="spacing-y">A propriedade <span class="code-inline">float</span> pode ter um dos seguintes valores:</p>
+      <ul class="spacing-left">
+        <li><span class="code-inline">none</span> - O elemento não é colocado abaixo dos elementos flutuantes esquerdo ou direito. Isso é padrão.</li>
+        <li><span class="code-inline">left</span> - O elemento é empurrado para baixo dos elementos flutuantes à esquerda.</li>
+        <li><span class="code-inline">right</span> - O elemento é empurrado abaixo dos elementos flutuantes à direita.</li>
+        <li><span class="code-inline">both</span> - O elemento é empurrado para baixo dos elementos flutuantes esquerdo e direito.</li>
+        <li><span class="code-inline">inherit</span> - O elemento herda o valor clear de seu pai.</li>
+      </ul>
+      <p class="spacing-y">Ao limpar os floats, você deve combinar o clear com o float: Se um elemento flutuar para a esquerda, então você deve limpar para a esquerda. Seu elemento flutuante continuará a flutuar, mas o elemento limpo aparecerá abaixo dele na página da web.</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -10631,10 +10641,22 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-tag">div</span><span class="code-punctuation">&#123;</span>
+    <span class="code-comment">&lt;!-- Este exemplo limpa o float para a esquerda. Aqui, significa que o elemento &lt;div2&gt; é colocado abaixo do elemento flutuante &lt;div1&gt; à esquerda: --&gt;</span>
+  </div>              
+  <div class="code-line">
+    <span class="code-tag">div1</span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">overflow</span>: scroll;</span>
+    <span class="code-text"><span class="example-text-color-1">float</span>: left;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">div2</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">clear</span>: left;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
@@ -10647,9 +10669,8 @@
           </div>
         </div>
       </div>
-      <h3 class="spacing-Y">overflow: scroll</h3>
-      <p class="spacing-y">O valor <span class="code-inline">auto</span> é semelhante a <span class="code-inline">scroll</span>, mas adiciona barras de rolagem somente quando necessário:</p>
-      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
+      <h3 class="spacing-Y">O hack clearfix</h3>
+      <p class="spacing-y">Se um elemento flutuante for mais alto que o elemento que o contém, ele "transbordará" para fora de seu contêiner. Podemos então adicionar um hack clearfix para resolver este problema:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -10666,7 +10687,7 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-tag">div</span><span class="code-punctuation">&#123;</span>
+    <span class="code-tag">.clearfix</span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
     <span class="code-text"><span class="example-text-color-1">overflow</span>: auto;</span>
@@ -10682,11 +10703,7 @@
           </div>
         </div>
       </div>
-      <h3 class="spacing-Y">overflow-x e overflow-y</h3>
-      <p class="spacing-y">As propriedades <span class="code-inline">overflow-x</span> e <span class="code-inline">overflow-y</span> especificam se o estouro do conteúdo deve ser alterado apenas horizontalmente ou verticalmente (ou ambos):</p>
-      <p class="spacing-y"><span class="code-inline">overflow-x</span> especifica o que fazer com as bordas esquerda/direita do conteúdo.</p>
-      <p class="spacing-y"><span class="code-inline">overflow-y</span> especifica o que fazer com as bordas superior/inferior do conteúdo.</p>
-      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
+      <p class="spacing-y">O <span class="code-inline">overflow: auto</span> clearfix funciona bem desde que você seja capaz de manter o controle de suas margens e preenchimento (caso contrário, você poderá ver as barras de rolagem). No entanto, o novo e moderno hack clearfix é mais seguro de usar, e o código a seguir é usado para a maioria das páginas da web:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -10703,13 +10720,16 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-tag">div</span><span class="code-punctuation">&#123;</span>
+    <span class="code-tag">.clearfix::after</span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">overflow-x</span>: hidden;</span> <span class="code-comment">/* esconde a barra de rolagem horizontal*/</span>
+    <span class="code-text"><span class="example-text-color-1">content</span>: "";</span> 
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">overflow-y</span>: scroll;</span> <span class="code-comment">/* adiciona uma barra de rolagem vertical*/</span>
+    <span class="code-text"><span class="example-text-color-1">clearx</span>: both;</span> 
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: table;</span> 
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
@@ -10722,6 +10742,7 @@
           </div>
         </div>
       </div>      
+      <p class="spacing-y">O Você aprenderá mais sobre o <span class="code-inline">::after</span> pseudoelemento em um capítulo posterior.</p>
     </section>
 
     <!-- Toast -->
