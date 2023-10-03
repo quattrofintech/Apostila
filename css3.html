@@ -134,8 +134,10 @@
           <a href="?t=positioncss" class="list-group-item">Layout(position) CSS</a>
           <a href="?t=zindexcss" class="list-group-item">Layout(z-index) CSS</a>
           <a href="?t=overflowcss" class="list-group-item">Layout(overflow) CSS</a>
-          <a href="?t=float" class="list-group-item">Layout(float) CSS</a>
+          <a href="?t=floatcss" class="list-group-item">Layout(float) CSS</a>
           <a href="?t=inline-blockcss" class="list-group-item">Inline-block CSS</a>
+          <a href="?t=aligncss" class="list-group-item">Align CSS</a>
+          <a href="?t=combinatorscss" class="list-group-item">Combinators CSS</a>
         </div>
       </div>
     </div>
@@ -266,6 +268,12 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=inline-blockcss">Inline-block CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=aligncss">Align CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=combinatorscss">Combinators CSS</a>
       </li>
     </ul>
   </aside>
@@ -10901,6 +10909,324 @@
   </div>
   <div class="code-line">
     <span class="code-text"><span class="example-text-color-1">padding</span>: 20px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="theme" data-title="aligncss" data-index="27" hidden>
+      <h1 class="spacing-Y">Layout CSS - Alinhamento(Align) Horizontal e Vertical</h1>
+      <h2 class="spacing-Y">Valor de inline-block</h2>
+      <p class="spacing-y">Em comparação com <span class="code-inline">display: inline</span>, a principal diferença é que <span class="code-inline">display: inline-block</span> permite definir uma largura e altura no elemento.</p>
+      <p class="spacing-y">Além disso, com <span class="code-inline">display: inline-block</span>, as margens/preenchimentos superiores e inferiores são respeitados, mas com <span class="code-inline">display: inline</span> eles não.</p>
+      <p class="spacing-y">Em comparação com <span class="code-inline">display: block</span>, a principal diferença é que <span class="code-inline">display: inline-block</span> não adiciona uma quebra de linha após o elemento, para que o elemento possa ficar próximo a outros elementos.</p>
+      <p class="spacing-y">O exemplo a seguir mostra o comportamento diferente de <span class="code-inline">display: inline</span>, <span class="code-inline">display: inline-block</span> e <span class="code-inline">display: block</span>:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">span.a</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: inline;</span> <span class="code-comment">/* padrão para span */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 100px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">height</span>: 100px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid blue;;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">span.b</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: inline-block;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 100px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">height</span>: 100px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid blue;;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">span.c</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: block;</span> 
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 100px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">height</span>: 100px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid blue;;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Usando o inline-block para criar links de navegação</h2>
+      <p class="spacing-y">Um uso comum para <span class="code-inline">display: inline-block</span> é exibir itens de lista horizontalmente em vez de verticalmente. O exemplo a seguir cria links de navegação horizontal:</p>
+      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.nav</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">list-style-type</span>: none;</span> 
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 0;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 0;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">.nav li</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: inline-block;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: 20px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 20px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="theme" data-title="combinatorscss" data-index="28" hidden>
+      <h1 class="spacing-Y">Combinadores de CSS</h1>
+      <p class="spacing-y">Um combinador é algo que explica a relação entre os seletores.</p>
+      <p class="spacing-y">Um seletor CSS pode conter mais de um seletor simples. Entre os seletores simples, podemos incluir um combinador.</p>
+      <p class="spacing-y">Existem quatro combinadores diferentes em CSS:</p>
+      <ul class="spacing-left">
+        <li>seletor descendente (espaço)</li>
+        <li>seletor filho (&gt;)</li>
+        <li>seletor de irmão adjacente (+)</li>
+        <li>seletor geral de irmãos (~)</li>
+      </ul>
+      <h2 class="spacing-Y">Seletor Descendente</h2>
+      <p class="spacing-y">O seletor descendente corresponde a todos os elementos que são descendentes de um elemento especificado.</p>
+      <p class="spacing-y">O exemplo a seguir seleciona todos os elementos &lt;p&gt; dentro dos elementos &lt;div&gt;:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">div p</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Seletor filho (&gt;)</h2>
+      <p class="spacing-y">O seletor filho seleciona todos os elementos que são filhos de um elemento especificado.</p>
+      <p class="spacing-y">O exemplo a seguir seleciona todos os elementos &lt;p&gt; que são filhos de um elemento &lt;div&gt;:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">div > p</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Seletor de irmão adjacente (+)</h2>
+      <p class="spacing-y">O seletor irmão adjacente é usado para selecionar um elemento que está diretamente após outro elemento específico.</p>
+      <p class="spacing-y">Os elementos irmãos devem ter o mesmo elemento pai e "adjacente" significa "imediatamente seguinte".</p>
+      <p class="spacing-y">O exemplo a seguir seleciona o primeiro elemento &lt;p&gt; que é colocado imediatamente após os elementos &lt;div&gt;:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">div + p</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Seletor geral de irmãos (~)</h2>
+      <p class="spacing-y">O seletor geral de irmãos seleciona todos os elementos que são os próximos irmãos de um elemento especificado.</p>
+      <p class="spacing-y">O exemplo a seguir seleciona todos os elementos &lt;p&gt; que são os próximos irmãos dos elementos &lt;div&gt;:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">div ~ p</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
