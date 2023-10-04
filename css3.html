@@ -10795,7 +10795,7 @@
     <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid blue;;</span>
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid blue;</span>
   </div>
   <div class="code-line">
     <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
@@ -10819,7 +10819,7 @@
     <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid blue;;</span>
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid blue;</span>
   </div>
   <div class="code-line">
     <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
@@ -10843,7 +10843,7 @@
     <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid blue;;</span>
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid blue;</span>
   </div>
   <div class="code-line">
     <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
@@ -10924,11 +10924,11 @@
     </section>
     <section class="theme" data-title="aligncss" data-index="27" hidden>
       <h1 class="spacing-Y">Layout CSS - Alinhamento(Align) Horizontal e Vertical</h1>
-      <h2 class="spacing-Y">Valor de inline-block</h2>
-      <p class="spacing-y">Em comparação com <span class="code-inline">display: inline</span>, a principal diferença é que <span class="code-inline">display: inline-block</span> permite definir uma largura e altura no elemento.</p>
-      <p class="spacing-y">Além disso, com <span class="code-inline">display: inline-block</span>, as margens/preenchimentos superiores e inferiores são respeitados, mas com <span class="code-inline">display: inline</span> eles não.</p>
-      <p class="spacing-y">Em comparação com <span class="code-inline">display: block</span>, a principal diferença é que <span class="code-inline">display: inline-block</span> não adiciona uma quebra de linha após o elemento, para que o elemento possa ficar próximo a outros elementos.</p>
-      <p class="spacing-y">O exemplo a seguir mostra o comportamento diferente de <span class="code-inline">display: inline</span>, <span class="code-inline">display: inline-block</span> e <span class="code-inline">display: block</span>:</p>
+      <h2 class="spacing-Y">Elementos de Alinhamento Central</h2>
+      <p class="spacing-y">Para centralizar horizontalmente um elemento de bloco (como &lt;div&gt;), use <span class="code-inline">margin: auto;</span></p>
+      <p class="spacing-y">Definir a largura do elemento impedirá que ele se estenda até as bordas de seu contêiner.</p>
+      <p class="spacing-y">O elemento ocupará a largura especificada e o espaço restante será dividido igualmente entre as duas margens:</p>
+      <p class="spacing-y" style="margin: auto; width: 50%; border: 3px solid green; padding: 10px;">Este elemento div é centralizado</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -10945,73 +10945,19 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-tag">span.a</span><span class="code-punctuation">&#123;</span>
+    <span class="code-tag">.center</span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">display</span>: inline;</span> <span class="code-comment">/* padrão para span */</span>
+    <span class="code-text"><span class="example-text-color-1">margin</span>: auto;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">width</span>: 100px;</span>
+    <span class="code-text"><span class="example-text-color-1">width</span>: 50%;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">height</span>: 100px;</span>
+    <span class="code-text"><span class="example-text-color-1">border</span>: 3px solid green;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid blue;;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-tag">span.b</span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">display</span>: inline-block;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">width</span>: 100px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">height</span>: 100px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid blue;;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-tag">span.c</span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">display</span>: block;</span> 
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">width</span>: 100px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">height</span>: 100px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid blue;;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 10px;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
@@ -11024,9 +10970,10 @@
           </div>
         </div>
       </div>
-      <h2 class="spacing-Y">Usando o inline-block para criar links de navegação</h2>
-      <p class="spacing-y">Um uso comum para <span class="code-inline">display: inline-block</span> é exibir itens de lista horizontalmente em vez de verticalmente. O exemplo a seguir cria links de navegação horizontal:</p>
-      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
+      <p class="spacing-y">Observação: o alinhamento centralizado não terá efeito se a propriedade <span class="code-inline">width</span> não estiver definida (ou definida como 100%).</p>
+      <h2 class="spacing-Y">Alinhar texto ao centro</h2>
+      <p class="spacing-y">Para apenas centralizar o texto dentro de um elemento, use <span class="code-inline">text-align: center;</span></p>
+      <p class="spacing-y" style="text-align: center; border: 3px solid green;">Esse texto está centralizado</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -11043,37 +10990,396 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-tag">.nav</span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">list-style-type</span>: none;</span> 
+    <span class="code-tag">.center</span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
     <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">padding</span>: 0;</span>
+    <span class="code-text"><span class="example-text-color-1">border</span>: 3px solid green;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">margin</span>: 0;</span>
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Alinhar texto ao centro</h2>
+      <p class="spacing-y">Para apenas centralizar o texto dentro de um elemento, use <span class="code-inline">text-align: center;</span></p>
+      <p class="spacing-y">Para centralizar uma imagem, defina as margens esquerda e direita <span class="code-inline">auto</span> e transforme-a em um <span class="code-inline">block</span> elemento.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">img</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: block;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin-left</span>: auto;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin-right</span>: auto;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 40%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Alinhamento à esquerda e à direita - usando a posição</h2>
+      <p class="spacing-y">Um método para alinhar elementos é usar <span class="code-inline">position: absolute;</span>:</p>
+      <p class="spacing-y">Para centralizar uma imagem, defina as margens esquerda e direita <span class="code-inline">auto</span> e transforme-a em um <span class="code-inline">block</span> elemento.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.right</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">position</span>: absolute;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">right</span>: 0px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 30%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 3px solid #73AD21;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 10px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Nota: Elementos posicionados absolutos são removidos do fluxo normal e podem sobrepor elementos.</p>
+      <h2 class="spacing-Y">Alinhamento à esquerda e à direita - usando float</h2>
+      <p class="spacing-y">Outro método para alinhar elementos é usar a propriedade <span class="code-inline">float</span>:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.right</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">float</span>: right;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 300px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 3px solid #73AD21;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 10px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Centralizar verticalmente - usando preenchimento</h2>
+      <p class="spacing-y">Existem muitas maneiras de centralizar um elemento verticalmente em CSS. Uma solução simples é usar top e bottom <span class="code-inline">padding</span>:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.right</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 70px 0;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 3px solid green;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>       
+            <p class="spacing-y" style="padding: 70px 0; border: 3px solid green;">Estou centrado verticalmente.</p>  
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Para centralizar vertical e horizontalmente, use <span class="code-inline">padding</span> e <span class="code-inline">text-align: center</span>:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.right</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 70px 0;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 3px solid green;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>       
+            <p class="spacing-y" style="padding: 70px 0; border: 3px solid green; text-align: center;">Estou centralizado vertical e horizontalmente.</p>  
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Centralizar verticalmente - usando a altura da linha</h2>
+      <p class="spacing-y">Outro truque é usar a propriedade <span class="code-inline">line-height</span> com um valor igual à propriedade <span class="code-inline">height</span>:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.center</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">line-height</span>: 200px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">height</span>: 200px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 3px solid green;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
   </div>
   <div class="code-line">
-    <span class="code-tag">.nav li</span><span class="code-punctuation">&#123;</span>
+    <span class="code-comment">/* Se o texto ter multiplas linhas, adicione o código a seguir */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">.center p</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">line-height</span>: 1.5;</span>
   </div>
   <div class="code-line">
     <span class="code-text"><span class="example-text-color-1">display</span>: inline-block;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">font-size</span>: 20px;</span>
+    <span class="code-text"><span class="example-text-color-1">vertical-align</span>: middle;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">padding</span>: 20px;</span>
+    <span class="code-punctuation">&#125;</span>
+  </div>  
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>       
+            <p class="spacing-y" style="height: 200px; border: 3px solid green; line-height: 200px; text-align: center;">Estou centrado vertical e horizontalmente.</p>  
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Centralizar verticalmente - usando posição e transformação</h2>
+      <p class="spacing-y">Se <span class="code-inline">padding</span> e <span class="code-inline">line-height</span> não forem opções, outra solução é usar o posicionamento e a propriedade <span class="code-inline">transform</span>:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.center</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">height</span>: 200px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">position</span>: relative;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 3px solid green;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">.center p</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 0;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">position</span>: absolute;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">top</span>: 50%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">left</span>: 50%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">transform</span>: translate(-50%, -50%);</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>  
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>       
+            <p class="spacing-y" style="height: 200px; border: 3px solid green; position: relative;">Estou centrado vertical e horizontalmente.</p>  
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Centralizar Verticalmente - Usando o Flexbox</h2>
+      <p class="spacing-y">Você também pode usar o flexbox para centralizar as coisas. Observe que o flexbox não é compatível com o IE10 e versões anteriores:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.center</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: flex;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">justify-content</span>: center;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">align-items/span>: center;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">height</span>: 200px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 3px solid green;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
