@@ -507,6 +507,11 @@ code {
     background-color: coral;
 }
 
+.example-of:hover{
+    display: block;
+}
+
+
 /* DESKTOP */
 @media all and (min-width: 768px) {
     main{
