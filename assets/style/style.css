@@ -510,6 +510,10 @@ code {
 .example-of:hover{
     display: block;
 }
+.example-of-selection::selection{
+    color: red;
+    background: yellow;
+}
 
 
 /* DESKTOP */

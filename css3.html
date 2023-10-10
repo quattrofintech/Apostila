@@ -139,6 +139,7 @@
           <a href="?t=aligncss" class="list-group-item">Align CSS</a>
           <a href="?t=combinatorscss" class="list-group-item">Combinators CSS</a>
           <a href="?t=pseudo-classcss" class="list-group-item">Pseudo-class CSS</a>
+          <a href="?t=pseudo-elementscss" class="list-group-item">Pseudo-elements CSS</a>
         </div>
       </div>
     </div>
@@ -278,6 +279,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=pseudoclasscss">Pseudo-class CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=pseudo-elementscss">Pseudo-elements CSS</a>
       </li>
     </ul>
   </aside>
@@ -11955,6 +11959,397 @@
           </div>
           <div class="code-support row">           
             <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="theme" data-title="pseudo-elementscss" data-index="30" hidden>
+      <h1 class="spacing-Y">Pseudo-elementos CSS</h1>
+      <p class="spacing-y">Um pseudo elemento CSS é usado para estilizar partes específicas de um elemento.</p>
+      <p class="spacing-y">Por exemplo, pode ser usado para:</p>
+      <ul class="spacing-left">
+        <li>Estilizar a primeira letra, ou linha, de um elemento</li>
+        <li>Inserir conteúdo antes ou depois do conteúdo de um elemento</li>
+      </ul>
+      <h2 class="spacing-Y">Sintaxe</h2>
+      <p class="spacing-y">A sintaxe das pseudo classes:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">selector:pseudo-class </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">property</span>: value;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">O ::pseudo-elemento de primeira linha</h2>
+      <p class="spacing-y">O  pseudo-elemento <span class="code-inline">::first-line</span> é usado para adicionar um estilo especial à primeira linha de um texto.</p>
+      <p class="spacing-y">O exemplo a seguir formata a primeira linha do texto em todos os elementos &lt;p&gt;:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p::first-line</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: #FF0000;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-variant</span>: small-caps;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Observação: o pseudo elemento <span class="code-inline">::first-line</span> só pode ser aplicado a elementos de nível de bloco.</p>
+      <p class="spacing-y">As seguintes propriedades se aplicam ao pseudo elemento <span class="code-inline">::first-line</span> :</p>
+      <ul class="spacing-left">
+        <li>propriedades da fonte</li>
+        <li>propriedades de cor</li>
+        <li>propriedades de fundo</li>
+        <li>espaçamento entre palavras</li>
+        <li>espaçamento entre letras</li>
+        <li>decoração de texto</li>
+        <li>alinhamento vertical</li>
+        <li>transformação de texto</li>
+        <li>altura da linha</li>
+        <li>claro</li>
+      </ul>
+      <p class="spacing-y">Observe a notação de dois-pontos duplos - <span class="code-inline">::first-line</span> versus <span class="code-inline">:first-line</span></p>
+      <p class="spacing-y">Os dois-pontos duplos substituíram a notação de dois-pontos simples para pseudo-elementos em CSS3. Esta foi uma tentativa do W3C de distinguir entre pseudo classes e pseudo elementos .</p>
+      <p class="spacing-y">A sintaxe de dois-pontos foi usada para pseudo classes e pseudo elementos em CSS2 e CSS1.</p>
+      <p class="spacing-y">Para compatibilidade com versões anteriores, a sintaxe de dois-pontos é aceitável para pseudo elementos CSS2 e CSS1.</p>
+      <h2 class="spacing-Y">O pseudo elemento ::primeira letra</h2>
+      <p class="spacing-y">O pseudo-elemento <span class="code-inline">::first-letter</span> é usado para adicionar um estilo especial à primeira letra de um texto.</p>
+      <p class="spacing-y">O exemplo a seguir formata a primeira letra do texto em todos os elementos &lt;p&gt; :</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p::first-letter</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: #ff0000;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: xx-large;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Observação: o pseudo elemento <span class="code-inline">::first-letter</span> só pode ser aplicado a elementos de nível de bloco.</p>
+      <p class="spacing-y">As seguintes propriedades se aplicam ao pseudo elemento <span class="code-inline">::first-letter</span>:</p>
+      <ul class="spacing-left">
+        <li>propriedades da fonte</li>
+        <li>propriedades de cor</li>
+        <li>propriedades de fundo</li>
+        <li>propriedades de margem</li>
+        <li>propriedades de preenchimento</li>
+        <li>propriedades de borda</li>
+        <li>decoração de texto</li>
+        <li>vertical-align (somente se "float" for "none")</li>
+        <li>transformação de texto</li>
+        <li>altura da linha</li>
+        <li>flutuador</li>
+        <li>claro</li>
+      </ul>
+      <h2 class="spacing-Y">Pseudo elementos e Classes HTML</h2>
+      <p class="spacing-y">Pseudo-elementos podem ser combinados com classes HTML:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p.intro::first-letter</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: #ff0000;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: 200%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">O exemplo acima exibirá a primeira letra dos parágrafos com class ="intro", em vermelho e em tamanho maior.</p>
+      <h2 class="spacing-Y">Múltiplos Pseudo-elementos</h2>
+      <p class="spacing-y">Vários pseudo-elementos também podem ser combinados.</p>
+      <p class="spacing-y">No exemplo a seguir, a primeira letra de um parágrafo será vermelha, em tamanho de fonte xx-large. O restante da primeira linha será azul e em letras maiúsculas. O restante do parágrafo terá o tamanho e a cor da fonte padrão:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p::first-letter</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: #ff0000;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: xx-large;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p::first-line</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: #0000ff;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-variant</span>: small-caps;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="spacing-y"><span class="example-text-color-1" style="font-size: xx-large;">T</span><span style="color: blue; font-variant: small-caps;">exto aleatório</span></span> 
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">CSS - O pseudo-elemento ::before</h2>
+      <p class="spacing-y">O pseudo-elemento <span class="code-inline">::before</span> pode ser usado para inserir algum conteúdo antes do conteúdo de um elemento.</p>
+      <h3 class="spacing-Y">O exemplo a seguir insere uma imagem antes do conteúdo de cada elemento &lt;h1&gt;</h3>
+      <p class="spacing-y">No exemplo a seguir, o seletor corresponde a qualquer elemento &lt;p&gt; que seja o primeiro filho de qualquer elemento:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">h1::before</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">content</span>: url(smiley.gif);</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">CSS - O pseudo-elemento ::after</h2>
+      <p class="spacing-y">O pseudo elemento <span class="code-inline">::after</span> pode ser usado para inserir algum conteúdo após o conteúdo de um elemento.</p>
+      <p class="spacing-y">O exemplo a seguir insere uma imagem após o conteúdo de cada elemento &lt;h1&gt;:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">h1::after</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">content</span>: url(smiley.gif);</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">CSS - O pseudo-elemento ::after</h2>
+      <p class="spacing-y">O pseudo elemento <span class="code-inline">::marker</span> seleciona os marcadores dos itens da lista.</p>
+      <p class="spacing-y">O exemplo a seguir estiliza os marcadores de itens de lista:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">::marker</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: 23px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">CSS - O pseudo-elemento ::selection</h3>
+      <p class="spacing-y">A pseudo elemento <span class="code-inline">::selection</span> corresponde à parte de um elemento que é selecionado por um usuário.</p>
+      <p class="spacing-y">As seguintes propriedades CSS podem ser aplicadas a <span class="code-inline">::selection</span>: <span class="code-inline">color</span>, <span class="code-inline">background</span>, <span class="code-inline">cursor</span> e <span class="code-inline">outline</span>.</p>
+      <p class="spacing-y">O exemplo a seguir torna o texto selecionado vermelho em um fundo amarelo:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">::selection</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <span class="spacing-y example-of-selection">Texto aleatório</span>     
           </div>
         </div>
       </div>
