@@ -792,19 +792,19 @@
     <span class="code-comment">&lt;!-- mystyle.css --&gt;</span>
   </div>       
   <div class="code-inline">         
-  <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+    <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
   </div>
   <div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+    <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
   </div>
   <div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">link <span class="example-text-color-1">rel</span><span class="example-text-color-2">="stylesheet"</span> <span class="example-text-color-1">href</span><span class="example-text-color-2">="mystyle.css"</span></span><span class="code-punctuation">&gt;</span>
+    <span class="code-punctuation">&lt;</span><span class="code-tag">link <span class="example-text-color-1">rel</span><span class="example-text-color-2">="stylesheet"</span> <span class="example-text-color-1">href</span><span class="example-text-color-2">="mystyle.css"</span></span><span class="code-punctuation">&gt;</span>
   </div>
   <div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
   </div>
   <div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+    <span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&lt;</span><span class="code-tag">h1</span><span class="code-punctuation">&gt;</span><span class="code-text">Esse é o cabeçalho</span><span class="code-punctuation">&lt;</span><span class="code-tag">/h1</span><span class="code-punctuation">&gt;</span>
@@ -813,10 +813,10 @@
     <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Isso é um paragráfo.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
   </div>  
   <div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
   </div>
   <div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
   </div>
               </code>
             </pre>
@@ -11552,18 +11552,15 @@
     </section>
     <section class="theme" data-title="pseudo-classcss" data-index="29" hidden>
       <h1 class="spacing-Y">Pseudo-class de CSS</h1>
-      <p class="spacing-y">Um combinador é algo que explica a relação entre os seletores.</p>
-      <p class="spacing-y">Um seletor CSS pode conter mais de um seletor simples. Entre os seletores simples, podemos incluir um combinador.</p>
-      <p class="spacing-y">Existem quatro combinadores diferentes em CSS:</p>
+      <p class="spacing-y">Uma pseudo classe é usada para definir um estado especial de um elemento.</p>
+      <p class="spacing-y">Por exemplo, pode ser usado para:</p>
       <ul class="spacing-left">
-        <li>seletor descendente (espaço)</li>
-        <li>seletor filho (&gt;)</li>
-        <li>seletor de irmão adjacente (+)</li>
-        <li>seletor geral de irmãos (~)</li>
+        <li>Estilizar um elemento quando um usuário passa o mouse sobre ele</li>
+        <li>Estilizar links visitados e não visitados de forma diferente</li>
+        <li>Estilizar um elemento quando ele recebe o foco</li>
       </ul>
-      <h2 class="spacing-Y">Seletor Descendente</h2>
-      <p class="spacing-y">O seletor descendente corresponde a todos os elementos que são descendentes de um elemento especificado.</p>
-      <p class="spacing-y">O exemplo a seguir seleciona todos os elementos &lt;p&gt; dentro dos elementos &lt;div&gt;:</p>
+      <h2 class="spacing-Y">Sintaxe</h2>
+      <p class="spacing-y">A sintaxe das pseudo classes:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -11580,10 +11577,10 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-tag">div p</span><span class="code-punctuation">&#123;</span>
+    <span class="code-tag">selector:pseudo-class </span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+    <span class="code-text"><span class="example-text-color-1">property</span>: value;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
@@ -11596,9 +11593,8 @@
           </div>
         </div>
       </div>
-      <h2 class="spacing-Y">Seletor filho (&gt;)</h2>
-      <p class="spacing-y">O seletor filho seleciona todos os elementos que são filhos de um elemento especificado.</p>
-      <p class="spacing-y">O exemplo a seguir seleciona todos os elementos &lt;p&gt; que são filhos de um elemento &lt;div&gt;:</p>
+      <h2 class="spacing-Y">Pseudo-classes âncora</h2>
+      <p class="spacing-y">Os links podem ser exibidos de diferentes maneiras:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -11615,10 +11611,49 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-tag">div > p</span><span class="code-punctuation">&#123;</span>
+    <span class="code-comment"> /* link não visitado */</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+    <span class="code-tag">a:link</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: #FF0000;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-comment"> /* link visitado */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">a:visited</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: #00FF00;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-comment"> /* link com mouse em cima */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">a:hover</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: #FF00FF;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-comment"> /* link selecionado */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">a:active</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: #0000FF;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
@@ -11631,10 +11666,10 @@
           </div>
         </div>
       </div>
-      <h2 class="spacing-Y">Seletor de irmão adjacente (+)</h2>
-      <p class="spacing-y">O seletor irmão adjacente é usado para selecionar um elemento que está diretamente após outro elemento específico.</p>
-      <p class="spacing-y">Os elementos irmãos devem ter o mesmo elemento pai e "adjacente" significa "imediatamente seguinte".</p>
-      <p class="spacing-y">O exemplo a seguir seleciona o primeiro elemento &lt;p&gt; que é colocado imediatamente após os elementos &lt;div&gt;:</p>
+      <p class="spacing-y">Observação: <span class="code-inline">a:hover</span> DEVE vir depois <span class="code-inline">a:link</span> e <span class="code-inline">a:visited</span> na definição de CSS para ser eficaz! <span class="code-inline">a:active</span> DEVE vir depois a:hover na definição de CSS para ser eficaz! Nomes de pseudo classe não diferenciam maiúsculas de minúsculas.</p>
+      <h2 class="spacing-Y">Pseudo-classes e classes HTML</h2>
+      <p class="spacing-y">Pseudo-classes podem ser combinadas com classes HTML:</p>
+      <p class="spacing-y">Ao passar o mouse sobre o link do exemplo, ele mudará de cor:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -11651,10 +11686,10 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-tag">div + p</span><span class="code-punctuation">&#123;</span>
+    <span class="code-tag">a.highlight:hover</span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+    <span class="code-text"><span class="example-text-color-1">color</span>: #ff0000;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
@@ -11667,9 +11702,8 @@
           </div>
         </div>
       </div>
-      <h2 class="spacing-Y">Seletor geral de irmãos (~)</h2>
-      <p class="spacing-y">O seletor geral de irmãos seleciona todos os elementos que são os próximos irmãos de um elemento especificado.</p>
-      <p class="spacing-y">O exemplo a seguir seleciona todos os elementos &lt;p&gt; que são os próximos irmãos dos elementos &lt;div&gt;:</p>
+      <h2 class="spacing-Y">Passe o mouse sobre &lt;div&gt;</h2>
+      <p class="spacing-y">Um exemplo de uso da <span class="code-inline">:hover</span> pseudoclasse em um elemento &lt;div&gt;:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -11686,13 +11720,235 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-tag">div ~ p</span><span class="code-punctuation">&#123;</span>
+    <span class="code-tag">div:hover</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: blue;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Dica de ferramenta simples</h2>
+      <p class="spacing-y">Passe o mouse sobre um elemento &lt;div&gt; para mostrar um elemento &lt;p&gt; (como uma dica de ferramenta):</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: none;</span>
   </div>
   <div class="code-line">
     <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
   </div>
   <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 20px;</span>
+  </div>
+  <div class="code-line">
     <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">div:hover</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: block;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>  
+            <span class="spacing-y example-of" style="display: none; background-color: yellow; padding: 20px;">Passe o mouse sobre mim para mostrar o elemento &lt;p&gt;.</span>       
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">CSS - A pseudo-classe :first-child</h2>
+      <p class="spacing-y">A pseudo classe :first-child corresponde a um elemento especificado que é o primeiro filho de outro elemento.</p>
+      <h3 class="spacing-Y">Corresponde ao primeiro elemento &lt;p&gt;</h3>
+      <p class="spacing-y">No exemplo a seguir, o seletor corresponde a qualquer elemento &lt;p&gt; que seja o primeiro filho de qualquer elemento:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p:first-child</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: blue;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">Corresponde ao primeiro elemento &lt;i&gt; em todos os elementos &lt;p&gt;</h3>
+      <p class="spacing-y">No exemplo a seguir, o seletor corresponde ao primeiro elemento &lt;i&gt; em todos os elementos &lt;p&gt;:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p i:first-child</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: blue;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">Corresponde a todos os elementos &lt;i&gt; em todos os primeiros elementos filhos &lt;p&gt;</h3>
+      <p class="spacing-y">No exemplo a seguir, o seletor corresponde a todos os elementos &lt;i&gt; em elementos &lt;p&gt; que são o primeiro filho de outro elemento:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">p:first-child i</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: blue;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">CSS - A pseudo-classe :lang</h3>
+      <p class="spacing-y">A pseudo classe <span class="code-inline">:lang</span>  permite definir regras especiais para diferentes idiomas.</p>
+      <p class="spacing-y">No exemplo abaixo, defina <span class="code-inline">:lang</span> as aspas para os elementos &lt;q&gt; com lang="no": </p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- mystyle.css --&gt;</span>
+  </div>       
+  <div class="code-inline">         
+    <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">link <span class="example-text-color-1">rel</span><span class="example-text-color-2">="stylesheet"</span> <span class="example-text-color-1">href</span><span class="example-text-color-2">="mystyle.css"</span></span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">style</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">q:lang(no)</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">quotes</span>: "~" "~";</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/style</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Texto aleatório<span class="code-punctuation">&lt;</span><span class="code-tag">q lang="no"</span><span class="code-punctuation">&gt;</span>Uma citação em um parágrafo<span class="code-punctuation">&lt;</span><span class="code-tag">/q</span><span class="code-punctuation">&gt;</span> Texto aleatório.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">0
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
   </div>
               </code>
             </pre>
