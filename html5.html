@@ -2755,22 +2755,24 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
         <p>Um CSS interno é usado para definir um estilo para uma única página HTML.</p>
         <p>Um CSS interno é definido na <code class="code-inline">&lt;head&gt;</code>seção de uma página HTML, dentro de
           um <code class="code-inline">&lt;style&gt;</code> elemento.</p>
-        <p>O exemplo a seguir define a cor do texto de TODOS os <code class="code-inline">&lt;h1&gt;</code> elementos (naquela página) como azul e a cor do texto de TODOS os <code class="code-inline">&lt;p&gt;</code> elementos como vermelho. Além disso, a página será exibida com uma cor de fundo "powerblue":</p>
+        <p>O exemplo a seguir define a cor do texto de TODOS os <code class="code-inline">&lt;h1&gt;</code> elementos
+          (naquela página) como azul e a cor do texto de TODOS os <code class="code-inline">&lt;p&gt;</code> elementos
+          como vermelho. Além disso, a página será exibida com uma cor de fundo "powerblue":</p>
         <div class="example-code">
           <div class="code-title d-flex align-items-center justify-content-between">
-              <div>
-                  <p>Exemplo Estrutura HTML</p>
-              </div>
-              <div class="btn-group" role="group" aria-label="First group">
-                  <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                      data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
-                  <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
-                      data-bs-placement="top" title="Copiar o codigo">Copiar</button>
-              </div>
+            <div>
+              <p>Exemplo Estrutura HTML</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo">Copiar</button>
+            </div>
           </div>
           <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-              <div class="code-body col">
-                  <pre>
+            <div class="code-body col">
+              <pre>
                   <code>
 <div class="code-line">
 <span class="code-punctuation">&lt;</span><span class="code-tag">!DOCTYPE html</span><span class="code-punctuation">&gt;</span>
@@ -2816,26 +2818,111 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
 </div>
                   </code>
               </pre>
-              </div>
-              <div class="code-support col">
-                <figure class="figure my-auto">
-                  <img src="/assets/img/EXEMPLO HTML 1.webp"
-                      class="figure-img img-fluid rounded" alt="Imamge">
-                  <figcaption class="figure-caption text-end mx-2">Utilizando a tag Style.
-                  </figcaption>
+            </div>
+            <div class="code-support col">
+              <figure class="figure my-auto">
+                <img src="/assets/img/EXEMPLO HTML 1.webp" class="figure-img img-fluid rounded" alt="Imamge">
+                <figcaption class="figure-caption text-end mx-2">Utilizando a tag Style.
+                </figcaption>
               </figure>
-              </div>
+            </div>
           </div>
-      </div>
-      <h2 class="spacing-y">CSS Externo</h2>
-      <p>Uma folha de estilo externa é usada para definir o estilo de muitas páginas HTML.</p>
-      <p>ara usar uma folha de estilo externa, adicione um link para ela na <code class="code-inline">head</code> seção de cada página HTML:
-      </p>
-
-
-
-
-
+        </div>
+        <h2 class="spacing-y">CSS Externo</h2>
+        <p>Uma folha de estilo externa é usada para definir o estilo de muitas páginas HTML.</p>
+        <p>Para usar uma folha de estilo externa, adicione um link para ela na <code class="code-inline">head</code>
+          seção de cada página HTML:
+        </p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo Estrutura HTML</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Tentar fazer este exercicio">Tentar</button>
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo">Copiar</button>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="code-body col">
+              <pre>
+                  <code>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">!DOCTYPE html</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">link rel="stylesheet" href="style.css"</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">h1</span><span class="code-text">Isso é um cabeçalho</span><span class="code-punctuation">&lt;</span><span class="code-tag">/h1</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Este é um paragráfo.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+</div>
+                  </code>
+              </pre>
+            </div>
+            <div class="code-support col">
+              <h1>Esse é um cabeçalho</h1>
+              <p>Esse é um parágrafo</p>
+            </div>
+          </div>
+        </div>
+        <p>A folha de estilo externa pode ser escrita em qualquer editor de texto. O arquivo não deve conter nenhum
+          código HTML e deve ser salvo com a extensão <span class="code-inline">.css</span></p>
+        <p>vAqui está a aparência do arquivo "styles.css":</p>
+        <div class="example-code">
+          <div class="code-title d-flex align-items-center justify-content-between">
+            <div>
+              <p>Exemplo</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Copiar o codigo">Copiar</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre>
+              <code>
+<div class="code-line">
+<span class="code-text">body </span><span class="code-punctuation">{ </span>
+</div>
+<div class="code-line">
+  <span class="code-attribute">background-color:</span> <span class="code-value">powerblue;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation"> }</span>
+</div>
+<div class="code-line">
+<span class="code-text">h1 </span><span class="code-punctuation">{ </span><span class="code-attribute">color:</span> <span class="code-value">blue;</span><span class="code-punctuation"> }</span>
+</div>
+<div class="code-line">
+<span class="code-text">p </span><span class="code-punctuation">{ </span><span class="code-attribute">color:</span> <span class="code-value">red;</span><span class="code-punctuation"> }</span>
+</div>
+</code>
+              </pre>
+          </div>
+        </div>
 
 
 
