@@ -140,6 +140,7 @@
           <a href="?t=combinatorscss" class="list-group-item">Combinators CSS</a>
           <a href="?t=pseudo-classcss" class="list-group-item">Pseudo-class CSS</a>
           <a href="?t=pseudo-elementscss" class="list-group-item">Pseudo-elements CSS</a>
+          <a href="?t=opacitycss" class="list-group-item">Opacity CSS</a>
         </div>
       </div>
     </div>
@@ -282,6 +283,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=pseudo-elementscss">Pseudo-elements CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=opacitycss">Opacity CSS</a>
       </li>
     </ul>
   </aside>
@@ -12353,6 +12357,293 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="theme" data-title="opacitycss" data-index="31" hidden>
+      <h1 class="spacing-Y">Opacity CSS</h1>
+      <p class="spacing-y">A propriedade <span class="code-inline">opacity</span> especifica a opacidade/transparência de um elemento.</p>
+      <h2 class="spacing-Y">Imagem Transparente</h2>
+      <p class="spacing-y">A propriedade <span class="code-inline">opacity</span> pode assumir um valor de 0,0 a 1,0. Quanto menor o valor, mais transparente:</p>
+      <img src="assets/img/miniLogo.webp" alt="" style="opacity: 0.2;">
+      <p class="spacing-y">opacidade 0.2</p>
+      <img src="assets/img/miniLogo.webp" alt="" style="opacity: 0.5;">
+      <p class="spacing-y">opacidade 0.5</p>
+      <img src="assets/img/miniLogo.webp" alt="" style="opacity: 1;">
+      <p class="spacing-y">opacidade 1(padrão)</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">img </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">opacity</span>: 0.5;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <img src="assets/img/miniLogo.webp" alt="" style="opacity: 0.5;">     
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Efeito de foco transparente</h2>
+      <p class="spacing-y">A propriedade <span class="code-inline">opacity</span> geralmente é usada junto com o <span class="code-inline">:hover</span> seletor para alterar a opacidade ao passar o mouse:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">img </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">opacity</span>: 0.5;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">img:hover </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">opacity</span>: 1;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <img src="assets/img/miniLogo.webp" class="example-of-1" alt="" style="opacity: 0.5;">     
+            <img src="assets/img/exemplo1.jpg" class="example-of-1" alt="" style="opacity: 0.5;">     
+            <img src="assets/img/exemplo2.jpg" class="example-of-1" alt="" style="opacity: 0.5;">     
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">Exemplo explicado</h3>
+      <p class="spacing-y">O primeiro bloco CSS é semelhante ao código do Exemplo 1. Além disso, adicionamos o que deve acontecer quando um usuário passa o mouse sobre uma das imagens. Neste caso, queremos que a imagem NÃO fique transparente quando o usuário passar o mouse sobre ela. O CSS para isso é <span class="code-inline">opacity: 1;</span></p>
+      <p class="spacing-y">Um exemplo de efeito de foco invertido:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">img:hover </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">opacity</span>: 0.5;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <img src="assets/img/miniLogo.webp" class="example-of-2" alt="">     
+            <img src="assets/img/exemplo1.jpg" class="example-of-2" alt="">     
+            <img src="assets/img/exemplo2.jpg" class="example-of-2" alt="">     
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Caixa Transparente</h2>
+      <p class="spacing-y">Ao usar a propriedade <span class="code-inline">opacity </span> para adicionar transparência ao plano de fundo de um elemento, todos os seus elementos filhos herdam a mesma transparência. Isso pode dificultar a leitura do texto dentro de um elemento totalmente transparente:</p>
+      <h2 class="spacing-Y">Transparência usando RGBA</h2>
+      <p class="spacing-y">Se você não deseja aplicar opacidade aos elementos filhos, como no exemplo acima, use valores de cores RGBA .</p>
+      <span class="example-background-color-2 example-opacity-1">Opacidade 100%</span>  
+      <span class="example-background-color-2 example-opacity-2">Opacidade 60%</span>  
+      <span class="example-background-color-2 example-opacity-3">Opacidade 30%</span>  
+      <span class="example-background-color-2 example-opacity-4">Opacidade 10%</span>  
+      <p class="spacing-y">Além de RGB, você pode usar um valor de cor RGB com um canal alfa (RGBA) - que especifica a opacidade de uma cor.</p>
+      <p class="spacing-y">Um valor de cor RGBA é especificado com: rgba(red, green, blue, alpha ). O parâmetro alfa é um número entre 0,0 (totalmente transparente) e 1,0 (totalmente opaco).</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">div </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background</span>: rgba(76, 175, 80, 0.3);</span> <span class="code-comment"> /* Green background with 30% opacity */ </span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Texto em Caixa Transparente</h2>
+      <p class="spacing-y">O pseudo-elemento <span class="code-inline">::first-letter</span> é usado para adicionar um estilo especial à primeira letra de um texto.</p>
+      <p class="spacing-y">O exemplo a seguir formata a primeira letra do texto em todos os elementos &lt;p&gt; :</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-inline">         
+    <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">style <span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">div.background </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background</span>: url(klematis.jpg) repeat;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 2px solid black;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">div.transbox </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 30px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #ffffff;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 2px solid black;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">opacity</span>: 0.6;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">div.transbox p </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 5%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-weight</span>: bold;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: #000000;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/style</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">div <span class="example-text-color-1">class</span>: background</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">div <span class="example-text-color-1">class</span>: transbox</span><span class="code-punctuation">&gt;</span>
+  </div>
+      <div class="code-line">
+        <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Isso é um um texto colocado na caixa transparente.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+      </div>  
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">/div</span><span class="code-punctuation">&gt;</span>
+    </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/div</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">Exemplo explicado</h3>
+      <p class="spacing-y">Primeiro, criamos um elemento &lt;div&gt; (class="background") com uma imagem de fundo e uma borda.</p>
+      <p class="spacing-y">Então criamos outro &lt;div&gt; (class="transbox") dentro do primeiro &lt;div&gt;.</p>
+      <p class="spacing-y">O &lt;div class="transbox"&gt; tem uma cor de fundo e uma borda - o div é transparente.</p>
+      <p class="spacing-y">Primeiro, criamos um elemento &lt;div&gt; (class="background") com uma imagem de fundo e uma borda.</p>
+      <p class="spacing-y">Dentro do &lt;div&gt; transparente, adicionamos algum texto dentro de um elemento <p>.</p>
     </section>
     <!-- Toast -->
     <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
