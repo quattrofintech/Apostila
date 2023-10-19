@@ -12647,7 +12647,7 @@
       <p class="spacing-y">Então criamos outro &lt;div&gt; (class="transbox") dentro do primeiro &lt;div&gt;.</p>
       <p class="spacing-y">O &lt;div class="transbox"&gt; tem uma cor de fundo e uma borda - o div é transparente.</p>
       <p class="spacing-y">Primeiro, criamos um elemento &lt;div&gt; (class="background") com uma imagem de fundo e uma borda.</p>
-      <p class="spacing-y">Dentro do &lt;div&gt; transparente, adicionamos algum texto dentro de um elemento <p>.</p>
+      <p class="spacing-y">Dentro do &lt;div&gt; transparente, adicionamos algum texto dentro de um elemento &lt;p&gt;.</p>
     </section>
     <section class="theme" data-title="navigation-barcss" data-index="32" hidden>
       <h1 class="spacing-Y">Barra de Navegação(navigation bar) CSS</h1>
@@ -12656,7 +12656,7 @@
       <h2 class="spacing-Y">Barra de Navegação = Lista de Links</h2>
       <p class="spacing-y">Uma barra de navegação precisa de HTML padrão como base.</p>
       <p class="spacing-y">Em nossos exemplos, construiremos a barra de navegação a partir de uma lista HTML padrão.</p>
-      <p class="spacing-y">Uma barra de navegação é basicamente uma lista de links, portanto, usar os elementos &lt;ul&gt;e &lt;li&gt; faz todo o sentido:</p>
+      <p class="spacing-y">Uma barra de navegação é basicamente uma lista de links, portanto, usar os elementos &lt;ul&gt; e &lt;li&gt; faz todo o sentido:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -12741,8 +12741,8 @@
       <p class="spacing-y"><span class="code-inline">list-style-type: none;</span>- Remove as balas. Uma barra de navegação não precisa de marcadores de lista.</p>
       <p class="spacing-y">Definir <span class="code-inline">margin: 0;</span> e <span class="code-inline">padding: 0;</span> remover as configurações padrão do navegador.</p>
       <p class="spacing-y">O código no exemplo acima é o código padrão usado nas barras de navegação vertical e horizontal, sobre o qual você aprenderá mais nos próximos capítulos.</p>
-      <h3 class="spacing-Y">Exemplo explicado</h3>
-      <p class="spacing-y">Um exemplo de efeito de foco invertido:</p>
+      <h2 class="spacing-Y">Barra de Navegação Vertical do CSS</h2>
+      <p class="spacing-y">Para construir uma barra de navegação vertical, você pode estilizar os elementos &lt;a&gt; dentro da lista, além do código da página anterior:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -12759,10 +12759,13 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-tag">img:hover </span><span class="code-punctuation">&#123;</span>
+    <span class="code-tag">li a </span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">opacity</span>: 0.5;</span>
+    <span class="code-text"><span class="example-text-color-1">display</span>: block;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 60px;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
@@ -12771,23 +12774,14 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
-            <img src="assets/img/miniLogo.webp" class="example-of-2" alt="">     
-            <img src="assets/img/exemplo1.jpg" class="example-of-2" alt="">     
-            <img src="assets/img/exemplo2.jpg" class="example-of-2" alt="">     
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
           </div>
         </div>
       </div>
-      <h2 class="spacing-Y">Caixa Transparente</h2>
-      <p class="spacing-y">Ao usar a propriedade <span class="code-inline">opacity </span> para adicionar transparência ao plano de fundo de um elemento, todos os seus elementos filhos herdam a mesma transparência. Isso pode dificultar a leitura do texto dentro de um elemento totalmente transparente:</p>
-      <h2 class="spacing-Y">Transparência usando RGBA</h2>
-      <p class="spacing-y">Se você não deseja aplicar opacidade aos elementos filhos, como no exemplo acima, use valores de cores RGBA .</p>
-      <span class="example-background-color-2 example-opacity-1">Opacidade 100%</span>  
-      <span class="example-background-color-2 example-opacity-2">Opacidade 60%</span>  
-      <span class="example-background-color-2 example-opacity-3">Opacidade 30%</span>  
-      <span class="example-background-color-2 example-opacity-4">Opacidade 10%</span>  
-      <p class="spacing-y">Além de RGB, você pode usar um valor de cor RGB com um canal alfa (RGBA) - que especifica a opacidade de uma cor.</p>
-      <p class="spacing-y">Um valor de cor RGBA é especificado com: rgba(red, green, blue, alpha ). O parâmetro alfa é um número entre 0,0 (totalmente transparente) e 1,0 (totalmente opaco).</p>
+      <h3 class="spacing-Y">Exemplo explicado:</h3>
+      <p class="spacing-y"><span class="code-inline">display: block;</span> - Exibir os links como elementos de bloco torna toda a área do link clicável (não apenas o texto) e nos permite especificar a largura (e preenchimento, margem, altura, etc., se desejar)</p>
+      <p class="spacing-y"><span class="code-inline">width: 60px;</span> - Os elementos do bloco ocupam toda a largura disponível por padrão. Queremos especificar uma largura de 60 pixels</p>
+      <p class="spacing-y">Você também pode definir a largura de &lt;ul&gt; e remover a largura de &lt;a&gt;, pois eles ocuparão toda a largura disponível quando exibidos como elementos de bloco. Isso produzirá o mesmo resultado do nosso exemplo anterior:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -12804,10 +12798,28 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-tag">div </span><span class="code-punctuation">&#123;</span>
+    <span class="code-tag">ul </span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background</span>: rgba(76, 175, 80, 0.3);</span> <span class="code-comment"> /* Green background with 30% opacity */ </span>
+    <span class="code-text"><span class="example-text-color-1">list-style-type</span>: none;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 0;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 0;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 60px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">li a </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: block;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
@@ -12816,13 +12828,12 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
           </div>
         </div>
       </div>
-      <h2 class="spacing-Y">Texto em Caixa Transparente</h2>
-      <p class="spacing-y">O pseudo-elemento <span class="code-inline">::first-letter</span> é usado para adicionar um estilo especial à primeira letra de um texto.</p>
-      <p class="spacing-y">O exemplo a seguir formata a primeira letra do texto em todos os elementos &lt;p&gt; :</p>
+      <h2 class="spacing-Y">Exemplos de barra de navegação vertical</h2>
+      <p class="spacing-y">Crie uma barra de navegação vertical básica com fundo cinza e altere a cor de fundo dos links quando o usuário passar o mouse sobre eles:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -12838,104 +12849,217 @@
           <div class="code-body col textocod">
             <pre>
               <code>
-  <div class="code-inline">         
-    <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+  <div class="code-line">
+    <span class="code-tag">ul </span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+    <span class="code-text"><span class="example-text-color-1">list-style-type</span>: none;</span>
   </div>
   <div class="code-line">
-    <span class="code-punctuation">&lt;</span><span class="code-tag">style <span class="code-punctuation">&gt;</span>
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 0;</span>
   </div>
   <div class="code-line">
-    <span class="code-tag">div.background </span><span class="code-punctuation">&#123;</span>
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 0;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background</span>: url(klematis.jpg) repeat;</span>
+    <span class="code-text"><span class="example-text-color-1">width</span>: 60px;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 2px solid black;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-tag">div.transbox </span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">margin</span>: 30px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-color</span>: #ffffff;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 2px solid black;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">opacity</span>: 0.6;</span>
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #f1f1f1;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
   </div>
   <div class="code-line">
-    <span class="code-tag">div.transbox p </span><span class="code-punctuation">&#123;</span>
+    <span class="code-tag">li a </span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">margin</span>: 5%;</span>
+    <span class="code-text"><span class="example-text-color-1">display</span>: block;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">font-weight</span>: bold;</span>
+    <span class="code-text"><span class="example-text-color-1">color</span>: #000;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">color</span>: #000000;</span>
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 8px 16px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-decoration</span>: none;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
   </div>
   <div class="code-line">
-    <span class="code-punctuation">&lt;</span><span class="code-tag">/style</span><span class="code-punctuation">&gt;</span>
+    <span class="code-comment">Mudar a cor do link com hover</span>
   </div>
   <div class="code-line">
-    <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+    <span class="code-tag">li a:hover </span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #555;</span>
   </div>
   <div class="code-line">
-    <span class="code-punctuation">&lt;</span><span class="code-tag">div <span class="example-text-color-1">class</span>: background</span><span class="code-punctuation">&gt;</span>
+    <span class="code-text"><span class="example-text-color-1">color</span>: white;</span>
   </div>
   <div class="code-line">
-    <span class="code-punctuation">&lt;</span><span class="code-tag">div <span class="example-text-color-1">class</span>: transbox</span><span class="code-punctuation">&gt;</span>
-  </div>
-      <div class="code-line">
-        <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Isso é um um texto colocado na caixa transparente.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
-      </div>  
-    <div class="code-line">
-      <span class="code-punctuation">&lt;</span><span class="code-tag">/div</span><span class="code-punctuation">&gt;</span>
-    </div>
-  <div class="code-line">
-    <span class="code-punctuation">&lt;</span><span class="code-tag">/div</span><span class="code-punctuation">&gt;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+    <span class="code-punctuation">&#125;</span>
   </div>
               </code>
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
           </div>
         </div>
       </div>
-      <h3 class="spacing-Y">Exemplo explicado</h3>
-      <p class="spacing-y">Primeiro, criamos um elemento &lt;div&gt; (class="background") com uma imagem de fundo e uma borda.</p>
-      <p class="spacing-y">Então criamos outro &lt;div&gt; (class="transbox") dentro do primeiro &lt;div&gt;.</p>
-      <p class="spacing-y">O &lt;div class="transbox"&gt; tem uma cor de fundo e uma borda - o div é transparente.</p>
-      <p class="spacing-y">Primeiro, criamos um elemento &lt;div&gt; (class="background") com uma imagem de fundo e uma borda.</p>
-      <p class="spacing-y">Dentro do &lt;div&gt; transparente, adicionamos algum texto dentro de um elemento <p>.</p>
+      <h3 class="spacing-Y">Link de navegação ativo/atual</h3>
+      <p class="spacing-y">Adicione uma classe "ativa" ao link atual para que o usuário saiba em qual página ele está:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.active</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #04AA6D;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: white;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">Centralizar links e adicionar bordas</h3>
+      <p class="spacing-y">Adicione <span class="code-inline">text-align:center</span> a &lt;li&gt; ou &lt;a&gt; para centralizar os links.</p>
+      <p class="spacing-y">Adicione a propriedade <span class="code-inline">border</span> &lt;ul&gt; para adicionar uma borda ao redor da barra de navegação. Se você também quiser bordas dentro da barra de navegação, adicione a <span class="code-inline">border-bottom</span> a todos os elementos &lt;li&gt;, exceto o último:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">ul </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid #555;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">li</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-bottom</span>: 1px solid #555;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">li:last-child </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border-bottom</span>: none;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">Barra de navegação vertical fixa de altura total</h3>
+      <p class="spacing-y">Crie uma navegação lateral "adesiva" de altura total:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">ul </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">list-style-type</span>: none;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 0;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 0;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 25%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #f1f1f1;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">height</span>: 100%;</span> <span class="code-comment">/* Altura máxima */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">position</span>: fixed;</span> <span class="code-comment">/* faz ficar colado na tela mesmo dando scroll */</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">overflow</span>: auto;</span> <span class="code-comment">permite scroll de a sidenav ter muito conteúdo</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Nota: Este exemplo pode não funcionar corretamente em dispositivos móveis.</p>
     </section>
     <!-- Toast -->
     <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
