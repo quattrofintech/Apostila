@@ -13060,6 +13060,132 @@
         </div>
       </div>
       <p class="spacing-y">Nota: Este exemplo pode não funcionar corretamente em dispositivos móveis.</p>
+      <h2 class="spacing-Y">Barra de Navegação Horizontal do CSS</h2>
+      <p class="spacing-y">Há duas maneiras de criar uma barra de navegação horizontal. Usando itens de lista embutidos ou flutuantes.</p>
+      <h3 class="spacing-Y">Itens de lista embutidos</h3>
+      <p class="spacing-y">Uma maneira de construir uma barra de navegação horizontal é especificar os elementos &lt;li&gt; como embutidos, além do código "padrão" da página anterior:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">li </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: inline;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">Exemplo explicado:</h3>
+      <p class="spacing-y"><span class="code-inline">display: inline;</span> - Por padrão, os elementos &lt;li&gt; são elementos de bloco. Aqui, removemos as quebras de linha antes e depois de cada item da lista, para exibi-los em uma linha</p>
+      <h3 class="spacing-Y">Itens da Lista Flutuante</h3>
+      <p class="spacing-y">Outra maneira de criar uma barra de navegação horizontal é flutuar os elementos &lt;li&gt; e especificar um layout para os links de navegação:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">li </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">float</span>: left;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">a</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: block;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 8px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #dddddd;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">Exemplo explicado:</h3>
+      <p class="spacing-y"><span class="code-inline">float: left;</span> - Use float para fazer com que os elementos do bloco flutuem um ao lado do outro</p>
+      <p class="spacing-y"><span class="code-inline">display: block;</span> - Permite especificar o preenchimento (altura, largura, margens, etc., se desejar)</p>
+      <p class="spacing-y"><span class="code-inline">padding: 8px;</span> - Especifique algum preenchimento entre cada elemento &lt;a&gt;, para torná-los com boa aparência</p>
+      <p class="spacing-y"><span class="code-inline">background-color: #dddddd;</span> - Adicione uma cor de fundo cinza a cada elemento &lt;a&gt;</p>
+      <p class="spacing-y">Dica: Adicione a cor de fundo a &lt;ul&gt; em vez de cada elemento &lt;a&gt; se desejar uma cor de fundo de largura total:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">li </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #dddddd;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Há muitos outros exemplos se utilizar na barra de navegação, testem o máximo que puderem com o que ja foi mostrado.</p>
     </section>
     <!-- Toast -->
     <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
