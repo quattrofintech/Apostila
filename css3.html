@@ -143,6 +143,8 @@
           <a href="?t=opacitycss" class="list-group-item">Opacity CSS</a>
           <a href="?t=navigation-barcss" class="list-group-item">Navigation bar(barra de navegação) CSS</a>
           <a href="?t=dropdowncss" class="list-group-item">Menus suspensos(Dropdown) CSS</a>
+          <a href="?t=imagescss" class="list-group-item">Galeria de Imagens CSS</a>
+          <a href="?t=imagespritecss" class="list-group-item">Sprites de imagem CSS</a>
         </div>
       </div>
     </div>
@@ -294,6 +296,12 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=dropdowncss">Menus suspensos(dropdown) CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=imagescss">Galeria de Imagens CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=imagespritecss">Sprite de Imagens CSS</a>
       </li>
     </ul>
   </aside>
@@ -13196,6 +13204,512 @@
       <p class="spacing-y">Crie um menu suspenso flutuante com CSS.</p>
       <h2 class="spacing-Y">Lista suspensa básica</h2>
       <p class="spacing-y">Crie uma caixa suspensa que aparece quando o usuário move o mouse sobre um elemento.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">style</span><span class="code-punctuation">&gt;</span>
+  </div> 
+    <div class="code-line">
+      <span class="code-tag">.dropdown</span><span class="code-punctuation">&#123;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">position</span>: relative;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">display</span>: inline-block</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">.dropdown-content  </span><span class="code-punctuation">&#123;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">display</span>: none</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">position</span>: absolute;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-color</span>: #f9f9f9;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">min-width</span>: 160px;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">box-shadow</span>: 0px 8px 16px 0px rgba(0,0,0,0.2);</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">padding</span>: 12px 16px;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">z-index</span>: 1;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">.dropdown:hover .dropdown-content  </span><span class="code-punctuation">&#123;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">display</span>: block</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&#125;</span>
+    </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/style</span><span class="code-punctuation">&gt;</span>
+  </div> 
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">div <span class="example-text-color-1">class</span>= "dropdown</span><span class="code-punctuation">&gt;</span>
+  </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">span</span><span class="code-punctuation">&gt;</span><span>Coloque o mouse em cima de mim!</span><span class="code-punctuation">&lt;</span><span class="code-tag">/span</span><span class="code-punctuation">&gt;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">div <span class="example-text-color-1">class</span>: "dropdown-content"</span><span class="code-punctuation">&gt;</span>
+    </div>
+      <div class="code-line">
+        <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span>Olá Mundo!</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p<span class="code-punctuation">&gt;</span>
+      </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">/div<span class="code-punctuation">&gt;</span>
+    </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/div<span class="code-punctuation">&gt;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Exemplo explicado</h2>
+      <p class="spacing-y">HTML - Use qualquer elemento para abrir o conteúdo suspenso, por exemplo, um elemento &lt;span&gt; ou &lt;button&gt;.</p>
+      <p class="spacing-y">Use um elemento de contêiner (como &lt;div&gt;) para criar o conteúdo suspenso e adicione o que quiser dentro dele.</p>
+      <p class="spacing-y">Envolva um elemento &lt;div&gt; em torno dos elementos para posicionar o conteúdo suspenso corretamente com CSS.</p>
+      <p class="spacing-y">CSS - A classe <span class="code-inline">.dropdown</span> usa <span class="code-inline">position:relative</span>, que é necessário quando queremos que o conteúdo suspenso seja colocado logo abaixo do botão suspenso (usando <span class="code-inline">position:absolute</span>).</p>
+      <p class="spacing-y">A classe <span class="code-inline">padding: 0;</span>.dropdown-content contém o conteúdo suspenso real. Ele está oculto por padrão e será exibido ao passar o mouse (veja abaixo). Observe que <span class="code-inline">min-width</span> está definido para 160px. Sinta-se livre para mudar isso. Dica: Se você deseja que a largura do conteúdo suspenso seja tão larga quanto o botão suspenso, defina como <span class="code-inline">width</span> 100% (e <span class="code-inline">overflow: auto</span> para habilitar a rolagem em telas pequenas).</p>
+      <p class="spacing-y">Em vez de usar uma borda, usamos a propriedade <span class="code-inline">box-shadow</span> CSS para fazer o menu suspenso parecer um "cartão".</p>
+      <p class="spacing-y">O seletor <span class="code-inline">:hover</span> é usado para mostrar o menu suspenso quando o usuário move o mouse sobre o botão suspenso.</p>
+      <h2 class="spacing-Y">Exemplo explicado</h2>
+      <p class="spacing-y">Cria um menu suspenso que permita ao usuário escolher uma opção em uma lista</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">style</span><span class="code-punctuation">&gt;</span>
+  </div> 
+    <div class="code-line">
+      <span class="code-comment">/* Estilo do botão do dropdown */</span>
+    </div>  
+    <div class="code-line">
+      <span class="code-tag">.dropbtn </span><span class="code-punctuation">&#123;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-color</span>: #4CAF50;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">color</span>: white;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">padding</span>: 16px</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">font-size</span>: 16px</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">border</span>: none</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">cursor</span>: pointer</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-comment">/* O contaider div - precisa da posição do conteúdo do dropdown */</span>
+    </div>  
+    <div class="code-line">
+      <span class="code-tag">.dropdown</span><span class="code-punctuation">&#123;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">position</span>: relative;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">display</span>: inline-block</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-comment">/* Conteúdo dropdown (hidden(escondido) por padrão) */</span>
+    </div>  
+    <div class="code-line">
+      <span class="code-tag">.dropdown-content  </span><span class="code-punctuation">&#123;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">display</span>: none</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">position</span>: absolute;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-color</span>: #f9f9f9;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">min-width</span>: 160px;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">box-shadow</span>: 0px 8px 16px 0px rgba(0,0,0,0.2);</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">padding</span>: 12px 16px;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">z-index</span>: 1;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-comment">/* Links dentro do dropdown */</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">.dropdown-content a </span><span class="code-punctuation">&#123;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">color</span>: black</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">padding</span>: 12px 16px</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">text-decoration</span>: none</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">display</span>: block</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-comment">/* Muda a cor dos links do dropdown com hover */</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">.dropdown-content a:hover </span><span class="code-punctuation">&#123;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-color</span>: #f1f1f1</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-comment">/* Mostra o menu do dropdown com hover */</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">.dropdown:hover .dropdown-content  </span><span class="code-punctuation">&#123;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">display</span>: block</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-comment">/* Modifica o background color do botão do dropdown quando o conteúdo é mostrado */</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">.dropdown:hover .dropbtn  </span><span class="code-punctuation">&#123;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background-color</span>: #3e8e41</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&#125;</span>
+    </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/style</span><span class="code-punctuation">&gt;</span>
+  </div> 
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">div <span class="example-text-color-1">class</span>= "dropdown</span><span class="code-punctuation">&gt;</span>
+  </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">span</span><span class="example-text-color-1">class</span>: "dropbtn"</span><span class="code-punctuation">&gt;</span><span>Dropdown</span><span class="code-punctuation">&lt;</span><span class="code-tag">/span</span><span class="code-punctuation">&gt;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">div <span class="example-text-color-1">class</span>: "dropdown-content"</span><span class="code-punctuation">&gt;</span>
+    </div>
+      <div class="code-line">
+        <span class="code-punctuation">&lt;</span><span class="code-tag">a</span><span class="example-text-color-1">href</span>: "#"</span><span class="code-punctuation">&gt;</span><span>Link 1</span><span class="code-punctuation">&lt;</span><span class="code-tag">/a<span class="code-punctuation">&gt;</span>
+        <span class="code-punctuation">&lt;</span><span class="code-tag">a</span><span class="example-text-color-1">href</span>: "#"</span><span class="code-punctuation">&gt;</span><span>Link 2</span><span class="code-punctuation">&lt;</span><span class="code-tag">/a<span class="code-punctuation">&gt;</span>
+        <span class="code-punctuation">&lt;</span><span class="code-tag">a</span><span class="example-text-color-1">href</span>: "#"</span><span class="code-punctuation">&gt;</span><span>Link 3</span><span class="code-punctuation">&lt;</span><span class="code-tag">/a<span class="code-punctuation">&gt;</span>
+      </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">/div<span class="code-punctuation">&gt;</span>
+    </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/div<span class="code-punctuation">&gt;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">Conteúdo suspenso alinhado à direita</h3>
+      <p class="spacing-y">Se você quiser que o menu suspenso vá da direita para a esquerda, em vez da esquerda para a direita, adicione <span class="code-inline">right: 0;</span></p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.dropdown-content </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">right</span>: 0;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="theme" data-title="imagescss" data-index="34" hidden>
+      <h1 class="spacing-Y">Galeria de Imagens CSS</h1>
+      <p class="spacing-y">CSS pode ser usado para criar uma galeria de imagens.</p>
+      <p class="spacing-y">A seguinte galeria de imagens é criada com CSS:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-inline">         
+    <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">style</span><span class="code-punctuation">&gt;</span>
+  </div> 
+  <div class="code-line">
+    <span class="code-tag">div.gallery</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin</span>: 5px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid #ccc;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">float</span>: left;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 180px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">div.gallery:hover </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid #777;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">div.gallery img </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 100%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">height</span>: auto;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>  
+  <div class="code-line">
+    <span class="code-tag">div.desc </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 15px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>  
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/style</span><span class="code-punctuation">&gt;</span>
+  </div> 
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">div <span class="example-text-color-1">class</span><span>= "gallery"</span><span class="code-punctuation">&gt;</span>
+  </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">a <span class="example-text-color-1">target</span>= "_blank"</span> <span class="example-text-color-1">href</span>= "#PRECISA COLOCAR IMAGEM AQUI"</span><span class="code-punctuation">&gt;</span>
+    </div>
+      <div class="code-line">
+        <span class="code-punctuation">&lt;</span><span class="code-tag">img <span class="example-text-color-1">src</span>= "PRECISA-COLOCAR-A-IMAGEM-AQUI"</span> <span class="example-text-color-1">alt</span><span>= "Nome que mostra ao colocar o cursor mouse em cima da imagem"</span> <span class="example-text-color-1">width</span><span>= "600"</span> 
+        <span class="example-text-color-1">height</span><span>= "400"</span><span class="code-punctuation">&gt;</span>
+      </div>
+      <div class="code-line">
+        <span class="code-punctuation">&lt;</span><span class="code-tag">div</span> <span class="example-text-color-1">class</span><span>= "desc"</span><span class="code-punctuation">&gt;</span><span>Adicione a descrição da imagem aqui</span><span class="code-punctuation">&lt;</span><span class="code-tag">/div</span><span class="code-punctuation">&gt;</span>
+      </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">/a<span class="code-punctuation">&gt;</span>
+    </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/div<span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">div <span class="example-text-color-1">class</span><span>= "gallery"</span><span class="code-punctuation">&gt;</span>
+  </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">a <span class="example-text-color-1">target</span>= "_blank"</span> <span class="example-text-color-1">href</span>= "#PRECISA COLOCAR UMA OUTRA IMAGEM AQUI"</span><span class="code-punctuation">&gt;</span>
+    </div>
+      <div class="code-line">
+        <span class="code-punctuation">&lt;</span><span class="code-tag">img <span class="example-text-color-1">src</span>= "PRECISA-COLOCAR-A-IMAGEM-AQUI"</span> <span class="example-text-color-1">alt</span><span>= "Nome que mostra ao colocar o cursor mouse em cima da imagem"</span> <span class="example-text-color-1">width</span><span>= "600"</span> 
+        <span class="example-text-color-1">height</span><span>= "400"</span><span class="code-punctuation">&gt;</span>
+      </div>
+      <div class="code-line">
+        <span class="code-punctuation">&lt;</span><span class="code-tag">div</span> <span class="example-text-color-1">class</span><span>= "desc"</span><span class="code-punctuation">&gt;</span><span>Adicione a descrição da imagem aqui</span><span class="code-punctuation">&lt;</span><span class="code-tag">/div</span><span class="code-punctuation">&gt;</span>
+      </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">/a<span class="code-punctuation">&gt;</span>
+    </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/div<span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">div <span class="example-text-color-1">class</span><span>= "gallery"</span><span class="code-punctuation">&gt;</span>
+  </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">a <span class="example-text-color-1">target</span>= "_blank"</span> <span class="example-text-color-1">href</span>= "#PRECISA COLOCAR OUTRA IMAGEM AQUI"</span><span class="code-punctuation">&gt;</span>
+    </div>
+      <div class="code-line">
+        <span class="code-punctuation">&lt;</span><span class="code-tag">img <span class="example-text-color-1">src</span>= "PRECISA-COLOCAR-OUTRA-IMAGEM-AQUI"</span> <span class="example-text-color-1">alt</span><span>= "Nome que mostra ao colocar o cursor mouse em cima da imagem"</span> <span class="example-text-color-1">width</span><span>= "600"</span> 
+        <span class="example-text-color-1">height</span><span>= "400"</span><span class="code-punctuation">&gt;</span>
+      </div>
+      <div class="code-line">
+        <span class="code-punctuation">&lt;</span><span class="code-tag">div</span> <span class="example-text-color-1">class</span><span>= "desc"</span><span class="code-punctuation">&gt;</span><span>Adicione a descrição da imagem aqui</span><span class="code-punctuation">&lt;</span><span class="code-tag">/div</span><span class="code-punctuation">&gt;</span>
+      </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">/a<span class="code-punctuation">&gt;</span>
+    </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/div<span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">div <span class="example-text-color-1">class</span><span>= "gallery"</span><span class="code-punctuation">&gt;</span>
+  </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">a <span class="example-text-color-1">target</span>= "_blank"</span> <span class="example-text-color-1">href</span>= "#PRECISA COLOCAR OUTRA IMAGEM AQUI"</span><span class="code-punctuation">&gt;</span>
+    </div>
+      <div class="code-line">
+        <span class="code-punctuation">&lt;</span><span class="code-tag">img <span class="example-text-color-1">src</span>= "PRECISA-COLOCAR-OUTRA-IMAGEM-AQUI"</span> <span class="example-text-color-1">alt</span><span>= "Nome que mostra ao colocar o cursor mouse em cima da imagem"</span> <span class="example-text-color-1">width</span><span>= "600"</span> 
+        <span class="example-text-color-1">height</span><span>= "400"</span><span class="code-punctuation">&gt;</span>
+      </div>
+      <div class="code-line">
+        <span class="code-punctuation">&lt;</span><span class="code-tag">div</span> <span class="example-text-color-1">class</span><span>= "desc"</span><span class="code-punctuation">&gt;</span><span>Adicione a descrição da imagem aqui</span><span class="code-punctuation">&lt;</span><span class="code-tag">/div</span><span class="code-punctuation">&gt;</span>
+      </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">/a<span class="code-punctuation">&gt;</span>
+    </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/div<span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="theme" data-title="imagespritecss" data-index="35" hidden>
+      <h1 class="spacing-Y">Sprites de imagem CSS</h1>
+      <p class="spacing-y">Um sprite de imagem é uma coleção de imagens colocadas em uma única imagem.</p>
+      <p class="spacing-y">Uma página da Web com muitas imagens pode demorar muito para carregar e gerar várias solicitações de servidor.</p>
+      <p class="spacing-y">O uso de sprites de imagem reduzirá o número de solicitações do servidor e economizará largura de banda.</p>
+      <h2 class="spacing-Y">Sprites de Imagem - Exemplo Simples</h2>
+      <p class="spacing-y">Em vez de usar três imagens separadas, usamos esta única imagem ("img_navsprites.gif").</p>
+      <p class="spacing-y">Com CSS, podemos mostrar apenas a parte da imagem que precisamos..</p>
+      <p class="spacing-y">No exemplo a seguir, o CSS especifica qual parte da imagem "img_navsprites.gif" mostrar:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
