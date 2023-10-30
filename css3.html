@@ -145,6 +145,7 @@
           <a href="?t=dropdowncss" class="list-group-item">Menus suspensos(Dropdown) CSS</a>
           <a href="?t=imagescss" class="list-group-item">Galeria de Imagens CSS</a>
           <a href="?t=imagespritecss" class="list-group-item">Sprites de imagem CSS</a>
+          <a href="?t=seletorescss" class="list-group-item">Seletores CSS</a>
         </div>
       </div>
     </div>
@@ -302,6 +303,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=imagespritecss">Sprite de Imagens CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=seletorescss">Seletores CSS</a>
       </li>
     </ul>
   </aside>
@@ -13934,6 +13938,393 @@
       </div>
       <h3 class="spacing-Y">Exemplo explicado:</h3>
       <p class="spacing-y"><span class="code-inline">#home a:hover {background: url('img_navsprites_hover.gif') 0 -45px;}</span> - a todas as três imagens flutuantes, especificamos a mesma posição de fundo, apenas 45px mais abaixo.</p>
+    </section>
+    <section class="theme" data-title="seletorescss" data-index="36" hidden>
+      <h1 class="spacing-Y">Seletores de atributos CSS</h1>
+      <h2 class="spacing-Y">Estilizar elementos HTML com atributos específicos</h2>
+      <p class="spacing-y">É possível estilizar elementos HTML que possuem atributos ou valores de atributos específicos.</p>
+      <h2 class="spacing-Y">CSS [attribute] Seletor</h2>
+      <p class="spacing-y">O seletor <span class="code-inline">[attribute]</span> é usado para selecionar elementos com um atributo especificado.</p>
+      <p class="spacing-y">O exemplo a seguir seleciona todos os elementos &lt;a&gt; com um atributo de destino:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">a[target]</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Seletor CSS [attribute="value"]</h2>
+      <p class="spacing-y">O seletor <span class="code-inline">[attribute="value"]</span> é usado para selecionar elementos com um atributo e valor especificados.</p>
+      <p class="spacing-y">O exemplo a seguir seleciona todos os elementos &lt;a&gt; com um atributo target="_blank":</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">a[target="_blank"] </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Seletor CSS [attribute~="value"]</h2>
+      <p class="spacing-y">O seletor <span class="code-inline">[attribute~="value"]</span> é usado para selecionar elementos com um valor de atributo contendo uma palavra especificada.</p>
+      <p class="spacing-y">O exemplo a seguir seleciona todos os elementos com um atributo de título que contém uma lista de palavras separadas por espaço, uma das quais é "flor":</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">[title~="flower"] </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 5px solid yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Seletor CSS [attribute|="value"]</h2>
+      <p class="spacing-y">O seletor <span class="code-inline">[attribute|="value"]</span> é usado para selecionar elementos com o atributo especificado, cujo valor pode ser exatamente o valor especificado ou o valor especificado seguido por um hífen (-).</p>
+      <p class="spacing-y">Nota: O valor deve ser uma palavra inteira, sozinha, como class="top", ou seguida por um hífen (-), como class="top-text".</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">[class|="top"] </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Seletor CSS [attribute^="value"]</h2>
+      <p class="spacing-y">O seletor <span class="code-inline">[attribute^="value"]</span> é usado para selecionar elementos com o atributo especificado, cujo valor começa com o valor especificado.</p>
+      <p class="spacing-y">O exemplo a seguir seleciona todos os elementos com um valor de atributo de classe que começa com "top":</p>
+      <p class="spacing-y">Nota: O valor não precisa ser uma palavra inteira!</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">[class^="top"] </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Seletor CSS [attribute$="value"]</h2>
+      <p class="spacing-y">O seletor <span class="code-inline">[attribute$="value"]</span> é usado para selecionar elementos cujo valor de atributo termina com um valor especificado.</p>
+      <p class="spacing-y">O exemplo a seguir seleciona todos os elementos com um valor de atributo de classe que termina com "teste":</p>
+      <p class="spacing-y">Nota: O valor não precisa ser uma palavra inteira!</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">[class$="test"]</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Seletor CSS [attribute*="value"]</h2>
+      <p class="spacing-y">O seletor <span class="code-inline">[attribute*="value"]</span> é usado para selecionar elementos cujo valor de atributo contém um valor especificado.</p>
+      <p class="spacing-y">O exemplo a seguir seleciona todos os elementos com um valor de atributo de classe que contém "te":</p>
+      <p class="spacing-y">Nota: O valor não precisa ser uma palavra inteira!</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">[class*="te"]</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+
+      <h2 class="spacing-Y">Formas de Estilização</h2>
+      <p class="spacing-y">Os seletores de atributo podem ser úteis para estilizar formulários sem classe ou ID:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">input[type="text"]</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 150px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: block;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin-bottom</span>: 10px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">input[type="button"]</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 120px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">margin-left</span>: 35px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: block;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">overflow: scroll</h3>
+      <p class="spacing-y">O valor <span class="code-inline">auto</span> é semelhante a <span class="code-inline">scroll</span>, mas adiciona barras de rolagem somente quando necessário:</p>
+      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">div</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">overflow</span>: auto;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-Y">overflow-x e overflow-y</h3>
+      <p class="spacing-y">As propriedades <span class="code-inline">overflow-x</span> e <span class="code-inline">overflow-y</span> especificam se o estouro do conteúdo deve ser alterado apenas horizontalmente ou verticalmente (ou ambos):</p>
+      <p class="spacing-y"><span class="code-inline">overflow-x</span> especifica o que fazer com as bordas esquerda/direita do conteúdo.</p>
+      <p class="spacing-y"><span class="code-inline">overflow-y</span> especifica o que fazer com as bordas superior/inferior do conteúdo.</p>
+      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">div</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">overflow-x</span>: hidden;</span> <span class="code-comment">/* esconde a barra de rolagem horizontal*/</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">overflow-y</span>: scroll;</span> <span class="code-comment">/* adiciona uma barra de rolagem vertical*/</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>      
     </section>
     <!-- Toast -->
     <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
