@@ -3277,11 +3277,99 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
         <li>Um link ativo é sublinhado e vermelho</li>
       </ul>
       <p class="stand-out-word">Dica: os links podem, obviamente, ser estilizados com CSS, para obter uma outra aparência!</p>
+      <h2 class="spacing-y">Links HTML - O atributo de destino</h2>
+      <p>Por padrão, a página vinculada será exibida na janela atual do navegador.</p>
+      <p>Para alterar isso, você deve especificar outro destino para o link.</p>
+      <p>O atributo <code class="code-inline">target</code> especifica onde abrir o documento vinculado.</p>
+      <p>O atributo <code class="code-inline">target</code> pode ter um dos seguintes valores:</p>
+      <ul class="spacing-left">
+        <li><code class="code-inline">_self</code> - Padrão. Abre o documento na mesma janela/guia em que foi clicado
+        </li>
+        <li><code class="code-inline">_blank</code> - Abre o documento em uma nova janela ou guia</li>
+        <li><code class="code-inline">_parent</code> - Abre o documento no quadro pai</li>
+        <li><code class="code-inline">_top</code> - Abre o documento em todo o corpo da janela</li>
+    </ul>
+    <div class="example-code">
+      <div class="code-title d-flex align-items-center justify-content-between">
+        <div>
+          <p>Exemplo</p>
+          <p>Use target="_blank" para abrir o documento vinculado em uma nova janela ou guia do navegador:</p>
+        </div>
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Copiar o codigo" id="btncopiar"
+            onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+      <div class="code-body textocod">
+        <pre>
+      <code>
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">a</span><span class="code-attribute"> href</span><span class="code-value">="https://edtech.investquattro.com.br/"</span><span class="code-attribute"> target</span><span class="code-value">="_blank"</span><span class="code-punctuation">&gt;</span><span class="code-text">Visite a Quattro</span><span class="code-punctuation">&lt;</span><span class="code-tag">/a</span><span class="code-punctuation">&gt;</span>
+</div>
 
+              </code>
+          </pre>
+      </div>
+      <div class="code-support col">
+        <a href="https://edtech.investquattro.com.br/" target="_blank">Visite a Quattro</a>
+    </div>
+    </div>
+    </div>
+    <h2 class="spacing-y">URLs absolutos vs. URLs relativos</h2>
+    <p>Ambos os exemplos acima estão usando um URL absoluto (um endereço da Web completo) no atributo <code class="code-inline">href</code>.</p>
+    <P>Um link local (um link para uma página dentro do mesmo site) é especificado com um URL relativo (sem a parte "https://www"):</P>
+    <div class="example-code">
+      <div class="code-title d-flex align-items-center justify-content-between">
+        <div>
+          <p>Exemplo</p>
+          <p>Use target="_blank" para abrir o documento vinculado em uma nova janela ou guia do navegador:</p>
+        </div>
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Copiar o codigo" id="btncopiar"
+            onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+      <div class="code-body textocod">
+        <pre>
+      <code>
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">h2</span><span class="code-punctuation">&gt;</span><span class="code-text">URLs Absolutos</span><span class="code-punctuation">&lt;</span><span class="code-tag">/h2</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">a</span><span class="code-attribute"> href</span><span class="code-value">="https://edtech.investquattro.com.br/"</span><span class="code-punctuation">&gt;</span><span class="code-text">Quattro</span><span class="code-punctuation">&lt;</span><span class="code-tag">/a</span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">a</span><span class="code-attribute"> href</span><span class="code-value">="google.com"</span><span class="code-punctuation">&gt;</span><span class="code-text">Google</span><span class="code-punctuation">&lt;</span><span class="code-tag">/a</span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
 
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">h2</span><span class="code-punctuation">&gt;</span><span class="code-text">URLs Relativos</span><span class="code-punctuation">&lt;</span><span class="code-tag">/h2</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">a</span><span class="code-attribute"> href</span><span class="code-value">="html_images.asp"</span><span class="code-punctuation">&gt;</span><span class="code-text">Imagens HTML</span><span class="code-punctuation">&lt;</span><span class="code-tag">/a</span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">a</span><span class="code-attribute"> href</span><span class="code-value">="/css/default.asp"</span><span class="code-punctuation">&gt;</span><span class="code-text">Tutorias CSS</span><span class="code-punctuation">&lt;</span><span class="code-tag">/a</span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
 
-
-
+              </code>
+          </pre>
+      </div>
+      <div class="code-support col">
+        <h2>URLs Absolutas</h2>
+        <p><a href="https://edtech.investquattro.com.br/" target="_blank">Visite a Quattro</a></p>
+        <a href="https://google.com" target="_blank">Google</a>
+        <br>
+        <h2>URLs Relativos</h2>
+        <p><a href="html_images.asp">Imagens HTML</a></p>
+        <p><a href="/css/default.asp">Tutorias CSS</a></p>
+    </div>
+    </div>
+    </div>
 
 
 
