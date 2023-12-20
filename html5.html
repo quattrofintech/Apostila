@@ -3370,9 +3370,51 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
     </div>
     </div>
     </div>
+    <h2 class="spacing-y">Links HTML - Use uma imagem como um link</h2>
+    <p>Para usar uma imagem como link, basta colocar a tag <code class="code-inline">&lt;img&gt;</code> dentro da tag <code class="code-inline">&lt;a&gt;</code>:</p>
+    <div class="example-code">
+      <div class="code-title d-flex align-items-center justify-content-between">
+        <div>
+          <p>Exemplo</p>
+          <p>Use target="_blank" para abrir o documento vinculado em uma nova janela ou guia do navegador:</p>
+        </div>
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Copiar o codigo" id="btncopiar"
+            onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+      <div class="code-body textocod">
+        <pre>
+      <code>
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">a</span><span class="code-attribute"> href</span><span class="code-value">="https://www.google.com/"</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">img</span><span class="code-attribute"> src</span><span class="code-value">="https://cutt.ly/awDzwxgO"</span><span class="code-attribute"> alt</span><span class="code-value">="Icone do Google"</span>
+</div>
+<div class="code-line">
+  <span class="code-attribute"> style</span><span class="code-value">="width:45px;height:45px;"</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/a</span><span class="code-punctuation">&gt;</span>
+</div>
 
-
-
+              </code>
+          </pre>
+      </div>
+      <div class="code-support col">
+        <figure class="figure my-auto">
+          <a href="https://www.google.com/" target="_blank">
+          <img src="https://cutt.ly/awDzwxgO"
+              class="figure-img img-fluid rounded" alt="Imamge" style="width: 45px; height: 45px;">
+            </a>
+          <figcaption class="figure-caption text-end mx-2">Ícone do google com link.
+          </figcaption>
+    </div>
+    </div>
+    </div>
 
 
 
