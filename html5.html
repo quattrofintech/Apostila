@@ -3601,9 +3601,68 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
           </pre>
       </div>
   </div>
-
-
-
+<h2 class="spacing-y">O Atributo src</h2>
+<p>O atributo obrigatório <code class="code-inline">src</code> especifica o caminho (URL) para a imagem.</p>
+<p>Nota: Quando uma página web carrega, é o navegador, nesse momento, que obtém a imagem de um servidor web e a insere na página. Portanto, certifique-se de que a imagem realmente permaneça no mesmo local em relação à página da Web, caso contrário, seus visitantes receberão um ícone de link quebrado. O ícone de link quebrado e o texto <code class="code-inline">alt</code> são mostrados se o navegador não conseguir encontrar a imagem.</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+    <div>
+      <p>Exemplo</p>
+    </div>
+    <div class="btn-group" role="group" aria-label="First group">
+      <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+        title="Copiar o codigo">Copiar</button>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+    <div class="code-body">
+      <pre>
+        <code>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">img</span><span class="code-attribute"> src</span><span class="code-value">="https://bit.ly/3tR4Lnv"</span><span class="code-attribute"> alt</span><span class="code-value">="Computação"</span><span class="code-punctuation">&gt;</span>
+</div>
+        </code>
+      </pre>
+    </div>
+    <div class="code-support col">
+      <figure class="figure my-auto">
+        <img src="https://bit.ly/3tR4Lnv" 
+            class="figure-img img-fluid rounded" alt="Computação">
+        <figcaption class="figure-caption text-end mx-2">Exemplo de Imagem
+        </figcaption>
+    </div>
+ </div>
+</div>
+<p class="spacing-y">Se um navegador não conseguir encontrar uma imagem, ele exibirá o valor do atributo <code class="code-inline">alt</code>:</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+    <div>
+      <p>Exemplo</p>
+    </div>
+    <div class="btn-group" role="group" aria-label="First group">
+      <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+        title="Copiar o codigo">Copiar</button>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+    <div class="code-body">
+      <pre>
+        <code>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">img</span><span class="code-attribute"> src</span><span class="code-value">="0000"</span><span class="code-attribute"> alt</span><span class="code-value">="Computação"</span><span class="code-punctuation">&gt;</span>
+</div>
+        </code>
+      </pre>
+    </div>
+    <div class="code-support col">
+      <figure class="figure my-auto">
+        <img src="0000" 
+            class="figure-img img-fluid rounded" alt="Computação">
+        <figcaption class="figure-caption text-end mx-2">Exemplo de Imagem
+        </figcaption>
+    </div>
+ </div>
+</div>
 
 
 
