@@ -3804,7 +3804,73 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
 </div>
 </div>
 </div>
+<h2 class="spacing-y">Imagem flutuante</h2>
+<p>Use a propriedade CSS <code class="code-inline">float</code> para deixar a imagem flutuar à direita ou à esquerda de um texto:</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+    <div>
+      <p>Exemplo</p>
+    </div>
+    <div class="btn-group" role="group" aria-label="First group">
+      <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+        title="Copiar o codigo" id="btncopiar"
+        onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+  <div class="code-body textocod">
+    <pre>
+  <code>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">img</span><span class="code-attribute"> src</span><span class="code-value">="computacao.gif"</span><span class="code-attribute"> alt</span><span class="code-value">="Exemplo de gif"</span>
 
+</div>
+<div class="code-line">
+  <span class="code-attribute"> style</span><span class="code-value">=" float:left;width:45px;height:45px;"</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-text">A imagem ira flutuar a direta do texto</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-punctuation">&lt;</span><span class="code-tag">img</span><span class="code-attribute"> src</span><span class="code-value">="computacao.gif"</span><span class="code-attribute"> alt</span><span class="code-value">="Exemplo de gif"</span>
+
+</div>
+<div class="code-line">
+  <span class="code-attribute"> style</span><span class="code-value">="float:right;width:45px;height:45px;"</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-text">A imagem ira flutuar a direta do texto</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+
+          </code>
+      </pre>
+  </div>
+  <div class="code-support col">
+    <p>
+    <figure class="figure my-auto">
+      <img src="https://bit.ly/3tR4Lnv"
+          class="figure-img img-fluid rounded" alt="Imagem" style=" float: right; width: 200px; height: 150px;">
+      <figcaption class="figure-caption text-end mx-2">
+      </figcaption>
+      A imagem ira flutuar à direita do texto
+    </p>
+    <p>
+    <figure class="figure my-auto">
+      <img src="https://bit.ly/3tR4Lnv"
+          class="figure-img img-fluid rounded" alt="Imagem" style=" float:left; width: 200px; height: 150px;">
+      <figcaption class="figure-caption text-end mx-2">
+      </figcaption>
+      A imagem ira flutuar à esquerda do texto
+    </p>
+</div>
+</div>
+</div>
 
 
 
