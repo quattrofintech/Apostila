@@ -121,6 +121,7 @@
           <a href="?t=linkshtml" class="list-group-item">Links HTML</a>
           <a href="?t=imagenshtml" class="list-group-item">Imagens HTML</a>
           <a href="?t=htmlfavicon" class="list-group-item">Favicon HTML</a>
+          <a href="?t=titulodapaghtml" class="list-group-item">Título da Página HTML</a>
         </div>
       </div>
     </div>
@@ -168,6 +169,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="?t=htmlfavicon">Favicon HTML</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="?t=titulodapaghtml">Título da Página HTML</a>
         </li>
       </ul>
     </aside>
@@ -3931,6 +3935,133 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
 
 <section class="theme" data-title="htmlfavicon" data-index="13" hidden>
   <h1 class="spacing-y fw-bold">HTML Favicon</h1>
+  <p>Um favicon é uma pequena imagem exibida ao lado do título da página na guia do navegador.</p>
+  <h2 class="spacing-y">Como adicionar um Favicon em HTML</h2>
+  <p>Você pode usar qualquer imagem que desejar como seu favicon. Você também pode criar seu próprio favicon em sites como https://www.favicon.cc .</p>
+  <p class="stand-out-word">Dica: Um favicon é uma imagem pequena, então deve ser uma imagem simples com alto contraste.</p>
+  <p>Uma imagem de favicon é exibida à esquerda do título da página na guia do navegador, assim:</p>
+  <img src="assets/img/img_favicon1.webp" alt="exemploImagem">
+  <p class="spacing-y">Para adicionar um favicon ao seu site, salve sua imagem de favicon no diretório raiz do seu servidor web ou crie uma pasta no diretório raiz chamada images e salve sua imagem de favicon nesta pasta. Um nome comum para uma imagem de favicon é "favicon.ico".</p>
+  <p>Em seguida, adicione um elemento <code class="code-inline">&lt;link&gt;</code> ao seu arquivo "index.html", após o elemento <code class="code-inline">&lt;tittle&gt;</code>, assim:</p>
+  <div class="example-code">
+    <div class="code-title d-flex align-items-center justify-content-between">
+        <div>
+            <p>Exemplo Estrutura HTML</p>
+        </div>
+        <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+                data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+                data-bs-placement="top" title="Copiar o codigo">Copiar</button>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+        <div class="code-body col">
+            <pre>
+            <code>
+                
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">!DOCTYPE html</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">title</span><span class="code-punctuation">&gt;</span><span class="code-text">Título da Página</span><span class="code-punctuation">&lt;</span><span class="code-tag">/title</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">link</span><span class="code-attribute"> rel</span><span class="code-value">="icon"</span><span class="code-attribute"> type</span><span class="code-value">="image/ x-icon"</span><span class="code-attribute"> rel</span><span class="code-value">="/images/favicon.ico"</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">h1</span><span class="code-attribute"> class</span><span class="code-value">="class-name"</span><span class="code-punctuation">&gt;</span><span class="code-text">Título Principal.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/h1</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Este é um paragráfo.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+</div>
+            </code>
+        </pre>
+        </div>
+        <div class="code-support col">
+           
+        </div>
+    </div>
+</div>
+<p class="stand-out-word spacing-y">Agora, salve o arquivo "index.html" e recarregue-o em seu navegador. A guia do navegador agora deve exibir sua imagem de favicon à esquerda do título da página.</p>
+<h2 class="spacing-y">Suporte ao formato de arquivo Favicon</h2>
+<p>A tabela a seguir mostra o suporte de formato de arquivo para uma imagem de favicon:</p>
+<table class="table table-dark table-hover">
+  <thead>
+      <tr>
+          <th scope="col">Navegador</th>
+          <th scope="col">ICO</th>
+          <th scope="col">PNG</th>
+          <th scope="col">GIF</th>
+          <th scope="col">JPEG</th>
+          <th scope="col">SVG</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <th scope="row">Edge</th>
+          <td>Sim</td>
+          <td>Sim</td>
+          <td>Sim</td>
+          <td>Sim</td>
+          <td>Sim</td>
+      </tr>
+      <tr>
+          <th scope="row">Chrome</th>
+          <td>Sim</td>
+          <td>Sim</td>
+          <td>Sim</td>
+          <td>Sim</td>
+          <td>Sim</td>
+      </tr>
+      <tr>
+          <th scope="row">Firefox</th>
+          <td>Sim</td>
+          <td>Sim</td>
+          <td>Sim</td>
+          <td>Sim</td>
+          <td>Sim</td>
+      </tr>
+      <tr>
+          <th scope="row">Opera</th>
+          <td>Sim</td>
+          <td>Sim</td>
+          <td>Sim</td>
+          <td>Sim</td>
+          <td>Sim</td>
+      </tr>
+      <tr>
+          <th scope="row">Safari</th>
+          <td>Sim</td>
+          <td>Sim</td>
+          <td>Sim</td>
+          <td>Sim</td>
+          <td>Sim</td>
+      </tr>      
+  </tbody>
+</table>
+</section>
+
+<section class="theme" data-title="titulodapaghtml" data-index="13" hidden>
+<h1 class="spacing-y fw-bold">Título da Página HTML</h1>
 
 
 
@@ -3947,16 +4078,7 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
 
 
 
-
-
-
-
-
-
-
-
-      </section>
-
+</section>
 
       <!-- Toast -->
       <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
