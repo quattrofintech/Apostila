@@ -148,6 +148,7 @@
           <a href="?t=seletorescss" class="list-group-item">Seletores CSS</a>
           <a href="?t=formscss" class="list-group-item">Formulário(form) CSS</a>
           <a href="?t=counterscss" class="list-group-item">Contadores CSS</a>
+          <a href="?t=layoutsitecss" class="list-group-item">Layout do site CSS</a>
         </div>
       </div>
     </div>
@@ -314,6 +315,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=counterscss">Contadores CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=layoutsitecss">Layout do site CSS</a>
       </li>
     </ul>
   </aside>
@@ -15394,6 +15398,340 @@
           </div>
         </div>
       </div>      
+    </section>
+    <section class="theme" data-title="layoutsitecss" data-index="39" hidden>
+      <h1 class="spacing-Y">Layout do site CSS</h1>
+      <p class="spacing-y">Um site geralmente é dividido em cabeçalhos, menus, conteúdo e rodapé.</p>
+      <p class="spacing-y">Existem vários designs de layout diferentes para escolher. No entanto, a estrutura acima é uma das mais comuns, e vamos dar uma olhada mais de perto neste tutorial.</p>
+      <h2 class="spacing-Y">Cabeçalho</h2>
+      <p class="spacing-y">Um cabeçalho geralmente está localizado na parte superior do site (ou logo abaixo de um menu de navegação superior). Geralmente contém um logotipo ou o nome do site:</p>
+      <ul class="spacing-left">
+        <li><span class="code-inline">counter-reset</span>- Cria ou zera um contador</li>
+        <li><span class="code-inline">counter-increment</span>- Incrementa um valor de contador</li>
+        <li><span class="code-inline">content</span>- Insere conteúdo gerado</li>
+        <li><span class="code-inline">counter()</span> ou <span class="code-inline">counters()</span>- Adiciona o valor de um contador a um elemento</li>
+      </ul>
+      <p class="spacing-y">O exemplo a seguir cria um contador para a página (no seletor de corpo), incrementa o valor do contador para cada elemento &lt;h2&gt; e adiciona "Seção &lt; valor do contador &gt;:" ao início de cada elemento &lt;h2&gt;:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.header </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #F1F1F1;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 20PX;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Barra de navegação</h2>
+      <p class="spacing-y">Uma barra de navegação contém uma lista de links para ajudar os visitantes a navegar pelo seu site:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;/* The navbar container */&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">.topnav </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">overflow</span>: hidden;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #333;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-comment">&lt;/* Navbar links */&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">.topnav a </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">float</span>: left;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: block;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: #f2f2f2;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 14px 16px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-decoration</span>: none;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-comment">&lt;/* Links - change color on hover */&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">.topnav a:hover </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #ddd;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: black;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Contente</h2>
+      <p class="spacing-y">O layout nesta seção geralmente depende dos usuários-alvo. O layout mais comum é um (ou uma combinação deles) dos seguintes:</p>
+      <ul class="spacing-left">
+        <li>1 coluna (geralmente usada para navegadores móveis)</li>
+        <li>2 colunas (geralmente usado para tablets e laptops)</li>
+        <li>Layout de 3 colunas (usado apenas para desktops)</li>
+      </ul>
+      <p class="spacing-y">Vamos criar um layout de 3 colunas e alterá-lo para um layout de 1 coluna em telas menores:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;/* The navbar container */&gt;</span>
+  </div>              
+  <div class="code-line">
+    <span class="code-tag">.column </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">float</span>: left;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 33,33%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-comment">&lt;/* The navbar container */&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">.row:after </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">content</span>: "";</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">display</span>: table;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">clear</span>: both;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-comment">&lt;/* Responsive layout - makes the three columns stack on top of each other </span>
+    <span class="code-comment">instead of next to each other on smaller screens (600px wide or less) */&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">@media screen and (max-width: 600px) </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">.column </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 100%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Dica: para criar um layout de 2 colunas, altere a largura para 50%. Para criar um layout de 4 colunas, use 25%, etc.</p>
+      <p class="spacing-y">Dica: Uma forma mais moderna de criar layouts de coluna é usar o CSS Flexbox. No entanto, não é compatível com o Internet Explorer 10 e versões anteriores. Se você precisar de suporte para IE6-10, use floats (como mostrado acima).</p>
+      <h2 class="spacing-Y">Colunas Desiguais</h2>
+      <p class="spacing-y">O conteúdo principal é a parte maior e mais importante do seu site.</p>
+      <p class="spacing-y">É comum com larguras de coluna desiguais , de modo que a maior parte do espaço é reservada para o conteúdo principal. O conteúdo secundário (se houver) costuma ser usado como uma navegação alternativa ou para especificar informações relevantes ao conteúdo principal. Altere as larguras como quiser, lembrando apenas que deve somar 100% no total:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.column </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">float</span>: left;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-comment">&lt;/* Left and right column */&gt;</span>
+  </div> 
+  <div class="code-line">
+    <span class="code-tag">.column.side </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 25%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-comment">&lt;/* Middle column */&gt;</span>
+  </div> 
+  <div class="code-line">
+    <span class="code-tag">.column.middle </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 50%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-comment">&lt;/* Responsive layout - makes the three columns stack on top </span>
+    <span class="code-comment">of each other instead of next to each other */&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">@media screen and (max-width: 600px) </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">.column.side, .column.middle </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: 100%;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Rodapé</h2>
+      <p class="spacing-y">O rodapé é colocado na parte inferior da sua página. Geralmente contém informações como direitos autorais e informações de contato:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.footer </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #F1F1F1;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 10px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Layout de site responsivo</h2>
+      <h2>PRECISA COLOCAR IMAGEM AQUI DO LAYOUT</h2>
+      <p class="spacing-y">Usando parte do código CSS acima, criamos um layout de site responsivo, que varia entre duas colunas e colunas de largura total, dependendo da largura da tela:</p>
     </section>
     <!-- Toast -->
     <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
