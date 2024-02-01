@@ -149,6 +149,7 @@
           <a href="?t=formscss" class="list-group-item">Formulário(form) CSS</a>
           <a href="?t=counterscss" class="list-group-item">Contadores CSS</a>
           <a href="?t=layoutsitecss" class="list-group-item">Layout do site CSS</a>
+          <a href="?t=unidadecss" class="list-group-item">Unidades CSS</a>
         </div>
       </div>
     </div>
@@ -318,6 +319,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=layoutsitecss">Layout do site CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=unidadecss">Unidades CSS</a>
       </li>
     </ul>
   </aside>
@@ -15732,6 +15736,100 @@
       <h2 class="spacing-Y">Layout de site responsivo</h2>
       <h2>PRECISA COLOCAR IMAGEM AQUI DO LAYOUT</h2>
       <p class="spacing-y">Usando parte do código CSS acima, criamos um layout de site responsivo, que varia entre duas colunas e colunas de largura total, dependendo da largura da tela:</p>
+    </section>
+    <section class="theme" data-title="unidadecss" data-index="40" hidden>
+      <h1 class="spacing-Y">Unidades CSS</h1>
+      <p class="spacing-y">CSS tem várias unidades diferentes para expressar um comprimento.</p>
+      <p class="spacing-y">Muitas propriedades CSS aceitam valores de "comprimento", como <span class="code-inline">width</span>, <span class="code-inline">margin</span>, <span class="code-inline">padding</span>, <span class="code-inline">font-size</span>, etc.</p>
+      <p class="spacing-y">Comprimento é um número seguido por uma unidade de comprimento, como <span class="code-inline">10px</span>, <span class="code-inline">2em</span>, etc.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- Defina diferentes valores de comprimento, usando px (pixels): --&gt;</span>    
+  </div>
+  <div class="code-line">
+    <span class="code-tag">h1 </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: 60px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">h1 </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">font-size</span>: 60px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">line-height</span>: 50px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Nota: Um espaço em branco não pode aparecer entre o número e a unidade. No entanto, se o valor for <span class="code-inline">0</span>, a unidade pode ser omitida.</p>
+      <p class="spacing-y">Para algumas propriedades CSS, comprimentos negativos são permitidos.</p>
+      <p class="spacing-y">Existem dois tipos de unidades de comprimento: absoluto e relativo.</p>
+      <h2 class="spacing-Y">Comprimentos absolutos</h2>
+      <p class="spacing-y">As unidades de comprimento absoluto são fixas e um comprimento expresso em qualquer um deles aparecerá exatamente com esse tamanho.</p>
+      <p class="spacing-y">Unidades de comprimento absoluto não são recomendadas para uso na tela, porque os tamanhos de tela variam muito. No entanto, eles podem ser usados ​​se a mídia de saída for conhecida, como para layout de impressão.</p>
+      <ul class="spacing-left">
+        <li><span class="code-inline">cm</span> - centimetros</li>
+        <li><span class="code-inline">mm</span> - milimetros</li>
+        <li><span class="code-inline">in</span> - inches (1in = 96px = 2.54cm)</li>
+        <li><span class="code-inline">px</span> - pixels (1px = 1/96th of 1in)</li>
+        <li><span class="code-inline">pt</span> - points (1pt = 1/72 of 1in)</li>
+        <li><span class="code-inline">pc</span> - picas (1pc = 12 pt)</li>
+      </ul>
+      <p class="spacing-y">Pixels (px) são relativos ao dispositivo de visualização. Para dispositivos de baixo dpi, 1px é um pixel de dispositivo (ponto) da exibição. Para impressoras e telas de alta resolução, 1px implica vários pixels de dispositivo.</p>
+      <h2 class="spacing-Y">Comprimentos Relativos</h2>
+      <p class="spacing-y">As unidades de comprimento relativo especificam um comprimento relativo a outra propriedade de comprimento. As unidades de comprimento relativo escalam melhor entre diferentes mídias de renderização.</p>
+      <ul class="spacing-left">
+        <li><span class="code-inline">em</span> - relativo a font-size do elemento (2em significa 2 vezes o tamanho da fonte atual)</li>
+        <li><span class="code-inline">ex</span> - relativo a altura-x da font atual (raramente usado)</li>
+        <li><span class="code-inline">ch</span> - relativo a largura de "0" (zero)</li>
+        <li><span class="code-inline">rem</span> - relativo a font-size da raiz do elemento</li>
+        <li><span class="code-inline">vw</span> - relativo a 1% da largura do viewport</li>
+        <li><span class="code-inline">vh</span> - relativo a 1% do tamanho do viewport</li>
+        <li><span class="code-inline">vmin</span> - relativo a 1% do viewport* (dimensão menor) </li>
+        <li><span class="code-inline">vmax</span> - relativo a 1% do viewport* (dimensão maior)</li>
+        <li><span class="code-inline">%</span> - relativo ao elemento pai</li>
+      </ul>
+      <p class="spacing-y">Dica: As unidades em e rem são práticas para criar um layout perfeitamente escalável!</p>
+      <p class="spacing-y">* Viewport = o tamanho da janela do navegador. Se a janela de visualização tiver 50 cm de largura, 1vw = 0,5 cm.</p>
+      <h2 class="spacing-Y">Suporte do navegador</h2>
+      <p class="spacing-y">Os números na tabela especificam a primeira versão do navegador que suporta totalmente a unidade de comprimento.</p>
+      <p class="spacing-y">Ordem dos navegadores para os valores abaixo: Chrome, Edge, Firefox, Safari e Opera</p>
+      <ul class="spacing-left">
+        <li><span class="code-inline">em, ex, %, px, cm, mm, in, pt, pc</span> - 1.0 | 3.0 | 1.0 | 1.0 | 3.5 </li>
+        <li><span class="code-inline">ch</span> - 27.0 | 9.0 | 1.0 |7.0 | 20.0 </li>
+        <li><span class="code-inline">rem</span> - 4.0 | 9.0 | 3.6 | 4.1 | 11.6 </li>
+        <li><span class="code-inline">vh, vw</span> - 20.0 | 9.0 | 19.0 | 6.0 | 20.0 </li>
+        <li><span class="code-inline">vmin</span> -  20.0 | 12.0 | 19.0 | 6.0 | 20.0 </li>
+        <li><span class="code-inline">vmax</span> - 26.0 | 3.0 | 19.0 | 7.0 |20.0 </li>
+      </ul>
     </section>
     <!-- Toast -->
     <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
