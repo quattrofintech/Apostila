@@ -151,7 +151,8 @@
           <a href="?t=layoutsitecss" class="list-group-item">Layout do site CSS</a>
           <a href="?t=unidadecss" class="list-group-item">Unidades CSS</a>
           <a href="?t=especificidadecss" class="list-group-item">Especificidade do CSS</a>
-          <a href="?t=importantcss" class="list-group-item">CSS A regra important!</a>
+          <a href="?t=importantcss" class="list-group-item">CSS A regra !important</a>
+          <a href="?t=funcoesmatematicascss" class="list-group-item">Funções matemáticas CSS</a>
         </div>
       </div>
     </div>
@@ -329,7 +330,10 @@
         <a class="nav-link" href="?t=especificidadecss">Especificidade do CSS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="?t=importantcss">CSS A regra important!</a>
+        <a class="nav-link" href="?t=importantcss">CSS A regra !important</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=funcoesmatematicascss">Funções matemáticas CSS</a>
       </li>
     </ul>
   </aside>
@@ -16466,6 +16470,157 @@
   </div>
   <div class="code-line">
     <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="theme" data-title="funcoesmatematicascss" data-index="43" hidden>
+      <h1 class="fw-bold spacing-y">Funções matemáticas CSS</h1>
+      <p class="spacing-y">As funções matemáticas CSS permitem que expressões matemáticas sejam usadas como valores de propriedade. Aqui, explicaremos as funções <span class="code-inline">calc()</span>, <span class="code-inline">max()</span> e <span class="code-inline">min()</span></p>
+      <h2 class="fw-bold spacing-y">A função calc()</h2>
+      <p class="spacing-y">A função <span class="code-inline">calc()</span> executa um cálculo para ser usado como o valor da propriedade.</p>
+      <p class="spacing-y">Sintaxe CSS - calc(expression)</p>
+      <p class="spacing-y">Na sintaxe acima: expression - Obrigatório. Uma expressão matemática. O resultado será utilizado como o valor. Os seguintes operadores podem ser usados: + - * /</p>
+      <p class="spacing-y">Vamos ver um exemplo:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- Use calc() para calcular a largura de um elemento &lt;div&gt;: --&gt;</span> 
+  </div>
+  <div class="code-line">
+    <span class="code-tag">#div1 </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">position</span>: absolute;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">left</span>: 50px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: calc(100% - 100px);</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid black;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-y">A função max()</h2>
+      <p class="spacing-y">A função <span class="code-inline">max()</span> usa o maior valor, de uma lista de valores separados por vírgula, como o valor da propriedade.</p>
+      <p class="spacing-y">Sintaxe CSS - max(value1, value2, ...)</p>
+      <p class="spacing-y">Na sintaxe acima: value1, value2, ... - Obrigatório. Uma lista de valores separados por vírgulas - onde o maior valor é escolhido.</p>
+      <p class="spacing-y">Veja um exemplo:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- Use max() para definir a largura de #div1 para o valor que for maior, 50% ou 300px: --&gt;</span> 
+  </div>
+  <div class="code-line">
+    <span class="code-tag">#div1 </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">height</span>: 100px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: max(50%, 300px);</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-y">A função min()</h2>
+      <p class="spacing-y">A função <span class="code-inline">min()</span> usa o menor valor, de uma lista de valores separados por vírgula, como o valor da propriedade.</p>
+      <p class="spacing-y">Sintaxe CSS - min(value1, value2, ...)</p>
+      <p class="spacing-y">Na sintaxe acima: value1, value2, ... - Obrigatório. Uma lista de valores separados por vírgulas - onde o menor valor é escolhido.</p>
+      <p class="spacing-y">Veja um exemplo:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- Use min() para definir a largura de #div1 para o menor valor, 50% ou 300px: --&gt;</span> 
+  </div>
+  <div class="code-line">
+    <span class="code-tag">#div1 </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">height</span>: 100px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: min(50%, 300px);</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
