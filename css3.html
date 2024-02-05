@@ -151,6 +151,7 @@
           <a href="?t=layoutsitecss" class="list-group-item">Layout do site CSS</a>
           <a href="?t=unidadecss" class="list-group-item">Unidades CSS</a>
           <a href="?t=especificidadecss" class="list-group-item">Especificidade do CSS</a>
+          <a href="?t=importantcss" class="list-group-item">CSS A regra important!</a>
         </div>
       </div>
     </div>
@@ -326,6 +327,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?t=especificidadecss">Especificidade do CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=importantcss">CSS A regra important!</a>
       </li>
     </ul>
   </aside>
@@ -16090,7 +16094,7 @@
       <p class="spacing-y">Memorize como calcular a especificidade!</p>
       <p class="spacing-y">Comece em 0, adicione 100 para cada valor de ID, adicione 10 para cada valor de classe (ou pseudoclasse ou seletor de atributo), adicione 1 para cada seletor de elemento ou pseudoelemento.</p>
       <p class="spacing-y">Nota: O estilo embutido obtém um valor de especificidade de 1000 e sempre recebe a prioridade mais alta!</p>
-      <p class="spacing-y">Observação 2: Há uma exceção a esta regra: se você usar a <span class="code-inline">!important</span> regra, ela substituirá até os estilos embutidos!</p>
+      <p class="spacing-y">Observação 2: Há uma exceção a esta regra: se você usar a regra <span class="code-inline">!important</span>, ela substituirá até os estilos embutidos!</p>
       <p class="spacing-y">Na lista abaixo mostra alguns exemplos de como calcular valores de especificidade:</p>
       <ul class="spacing-left">
         <li>Seletor       Valor específico        Calculador</li>
@@ -16198,22 +16202,24 @@
             <pre>
               <code>
 <div class="code-line">
-  <span class="code-tag">div#a </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">background-color</span>: green;</span> <span class="code-punctuation">&#125;</span>
+  <span class="code-tag">.intro </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span> <span class="code-punctuation">&#125;</span>
 </div>
 <div class="code-line">
-  <span class="code-tag">#a </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span> <span class="code-punctuation">&#125;</span>
-</div>
-<div class="code-line">
-  <span class="code-tag">div[id=a] </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">background-color</span>: red;</span> <span class="code-punctuation">&#125;</span>
+  <span class="code-tag">h1 </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">background-color</span>: red;</span> <span class="code-punctuation">&#125;</span>
 </div>
               </code>
             </pre>
           </div>
         </div>
       </div>
-      <h2>Múltiplas Folhas de Estilo</h2>
-      <p class="spacing-y">Caso algumas propriedades tenham sido definidas para o mesmo seletor (elemento) em diferentes folhas de estilo, será utilizado o valor da última folha de estilo lida.</p>
-      <p class="spacing-y">Suponha que uma folha de estilo externa tenha o seguinte estilo para o elemento <code class="code-inline">&lt;h1&gt;</code> seja de <code class="code-inline">color: navy;</code></p>
+      <p class="spacing-y">O seletor universal (*) e os valores herdados têm uma especificidade de 0 - O seletor universal (*) e os valores herdados são ignorados!</p>
+    </section>
+    <section class="theme" data-title="importantcss" data-index="42" hidden>
+      <h1 class="fw-bold spacing-y">Especificidade do CSS</h1>
+      <h2 class="spacing-Y">O que é "!important"?</h2>
+      <p class="spacing-y">A regra <span class="code-inline">!important</span> em CSS é usada para adicionar mais importância a uma propriedade/valor do que o normal.</p>
+      <p class="spacing-y">Na verdade, se você usar a regra <span class="code-inline">!important</span>, ela substituirá TODAS as regras de estilo anteriores para aquela propriedade específica naquele elemento!</p>
+      <p class="spacing-y">Vamos ver um exemplo:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -16230,37 +16236,45 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-comment">&lt;!-- Se o estilo interno for definido após o link para a folha de estilo externa, os elementos &lt;h1&gt; serão "laranja":  --&gt;</span>
+    <span class="code-tag">#myid </span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
-  </div>
-  <div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">link <span class="example-text-color-1">rel</span><span class="example-text-color-2">="stylesheet"</span> <span class="example-text-color-1">type</span><span class="example-text-color-2">="text/css"</span> <span class="example-text-color-1">href</span><span class="example-text-color-2">="mystyle.css"</span></span><span class="code-punctuation">&gt;</span>
-  </div>
-  <div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">style</span><span class="code-punctuation">&gt;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-tag">h1</span> <span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">color</span>: orange;</span>
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: blue;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
   </div>
   <div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">/style</span><span class="code-punctuation">&gt;</span>
+    <span class="code-tag">.myclass </span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: gray;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: red<span class="example-text-color-1">!important</span>;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
   </div>
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
         </div>
       </div>
+      <h3 class="spacing-y">Exemplo explicado</h3>
+      <p class="spacing-y">No exemplo acima. todos os três parágrafos terão uma cor de fundo vermelha, mesmo que o seletor de ID e o seletor de classe tenham uma especificidade maior. A regra <span class="code-inline">!important</span> substitui a propriedade <span class="code-inline">background-color</span> em ambos os casos.</p>
+      <h2 class="spacing-Y">important! sobre important!</h2>
+      <p class="spacing-y">A única maneira de substituir uma regra <span class="code-inline">!important</span> é incluir outra regra <span class="code-inline">!important</span> em uma declaração com a mesma (ou superior) especificidade no código-fonte - e aqui começa o problema! Isso torna o código CSS confuso e a depuração será difícil, especialmente se você tiver uma folha de estilo grande!</p>
+      <p class="spacing-y">Aqui criamos um exemplo simples. Não fica muito claro, quando você olha para o código-fonte do CSS, qual cor é considerada mais importante:</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -16277,46 +16291,190 @@
             <pre>
               <code>
   <div class="code-line">
-    <span class="code-comment">&lt;!-- No entanto, se o estilo interno for definido antes do link para a folha de estilo externa, os elementos &lt;h1&gt; serão "navy": --&gt;</span>
+    <span class="code-tag">#myid </span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
-  </div>
-  <div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">style</span><span class="code-punctuation">&gt;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-tag">h1</span> <span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">color</span>: orange;</span>
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: blue<span class="example-text-color-1">!important</span>;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
   </div>
   <div class="code-line">
-    <span class="code-tag">h1</span> <span class="code-punctuation">&#123;</span>
+    <span class="code-tag">.myclass </span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">color</span>: maroon;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">margin-left</span>: 40px;</span>
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: gray<span class="example-text-color-1">!important</span>;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
   </div>
   <div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">/style</span><span class="code-punctuation">&gt;</span>
+    <span class="code-tag">p </span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">link <span class="example-text-color-1">rel</span><span class="example-text-color-2">="stylesheet"</span> <span class="example-text-color-1">type</span><span class="example-text-color-2">="text/css"</span> <span class="example-text-color-1">href</span><span class="example-text-color-2">="mystyle.css"</span></span><span class="code-punctuation">&gt;</span>
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: red<span class="example-text-color-1">!important</span>;</span>
   </div>
   <div class="code-line">
-  <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+    <span class="code-punctuation">&#125;</span>
   </div>
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Dica: É bom saber sobre a regra <span class="code-inline">!important</span>. Você pode vê-lo em algum código-fonte CSS. No entanto, não o use a menos que seja absolutamente necessário.</p>
+      <h2 class="spacing-Y">Talvez um ou dois usos justos de !important</h2>
+      <p class="spacing-y">Uma maneira de usar <span class="code-inline">!important</span> é se você precisar substituir um estilo que não pode ser substituído de nenhuma outra maneira. Isso pode acontecer se você estiver trabalhando em um Sistema de gerenciamento de conteúdo (CMS) e não puder editar o código CSS. Em seguida, você pode definir alguns estilos personalizados para substituir alguns dos estilos CMS.</p>
+      <p class="spacing-y">Outra maneira de usar <span class="code-inline">!important</span> é: suponha que você deseja uma aparência especial para todos os botões em uma página. Aqui, os botões são estilizados com uma cor de fundo cinza, texto branco e algum preenchimento e borda:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.button </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #8c8c8c;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: white;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid black;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Às vezes, a aparência de um botão pode mudar se o colocarmos dentro de outro elemento com maior especificidade e as propriedades entrarem em conflito. Aqui está um exemplo disso:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.button </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #8c8c8c;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: white;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid black;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">#myDiv a </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Para "forçar" todos os botões a terem a mesma aparência, não importa o que aconteça, podemos adicionar a regra <span class="code-inline">!important</span> às propriedades do botão, assim:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.button </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #8c8c8c<span class="example-text-color-1">!important</span>;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: white<span class="example-text-color-1">!important</span>;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 5px<span class="example-text-color-1">!important</span>;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid black<span class="example-text-color-1">!important</span>;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">#myDiv a </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
           </div>
         </div>
       </div>
