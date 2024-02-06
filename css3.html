@@ -354,7 +354,6 @@
         <li>Folhas de estilo externas são armazenadas em arquivos CSS.</li>
         <li>CSS é a linguagem que usamos para estilizar uma página da Web.</li>
       </ul>
-
       <h2 class="spacing-y">Por que usar CSS?</h2>
       <p class="spacing-y">O CSS é usado para definir estilos para suas páginas da Web, incluindo design, layout e variações de exibição para diferentes dispositivos e tamanhos de tela.</p>
       <div class="example-code">
@@ -381,7 +380,6 @@
 <div class="code-line">
   <span class="code-punctuation">&#125;</span>
 </div>
-
 <div class="code-line">
   <span class="code-tag">h1</span><span class="code-punctuation">&#123;</span>
 </div>
@@ -394,12 +392,11 @@
 <div class="code-line">
   <span class="code-punctuation">&#125;</span>
 </div>
-
 <div class="code-line">
   <span class="code-tag">p</span><span class="code-punctuation">&#123;</span>
 </div>
 <div class="code-line">
-    <span class="code-text">font-family: verdana;</span>
+    <span class="code-text">font-family: Verdana, Geneva, Tahoma, sans-serif;;</span>
 </div>
 <div class="code-line">
     <span class="code-text">font-size: 20px;</span>
@@ -410,9 +407,13 @@
         </code>
       </pre>
           </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+                 <h1 style="color: white; text-align: center;">Olá, mundo!</h1>
+                 <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">Isto é uma frase!</p>
+          </div>
         </div>
       </div>
-
       <h3>CSS resolveu um grande problema</h3>
       <p class="spacing-y">O HTML NUNCA foi destinado a conter tags para formatar uma página da web!</p>
       <p class="spacing-y">HTML foi criado para descrever o conteúdo de uma página web, como:</p>
@@ -426,7 +427,6 @@
         foram adicionadas a cada página, tornou-se um processo longo e caro.</p>
       <p class="spacing-y">Para resolver esse problema, o World Wide Web Consortium (W3C) criou o CSS.</p>
       <p class="spacing-y">CSS removeu a formatação de estilo da página HTML!</p>
-
     </section>
     <section class="theme" data-title="sintaxecss" data-index="2" hidden>
       <h1 class="fw-bold spacing-y">Sintaxe CSS</h1>
@@ -475,9 +475,12 @@
         </code>
       </pre>
           </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+                <p style="color: red; text-align: center;">Isto é uma frase!</p>
+          </div>
         </div>
       </div>
-
       <h3>Explicação do exemplo</h3>
       <p class="spacing-y">p é um seletor em CSS (aponta para o elemento HTML que você deseja estilizar: <code class="code-inline">&lt;p&gt;</code>).</p>
       <p class="spacing-y"><code class="code-inline">color</code> é uma propriedade e <code class="code-inline">red</code> é o valor da propriedade.</p>
@@ -513,10 +516,10 @@
       <pre>
         <code>
 <div class="code-line">
-  <span class="code-comment">/* Aqui, todos os elementos &lt;p&gt; na página serão alinhados ao centro, com uma cor de texto vermelha: &lt;p&gt;</span>
+  <span class="code-comment">/* Aqui, todos os elementos &lt;p&gt; na página</span>
 </div>
 <div class="code-line">
-  <span class="code-comment">serão alinhados ao centro, com uma cor de texto vermelha: */</span>
+  <span class="code-comment">serão alinhados ao centro, com uma cor de texto vermelha:&lt;p&gt; */</span>
 </div>
 <div class="code-line">
   <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
@@ -532,6 +535,11 @@
 </div>
         </code>
       </pre>
+          </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+                <p style="color: red; text-align: center;">Isto é uma frase!</p>
+                <p style="color: red; text-align: center;">Esta é outra frase!</p>
           </div>
         </div>
       </div>
@@ -574,6 +582,11 @@
       </pre>
       <p class="spacing-y"><span class="stand-out-word">Observação</span>: um nome de identificação não pode começar com um número!</p>
           </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <span class="code-comment">&lt;p <span class="example-text-color-1">id</span>:"#para1"&gt; Isto é uma frase! &lt;/p&gt;</span>    
+              <p style="color: red; text-align: center;">Isto é uma frase!</p>
+          </div>
         </div>
       </div>
       <h2 class="spacing-y">O seletor de classe CSS</h2>
@@ -613,6 +626,10 @@
       </pre>
       <p class="spacing-y">Você também pode especificar que apenas elementos HTML específicos devem ser afetados por uma classe.</p>
           </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>      
+              <p style="color: red; text-align: center;">Isto é uma frase!</p>
+          </div>
         </div>
       </div>
       <div class="example-code">
@@ -649,6 +666,11 @@
       </pre>
       <p class="spacing-y">Os elementos HTML também podem se referir a mais de uma classe.</p>
           </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <span class="code-comment">&lt;p <span class="example-text-color-1">class</span>:"center"&gt; Isto é uma frase! &lt;/p&gt;</span>    
+              <p style="color: red; text-align: center;">Isto é uma frase!</p>
+          </div>
         </div>
       </div>
       <div class="example-code">
@@ -670,11 +692,13 @@
   <span class="code-comment">&lt;!-- Neste exemplo, o elemento &lt;p&gt; será estilizado de acordo com class="center" e class="large": --&gt;</span>
 </div>
 <div class="code-line">
-  <span class="code-tag">&lt;p class="center large"&gt;Esse parágarfo se refere a duas classes.&lt;/p&gt;</span>
+  <span class="code-tag">&lt;p <span class="example-text-color-1">class</span>="center large"&gt;Esse parágarfo se refere a duas classes.&lt;/p&gt;</span>
 </div>
-
 <div class="code-line">
   <span class="code-punctuation">&#125;</span>
+</div>
+<div class="code-line">
+  <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
 </div>
         </code>
       </pre>
