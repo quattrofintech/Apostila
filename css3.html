@@ -704,6 +704,11 @@
       </pre>
       <p class="spacing-y">Nota: Um nome de classe não pode começar com um número!</p>
           </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <span class="code-comment">&lt;p <span class="example-text-color-1">class</span>:"center large"&gt; Esse parágarfo se refere a duas classes. &lt;/p&gt;</span>    
+              <p style="color: red; text-align: center;">Esse parágrafo se refere a duas classes.</p>
+          </div>
         </div>
       </div>
       <h2 class="spacing-y">O seletor universal de CSS</h2>
@@ -741,11 +746,15 @@
         </code>
       </pre>
           </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>       
+            <p style="color: red; text-align: center;">Esse parágrafo se refere a duas classes.</p>
+          </div>
         </div>
       </div>
       <h2 class="spacing-y">O seletor de agrupamento de CSS</h2>
-        <p class="spacing-y">O seletor de agrupamento seleciona todos os elementos HTML com as mesmas definições de estilo.</p>
-        <p class="spacing-y">Observe o seguinte código CSS (os elementos h1, h2 e p têm as mesmas definições de estilo):</p>
+      <p class="spacing-y">O seletor de agrupamento seleciona todos os elementos HTML com as mesmas definições de estilo.</p>
+      <p class="spacing-y">Observe o seguinte código CSS (os elementos h1, h2 e p têm as mesmas definições de estilo):</p>
       <div class="example-code">
         <div class="code-title d-flex align-items-center justify-content-between">
           <div>
@@ -798,8 +807,14 @@
 </div>
         </code>
       </pre>
+          </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>      
+            <h1 style="color: red; text-align: center;">h1</h1>
+            <h2 style="color: red; text-align: center;">h2</h2>
+            <p style="color: red; text-align: center;">P</p>
+          </div>
         </div>
-      </div>
       </div>
       <p class="spacing-y">Será melhor agrupar os seletores, para minimizar o código.</p>
       <p class="spacing-y">Para agrupar seletores, separe cada seletor com uma vírgula.</p>
@@ -837,9 +852,14 @@
       </pre>
       <p class="spacing-y">Os elementos HTML também podem se referir a mais de uma classe.</p>
           </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>      
+            <h1 style="color: red; text-align: center;">h1</h1>
+            <h2 style="color: red; text-align: center;">h2</h2>
+            <p style="color: red; text-align: center;">P</p>
+          </div>
         </div>
-      </div>
-      
+      </div>      
     </section>
     <section class="theme" data-title="adicionandocss" data-index="4" hidden>
       <h1 class="fw-bold spacing-y">Adicionando CSS</h1>
@@ -1202,8 +1222,7 @@
         <li>Folhas de estilo internas e externas (na seção head).</li>
         <li>Padrão do navegador.</li>
       </ul>
-      <p class="spacing-y">Portanto, um estilo embutido tem a prioridade mais alta e substituirá os estilos externos e internos e os padrões do navegador.</p>
-      
+      <p class="spacing-y">Portanto, um estilo embutido tem a prioridade mais alta e substituirá os estilos externos e internos e os padrões do navegador.</p>      
       <h2>Comentários CSS</h2>
       <p class="spacing-y">Os comentários CSS não são exibidos no navegador, mas podem ajudar a documentar seu código-fonte.</p>
       <p class="spacing-y">Os comentários são usados ​​para explicar o código e podem ajudar quando você editar o código-fonte posteriormente.</p>
@@ -1361,8 +1380,7 @@
           </div>
         </div>
       </div>
-      <p class="spacing-y"><span class="stand-out-word">Dica</span>: Um estilo embutido perde muitas das vantagens de uma folha de estilo (misturando conteúdo com apresentação). Use este método com moderação.</p>
-      
+      <p class="spacing-y"><span class="stand-out-word">Dica</span>: Um estilo embutido perde muitas das vantagens de uma folha de estilo (misturando conteúdo com apresentação). Use este método com moderação.</p>      
       <h2>Múltiplas Folhas de Estilo</h2>
       <p class="spacing-y">Caso algumas propriedades tenham sido definidas para o mesmo seletor (elemento) em diferentes folhas de estilo, será utilizado o valor da última folha de estilo lida.</p>
       <p class="spacing-y">Suponha que uma folha de estilo externa tenha o seguinte estilo para o elemento <code class="code-inline">&lt;h1&gt;</code> seja de <code class="code-inline">color: navy;</code></p>
@@ -1785,6 +1803,12 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <h1 style="background-color: green;">Este é o h1</h1>
+            <div style="background-color: lightblue;">Este é o div</div>
+            <p style="background-color: yellow;">Este é o p</p>
+          </div>
         </div>
       </div>
       <h2 class="spacing-Y">Opacidade / Transparência</h2>
@@ -1826,6 +1850,10 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <h1 style="background-color: green; opacity: 0.3;">Este é o h1</h1>
+          </div>
         </div>
       </div>      
       <p class="spacing-y"><span class="stand-out-word">Observação</span>: ao usar a propriedade <code class="code-inline">opacity</code> para adicionar transparência ao plano de fundo de um elemento, todos os seus elementos filhos herdam a mesma transparência. Isso pode dificultar a leitura do texto dentro de um elemento totalmente transparente.</p>
@@ -1866,6 +1894,10 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <span style="background-color: rgba(0, 128, 0, 0.3);">Este é o h1</span>
+          </div>
         </div>
       </div>
       <p class="spacing-y">A propriedade <code class="code-inline">background-color</code> adiciona cor de fundo para o elemento.</p>
@@ -1901,6 +1933,10 @@
   </div>
               </code>
             </pre>
+          </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <div>IMAGE</div>
           </div>
         </div>
       </div>
