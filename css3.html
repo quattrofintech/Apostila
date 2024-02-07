@@ -150,6 +150,9 @@
           <a href="?t=counterscss" class="list-group-item">Contadores CSS</a>
           <a href="?t=layoutsitecss" class="list-group-item">Layout do site CSS</a>
           <a href="?t=unidadecss" class="list-group-item">Unidades CSS</a>
+          <a href="?t=especificidadecss" class="list-group-item">Especificidade do CSS</a>
+          <a href="?t=importantcss" class="list-group-item">CSS A regra !important</a>
+          <a href="?t=funcoesmatematicascss" class="list-group-item">Funções matemáticas CSS</a>
         </div>
       </div>
     </div>
@@ -323,6 +326,15 @@
       <li class="nav-item">
         <a class="nav-link" href="?t=unidadecss">Unidades CSS</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=especificidadecss">Especificidade do CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=importantcss">CSS A regra !important</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?t=funcoesmatematicascss">Funções matemáticas CSS</a>
+      </li>
     </ul>
   </aside>
   <article class="p-2 flex-grow-1">
@@ -342,7 +354,6 @@
         <li>Folhas de estilo externas são armazenadas em arquivos CSS.</li>
         <li>CSS é a linguagem que usamos para estilizar uma página da Web.</li>
       </ul>
-
       <h2 class="spacing-y">Por que usar CSS?</h2>
       <p class="spacing-y">O CSS é usado para definir estilos para suas páginas da Web, incluindo design, layout e variações de exibição para diferentes dispositivos e tamanhos de tela.</p>
       <div class="example-code">
@@ -369,7 +380,6 @@
 <div class="code-line">
   <span class="code-punctuation">&#125;</span>
 </div>
-
 <div class="code-line">
   <span class="code-tag">h1</span><span class="code-punctuation">&#123;</span>
 </div>
@@ -382,12 +392,11 @@
 <div class="code-line">
   <span class="code-punctuation">&#125;</span>
 </div>
-
 <div class="code-line">
   <span class="code-tag">p</span><span class="code-punctuation">&#123;</span>
 </div>
 <div class="code-line">
-    <span class="code-text">font-family: verdana;</span>
+    <span class="code-text">font-family: Verdana, Geneva, Tahoma, sans-serif;;</span>
 </div>
 <div class="code-line">
     <span class="code-text">font-size: 20px;</span>
@@ -398,9 +407,13 @@
         </code>
       </pre>
           </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+                 <h1 style="color: white; text-align: center;">Olá, mundo!</h1>
+                 <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">Isto é uma frase!</p>
+          </div>
         </div>
       </div>
-
       <h3>CSS resolveu um grande problema</h3>
       <p class="spacing-y">O HTML NUNCA foi destinado a conter tags para formatar uma página da web!</p>
       <p class="spacing-y">HTML foi criado para descrever o conteúdo de uma página web, como:</p>
@@ -414,7 +427,6 @@
         foram adicionadas a cada página, tornou-se um processo longo e caro.</p>
       <p class="spacing-y">Para resolver esse problema, o World Wide Web Consortium (W3C) criou o CSS.</p>
       <p class="spacing-y">CSS removeu a formatação de estilo da página HTML!</p>
-
     </section>
     <section class="theme" data-title="sintaxecss" data-index="2" hidden>
       <h1 class="fw-bold spacing-y">Sintaxe CSS</h1>
@@ -463,9 +475,12 @@
         </code>
       </pre>
           </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+                <p style="color: red; text-align: center;">Isto é uma frase!</p>
+          </div>
         </div>
       </div>
-
       <h3>Explicação do exemplo</h3>
       <p class="spacing-y">p é um seletor em CSS (aponta para o elemento HTML que você deseja estilizar: <code class="code-inline">&lt;p&gt;</code>).</p>
       <p class="spacing-y"><code class="code-inline">color</code> é uma propriedade e <code class="code-inline">red</code> é o valor da propriedade.</p>
@@ -501,10 +516,10 @@
       <pre>
         <code>
 <div class="code-line">
-  <span class="code-comment">/* Aqui, todos os elementos &lt;p&gt; na página serão alinhados ao centro, com uma cor de texto vermelha: &lt;p&gt;</span>
+  <span class="code-comment">/* Aqui, todos os elementos &lt;p&gt; na página</span>
 </div>
 <div class="code-line">
-  <span class="code-comment">serão alinhados ao centro, com uma cor de texto vermelha: */</span>
+  <span class="code-comment">serão alinhados ao centro, com uma cor de texto vermelha:&lt;p&gt; */</span>
 </div>
 <div class="code-line">
   <span class="code-tag">p</span> <span class="code-punctuation">&#123;</span>
@@ -520,6 +535,11 @@
 </div>
         </code>
       </pre>
+          </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+                <p style="color: red; text-align: center;">Isto é uma frase!</p>
+                <p style="color: red; text-align: center;">Esta é outra frase!</p>
           </div>
         </div>
       </div>
@@ -562,6 +582,11 @@
       </pre>
       <p class="spacing-y"><span class="stand-out-word">Observação</span>: um nome de identificação não pode começar com um número!</p>
           </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <span class="code-comment">&lt;p <span class="example-text-color-1">id</span>:"#para1"&gt; Isto é uma frase! &lt;/p&gt;</span>    
+              <p style="color: red; text-align: center;">Isto é uma frase!</p>
+          </div>
         </div>
       </div>
       <h2 class="spacing-y">O seletor de classe CSS</h2>
@@ -601,6 +626,10 @@
       </pre>
       <p class="spacing-y">Você também pode especificar que apenas elementos HTML específicos devem ser afetados por uma classe.</p>
           </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>      
+              <p style="color: red; text-align: center;">Isto é uma frase!</p>
+          </div>
         </div>
       </div>
       <div class="example-code">
@@ -637,6 +666,11 @@
       </pre>
       <p class="spacing-y">Os elementos HTML também podem se referir a mais de uma classe.</p>
           </div>
+          <div class="code-support row" style="background-color: lightblue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <span class="code-comment">&lt;p <span class="example-text-color-1">class</span>:"center"&gt; Isto é uma frase! &lt;/p&gt;</span>    
+              <p style="color: red; text-align: center;">Isto é uma frase!</p>
+          </div>
         </div>
       </div>
       <div class="example-code">
@@ -658,11 +692,13 @@
   <span class="code-comment">&lt;!-- Neste exemplo, o elemento &lt;p&gt; será estilizado de acordo com class="center" e class="large": --&gt;</span>
 </div>
 <div class="code-line">
-  <span class="code-tag">&lt;p class="center large"&gt;Esse parágarfo se refere a duas classes.&lt;/p&gt;</span>
+  <span class="code-tag">&lt;p <span class="example-text-color-1">class</span>="center large"&gt;Esse parágarfo se refere a duas classes.&lt;/p&gt;</span>
 </div>
-
 <div class="code-line">
   <span class="code-punctuation">&#125;</span>
+</div>
+<div class="code-line">
+  <span class="code-text"><span class="example-text-color-1">text-align</span>: center;</span>
 </div>
         </code>
       </pre>
@@ -15830,6 +15866,797 @@
         <li><span class="code-inline">vmin</span> -  20.0 | 12.0 | 19.0 | 6.0 | 20.0 </li>
         <li><span class="code-inline">vmax</span> - 26.0 | 3.0 | 19.0 | 7.0 |20.0 </li>
       </ul>
+    </section>
+    <section class="theme" data-title="especificidadecss" data-index="41" hidden>
+      <h1 class="fw-bold spacing-y">Especificidade do CSS</h1>
+      <h2 class="spacing-Y">O que é Especificidade?</h2>
+      <p class="spacing-y">Se houver duas ou mais regras CSS que apontam para o mesmo elemento, o seletor com o maior valor de especificidade "vencerá" e sua declaração de estilo será aplicada a esse elemento HTML.</p>
+      <p class="spacing-y">Pense na especificidade como uma pontuação/classificação que determina qual declaração de estilo é aplicada a um elemento.</p>
+      <p class="spacing-y">Veja os exemplos a seguir:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- Neste exemplo, usamos o elemento "p" como seletor e especificamos</span>
+    <span class="code-comment">uma cor vermelha para este elemento. O texto ficará vermelho: --&gt;</span>
+  </div>       
+  <div class="code-inline">         
+    <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+  </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">style</span><span class="code-punctuation">&gt;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">p </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">color</span>: red;</span> <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">/style</span><span class="code-punctuation">&gt;</span>
+    </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">p</span><span class="code-punctuation">&gt;</span><span class="code-text">Olá Mundo!.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Agora, veja o exemplo 2:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- Neste exemplo, adicionamos um seletor de classe (chamado "teste") e especificamos uma cor verde para esta classe. </span>
+    <span class="code-comment">O texto agora será verde (apesar de termos especificado uma cor vermelha para o seletor de elemento "p").</span>
+    <span class="code-comment">Isso ocorre porque o seletor de classe recebe prioridade mais alta: --&gt;</span>
+  </div>       
+  <div class="code-inline">         
+    <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+  </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">style</span><span class="code-punctuation">&gt;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">.test </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">color</span>: green;</span> <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">p </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">color</span>: red;</span> <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">/style</span><span class="code-punctuation">&gt;</span>
+    </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">p <span class="example-text-color-1">class</span><span class="example-text-color-2">="test"</span></span><span class="code-punctuation">&gt;</span><span class="code-text">Olá Mundo!.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Agora, veja o exemplo 3:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- Neste exemplo, adicionamos um seletor de classe (chamado "teste") e especificamos uma cor verde para esta classe. </span>
+    <span class="code-comment">O texto agora será verde (apesar de termos especificado uma cor vermelha para o seletor de elemento "p").</span>
+    <span class="code-comment">Isso ocorre porque o seletor de classe recebe prioridade mais alta: --&gt;</span>
+  </div>       
+  <div class="code-inline">         
+    <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+  </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">style</span><span class="code-punctuation">&gt;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">#demo </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">color</span>: blue;</span> <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">.test </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">color</span>: green;</span> <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">p </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">color</span>: red;</span> <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">/style</span><span class="code-punctuation">&gt;</span>
+    </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">p <span class="example-text-color-1">id</span><span class="example-text-color-2">="demo"</span> <span class="example-text-color-1">class</span><span class="example-text-color-2">="test"</span></span></span><span class="code-punctuation">&gt;</span><span class="code-text">Olá Mundo!.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Agora, veja o exemplo 4:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- Neste exemplo, adicionamos um estilo embutido para o elemento "p". </span>
+    <span class="code-comment"> O texto agora será rosa, porque o estilo embutido recebe a maior prioridade: --&gt;</span>
+  </div>       
+  <div class="code-inline">         
+    <span class="code-punctuation">&lt;</span><span class="code-tag">html</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">head</span><span class="code-punctuation">&gt;</span>
+  </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">style</span><span class="code-punctuation">&gt;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">#demo </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">color</span>: blue;</span> <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">.test </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">color</span>: green;</span> <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-tag">p </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">color</span>: red;</span> <span class="code-punctuation">&#125;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&lt;</span><span class="code-tag">/style</span><span class="code-punctuation">&gt;</span>
+    </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/head</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">p <span class="example-text-color-1">id</span><span class="example-text-color-2">="demo"</span> <span class="example-text-color-1">class</span><span class="example-text-color-2">="test"</span> <span class="example-text-color-1">style</span><span class="example-text-color-2">="color: pink;"</span></span><span class="code-punctuation">&gt;</span><span class="code-text">Olá Mundo!.</span><span class="code-punctuation">&lt;</span><span class="code-tag">/p</span><span class="code-punctuation">&gt;</span>
+  </div>  
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/body</span><span class="code-punctuation">&gt;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&lt;</span><span class="code-tag">/html</span><span class="code-punctuation">&gt;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-Y">Hierarquia de Especificidade</h2>
+      <p class="spacing-y">Todo seletor CSS tem seu lugar na hierarquia de especificidade.</p>
+      <p class="spacing-y">Existem quatro categorias que definem o nível de especificidade de um seletor:</p>
+      <ul class="spacing-left">
+        <li>Estilos embutidos - Exemplo: &lt;h1 style="color: pink;"&gt;</li>
+        <li>IDs - Exemplo: #navbar</li>
+        <li>Classes, pseudo-classes, seletores de atributo - Exemplo: .test, :hover, [href]</li>
+        <li>Elementos e pseudo-elementos - Exemplo: h1, ::before</li>
+      </ul>
+      <h2 class="spacing-Y">Como calcular a especificidade?</h2>
+      <p class="spacing-y">Memorize como calcular a especificidade!</p>
+      <p class="spacing-y">Comece em 0, adicione 100 para cada valor de ID, adicione 10 para cada valor de classe (ou pseudoclasse ou seletor de atributo), adicione 1 para cada seletor de elemento ou pseudoelemento.</p>
+      <p class="spacing-y">Nota: O estilo embutido obtém um valor de especificidade de 1000 e sempre recebe a prioridade mais alta!</p>
+      <p class="spacing-y">Observação 2: Há uma exceção a esta regra: se você usar a regra <span class="code-inline">!important</span>, ela substituirá até os estilos embutidos!</p>
+      <p class="spacing-y">Na lista abaixo mostra alguns exemplos de como calcular valores de especificidade:</p>
+      <ul class="spacing-left">
+        <li>Seletor       Valor específico        Calculador</li>
+        <li>p       1      1</li>
+        <li>p.test  11    1 + 10</li>
+        <li>p#demo  101   1 + 100</li>
+        <li>&lt;h1 style="color: pink;"&gt;       1000      1000</li>
+        <li>#demo  100    100</li>
+        <li>.test  10     10</li>
+        <li>p.test1.test2       21      1 + 10 + 10</li>
+        <li>#navbar p#demo  201    100 + 1 + 100</li>
+        <li>*       0     0(o seletor universal é ignorado)</li>
+      </ul>
+      <p class="spacing-y">O seletor com o maior valor de especificidade vencerá e entrará em vigor!</p>
+      <p class="spacing-y">Considere estes três fragmentos de código:</p>
+      <p class="spacing-y">A: h1</p>
+      <p class="spacing-y">B: h1#content</p>
+      <p class="spacing-y">C: &lt;h1 <span class="example-text-color-1">id</span><span class="example-text-color-2">="demo"</span> <span class="example-text-color-1">style</span><span class="example-text-color-2">="color: pink;"</span>&gt;Heading&lt;/h1&gt;</p>
+      <p class="spacing-y">A especificidade de A é 1 (um seletor de elemento)</p>
+      <p class="spacing-y">A especificidade de B é 101 (uma referência de ID + um seletor de elemento)</p>
+      <p class="spacing-y">A especificidade de C é 1000 (estilo embutido)</p>
+      <p class="spacing-y">Como a terceira regra (C) tem o valor de especificidade mais alto (1000), essa declaração de estilo será aplicada.</p>
+      <h2 class="spacing-Y">Mais exemplos de regras de especificidade</h2>
+      <p class="spacing-y">Especificidade igual: a regra mais recente vence - Se a mesma regra for escrita duas vezes na folha de estilo externa, a regra mais recente vence:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+<div class="code-line">
+  <span class="code-tag">h1 </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span> <span class="code-punctuation">&#125;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">h1 </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">background-color</span>: red;</span> <span class="code-punctuation">&#125;</span>
+</div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Os seletores de ID têm uma especificidade maior do que os seletores de atributo - observe as três linhas de código a seguir:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+<div class="code-line">
+  <span class="code-tag">Fontes externas do arquivo css:</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">#content h1 </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">background-color</span>: red;</span> <span class="code-punctuation">&#125;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">Nos arquivos HTML:</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">style</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">#content h1 </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span> <span class="code-punctuation">&#125;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">/style</span><span class="code-punctuation">&gt;</span>
+</div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">a última regra será aplicada.</p>
+      <p class="spacing-y">Um seletor de classe supera qualquer número de seletores de elemento - um seletor de classe como .intro supera h1, p, div, etc:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+<div class="code-line">
+  <span class="code-tag">.intro </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span> <span class="code-punctuation">&#125;</span>
+</div>
+<div class="code-line">
+  <span class="code-tag">h1 </span><span class="code-punctuation">&#123;</span> <span class="code-text"><span class="example-text-color-1">background-color</span>: red;</span> <span class="code-punctuation">&#125;</span>
+</div>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">O seletor universal (*) e os valores herdados têm uma especificidade de 0 - O seletor universal (*) e os valores herdados são ignorados!</p>
+    </section>
+    <section class="theme" data-title="importantcss" data-index="42" hidden>
+      <h1 class="fw-bold spacing-y">Especificidade do CSS</h1>
+      <h2 class="spacing-Y">O que é "!important"?</h2>
+      <p class="spacing-y">A regra <span class="code-inline">!important</span> em CSS é usada para adicionar mais importância a uma propriedade/valor do que o normal.</p>
+      <p class="spacing-y">Na verdade, se você usar a regra <span class="code-inline">!important</span>, ela substituirá TODAS as regras de estilo anteriores para aquela propriedade específica naquele elemento!</p>
+      <p class="spacing-y">Vamos ver um exemplo:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">#myid </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: blue;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">.myclass </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: gray;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: red<span class="example-text-color-1">!important</span>;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h3 class="spacing-y">Exemplo explicado</h3>
+      <p class="spacing-y">No exemplo acima. todos os três parágrafos terão uma cor de fundo vermelha, mesmo que o seletor de ID e o seletor de classe tenham uma especificidade maior. A regra <span class="code-inline">!important</span> substitui a propriedade <span class="code-inline">background-color</span> em ambos os casos.</p>
+      <h2 class="spacing-Y">important! sobre important!</h2>
+      <p class="spacing-y">A única maneira de substituir uma regra <span class="code-inline">!important</span> é incluir outra regra <span class="code-inline">!important</span> em uma declaração com a mesma (ou superior) especificidade no código-fonte - e aqui começa o problema! Isso torna o código CSS confuso e a depuração será difícil, especialmente se você tiver uma folha de estilo grande!</p>
+      <p class="spacing-y">Aqui criamos um exemplo simples. Não fica muito claro, quando você olha para o código-fonte do CSS, qual cor é considerada mais importante:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">#myid </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: blue<span class="example-text-color-1">!important</span>;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">.myclass </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: gray<span class="example-text-color-1">!important</span>;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">p </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: red<span class="example-text-color-1">!important</span>;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Dica: É bom saber sobre a regra <span class="code-inline">!important</span>. Você pode vê-lo em algum código-fonte CSS. No entanto, não o use a menos que seja absolutamente necessário.</p>
+      <h2 class="spacing-Y">Talvez um ou dois usos justos de !important</h2>
+      <p class="spacing-y">Uma maneira de usar <span class="code-inline">!important</span> é se você precisar substituir um estilo que não pode ser substituído de nenhuma outra maneira. Isso pode acontecer se você estiver trabalhando em um Sistema de gerenciamento de conteúdo (CMS) e não puder editar o código CSS. Em seguida, você pode definir alguns estilos personalizados para substituir alguns dos estilos CMS.</p>
+      <p class="spacing-y">Outra maneira de usar <span class="code-inline">!important</span> é: suponha que você deseja uma aparência especial para todos os botões em uma página. Aqui, os botões são estilizados com uma cor de fundo cinza, texto branco e algum preenchimento e borda:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.button </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #8c8c8c;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: white;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid black;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Às vezes, a aparência de um botão pode mudar se o colocarmos dentro de outro elemento com maior especificidade e as propriedades entrarem em conflito. Aqui está um exemplo disso:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.button </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #8c8c8c;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: white;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid black;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">#myDiv a </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <p class="spacing-y">Para "forçar" todos os botões a terem a mesma aparência, não importa o que aconteça, podemos adicionar a regra <span class="code-inline">!important</span> às propriedades do botão, assim:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">.button </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: #8c8c8c<span class="example-text-color-1">!important</span>;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: white<span class="example-text-color-1">!important</span>;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 5px<span class="example-text-color-1">!important</span>;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid black<span class="example-text-color-1">!important</span>;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-tag">#myDiv a </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">color</span>: red;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="theme" data-title="funcoesmatematicascss" data-index="43" hidden>
+      <h1 class="fw-bold spacing-y">Funções matemáticas CSS</h1>
+      <p class="spacing-y">As funções matemáticas CSS permitem que expressões matemáticas sejam usadas como valores de propriedade. Aqui, explicaremos as funções <span class="code-inline">calc()</span>, <span class="code-inline">max()</span> e <span class="code-inline">min()</span></p>
+      <h2 class="fw-bold spacing-y">A função calc()</h2>
+      <p class="spacing-y">A função <span class="code-inline">calc()</span> executa um cálculo para ser usado como o valor da propriedade.</p>
+      <p class="spacing-y">Sintaxe CSS - calc(expression)</p>
+      <p class="spacing-y">Na sintaxe acima: expression - Obrigatório. Uma expressão matemática. O resultado será utilizado como o valor. Os seguintes operadores podem ser usados: + - * /</p>
+      <p class="spacing-y">Vamos ver um exemplo:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- Use calc() para calcular a largura de um elemento &lt;div&gt;: --&gt;</span> 
+  </div>
+  <div class="code-line">
+    <span class="code-tag">#div1 </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">position</span>: absolute;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">left</span>: 50px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: calc(100% - 100px);</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid black;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-y">A função max()</h2>
+      <p class="spacing-y">A função <span class="code-inline">max()</span> usa o maior valor, de uma lista de valores separados por vírgula, como o valor da propriedade.</p>
+      <p class="spacing-y">Sintaxe CSS - max(value1, value2, ...)</p>
+      <p class="spacing-y">Na sintaxe acima: value1, value2, ... - Obrigatório. Uma lista de valores separados por vírgulas - onde o maior valor é escolhido.</p>
+      <p class="spacing-y">Veja um exemplo:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- Use max() para definir a largura de #div1 para o valor que for maior, 50% ou 300px: --&gt;</span> 
+  </div>
+  <div class="code-line">
+    <span class="code-tag">#div1 </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">height</span>: 100px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: max(50%, 300px);</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
+      <h2 class="spacing-y">A função min()</h2>
+      <p class="spacing-y">A função <span class="code-inline">min()</span> usa o menor valor, de uma lista de valores separados por vírgula, como o valor da propriedade.</p>
+      <p class="spacing-y">Sintaxe CSS - min(value1, value2, ...)</p>
+      <p class="spacing-y">Na sintaxe acima: value1, value2, ... - Obrigatório. Uma lista de valores separados por vírgulas - onde o menor valor é escolhido.</p>
+      <p class="spacing-y">Veja um exemplo:</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-comment">&lt;!-- Use min() para definir a largura de #div1 para o menor valor, 50% ou 300px: --&gt;</span> 
+  </div>
+  <div class="code-line">
+    <span class="code-tag">#div1 </span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">height</span>: 100px;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">width</span>: min(50%, 300px);</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Toast -->
     <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
