@@ -4148,6 +4148,10 @@
         </code>
       </pre>
           </div>
+          <div>
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <div style="width: 300px; border: 15px solid green; padding: 50px; margin: 20px;">Hello, world!</div>                               
+          </div>
         </div>
       </div>
       <h2 class="spacing-y">Largura e altura de um elemento</h2>      
@@ -4191,6 +4195,10 @@
   </div>
         </code>
       </pre>
+          </div>
+          <div>
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <div style="width: 320px; border: 5px solid gray; padding: 10px; margin: 0;">Hello, world!</div>                               
           </div>
         </div>
       </div>
@@ -4482,6 +4490,12 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-text" style="border: 2px solidgray; outline-style: solid; outline-color: red;">p.ex1</span>            
+            <span class="code-text" style="border: 2px solidgray; outline-style: dotted; outline-color: yellow;">p.ex2</span>
+            <span class="code-text" style="border: 2px solidgray; outline-style: outset; outline-color: green;">p.ex3</span>       
+          </div>
         </div>
       </div>      
       <h2>Valores HEX</h2>
@@ -4519,6 +4533,10 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-text" style="outline-style: solid; outline-color: #ff0000;">Olá, mundo!</span>  
+          </div>
         </div>
       </div>
       <h2 class="spacing-Y">Valores RGB</h2>
@@ -4553,6 +4571,10 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-text" style="outline-style: solid; outline-color: rgb(255, 0, 0);">Olá, mundo!</span>                 
+          </div>
         </div>
       </div>      
       <h2>Valores HSL</h2>
@@ -4579,13 +4601,17 @@
     <span class="code-text"><span class="example-text-color-1">outline-style</span>: solid;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">outline-color</span>: #hsl(0, 100%, 50%);</span> <span class="code-comment">/* vermelho */</span>
+    <span class="code-text"><span class="example-text-color-1">outline-color</span>: hsl(0, 100%, 50%);</span> <span class="code-comment">/* vermelho */</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
   </div>  
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-text" style="outline-style: solid; outline-color: hsl(0, 100%, 50%);">Olá mundo!</span>                 
           </div>
         </div>
       </div>
@@ -4632,6 +4658,13 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-text" style="outline: dashed;">p.ex1</span>                 
+            <span class="code-text" style="outline: dotted red;">p.ex2</span>                 
+            <span class="code-text" style="outline: 5px solid yellow;">p.ex3</span>                 
+            <span class="code-text" style="outline: thick ridge pink;">p.ex4</span>                 
+          </div>
         </div>
       </div>
       <h2 class="spacing-Y">Deslocamento do Contorno do CSS</h2>
@@ -4660,7 +4693,7 @@
     <span class="code-text"><span class="example-text-color-1">margin</span>: 30px;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid black;</span>
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid gray;</span>
   </div>
   <div class="code-line">
     <span class="code-text"><span class="example-text-color-1">outline</span>: 1px solid red;</span>
@@ -4673,6 +4706,10 @@
   </div>
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-text" style="outline: 1px solid red; margin: 30px; border: 1px solid gray; outline-offset: 15px;">Olá mundo!</span>                               
           </div>
         </div>
       </div>   
@@ -4716,6 +4753,10 @@
   </div>
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-text" style="margin: 30px;background: yellow; border: 1px solid red; outline: 1px solid gray; outline-offset: 15px;">Olá mundo!</span>                                 
           </div>
         </div>
       </div>
@@ -4773,7 +4814,11 @@
               </code>
             </pre>
           </div>
-          <div class="code-support row">               
+          <div class="code-support row" style="color: blue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <h1 class="code-text" style="color: green;">Olá mundo!</h1>       
+            <p class="code-text">Olá mundo</p>                          
+            <p class="code-text">Olá mundo</p>                          
           </div>
         </div>
       </div>
@@ -4813,7 +4858,7 @@
     <span class="code-tag">h1</span><span class="code-punctuation">&#123;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-color</span>: black;</span>
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: purple;</span>
   </div>
   <div class="code-line">
     <span class="code-text"><span class="example-text-color-1">color</span>: white;</span>
@@ -4836,8 +4881,10 @@
               </code>
             </pre>
           </div>
-          <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+          <div class="code-support row" style="background-color: lightgrey; color: blue;">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <h1 class="code-text" style="background-color: purple; color: white;">Olá mundo!</h1>       
+            <div class="code-text" style="background-color: blue; color: white;">Olá mundo!</div>        
           </div>
         </div>
       </div>
@@ -4891,6 +4938,12 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <p class="code-text" style="text-align: center;">Olá mundo!</p>                                
+            <p class="code-text" style="text-align: left;">Olá mundo!</p>                                
+            <p class="code-text" style="text-align: right;">Olá mundo!</p>                                
+          </div>
         </div>
       </div>      
       <p class="spacing-y">Quando a propriedade <code class="code-inline">text-align</code> é definida como "justify", cada linha é esticada para que cada linha tenha a mesma largura e as margens esquerda e direita sejam retas (como em revistas e jornais):</p>
@@ -4920,6 +4973,10 @@
   </div>   
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <div class="code-text" style="text-align: justify;">Olá mundo!</div>                              
           </div>
         </div>
       </div>
@@ -4973,6 +5030,12 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <p class="code-text" style="text-align-last: right;">Olá mundo!</p>                                
+            <p class="code-text" style="text-align-last: center;">Olá mundo!</p>                                
+            <p class="code-text" style="text-align-last: justify;">Olá mundo!</p>                                
+          </div>
         </div>
       </div>     
       <h2 class="spacing-Y">Direção do texto</h2>
@@ -5005,6 +5068,10 @@
   </div>  
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <p class="code-text" style="direction: rtl; unicode-bidi: bidi-override;">Olá mundo!</p>                                                           
           </div>
         </div>
       </div>
@@ -5082,6 +5149,14 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <p class="code-text" style="vertical-align: baseline;">Olá mundo!</p>                                                       
+            <p class="code-text" style="vertical-align: text-top;">Olá mundo!</p>                                                       
+            <p class="code-text" style="vertical-align: text-bottom;">Olá mundo!</p>                                                       
+            <p class="code-text" style="vertical-align: sub;">Olá mundo!</p>                                                       
+            <p class="code-text" style="vertical-align: super;">Olá mundo!</p>                                                       
+          </div>
         </div>
       </div>
       <h2 class="spacing-Y">Decoração de Texto CSS</h2>
@@ -5140,6 +5215,13 @@
   </div>
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <p class="code-text" style="text-decoration-line: overline;">Olá mundo!</p>                                                         
+            <p class="code-text" style="text-decoration-line: line-through;">Olá mundo!</p>                                                         
+            <p class="code-text" style="text-decoration-line: underline;">Olá mundo!</p>                                                         
+            <p class="code-text" style="text-decoration-line: overline underline;">Olá mundo!</p>                                                         
           </div>
         </div>
       </div>   
@@ -5210,6 +5292,13 @@
   </div>
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <h1 class="code-text" style="text-decoration-line: overline; text-decoration-color: red;">Olá mundo!</h1>                                
+            <h2 class="code-text" style="text-decoration-line: line-through; text-decoration-color: blue;">Olá mundo!</h2>                                
+            <h3 class="code-text" style="text-decoration-line: underline; text-decoration-color: green;">Olá mundo!</h3>                                
+            <p class="code-text" style="text-decoration-line: overline underline; text-decoration-color: purple;">Olá mundo!</p>                                
           </div>
         </div>
       </div>
@@ -5305,6 +5394,15 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <h1 class="code-text" style="text-decoration-line: overline; text-decoration-color: red;">Olá mundo!</h1>                                
+            <h2 class="code-text" style="text-decoration-line: line-through; text-decoration-color: blue;">Olá mundo!</h2>                                
+            <h3 class="code-text" style="text-decoration-line: underline; text-decoration-color: green;">Olá mundo!</h3>                                
+            <p class="code-text" style="text-decoration-line: overline underline; text-decoration-color: purple;">Olá mundo!(p.ex1)</p>                                
+            <p class="code-text" style="text-decoration-line: overline underline; text-decoration-color: purple;">Olá mundo!(p.ex2)</p>                                
+            <p class="code-text" style="text-decoration-line: overline underline; text-decoration-color: purple;">Olá mundo!(p.ex3)</p>                                
+          </div>
         </div>
       </div>
       <h2 class="spacing-Y">Especifique a espessura para a linha de decoração</h2>
@@ -5381,6 +5479,13 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <h1 class="code-text" style="text-decoration-line: underline; text-decoration-thickness: auto;">Olá mundo!</h1>                                
+            <h2 class="code-text" style="text-decoration-line: underline; text-decoration-thickness: 5px;">Olá mundo!</h2>                                
+            <h3 class="code-text" style="text-decoration-line: underline; text-decoration-thickness: 25%;">Olá mundo!</h3>                                
+            <p class="code-text" style="text-decoration-line: underline;text-decoration-color: red;text-decoration-style: double; text-decoration-thickness: 5px;">Olá mundo!(p.ex1)</p>                           
+          </div>
         </div>
       </div>
       <h2 class="spacing-Y">Decoração de texto - propriedade abreviada</h2>
@@ -5445,6 +5550,13 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <h1 class="code-text" style="text-decoration: underline;">Olá mundo!</h1>                                
+            <h2 class="code-text" style="text-decoration: underline red;">Olá mundo!</h2>                                
+            <h3 class="code-text" style="text-decoration: underline red double;">Olá mundo!</h3>                                
+            <p class="code-text" style="text-decoration: underline red double 5px;">Olá mundo!(p.ex1)</p>                                                             
+          </div>
         </div>
       </div>
       <p class="spacing-y"><span class="stand-out-word">Observação</span>: Todos os links em HTML são sublinhados por padrão. Às vezes, você vê que os links são estilizados sem sublinhado. O <code class="code-inline">text-decoration: none</code> é usado para remover o sublinhado dos links, assim:</p>
@@ -5474,6 +5586,10 @@
   </div>
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <h1 class="code-text" style="text-decoration: none;">Olá mundo!</h1>                                                                                          
           </div>
         </div>
       </div>
@@ -5525,6 +5641,12 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <p class="code-text" style="text-transform: uppercase;">Olá mundo!</p>                                                                                   
+            <p class="code-text" style="text-transform: lowercase;">Olá mundo!</p>                                                                                   
+            <p class="code-text" style="text-transform: capitalize;">Olá mundo!</p>                                                                                   
+          </div>
         </div>
       </div>
       <h2 class="spacing-Y">Espaçamento do Texto CSS</h2>
@@ -5556,6 +5678,10 @@
   </div>
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>                                     
+            <p class="code-text" style="text-indent: 50px;">Olá mundo!</p>                                                             
           </div>
         </div>
       </div>
@@ -5598,6 +5724,11 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <h1 class="code-text" style="letter-spacing: 5px;">Olá mundo!</h1>                                
+            <h2 class="code-text" style="letter-spacing: -2px;">Olá mundo!</h2>                                                                                            
+          </div>
         </div>
       </div>
       <h3 class="spacing-Y">Altura da linha</h3>
@@ -5638,6 +5769,11 @@
   </div>
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>                                        
+            <p class="code-text" style="line-height: 0.8;">Olá mundo!</p>                                                             
+            <p class="code-text" style="line-height: 1.8;">Olá mundo!</p>                                                             
           </div>
         </div>
       </div>
@@ -5680,6 +5816,11 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>                                   
+            <p class="code-text" style="word-spacing: 10px;">Olá mundo!</p>                                                             
+            <p class="code-text" style="word-spacing: -2px;">Olá mundo!</p>                                                             
+          </div>
         </div>
       </div>
       <h3 class="spacing-Y">Espaço em branco</h3>
@@ -5711,6 +5852,10 @@
   </div>
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>                                        
+            <p class="code-text" style="white-space: nowrap;">Olá mundo!</p>                                                             
           </div>
         </div>
       </div>
@@ -5746,6 +5891,10 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <h1 class="code-text" style="text-shadow: 2px 2px;">Olá mundo!</h1>                                                                                        
+          </div>
         </div>
       </div>
       <p class="spacing-y">Em seguida, adicione uma cor (vermelho) à sombra:</p>
@@ -5776,6 +5925,10 @@
   </div>
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <h1 class="code-text" style="text-shadow: 2px 2px red;">Olá mundo!</h1>                                                                                    
           </div>
         </div>
       </div>
@@ -5808,6 +5961,10 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <h1 class="code-text" style="text-shadow: 2px 2px 5px red;">Olá mundo!</h1>                                                          
+          </div>
         </div>
       </div>
       <h3 class="spacing-Y">Sombra de Texto CSS</h3>
@@ -5836,13 +5993,17 @@
     <span class="code-text"><span class="example-text-color-1">color</span>: white;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">text-shadow</span>: 2px 2px 4px #000000;</span>
+    <span class="code-text"><span class="example-text-color-1">text-shadow</span>: 2px 2px 4px #353535;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
   </div>
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <h1 class="code-text" style="color: white; text-shadow: 2px 2px 4px #353535;">Olá mundo!</h1>                                                                                       
           </div>
         </div>
       </div>
@@ -5879,6 +6040,10 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <h1 class="code-text" style="color: white; text-shadow: 0 0 3px #ff0000;">Olá mundo!</h1>                                                                                         
+          </div>
         </div>
       </div>
       <div class="example-code">
@@ -5911,6 +6076,10 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <h1 class="code-text" style="text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;">Olá mundo!</h1>                                                                                         
+          </div>
         </div>
       </div>
       <div class="example-code">
@@ -5935,13 +6104,17 @@
     <span class="code-text"><span class="example-text-color-1">color</span>: white;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">text-shadow</span>: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;</span>
+    <span class="code-text"><span class="example-text-color-1">text-shadow</span>: 1px 1px 2px gray, 0 0 25px blue, 0 0 5px darkblue;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
   </div>
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <h1 class="code-text" style="color: white; text-shadow: 1px 1px 2px gray, 0 0 25px blue, 0 0 5px darkblue;">Olá mundo!</h1>                                                                                         
           </div>
         </div>
       </div>
