@@ -498,11 +498,9 @@ code {
 .example-table-1{
     border: 1px solid var(--text-color);
 }
-
 .example-table-2{
     border-bottom: 1px solid var(--text-color);
 }
-
 .example-table-3:hover{
     background-color: coral;
 }
@@ -517,6 +515,24 @@ code {
 
 .example-of-2:hover {
     opacity: 0.5;
+}
+.example-of-3:hover{
+    color: red;
+}
+.example-of-4:hover{
+    color: green;
+}
+.example-of-5:hover{
+    color: hotpink;
+}
+.example-of-6:hover{
+    color: blue;
+}
+.example-of-7:hover{
+    background-color: lightgreen;
+}
+.example-of-8:hover{
+    background-color: red;
 }
 
 .example-of-selection::selection{
