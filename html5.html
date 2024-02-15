@@ -123,6 +123,7 @@
           <a href="?t=htmlfavicon" class="list-group-item">Favicon HTML</a>
           <a href="?t=titulodapaghtml" class="list-group-item">Título da Página HTML</a>
           <a href="?t=tabelashtml" class="list-group-item">Tabelas HTML</a>
+          <a href="?t=listashtml" class="list-group-item">Listas HTML</a>
         </div>
       </div>
     </div>
@@ -176,6 +177,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="?t=tabelashtml">Tabelas HTML</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="?t=listashtml">Listas HTML</a>
         </li>
       </ul>
     </aside>
@@ -5319,30 +5323,613 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
 <p>Você pode adicionar uma legenda que sirva como cabeçalho para toda a tabela.</p>
 <p>!!!!!! EXEMPLO DE LEGENDA DA TABELA !!!!!!!</p>
 <p>Para adicionar uma legenda a uma tabela, use a tag <code class="code-inline">&lt;caption&gt;</code>:</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+      <div>
+          <p>Defina a largura da tabela para 100%</p>
+      </div>
+      <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Copiar o codigo">Copiar</button>
+      </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+      <div class="code-body col">
+          <pre>
+          <code>
+              
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">table</span><span class="code-attribute"> style</span><span class="code-value">="width: 100%"</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">caption</span><span class="code-punctuation">&gt;</span><span class="code-text">Quadro de Colaboradores</span><span class="code-punctuation">&lt;</span><span class="code-tag">/caption</span><span class="code-punctuation">&gt;</span>
+  </div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">Empresa</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">Nome</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">País de Origem</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Coca-Cola</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Marcelo</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Brasil</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Microsoft</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Noah</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Canadá</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Apple</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Werner</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Alemanha</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/table</span><span class="code-punctuation">&gt;</span>
+</div>
+          </code>
+      </pre>
+      </div>
+      <div class="code-support col">
+      </div>
+  </div>
+</div>
+<h2 class="spacing-y">Preenchimento e Espaçamento de Tabela HTML</h2>
+<p>As tabelas HTML podem ajustar o preenchimento dentro das células e também o espaço entre as células.</p>
+<p>!!!! EXEMPLO DE PREENCHIMENTO E ESPAÇAMENTO DE TABELA !!!!!!!</p>
+<h3 class="spacing-y">Tabela HTML - Preenchimento de Célula</h3>
+<p>O preenchimento da célula é o espaço entre as bordas da célula e o conteúdo da célula.</p>
+<p>Por padrão, o preenchimento é definido como 0.</p>
+<p>Para adicionar preenchimento nas células da tabela, use a propriedade CSS <code class="code-inline">padding</code>:</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+    <div>
+      <p>Exemplo</p>
+    </div>
+    <div class="btn-group" role="group" aria-label="First group">
+      <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+        title="Copiar o codigo" id="btncopiar"
+        onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+  <div class="code-body textocod">
+    <pre>
+  <code>
+    <div class="code-line">
+      <span class="code-text">th, td </span><span class="code-punctuation">{ </span>
+      </div>
+      <div class="code-line">
+      <span class="code-attribute">padding:</span> <span class="code-value">15px;</span>
+      </div>
+      <div class="code-line">
+        <span class="code-punctuation"> }</span>
+        </div>
+          </code>
+      </pre>
+  </div>
+  <div class="code-support col">
+    
+</div>
+</div>
+</div>
+<p class="spacing-y">Para adicionar preenchimento somente acima do conteúdo, use a propriedade <code class="code-inline">padding-top</code>.</p>
+<p>E os outros lados com as propriedades <code class="code-inline">padding-bottom</code>, <code class="code-inline">padding-left</code> e <code class="code-inline">padding-right</code> :</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+    <div>
+      <p>Exemplo</p>
+    </div>
+    <div class="btn-group" role="group" aria-label="First group">
+      <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+        title="Copiar o codigo" id="btncopiar"
+        onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+  <div class="code-body textocod">
+    <pre>
+  <code>
+    <div class="code-line">
+      <span class="code-text">th, td </span><span class="code-punctuation">{ </span>
+      </div>
+      <div class="code-line">
+      <span class="code-attribute">padding-top:</span> <span class="code-value">10px;</span>
+      </div>
+      <div class="code-line">
+      <span class="code-attribute">padding-bottom:</span> <span class="code-value">20px;</span>
+      </div>
+      <div class="code-line">
+      <span class="code-attribute">padding-left:</span> <span class="code-value">30px;</span>
+      </div>
+      <div class="code-line">
+      <span class="code-attribute">padding-right:</span> <span class="code-value">40px;</span>
+      </div>
+      <div class="code-line">
+        <span class="code-punctuation"> }</span>
+        </div>
+          </code>
+      </pre>
+  </div>
+  <div class="code-support col">
+    
+</div>
+</div>
+</div>
+<h3 class="spacing-y">Tabela HTML - Espaçamento de Células</h3>
+<p>Espaçamento celular é o espaço entre cada célula.</p>
+<p>Por padrão, o espaço é definido como 2 pixels.</p>
+<p>Para alterar o espaço entre as células da tabela, use a propriedade <code class="code-inline">border-spacing</code> CSS no elemento <code class="code-inline">table</code>:</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+    <div>
+      <p>Exemplo</p>
+    </div>
+    <div class="btn-group" role="group" aria-label="First group">
+      <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+        title="Copiar o codigo" id="btncopiar"
+        onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+  <div class="code-body textocod">
+    <pre>
+  <code>
+    <div class="code-line">
+      <span class="code-text">table </span><span class="code-punctuation">{ </span>
+      </div>
+      <div class="code-line">
+      <span class="code-attribute">border-spacing:</span> <span class="code-value">30px;</span>
+      </div>
+      <div class="code-line">
+        <span class="code-punctuation"> }</span>
+        </div>
+          </code>
+      </pre>
+  </div>
+  <div class="code-support col">
+    
+</div>
+</div>
+</div>
+<h2 class="spacing-y">Tabela HTML Colspan & Rowspan</h2>
+<p>As tabelas HTML podem ter células que abrangem várias linhas e/ou colunas.</p>
+<p>!!!!! EXEMPLO DE TABELA COM COLSPAN E ROWSPAN !!!!!</p>
+<h3 class="spacing-y">Tabela HTML - Colspan</h3>
+<p>Para fazer uma célula abranger várias colunas, use o atributo <code class="code-inline">colspan</code>:</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+      <div>
+          <p>Defina a altura da segunda linha para 200 pixels</p>
+      </div>
+      <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Copiar o codigo">Copiar</button>
+      </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+      <div class="code-body col">
+          <pre>
+          <code>
+              
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">table</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-attribute"> colspan</span><span class="code-value">="2"</span><span class="code-punctuation">&gt;</span><span class="code-text">Empresa</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">Nome</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">País de Origem</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Coca-Cola</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Marcelo</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Brasil</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Microsoft</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Noah</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Canadá</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Apple</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Werner</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Alemanha</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/table</span><span class="code-punctuation">&gt;</span>
+</div>
+          </code>
+      </pre>
+      </div>
+      <div class="code-support col">
+      </div>
+  </div>
+</div>
+<p class="stand-out-word">Observação: o valor do atributo <code>colspan</code> representa o número de colunas a serem expandidas.</p>
+<h3 class="spacing-y">Tabela HTML - Rowspan</h3>
+<p>Para fazer uma célula abranger várias linhas, use o atributo <code class="code-inline">rowspan</code>:</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+      <div>
+          <p>Defina a altura da segunda linha para 200 pixels</p>
+      </div>
+      <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Copiar o codigo">Copiar</button>
+      </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+      <div class="code-body col">
+          <pre>
+          <code>
+              
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">table</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-attribute"> rowspan</span><span class="code-value">="2"</span><span class="code-punctuation">&gt;</span><span class="code-text">Empresa</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">Nome</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">País de Origem</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Coca-Cola</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Marcelo</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Brasil</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Microsoft</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Noah</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Canadá</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Apple</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Werner</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Alemanha</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/table</span><span class="code-punctuation">&gt;</span>
+</div>
+          </code>
+      </pre>
+      </div>
+      <div class="code-support col">
+      </div>
+  </div>
+</div>
+<p class="stand-out-word">Observação: o valor do atributo <code>rowspan</code> representa o número de linhas a serem expandidas.</p>
+<h2 class="spacing-y">Estilização da Tabela HTML</h2>
+<p>Use CSS para melhorar a aparência de suas tabelas.</p>
+<h3 class="spacing-y">Tabela HTML - Listras de Zebra</h3>
+<p>Se você adicionar uma cor de fundo em linhas alternadas da tabela, obterá um belo efeito de listras de zebra.</p>
+<p>!!!! EXEMPLO DE LISTA DE ZEBRA !!!!</p>
+<p>Para estilizar todos os outros elementos de linha da tabela, use o seletor <code class="code-inline">:nth-child(even)</code> como este:</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+    <div>
+      <p>Exemplo</p>
+    </div>
+    <div class="btn-group" role="group" aria-label="First group">
+      <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+        title="Copiar o codigo" id="btncopiar"
+        onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+  <div class="code-body textocod">
+    <pre>
+  <code>
+    <div class="code-line">
+      <span class="code-text">tr:nth-child(even) </span><span class="code-punctuation">{ </span>
+      </div>
+      <div class="code-line">
+      <span class="code-attribute">background-color:</span> <span class="code-value">#D6EEEE;</span>
+      </div>
+      <div class="code-line">
+        <span class="code-punctuation"> }</span>
+        </div>
+          </code>
+      </pre>
+  </div>
+  <div class="code-support col">
+    
+</div>
+</div>
+</div>
+<p class="stand-out-word">Nota: Se você usar <code>(odd)</code> em vez de <code>(even)</code>, o estilo ocorrerá na linha 1,3,5 etc. em vez de 2,4,6 etc.</p>
+<h3 class="spacing-y">Tabela HTML - Listras Verticais de Zebra</h3>
+<p>Para fazer listras de zebra verticais, estilize colunas alternadas , em vez de linhas alternadas .</p>
+<p>!!!! EXEMPLO DE LISTAS VERTICAIS DE ZEBRA !!!!</p>
+<p>Defina os elementos <code class="code-inline">:nth-child(even)</code> de dados da tabela da seguinte forma:</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+    <div>
+      <p>Exemplo</p>
+    </div>
+    <div class="btn-group" role="group" aria-label="First group">
+      <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+        title="Copiar o codigo" id="btncopiar"
+        onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+  <div class="code-body textocod">
+    <pre>
+  <code>
+    <div class="code-line">
+      <span class="code-text">td:nth-child(even), th:nth-child(even) </span><span class="code-punctuation">{ </span>
+      </div>
+      <div class="code-line">
+      <span class="code-attribute">background-color:</span> <span class="code-value">#D6EEEE;</span>
+      </div>
+      <div class="code-line">
+        <span class="code-punctuation"> }</span>
+        </div>
+          </code>
+      </pre>
+  </div>
+  <div class="code-support col">
+    
+</div>
+</div>
+</div>
+<p class="stand-out-word">Observação: coloque o seletor <code>:nth-child()</code> em ambos os elementos <code>th</code> e <code>td</code> e se desejar ter o estilo nos cabeçalhos e nas células regulares da tabela.</p>
+<h3 class="spacing-y">Combine listras de zebra verticais e horizontais</h3>
+<p>Você pode combinar o estilo dos dois exemplos acima e terá listras em linhas alternadas e em colunas alternadas.</p>
+<p>Se você usar uma cor transparente, obterá um efeito de sobreposição.</p>
+<p>!!! EXEMPLO DE TABELA ZEBRA VERTICAIS E HORIZONTAIS TRANPARENTE !!!!!</p>
+<p>Use uma cor <code>rgba()</code> para especificar a transparência da cor:</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+    <div>
+      <p>Exemplo</p>
+    </div>
+    <div class="btn-group" role="group" aria-label="First group">
+      <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+        title="Copiar o codigo" id="btncopiar"
+        onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+  <div class="code-body textocod">
+    <pre>
+  <code>
+    <div class="code-line">
+      <span class="code-text">tr:nth-child(even) </span><span class="code-punctuation">{ </span>
+      </div>
+      <div class="code-line">
+      <span class="code-attribute">background-color:</span> <span class="code-value">rgba(150, 212, 212, 0.4);</span>
+      </div>
+      <div class="code-line">
+        <span class="code-punctuation"> }</span>
+        </div>
+          </code>
+    <div class="code-line">
+      <span class="code-text">th:nth-child(even),td:nth-child(even) </span><span class="code-punctuation">{ </span>
+      </div>
+      <div class="code-line">
+      <span class="code-attribute">background-color:</span> <span class="code-value">rgba(150, 212, 212, 0.4);</span>
+      </div>
+      <div class="code-line">
+        <span class="code-punctuation"> }</span>
+        </div>
+          </code>
+      </pre>
+  </div>
+  <div class="code-support col">
+    
+</div>
+</div>
+</div>
+<h2 class="spacing-y">Tabela de HTML Colgroup</h2>
+<p>O elemento <code class="code-inline">&lt;colgroup&gt;</code> é usado para estilizar colunas específicas de uma tabela.</p>
+<h3 class="spacing-y">Tabela de HTML Colgroup</h3>
+<p>Se você deseja estilizar as duas primeiras colunas de uma tabela, use os elementos <code class="code-inline">&lt;colgroup&gt;</code> e <code class="code-inline">&lt;col&gt;</code> .</p>
+<p>!!!! EXEMPLO DE TABELA HTML COLGROUP !!!!</p>
+<p>O elemento <code class="code-inline">&lt;colgroup&gt;</code> deve ser usado como um contêiner para as especificações da coluna.</p>
+<p>Cada grupo é especificado com um elemento <code class="code-inline">&lt;col&gt;</code>.</p>
+<p>O atributo <code class="code-inline">span</code> especifica quantas colunas recebem o estilo.</p>
+<p>O atributo <code class="code-inline">style</code> especifica o estilo a ser dado às colunas.</p>
+<p class="stand-out-word">Há uma seleção muito limitada de propriedades CSS legais para colgroups .</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+      <div>
+          <p>Defina a altura da segunda linha para 200 pixels</p>
+      </div>
+      <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Copiar o codigo">Copiar</button>
+      </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+      <div class="code-body col">
+          <pre>
+          <code>
+              
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">table</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">colgroup</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">col</span><span class="code-attribute"> span</span><span class="code-value">="2"</span><span class="code-attribute"> style</span><span class="code-value">="background-color: #D6EEEE"</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/colgroup</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">MON</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">TUE</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">WED</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
+</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/table</span><span class="code-punctuation">&gt;</span>
+</div>
+          </code>
+      </pre>
+      </div>
+      <div class="code-support col">
+      </div>
+  </div>
+</div>
+<p class="stand-out-word">Observação: a tag <code class="code-inline">&lt;colgroup&gt;</code> deve ser filha de um elemento <code class="code-inline">&lt;table&gt;</code> e deve ser colocada antes de qualquer outro elemento da tabela, como <code class="code-inline">&lt;thead&gt;</code>, <code class="code-inline">&lt;tr&gt;</code>, <code class="code-inline">&lt;td&gt;</code> etc., mas depois do elemento <code class="code-inline">&lt;caption&gt;</code>, se presente.</p>
+</section>
+<section class="theme" data-title="listashtml" data-index="15" hidden>
+<h1 class="fw-bold spacing-y"> Listas HTML</h1>
+<p>As listas HTML permitem que os desenvolvedores da Web agrupem um conjunto de itens relacionados em listas.</p>
 
 
 
@@ -5353,7 +5940,6 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
 
 
 </section>
-
 
 
 
