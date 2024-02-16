@@ -124,6 +124,7 @@
           <a href="?t=titulodapaghtml" class="list-group-item">Título da Página HTML</a>
           <a href="?t=tabelashtml" class="list-group-item">Tabelas HTML</a>
           <a href="?t=listashtml" class="list-group-item">Listas HTML</a>
+          <a href="?t=blocoeelementosembutidoshtml" class="list-group-item">Bloco e Elementos embutidos HTML</a>
         </div>
       </div>
     </div>
@@ -180,6 +181,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="?t=listashtml">Listas HTML</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="?t=blocoeelementosembutidoshtml">Bloco e Elementos embutidos HTML</a>
         </li>
       </ul>
     </aside>
@@ -5930,17 +5934,489 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
 <section class="theme" data-title="listashtml" data-index="15" hidden>
 <h1 class="fw-bold spacing-y"> Listas HTML</h1>
 <p>As listas HTML permitem que os desenvolvedores da Web agrupem um conjunto de itens relacionados em listas.</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+      <div>
+          <p>!!!!COLOCAR EXEMPLO!!!!</p>
+      </div>
+      <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Copiar o codigo">Copiar</button>
+      </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+      <div class="code-body col">
+          <pre>
+          <code>
+<div class="code-line">
+  <p>Uma lista HTML não ordenada:</p>
+</div>
+          </code>
+      </pre>
+      </div>
+      <div class="code-support col">
+      </div>
+  </div>
+</div>
+<h2 class="spacing-y">Lista HTML não ordenada</h2>
+<p>Uma lista não ordenada começa com a tag <code class="code-inline">&lt;ul&gt;</code>. Cada item da lista começa com a tag <code class="code-inline">&lt;li&gt;</code>.</p>
+<p>Os itens da lista serão marcados com marcadores (pequenos círculos pretos) por padrão:</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+      <div>
+          <p>Exemplo</p>
+      </div>
+      <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Copiar o codigo">Copiar</button>
+      </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+      <div class="code-body col">
+          <pre>
+          <code>
+              
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">ul</span><span class="code-punctuation">&gt;</span>
+</div>
 
 
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Café</span><span class="code-punctuation">&lt;</span><span class="code-tag">/li</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Pão</span><span class="code-punctuation">&lt;</span><span class="code-tag">/li</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Leite</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
 
 
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/ul</span><span class="code-punctuation">&gt;</span>
+</div>
+          </code>
+      </pre>
+      </div>
+      <div class="code-support col">
+      </div>
+  </div>
+</div>
+<h2 class="spacing-y">Lista HTML Ordenada</h2>
+<p>Uma lista ordenada começa com a tag <code class="code-inline">&lt;ol&gt;</code>. Cada item da lista começa com a tag <code class="code-inline">&lt;li&gt;</code>.</p>
+<p>Os itens da lista serão marcados com números por padrão:</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+      <div>
+          <p>Exemplo</p>
+      </div>
+      <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Copiar o codigo">Copiar</button>
+      </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+      <div class="code-body col">
+          <pre>
+          <code>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">ol</span><span class="code-punctuation">&gt;</span>
+</div>
 
 
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Café</span><span class="code-punctuation">&lt;</span><span class="code-tag">/li</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Pão</span><span class="code-punctuation">&lt;</span><span class="code-tag">/li</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Leite</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/ol</span><span class="code-punctuation">&gt;</span>
+</div>              
+         </code>
+      </pre>
+      </div>
+      <div class="code-support col">
+      </div>
+  </div>
+</div>
+<h2 class="spacing-y">Listas de descrição HTML</h2>
+<p>O HTML também suporta listas de descrição.</p>
+<p>Uma lista de descrição é uma lista de termos, com uma descrição de cada termo.</p>
+<p>A tag <code class="code-inline">&lt;dl&gt;</code> define a lista de descrição, a tag <code class="code-inline">&lt;dt&gt;</code> define o termo (nome) e a tag <code class="code-inline">&lt;dd&gt;</code> descreve cada termo:</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+      <div>
+          <p>Exemplo</p>
+      </div>
+      <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Copiar o codigo">Copiar</button>
+      </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+      <div class="code-body col">
+          <pre>
+          <code>
+              
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">dl</span><span class="code-punctuation">&gt;</span>
+</div>
+      
+      
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">dt</span><span class="code-punctuation">&gt;</span><span class="code-text">Café</span><span class="code-punctuation">&lt;</span><span class="code-tag">/li</span><span class="code-punctuation">&gt;</span>
+</div>
+      
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">dd</span><span class="code-punctuation">&gt;</span><span class="code-text">Bebida preta e quente</span><span class="code-punctuation">&lt;</span><span class="code-tag">/dd</span><span class="code-punctuation">&gt;</span>
+</div>
+      
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">dt</span><span class="code-punctuation">&gt;</span><span class="code-text">Leite</span><span class="code-punctuation">&lt;</span><span class="code-tag">/dt</span><span class="code-punctuation">&gt;</span>
+</div>
+      
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">dd</span><span class="code-punctuation">&gt;</span><span class="code-text">Bebiba branca e gelada</span><span class="code-punctuation">&lt;</span><span class="code-tag">/dd</span><span class="code-punctuation">&gt;</span>
+</div>
+      
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/dl</span><span class="code-punctuation">&gt;</span>
+</div>
+        </code>
+      </pre>
+      </div>
+      <div class="code-support col">
+      </div>
+  </div>
+</div>
+<h2 class="spacing-y fw-bold">Listas HTML Não Ordenadas</h2>
+<p>A tag HTML <code class="code-inline">&lt;ul&gt;</code> define uma lista não ordenada (marcada).</p>
+<h3 class="spacing-y">Lista HTML não ordenada</h3>
+<p>Uma lista não ordenada começa com a tag <code class="code-inline">&lt;ul&gt;</code>. Cada item da lista começa com a tag <code class="code-inline">&lt;li&gt;</code>.</p>
+<p>Os itens da lista serão marcados com marcadores (pequenos círculos pretos) por padrão:</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+      <div>
+          <p>Exemplo</p>
+      </div>
+      <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Copiar o codigo">Copiar</button>
+      </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+      <div class="code-body col">
+          <pre>
+          <code>
+              
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">ul</span><span class="code-punctuation">&gt;</span>
+</div>
+
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Café</span><span class="code-punctuation">&lt;</span><span class="code-tag">/li</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Chá</span><span class="code-punctuation">&lt;</span><span class="code-tag">/li</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Leite</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/ul</span><span class="code-punctuation">&gt;</span>
+</div>
+          </code>
+      </pre>
+      </div>
+      <div class="code-support col">
+      </div>
+  </div>
+</div>
+<h3 class="spacing-y">Lista HTML não ordenada - Escolha o marcador de item da lista</h3>
+<p>A propriedade CSS <code class="code-inline">list-style-type</code> é usada para definir o estilo do marcador de item da lista. Pode ter um dos seguintes valores:</p>
+<div class="example-code">
+  <div class="code-title d-flex align-items-center justify-content-between">
+      <div>
+          <p>Exemplo - Disco</p>
+      </div>
+      <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Copiar o codigo">Copiar</button>
+      </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+      <div class="code-body col">
+          <pre>
+          <code>
+              
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">ul</span><span class="code-attribute"> style</span><span class="code-value">="list-style-type:disc;"</span><span class="code-punctuation">&gt;</span>
+</div>
+
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Café</span><span class="code-punctuation">&lt;</span><span class="code-tag">/li</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Chá</span><span class="code-punctuation">&lt;</span><span class="code-tag">/li</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Leite</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/ul</span><span class="code-punctuation">&gt;</span>
+</div>
+          </code>
+      </pre>
+      </div>
+      <div class="code-support col">
+      </div>
+  </div>
+</div>
+<div class="example-code spacing-y">
+  <div class="code-title d-flex align-items-center justify-content-between">
+      <div>
+          <p>Exemplo - Quadrado</p>
+      </div>
+      <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Copiar o codigo">Copiar</button>
+      </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+      <div class="code-body col">
+          <pre>
+          <code>
+              
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">ul</span><span class="code-attribute"> style</span><span class="code-value">="list-style-type:square;"</span><span class="code-punctuation">&gt;</span>
+</div>
+
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Café</span><span class="code-punctuation">&lt;</span><span class="code-tag">/li</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Chá</span><span class="code-punctuation">&lt;</span><span class="code-tag">/li</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Leite</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/ul</span><span class="code-punctuation">&gt;</span>
+</div>
+          </code>
+      </pre>
+      </div>
+      <div class="code-support col">
+      </div>
+  </div>
+</div>
+<div class="example-code spacing-y">
+  <div class="code-title d-flex align-items-center justify-content-between">
+      <div>
+          <p>Exemplo - Nenhum</p>
+      </div>
+      <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Copiar o codigo">Copiar</button>
+      </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+      <div class="code-body col">
+          <pre>
+          <code>
+              
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">ul</span><span class="code-attribute"> style</span><span class="code-value">="list-style-type:none;"</span><span class="code-punctuation">&gt;</span>
+</div>
+
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Café</span><span class="code-punctuation">&lt;</span><span class="code-tag">/li</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Chá</span><span class="code-punctuation">&lt;</span><span class="code-tag">/li</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Leite</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/ul</span><span class="code-punctuation">&gt;</span>
+</div>
+          </code>
+      </pre>
+      </div>
+      <div class="code-support col">
+      </div>
+  </div>
+</div>
+<h2 class="spacing-y">Listas HTML aninhadas</h2>
+<p>As listas podem ser aninhadas (lista dentro da lista):</p>
+<div class="example-code spacing-y">
+  <div class="code-title d-flex align-items-center justify-content-between">
+      <div>
+          <p>Exemplo - Nenhum</p>
+      </div>
+      <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Tentar fazer este exercicio">Tentar</button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Copiar o codigo">Copiar</button>
+      </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+      <div class="code-body col">
+          <pre>
+          <code>
+              
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">ul</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Café</span><span class="code-punctuation">&lt;</span><span class="code-tag">/li</span><span class="code-punctuation">&gt;</span>
+</div>
+
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Chá</span>
+</div>
+<div class="code-line">
+ <span class="code-punctuation">&lt;</span><span class="code-tag">ul</span><span class="code-punctuation">&gt;</span>
+ </div>
+
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Chá Preto</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+  </div>
+
+<div class="code-line">
+  <span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Chá Verde</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+  </div>
+
+<div class="code-line">
+ <span class="code-punctuation">&lt;</span><span class="code-tag">/ul</span><span class="code-punctuation">&gt;</span>
+ </div>
+<span class="code-punctuation">&lt;</span><span class="code-tag">/li</span><span class="code-punctuation">&gt;</span>
+
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">li</span><span class="code-punctuation">&gt;</span><span class="code-text">Leite</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/ul</span><span class="code-punctuation">&gt;</span>
+</div>  
+          </code>
+      </pre>
+      </div>
+      <div class="code-support col">
+      </div>
+  </div>
+</div>
+<p class="stand-out-word spacing-y">Nota: Um item de lista ( <code class="code-inline">&lt;li&gt;</code> ) pode conter uma nova lista e outros elementos HTML, como imagens e links, etc.</p>
+<h2 class="spacing-y">Lista horizontal com CSS</h2>
+<p>As listas HTML podem ser estilizadas de várias maneiras diferentes com CSS.</p>
+<p>Uma maneira popular é estilizar uma lista horizontalmente, para criar um menu de navegação:</p>
+<p>!!!!!!! COLOCAR BLOCO DE CÓDIGO COM EXEMPLO AQUI !!!!!!!!!!!!!</p>
+<h2 class="spacing-y">Resumo do Capítulo</h2>
+<ul class="spacing-left">
+  <li>Use o elemento HTML <code class="code-inline">&lt;ul&gt;</code> para definir uma lista não ordenada</li>
+  <li>Use a propriedade CSS <code class="code-inline">list-style-type</code> para definir o marcador de item da lista</li>
+  <li>Use o elemento HTML <code class="code-inline">&lt;li&gt;</code> para definir um item de lista</li>
+  <li>As listas podem ser aninhadas</li>
+  <li>Os itens da lista podem conter outros elementos HTML</li>
+  <li>Use a propriedade CSS <code class="code-inline">float:left</code> para exibir uma lista horizontalmente</li>
+</ul>
+<h3 class="spacing-y">Lista ordenada HTML - o atributo Type</h3>
+<p>O atributo <code class="code-inline">type</code> da tag <code class="code-inline">&lt;ol&gt;</code>, define o tipo de marcador do item da lista:</p>
+<p>!!!! EXEMPLO DO ATRIBUTO TYPE DA LISTA ORDENADA !!!!!!</p>
+<h3 class="spacing-y">Contagem da lista de controle</h3>
+<p>Por padrão, uma lista ordenada começará a contar a partir de 1. Se você quiser começar a contar a partir de um número especificado, poderá usar o atributo <code class="code-inline">start</code>:</p>
+<p>!!!!! EXEMPLO !!!!</p>
+</section>
+
+<section class="theme" data-title="blocoeelementosembutidoshtml" data-index="16" hidden>
+<h1 class="fw-bold spacing-y">Bloco e Elementos embutidos HTML</h1>
+<p>Cada elemento HTML tem um valor de exibição padrão, dependendo do tipo de elemento.</p>
+<p>Existem dois valores de exibição: bloco e embutido.</p>
+<h2 class="spacing-y">Elementos de nível de bloco</h2>
+<p>Um elemento de nível de bloco sempre começa em uma nova linha e os navegadores adicionam automaticamente algum espaço (uma margem) antes e depois do elemento.</p>
+<p>Um elemento de nível de bloco sempre ocupa toda a largura disponível (estende-se para a esquerda e para a direita o máximo possível).</p>
+<p>Dois elementos de bloco comumente usados ​​são:<code class="code-inline">&lt;p&gt;</code> e <code class="code-inline">&lt;div&gt;</code>.</p>
+<p>O elemento <code class="code-inline">&lt;p&gt;</code> define um parágrafo em um documento HTML.</p>
+<p>O elemento <code class="code-inline">&lt;div&gt;</code> define uma divisão ou uma seção em um documento HTML.</p>
+<p>!!!!! EXEMPLO !!!!!</p>
+<h2 class="spacing-y">Elementos embutidos</h2>
+<p>Um elemento inline não começa em uma nova linha.</p>
+<p>Um elemento inline ocupa apenas a largura necessária.</p>
+<p>Este é um elemento <code class="code-inline">&lt;span&gt;</code> dentro de um parágrafo.</p>
+<p>!!!!! EXEMPLO !!!!!</p>
+<h2 class="spacing-y">O elemento &lt;div&gt;</h2>
+<p>O elemento <code class="code-inline">&lt;div&gt;</code> geralmente é usado como um contêiner para outros elementos HTML.</p>
+<p>O elemento <code class="code-inline">&lt;div&gt;</code> não tem atributos obrigatórios, mas <code class="code-inline">style</code>, <code class="code-inline">class</code> e <code class="code-inline">id</code> são comuns.</p>
+<p>Quando usado junto com CSS, o elemento <code class="code-inline">&lt;div&gt;</code> pode ser usado para estilizar blocos de conteúdo:</p>
+<p>!!!!! EXEMPLO !!!!!</p>
+<h2 class="spacing-y">O elemento &lt;span&gt;</h2>
+<p>O  elemento <code class="code-inline">&lt;span&gt;</code> é um contêiner embutido usado para marcar uma parte de um texto ou uma parte de um documento.</p>
+<p>O elemento <code class="code-inline">&lt;span&gt;</code> não tem atributos obrigatórios, mas <code class="code-inline">style</code>,<code class="code-inline">class</code> e <code class="code-inline">id</code> são comuns.</p>
+<p>Quando usado junto com CSS, o elemento <code class="code-inline">&lt;span&gt;</code> pode ser usado para estilizar partes do texto:</p>
+<p>!!!! EXEMPLO !!!!</p>
+<h2 class="spacing-y">Resumo do Capítulo</h2>
+<ul class="spacing-left">
+  <li>Existem dois valores de exibição: bloco e embutido</li>
+  <li>Um elemento de nível de bloco sempre começa em uma nova linha e ocupa toda a largura disponível</li>
+  <li>Um elemento inline não começa em uma nova linha e ocupa apenas a largura necessária</li>
+  <li>O elemento <code class="code-inline">&lt;div&gt;</code> é um nível de bloco e geralmente é usado como um contêiner para outros elementos HTML</li>
+  <li>O elemento <code class="code-inline">&lt;span&gt;</code> é um contêiner embutido usado para marcar uma parte de um texto ou uma parte de um documento</li>
+</ul>
 
 
 
 </section>
-
 
 
 
