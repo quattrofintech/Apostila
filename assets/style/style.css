@@ -540,6 +540,10 @@ code {
 .example-of-10:hover{
     display: block;
 }
+.example-of-11:hover{
+    background-color: #555;
+    color: white;
+}
 
 .example-of-selection::selection{
     color: red;
@@ -550,6 +554,13 @@ code {
     content: "";
     clear: both;
     display: table;
+}
+
+.example-of-pseudo-class::before{
+    content: url(smiley.gif);
+}
+.example-of-pseudo-class-2::after{
+    content: url(smiley.gif);
 }
 
 
