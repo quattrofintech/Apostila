@@ -11208,7 +11208,7 @@
           </div>
         </div>
       </div>
-      <h3 class="spacing-Y">overflow: scroll</h3>
+      <h3 class="spacing-Y">overflow: auto</h3>
       <p class="spacing-y">O valor <span class="code-inline">auto</span> é semelhante a <span class="code-inline">scroll</span>, mas adiciona barras de rolagem somente quando necessário:</p>
       <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
       <div class="example-code">
@@ -14730,7 +14730,34 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>     
+            <div class="gallery">
+              <a target="_blank" href="img_5terre.jpg">
+                <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+              </a>
+              <div class="desc">Imagem 1</div>
+            </div>
+            
+            <div class="gallery">
+              <a target="_blank" href="img_forest.jpg">
+                <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+              </a>
+              <div class="desc">Imagem 2</div>
+            </div>
+            
+            <div class="gallery">
+              <a target="_blank" href="img_lights.jpg">
+                <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+              </a>
+              <div class="desc">Imagem 3</div>
+            </div>
+            
+            <div class="gallery">
+              <a target="_blank" href="img_mountains.jpg">
+                <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+              </a>
+              <div class="desc">Imagem 4</div>
+            </div>   
           </div>
         </div>
       </div>
@@ -14774,11 +14801,28 @@
     <div class="code-line">
       <span class="code-punctuation">&#125;</span>
     </div>
+    <div class="code-line">
+      <span class="code-tag">#next</span><span class="code-punctuation">&#123;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">width</span>: 43px;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">height</span>: 44px;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-text"><span class="example-text-color-1">background</span>: url(img_navsprites.gif) -91px0 0;</span>
+    </div>
+    <div class="code-line">
+      <span class="code-punctuation">&#125;</span>
+    </div>
               </code>
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <img id="home-sprite" src="img_trans.gif" width="1" height="1">
+            <img id="next-sprite" src="img_trans.gif" width="1" height="1">    
           </div>
         </div>
       </div>
@@ -14896,7 +14940,15 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>
+            <ul style="position: relative;">
+              <li id="home-sprite-2"><a href="#"></a></li>
+              <li id="next-sprite-2"><a href="#"></a></li>
+              <li id="prev-sprite-2"><a href="#"></a></li>
+            </ul> 
+            <!-- <img id="home-sprite-2" src="img_trans.gif" width="1" height="1">
+            <img id="next-sprite-2" src="img_trans.gif" width="1" height="1">        
+            <img id="prev-sprite-2" src="img_trans.gif" width="1" height="1">         -->
           </div>
         </div>
       </div>
@@ -14961,9 +15013,11 @@
               </code>
             </pre>
           </div>
-          <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
-          </div>
+          <ul style="position: relative;">
+            <li id="home-sprite-3"><a href="#"></a></li>
+            <li id="next-sprite-3"><a href="#"></a></li>
+            <li id="prev-sprite-3"><a href="#"></a></li>
+          </ul> 
         </div>
       </div>
       <h3 class="spacing-Y">Exemplo explicado:</h3>
@@ -15004,7 +15058,10 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <a href="#">youtube.com</a>     
+            <a href="#" style="background-color: yellow;">disney.com</a>     
+            <a href="#" style="background-color: yellow;">wikipedia.org</a>     
           </div>
         </div>
       </div>
@@ -15039,7 +15096,10 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <a href="#">youtube.com</a>     
+            <a href="#" style="background-color: yellow;">disney.com</a>     
+            <a href="#">wikipedia.org</a>     
           </div>
         </div>
       </div>
@@ -15074,7 +15134,10 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span> 
+            <img src="klematis.jpg" title="klematis flower" width="150" height="113" style="border: 5px solid yellow;">
+            <img src="img_flwr.gif" title="flower" width="224" height="162" style="border: 5px solid yellow;">
+            <img src="img_tree.gif" title="tree" width="200" height="358">        
           </div>
         </div>
       </div>
@@ -15109,7 +15172,10 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>     
+            <h1 style="background-color:yellow;">Bem vindo</h1>  
+            <p style="background-color: yellow;">Olá mundo!</p>  
+            <p>Texto aleatório</p>  
           </div>
         </div>
       </div>
@@ -15145,7 +15211,10 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>     
+            <h1 style="background-color:yellow;">Bem vindo</h1>  
+            <p style="background-color: yellow;">Olá mundo!</p>  
+            <p style="background-color: yellow;">Texto aleatório</p>  
           </div>
         </div>
       </div>
@@ -15181,7 +15250,12 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>     
+            <div style="background-color:yellow;">Primeiro elemento div</div>  
+            <div>Segundo elemento div</div>  
+            <div style="background-color: yellow;">Terceiro elemento div</div>  
+
+            <p style="background-color: yellow;">Texto aleatório em um parágrafo</p>  
           </div>
         </div>
       </div>
@@ -15217,7 +15291,12 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>     
+            <div style="background-color:yellow;">Primeiro elemento div</div>  
+            <div>Segundo elemento div</div>  
+            <div style="background-color: yellow;">Terceiro elemento div</div>  
+
+            <p style="background-color: yellow;">Texto aleatório em um parágrafo</p>  
           </div>
         </div>
       </div>
@@ -15274,86 +15353,13 @@
               </code>
             </pre>
           </div>
-          <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
-          </div>
+          <form name="input" action="" method="get">
+            Firstname:<input type="text" name="Name" value="Peter" size="20" width="150px" style="display: block; margin-bottom: 10px; background-color: yellow;">
+            Lastname:<input type="text" name="Name" value="Griffin" size="20" width="150px" style="display: block; margin-bottom: 10px; background-color: yellow;">
+            <input type="button" value="Example Button" width="120px" style="display: block; margin-left: 35px;">
+          </form>
         </div>
-      </div>
-      <h3 class="spacing-Y">overflow: scroll</h3>
-      <p class="spacing-y">O valor <span class="code-inline">auto</span> é semelhante a <span class="code-inline">scroll</span>, mas adiciona barras de rolagem somente quando necessário:</p>
-      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
-      <div class="example-code">
-        <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-            <p>Exemplo CSS</p>
-          </div>
-          <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Copiar o codigo" id="btncopiar"
-              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-          <div class="code-body col textocod">
-            <pre>
-              <code>
-  <div class="code-line">
-    <span class="code-tag">div</span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">overflow</span>: auto;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>
-              </code>
-            </pre>
-          </div>
-          <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
-          </div>
-        </div>
-      </div>
-      <h3 class="spacing-Y">overflow-x e overflow-y</h3>
-      <p class="spacing-y">As propriedades <span class="code-inline">overflow-x</span> e <span class="code-inline">overflow-y</span> especificam se o estouro do conteúdo deve ser alterado apenas horizontalmente ou verticalmente (ou ambos):</p>
-      <p class="spacing-y"><span class="code-inline">overflow-x</span> especifica o que fazer com as bordas esquerda/direita do conteúdo.</p>
-      <p class="spacing-y"><span class="code-inline">overflow-y</span> especifica o que fazer com as bordas superior/inferior do conteúdo.</p>
-      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
-      <div class="example-code">
-        <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-            <p>Exemplo CSS</p>
-          </div>
-          <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Copiar o codigo" id="btncopiar"
-              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-          <div class="code-body col textocod">
-            <pre>
-              <code>
-  <div class="code-line">
-    <span class="code-tag">div</span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">overflow-x</span>: hidden;</span> <span class="code-comment">/* esconde a barra de rolagem horizontal*/</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">overflow-y</span>: scroll;</span> <span class="code-comment">/* adiciona uma barra de rolagem vertical*/</span>
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>
-              </code>
-            </pre>
-          </div>
-          <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
-          </div>
-        </div>
-      </div>      
+      </div>     
     </section>
     <section class="theme" data-title="formscss" data-index="37" hidden>
       <h1 class="spacing-Y">Formulários(forms) CSS</h1>

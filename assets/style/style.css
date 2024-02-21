@@ -563,6 +563,74 @@ code {
     content: url(smiley.gif);
 }
 
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+#home-sprite {
+    width: 46px;
+    height: 44px;
+    background: url('img_navsprites.gif') 0 0;
+}
+#next-sprite {
+    width: 43px;
+    height: 44px;
+    background: url('img_navsprites.gif') -91px 0;
+}
+
+#home-sprite-2 {
+    left: 0px;
+    width: 46px;
+    background: url('img_navsprites.gif') 0 0;
+}
+#next-sprite-2 {
+    left: 129px;
+    width: 43px;
+    background: url('img_navsprites.gif') -91px 0;
+}
+#prev-sprite-2 {
+    left: 63px;
+    width: 43px;
+    background: url('img_navsprites.gif') -47px 0;
+}
+#home-sprite-3 {
+    left: 0px;
+    width: 46px;
+    background: url('img_navsprites.gif') 0 0;
+}
+#next-sprite-3 {
+    left: 129px;
+    width: 43px;
+    background: url('img_navsprites.gif') -91px 0;
+}
+#prev-sprite-3 {
+    left: 63px;
+    width: 43px;
+    background: url('img_navsprites.gif') -47px 0;
+}
+#home-sprite-3:hover {
+    background: url('img_navsprites_hover.gif') 0 -45px;
+}
+#next-sprite-3:hover {
+    background: url('img_navsprites_hover.gif') -47px -45px;
+}
+#prev-sprite-3:hover {
+    background: url('img_navsprites_hover.gif') -91px -45px;
+}
 
 /* DESKTOP */
 @media all and (min-width: 768px) {
