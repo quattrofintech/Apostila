@@ -4543,6 +4543,38 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
 <h3 class="spacing-y">Como adicionar uma borda</h3>
 <p>Ao adicionar uma borda a uma tabela, você também adiciona bordas ao redor de cada célula da tabela:</p>
 <p>Para adicionar uma borda, use a propriedade CSS <code class="code-inline">border</code> nos elementos <code class="code-inline">table</code>, <code class="code-inline">th</code> e <code class="code-inline">td</code>:</p>
+<table class="table table-dark table-hover" style="border: 3px solid black;">
+  <thead>
+      <tr>
+          <th scope="col"style="border: 3px solid black;">#</th>
+          <th scope="col"style="border: 3px solid black;">Empresa</th>
+          <th scope="col"style="border: 3px solid black;">Nome</th>
+          <th scope="col"style="border: 3px solid black;">País de origem</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <th scope="row"style="border: 3px solid black;">1</th>
+          <td style="border: 3px solid black;">Coca-Cola</td>
+          <td style="border: 3px solid black;">Marcelo</td>
+          <td style="border: 3px solid black;">Brasil</td>
+      </tr>
+      <tr>
+          <th scope="row" style="border: 3px solid black;">2</th>
+          <td style="border: 3px solid black;">Microsoft</td>
+          <td style="border: 3px solid black;">Noah</td>
+          <td style="border: 3px solid black;">Canadá</td>
+      </tr>
+      <tr>
+          <th scope="row" style="border: 3px solid black;">3</th>
+          <td style="border: 3px solid black;">Apple</td>
+          <td style="border: 3px solid black;">Werner</td>
+          <td style="border: 3px solid black;">Alemanha</td>
+      </tr>
+     
+  </tbody>
+</table>
+</table>
 <div class="example-code">
   <div class="code-title d-flex align-items-center justify-content-between">
     <div>
@@ -4578,6 +4610,38 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
 <h2 class="spacing-y">Bordas da tabela recolhidas</h2>
 <p>Para evitar bordas duplas como no exemplo acima, defina a <code class="code-inline">border-collapse</code> como propriedade CSS <code class="code-inline">collapse</code></p>
 <p>Isso fará com que as bordas colapsem em uma única borda:</p>
+<table class="table table-dark table-hover" style="border: 3px solid black; border-radius: 3px;">
+  <thead>
+      <tr>
+          <th scope="col"style="border: 3px solid black; border-collapse: collapse;">#</th>
+          <th scope="col"style="border: 3px solid black; border-collapse: collapse;">Empresa</th>
+          <th scope="col"style="border: 3px solid black; border-collapse: collapse;">Nome</th>
+          <th scope="col"style="border: 3px solid black; border-collapse: collapse;">País de origem</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <th scope="row"style="border: 3px solid black; border-collapse: collapse;">1</th>
+          <td style="border: 3px solid black; border-collapse: collapse;">Coca-Cola</td>
+          <td style="border: 3px solid black; border-collapse: collapse;">Marcelo</td>
+          <td style="border: 3px solid black; border-collapse: collapse;">Brasil</td>
+      </tr>
+      <tr>
+          <th scope="row" style="border: 3px solid black; border-collapse: collapse;" >2</th>
+          <td style="border: 3px solid black; border-collapse: collapse;">Microsoft</td>
+          <td style="border: 3px solid black; border-collapse: collapse;">Noah</td>
+          <td style="border: 3px solid black; border-collapse: collapse;">Canadá</td>
+      </tr>
+      <tr>
+          <th scope="row" style="border: 3px solid black; border-collapse: collapse;">3</th>
+          <td style="border: 3px solid black; border-collapse: collapse;">Apple</td>
+          <td style="border: 3px solid black; border-collapse: collapse;">Werner</td>
+          <td style="border: 3px solid black; border-collapse: collapse;">Alemanha</td>
+      </tr>
+     
+  </tbody>
+</table>
+</table>
 <div class="example-code">
   <div class="code-title d-flex align-items-center justify-content-between">
     <div>
