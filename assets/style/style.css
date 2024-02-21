@@ -534,10 +534,33 @@ code {
 .example-of-8:hover{
     background-color: red;
 }
+.example-of-9:hover{
+    background-color: blue;
+}
+.example-of-10:hover{
+    display: block;
+}
+.example-of-11:hover{
+    background-color: #555;
+    color: white;
+}
 
 .example-of-selection::selection{
     color: red;
     background: yellow;
+}
+
+.example-of-clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.example-of-pseudo-class::before{
+    content: url(smiley.gif);
+}
+.example-of-pseudo-class-2::after{
+    content: url(smiley.gif);
 }
 
 
@@ -546,7 +569,6 @@ code {
     main{
         color: var(--text-color);
     }
-
     .nav-link{
         color: var(--text-color);
         font-size: 0.8em;
@@ -555,35 +577,27 @@ code {
     .active .nav-link{
         color: var(--link-color);
     }
-
     .menuLateral {
         max-height: 35px;
     }
-
     .menuMaterias {
         padding: 10px;
         color: var(--text-color) !important;
     }
-
     ::-webkit-scrollbar {
         width: 4px;
     }
-
     pre::-webkit-scrollbar {
         width: 4px;
         height: 4px;
     }
-
     ::-webkit-scrollbar-thumb {
         background-color: #888;
         border-radius: 4px;
     }
-
-
     ::-webkit-scrollbar-thumb:hover {
         background-color: #555;
     }
-
     main {
         margin-top: 108px;
     }
@@ -591,20 +605,16 @@ code {
     .no-padding {
         padding: 0px;
     }
-
     .nav-matter {
         display: block;
         z-index: 10 !important;
     }
-
     .nav-matter .nav-link{
         color: var(--link-color);
     }
-
     .margin-toast-top {
         margin-top: 112px;
     }
-
     .content-search{
         display: flex;
         flex-direction: column;
@@ -618,7 +628,6 @@ code {
         z-index: 10;
         background-color: var(--main-background-color);
     }
-
 }
 
 /* DESKTOP */
