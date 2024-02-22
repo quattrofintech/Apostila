@@ -15354,8 +15354,8 @@
             </pre>
           </div>
           <form name="input" action="" method="get">
-            Firstname:<input type="text" name="Name" value="Peter" size="20" width="150px" style="display: block; margin-bottom: 10px; background-color: yellow;">
-            Lastname:<input type="text" name="Name" value="Griffin" size="20" width="150px" style="display: block; margin-bottom: 10px; background-color: yellow;">
+            Primerio nome:<input type="text" name="Name" value="Peter" size="20" width="150px" style="display: block; margin-bottom: 10px; background-color: yellow;">
+            Último nome:<input type="text" name="Name" value="Griffin" size="20" width="150px" style="display: block; margin-bottom: 10px; background-color: yellow;">
             <input type="button" value="Example Button" width="120px" style="display: block; margin-left: 35px;">
           </form>
         </div>
@@ -15364,6 +15364,42 @@
     <section class="theme" data-title="formscss" data-index="37" hidden>
       <h1 class="spacing-Y">Formulários(forms) CSS</h1>
       <p class="spacing-y">A aparência de um formulário HTML pode ser muito melhorada com CSS.</p>
+      <div class="example-code">
+        <div class="code-title d-flex align-items-center justify-content-between">
+          <div>
+            <p>Exemplo CSS</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Copiar o codigo" id="btncopiar"
+              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+          <div class="code-body col textocod">
+            <pre>
+              <code>
+  <div class="code-line">
+    <span class="code-tag">input</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">background-color</span>: yellow;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
+              </code>
+            </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>   
+            <form>
+              <label for="fname">Primeiro Nome</label>
+              <input type="text" id="fname" name="fname" style="width: 100%;">
+            </form>  
+          </div>
+        </div>
+      </div>
       <h2 class="spacing-Y">Estilizando campos de entrada</h2>
       <p class="spacing-y">Use a propriedade <span class="code-inline">width</span> para determinar a largura do campo de entrada:</p>
       <div class="example-code">
@@ -15394,7 +15430,25 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>   
+            <div style="border-radius: 5px; background-color: #f2f2f2; padding: 20px;">
+              <form action="/action_page.php">
+                <label for="fname" style="display: block;">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." style="width: 100%; padding: 12px 20px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+            
+                <label for="lname" style="display: block;">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." style="width: 100%; padding: 12px 20px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+            
+                <label for="country" style="display: block;">Country</label>
+                <select id="country" name="country" style="width: 100%; padding: 12px 20px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+              
+                <input type="submit" value="Submit" style="width: 100%; background-color: #4CAF50; color: white; padding: 14px 20px; margin: 8px 0; border: none; border-radius: 4px; cursor: pointer;">
+              </form>
+            </div>       
           </div>
         </div>
       </div>
@@ -15445,7 +15499,13 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>      
+            <form>
+              <label for="fname">Primeiro nome</label>
+              <input type="text" id="fname" name="fname" style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box;">
+              <label for="lname">Último nome</label>
+              <input type="text" id="lname" name="lname" style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box;">
+            </form>   
           </div>
         </div>
       </div>
@@ -15483,7 +15543,13 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>      
+            <form>
+              <label for="fname">Primeiro nome</label>
+              <input type="text" id="fname" name="fname" style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 2px solid red; border-radius: 4px;">
+              <label for="lname">Último nome</label>
+              <input type="text" id="lname" name="lname" style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 2px solid red; border-radius: 4px;">
+            </form>   
           </div>
         </div>
       </div>
@@ -15519,7 +15585,13 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>      
+            <form>
+              <label for="fname">Primeiro nome</label>
+              <input type="text" id="fname" name="fname" style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; border-bottom: 2px solid red;">
+              <label for="lname">Último nome</label>
+              <input type="text" id="lname" name="lname" style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; border-bottom: 2px solid red;">
+            </form>   
           </div>
         </div>
       </div>
@@ -15556,7 +15628,13 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>      
+            <form>
+              <label for="fname">Primeiro nome</label>
+              <input type="text" id="fname" name="fname" value="John" style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D; color: white;">
+              <label for="lname">Último nome</label>
+              <input type="text" id="lname" name="lname" value="Doe" style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D; color: white;">
+            </form>   
           </div>
         </div>
       </div>
@@ -15587,11 +15665,26 @@
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
   </div>
+  <div class="code-line">
+    <span class="code-tag">input[type=text]:focus</span><span class="code-punctuation">&#123;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-text"><span class="example-text-color-1">border</span>: 3px solid #555;</span>
+  </div>
+  <div class="code-line">
+    <span class="code-punctuation">&#125;</span>
+  </div>
               </code>
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>      
+            <form>
+              <label for="fname">Primeiro nome</label>
+              <input class="focused-input-example-1" type="text" id="fname" name="fname" value="John" style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 1px solid #555; outline: none;">
+              <label for="lname">Último nome</label>
+              <input class="focused-input-example-1" type="text" id="lname" name="lname" value="Doe" style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 1px solid #555; outline: none;">
+            </form>   
           </div>
         </div>
       </div>
@@ -15623,7 +15716,13 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>      
+            <form>
+              <label for="fname">Primeiro nome</label>
+              <input class="focused-input-example-2" type="text" id="fname" name="fname" value="John" style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; border: 3px solid #ccc; transition: 0.5s; outline: none;">
+              <label for="lname">Último nome</label>
+              <input class="focused-input-example-2" type="text" id="lname" name="lname" value="Doe" style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; border: 3px solid #ccc; transition: 0.5s; outline: none;">
+            </form>   
           </div>
         </div>
       </div>
@@ -15669,7 +15768,10 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>   
+            <form>
+              <input type="text" name="search" placeholder="Search.." class="example-animated-search-icon">
+            </form>      
           </div>
         </div>
       </div>
@@ -15712,7 +15814,10 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>   
+            <form>
+              <input type="text" name="search" placeholder="Search.." class="example-animated-search-input">
+            </form>      
           </div>
         </div>
       </div>
@@ -15769,6 +15874,9 @@
           </div>
           <div class="code-support row">           
             <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <form>
+              <textarea class="example-textarea">Texto aleatório...</textarea>
+            </form>
           </div>
         </div>
       </div>
@@ -15813,7 +15921,14 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>     
+            <form>
+              <select id="country" name="country" class="example-select">
+              <option value="au">Australia</option>
+              <option value="ca">Canada</option>
+              <option value="usa">Estados Unidos</option>
+              </select>
+            </form>    
           </div>
         </div>
       </div>      
@@ -15864,7 +15979,10 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>
+            <input type="button" value="Button" class="example-form-button">
+            <input type="reset" value="Reset" class="example-form-button">
+            <input type="submit" value="Submit" class="example-form-button">         
           </div>
         </div>
       </div>      
@@ -15922,7 +16040,16 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>        
+            <div class="example-counters-1">
+              <h1>Usando contadores CSS</h1>
+
+              <h2>Tutorial de HTML</h2>
+              <h2>Tutorial de CSS</h2>
+              <h2>Tutorial de Javascript</h2>
+              <h2>Tutorial de Python</h2>
+              <h2>Tutorial de SQL</h2>
+            </div> 
           </div>
         </div>
       </div>
@@ -15989,7 +16116,26 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>  
+            <div class="example-counters-nesting-1">
+              <h1>HTML/CSS Tutoriais</h1>
+              <h2>HTML</h2>
+              <h2>CSS</h2>
+              <h2>Bootstrap</h2>
+              <h2>W3.CSS</h2>
+            </div> 
+            <div class="example-counters-nesting-1">
+              <h1>Scripting Tutorials</h1>
+              <h2>JavaScript</h2>
+              <h2>jQuery</h2>
+              <h2>React</h2>
+            </div>
+            <div class="example-counters-nesting-1">
+              <h1>Programming Tutorials</h1>
+              <h2>Python</h2>
+              <h2>Java</h2>
+              <h2>C++</h2> 
+            </div>
           </div>
         </div>
       </div>
@@ -16037,388 +16183,31 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
-          </div>
-        </div>
-      </div>
-      <p class="spacing-y">Se você quiser apenas uma borda inferior, use a propriedade <span class="code-inline">border-bottom</span>:</p>
-      <div class="example-code">
-        <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-            <p>Exemplo CSS</p>
-          </div>
-          <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Copiar o codigo" id="btncopiar"
-              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-          <div class="code-body col textocod">
-            <pre>
-              <code>
-  <div class="code-line">
-    <span class="code-tag">input[type=text] </span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: none;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border-radius</span>: 2px solid red;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>
-              </code>
-            </pre>
-          </div>
-          <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
-          </div>
-        </div>
-      </div>
-      <h2 class="spacing-Y">Entradas Coloridas</h2>
-      <p class="spacing-y">Use a propriedade <span class="code-inline">background-color</span> para adicionar uma cor de fundo à entrada e a propriedade <span class="code-inline">color</span> para alterar a cor do texto:</p>
-      <div class="example-code">
-        <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-            <p>Exemplo CSS</p>
-          </div>
-          <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Copiar o codigo" id="btncopiar"
-              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-          <div class="code-body col textocod">
-            <pre>
-              <code>
-  <div class="code-line">
-    <span class="code-tag">input[type=text] </span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-color</span>: #3CBC8D;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">color</span>: white;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>
-              </code>
-            </pre>
-          </div>
-          <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
-          </div>
-        </div>
-      </div>
-      <h2 class="spacing-Y">Entradas focadas</h2>
-      <p class="spacing-y">Por padrão, alguns navegadores adicionam um contorno azul ao redor da entrada quando ela recebe o foco (clicada). Você pode remover esse comportamento adicionando <span class="code-inline">outline: none;</span> à entrada. </p>
-      <p class="spacing-y">Use o seletor <span class="code-inline">:focus</span> para fazer algo com o campo de entrada quando ele estiver em foco:</p>
-      <div class="example-code">
-        <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-            <p>Exemplo CSS</p>
-          </div>
-          <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Copiar o codigo" id="btncopiar"
-              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-          <div class="code-body col textocod">
-            <pre>
-              <code>
-  <div class="code-line">
-    <span class="code-tag">input[type=text]:focus</span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-color</span>: lightblue;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>
-              </code>
-            </pre>
-          </div>
-          <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
-          </div>
-        </div>
-      </div>
-      <div class="example-code">
-        <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-            <p>Exemplo CSS</p>
-          </div>
-          <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Copiar o codigo" id="btncopiar"
-              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-          <div class="code-body col textocod">
-            <pre>
-              <code>
-  <div class="code-line">
-    <span class="code-tag">input[type=text]:focus</span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 3px solid #555;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>
-              </code>
-            </pre>
-          </div>
-          <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
-          </div>
-        </div>
-      </div>
-      <h2 class="spacing-Y">Entrada com ícone/imagem</h2>
-      <p class="spacing-y">Se você quiser um ícone dentro da entrada, use a propriedade <span class="code-inline">background-image</span> e posicione-a com a propriedade <span class="code-inline">background-position</span>. Observe também que adicionamos um grande preenchimento à esquerda para reservar o espaço do ícone:</p>
-      <div class="example-code">
-        <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-            <p>Exemplo CSS</p>
-          </div>
-          <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Copiar o codigo" id="btncopiar"
-              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-          <div class="code-body col textocod">
-            <pre>
-              <code>
-  <div class="code-line">
-    <span class="code-tag">input[type=text]</span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-color</span>: white;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-image</span>: url('searchicon.png');</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-position</span>: 10px 10px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-repeat</span>: no-repeat;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">padding-left</span>: 40px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>
-              </code>
-            </pre>
-          </div>
-          <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
-          </div>
-        </div>
-      </div>
-      <h2 class="spacing-Y">Entrada de Pesquisa Animada</h2>
-      <p class="spacing-y">Neste exemplo, usamos a propriedade <span class="code-inline">transition</span> CSS para animar a largura da entrada de pesquisa quando ela recebe o foco.</p>
-      <div class="example-code">
-        <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-            <p>Exemplo CSS</p>
-          </div>
-          <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Copiar o codigo" id="btncopiar"
-              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-          <div class="code-body col textocod">
-            <pre>
-              <code>
-  <div class="code-line">
-    <span class="code-tag">input[type=text]</span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">transition</span>: width 0.4s ease-in-out;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-tag">input[type=text]:focus</span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">width</span>: 100%;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>
-              </code>
-            </pre>
-          </div>
-          <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
-          </div>
-        </div>
-      </div>
-      <h2 class="spacing-Y">Estilizando Áreas de Texto</h2>
-      <p class="spacing-y">Dica: Use a propriedade <span class="code-inline">resize</span></p> para evitar que áreas de texto sejam redimensionadas (desative o "agarrador" no canto inferior direito):</p>
-      <p class="spacing-y">Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar a caixa de um elemento.</p>
-      <div class="example-code">
-        <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-            <p>Exemplo CSS</p>
-          </div>
-          <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Copiar o codigo" id="btncopiar"
-              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-          <div class="code-body col textocod">
-            <pre>
-              <code>
-  <div class="code-line">
-    <span class="code-tag">textarea </span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">width</span>: 100%;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">height</span>: 150px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">padding</span>: 12px 20px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">box-sizing</span>: border-box;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 2px solid #ccc;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border-radius</span>: 4px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-color</span>: #f8f8f8;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">resize</span>: none;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>
-              </code>
-            </pre>
-          </div>
-          <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
-          </div>
-        </div>
-      </div>
-      <h2 class="spacing-Y">Menus de seleção de estilo</h2>
-      <div class="example-code">
-        <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-            <p>Exemplo CSS</p>
-          </div>
-          <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Copiar o codigo" id="btncopiar"
-              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-          <div class="code-body col textocod">
-            <pre>
-              <code>
-  <div class="code-line">
-    <span class="code-tag">select </span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">width</span>: 100%;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">padding</span>: 16px 20px;</span> 
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: none;</span> 
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border-radius</span>: 4px;</span> 
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-color</span>: #f1f1f1;</span> 
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>
-              </code>
-            </pre>
-          </div>
-          <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
-          </div>
-        </div>
-      </div>      
-      <h2 class="spacing-Y">Botões de entrada de estilo</h2>
-      <div class="example-code">
-        <div class="code-title d-flex align-items-center justify-content-between">
-          <div>
-            <p>Exemplo CSS</p>
-          </div>
-          <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Copiar o codigo" id="btncopiar"
-              onclick="openToast('Copiado para àrea de transferência!')">Copiar</button>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-          <div class="code-body col textocod">
-            <pre>
-              <code>
-  <div class="code-line">
-    <span class="code-tag">input[type=button], input[type=submit], input[type=reset] </span><span class="code-punctuation">&#123;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">background-color</span>: #04AA6D;</span> 
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: none;</span> 
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">color</span>: white;</span> 
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">padding</span>: 16px 32px;</span> 
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">margin</span>: 4px 2px;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">cursor</span>: pointer;</span> 
-  </div>
-  <div class="code-line">
-    <span class="code-punctuation">&#125;</span>
-  </div>
-  <div class="code-line">
-    <span class="code-comment">&lt;!-- Dica: use width: 100%; para botões largura cheia --&gt;</span>
-  </div>
-              </code>
-            </pre>
-          </div>
-          <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>    
+            <ol class="example-counters-nesting-2">
+              <li>item</li>
+              <li>item   
+              <ol class="example-counters-nesting-2">
+                <li>item</li>
+                <li>item</li>
+                <li>item
+                <ol class="example-counters-nesting-2">
+                  <li>item</li>
+                  <li>item</li>
+                  <li>item</li>
+                </ol>
+                </li>
+                <li>item</li>
+              </ol>
+              </li>
+              <li>item</li>
+              <li>item</li>
+            </ol>
+            
+            <ol class="example-counters-nesting-2">
+              <li>item</li>
+              <li>item</li>
+            </ol>     
           </div>
         </div>
       </div>      
@@ -16470,7 +16259,10 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>   
+            <div class="example-website-layout-1">
+              <h1>Header</h1>
+            </div>      
           </div>
         </div>
       </div>
@@ -16534,7 +16326,7 @@
     <span class="code-punctuation">&#125;</span>
   </div>
   <div class="code-line">
-    <span class="code-comment">&lt;/* Links - change color on hover */&gt;</span>
+    <span class="code-comment">&lt;/* Links - muda de cor com hover */&gt;</span>
   </div>
   <div class="code-line">
     <span class="code-tag">.topnav a:hover </span><span class="code-punctuation">&#123;</span>
@@ -16552,7 +16344,16 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>       
+            <div class="example-website-layout-1">
+              <h1>Header</h1>
+            </div>
+            
+            <div class="example-topnav">
+              <a href="#">Link</a>
+              <a href="#">Link</a>
+              <a href="#">Link</a>
+            </div>  
           </div>
         </div>
       </div>
@@ -16632,7 +16433,32 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>       
+            <div class="example-website-layout-1">
+              <h1>Header</h1>
+            </div>
+
+            <div class="example-topnav">
+              <a href="#">Link</a>
+              <a href="#">Link</a>
+              <a href="#">Link</a>
+            </div>  
+            <div class="example-website-row">
+              <div class="example-website-column">
+                <h2>Column</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+              </div>
+              
+              <div class="example-website-column">
+                <h2>Column</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+              </div>
+              
+              <div class="example-website-column">
+                <h2>Column</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -16709,7 +16535,33 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>       
+            <div class="example-website-layout-1">
+              <h1>Header</h1>
+            </div>
+
+            <div class="example-topnav">
+              <a href="#">Link</a>
+              <a href="#">Link</a>
+              <a href="#">Link</a>
+            </div>  
+            <div class="example-website-row">
+              <div class="example-website-column" style="width: 25%; float: left; padding: 10px;">
+                <h2>Side</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+              </div>
+              
+              <div class="example-website-column" style="width: 50%; float: left; padding: 10px;">
+                <h2>Main content</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+              </div>
+              
+              <div class="example-website-column" style="width: 25%; float: left; padding: 10px;">
+                <h2>Side</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -16749,13 +16601,43 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>       
+            <div class="example-website-layout-1">
+              <h1>Header</h1>
+            </div>
+
+            <div class="example-topnav">
+              <a href="#">Link</a>
+              <a href="#">Link</a>
+              <a href="#">Link</a>
+            </div>  
+            <div class="example-website-row">
+              <div class="example-website-column" style="width: 25%; float: left; padding: 10px;">
+                <h2>Side</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+              </div>
+              
+              <div class="example-website-column" style="width: 50%; float: left; padding: 10px;">
+                <h2>Main content</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+              </div>
+              
+              <div class="example-website-column" style="width: 25%; float: left; padding: 10px;">
+                <h2>Side</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+              </div>
+
+              <div style="background-color: #f1f1f1; padding: 10px; text-align: center;">
+                <p>Footer</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <h2 class="spacing-Y">Layout de site responsivo</h2>
+      <!-- <h2 class="spacing-Y">Layout de site responsivo</h2>
       <h2>PRECISA COLOCAR IMAGEM AQUI DO LAYOUT</h2>
-      <p class="spacing-y">Usando parte do código CSS acima, criamos um layout de site responsivo, que varia entre duas colunas e colunas de largura total, dependendo da largura da tela:</p>
+      <p class="spacing-y">Usando parte do código CSS acima, criamos um layout de site responsivo, que varia entre duas colunas e colunas de largura total, dependendo da largura da tela:</p> -->
     </section>
     <section class="theme" data-title="unidadecss" data-index="40" hidden>
       <h1 class="spacing-Y">Unidades CSS</h1>
@@ -16805,7 +16687,11 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>  
+            <h1 style="font-size: 60px;">Cabeçalho 1</h1>
+            <h2>Cabeçalho 2</h2>
+            <p style="font-size: 25px; line-height: 50px;">Um parágrafo.</p>
+            <p style="font-size: 25px; line-height: 50px;">Outro parágrafo.</p>       
           </div>
         </div>
       </div>
@@ -16909,6 +16795,10 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>  
+            <p style="color: red;">Olá mundo!.</p>       
+          </div>
         </div>
       </div>
       <p class="spacing-y">Agora, veja o exemplo 2:</p>
@@ -16967,6 +16857,10 @@
   </div>
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>  
+            <p style="color: green;">Olá mundo!.</p>       
           </div>
         </div>
       </div>
@@ -17030,6 +16924,10 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>  
+            <p style="color: blue;">Olá mundo!.</p>       
+          </div>
         </div>
       </div>
       <p class="spacing-y">Agora, veja o exemplo 4:</p>
@@ -17090,6 +16988,10 @@
   </div>
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>  
+            <p style="color: pink;">Olá mundo!.</p>       
           </div>
         </div>
       </div>
@@ -17155,6 +17057,10 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>  
+            <h1 style="background-color: red;">Cabeçalho</h1>       
+          </div>
         </div>
       </div>
       <p class="spacing-y">Os seletores de ID têm uma especificidade maior do que os seletores de atributo - observe as três linhas de código a seguir:</p>
@@ -17194,6 +17100,10 @@
               </code>
             </pre>
           </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>  
+            <div style="background-color: green;">essa é uma div</div>       
+          </div>
         </div>
       </div>
       <p class="spacing-y">a última regra será aplicada.</p>
@@ -17221,6 +17131,10 @@
 </div>
               </code>
             </pre>
+          </div>
+          <div class="code-support row">           
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>  
+            <h1 style="background-color: yellow;">Cabeçalho</h1>       
           </div>
         </div>
       </div>
@@ -17278,7 +17192,10 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>  
+            <p style="background-color: red;">Algum texto em um parágrafo.</p>       
+            <p style="background-color: red;">Algum texto em um parágrafo.</p>       
+            <p style="background-color: red;">Algum texto em um parágrafo.</p>       
           </div>
         </div>
       </div>
@@ -17333,7 +17250,10 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>  
+            <p style="background-color: red;">Algum texto em um parágrafo.</p>       
+            <p style="background-color: gray;">Algum texto em um parágrafo.</p>       
+            <p style="background-color: blue;">Algum texto em um parágrafo.</p>       
           </div>
         </div>
       </div>
@@ -17369,7 +17289,7 @@
     <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid black;</span>
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid yellow;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
@@ -17378,7 +17298,9 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>  
+            <p>Botão comum: <a href="#" style="background-color: #8c8c8c; color: white; padding: 5px; border: 1px solid yellow;">CSS</a>.</p>       
+            <p>Botão comum: <a href="#" style="background-color: #8c8c8c; color: white; padding: 5px; border: 1px solid yellow;">HTML</a>.</p>            
           </div>
         </div>
       </div>
@@ -17411,7 +17333,7 @@
     <span class="code-text"><span class="example-text-color-1">padding</span>: 5px;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid black;</span>
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid green;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
@@ -17432,7 +17354,10 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>  
+            <p>Botão comum: <a href="#" style="background-color: #8c8c8c; color: white; padding: 5px; border: 1px solid green;">CSS</a>.</p>       
+            <p>um link texto dentro de myDiv: <a href="#" style="background-color: yellow; color: red; padding: 5px;">HTML</a>.</p>            
+            <p>um link botão dentro do myDiv: <a href="#" style="background-color: yellow; color: red; padding: 5px; border: 1px solid green;">HTML</a>.</p>            
           </div>
         </div>
       </div>
@@ -17465,7 +17390,7 @@
     <span class="code-text"><span class="example-text-color-1">padding</span>: 5px<span class="example-text-color-1">!important</span>;</span>
   </div>
   <div class="code-line">
-    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid black<span class="example-text-color-1">!important</span>;</span>
+    <span class="code-text"><span class="example-text-color-1">border</span>: 1px solid green<span class="example-text-color-1">!important</span>;</span>
   </div>
   <div class="code-line">
     <span class="code-punctuation">&#125;</span>
@@ -17486,7 +17411,10 @@
             </pre>
           </div>
           <div class="code-support row">           
-            <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <span class="code-comment">&lt;!-- Resultado --&gt;</span>  
+            <p>Botão comum: <a href="#" style="background-color: #8c8c8c; color: white; padding: 5px; border: 1px solid green;">CSS</a>.</p>       
+            <p>um link texto dentro de myDiv: <a href="#" style="background-color: yellow; color: red; padding: 5px;">HTML</a>.</p>            
+            <p>um link botão dentro do myDiv: <a href="#" style="background-color: #8c8c8c; color: white; padding: 5px; border: 1px solid green;">HTML</a>.</p>            
           </div>
         </div>
       </div>
@@ -17546,6 +17474,7 @@
           </div>
           <div class="code-support row">           
             <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <div class="example-math-function">Algum texto...</div>
           </div>
         </div>
       </div>
@@ -17592,6 +17521,8 @@
           </div>
           <div class="code-support row">           
             <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <div class="example-math-function-2">Algum texto...</div>
+            <p>Aumente ou diminua a tela do browser para ver o efeito.</p>
           </div>
         </div>
       </div>
@@ -17638,6 +17569,8 @@
           </div>
           <div class="code-support row">           
             <span class="code-comment">&lt;!-- Resultado --&gt;</span>         
+            <div class="example-math-function-3">Algum texto...</div>
+            <p>Aumente ou diminua a tela do browser para ver o efeito.</p>
           </div>
         </div>
       </div>

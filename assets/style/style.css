@@ -632,6 +632,150 @@ div.desc {
     background: url('img_navsprites_hover.gif') -91px -45px;
 }
 
+.focused-input-example-1{
+    background-color: lightblue;
+}
+.focused-input-example-2{
+    border: 3px solid #555;
+}
+.example-animated-search-icon{    
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;   
+}
+.example-animated-search-input{    
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;      
+}
+.example-animated-search-input:focus{    
+    width: 100%;
+}
+.example-textarea{
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+.example-select{
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+.example-form-button{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.example-counters-1{
+    counter-reset: section;
+}
+.example-counters-1 h2::before{
+    counter-increment: section;
+    content: "Section " counter(section) ": ";
+}
+.example-counters-nesting-1{
+    counter-reset: section;
+}
+.example-counters-nesting-1 h1{
+    counter-reset: subsection;
+}
+.example-counters-nesting h1::before{
+    counter-increment: section;
+    content: "Section " counter(section) ". ";
+}
+.example-counters-nesting h2::before{
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+}
+.example-counters-nesting-2 {
+    counter-reset: section;
+    list-style-type: none;
+}  
+.example-counters-nesting-2 li::before {
+    counter-increment: section;
+    content: counters(section,".") " ";
+}
+
+.example-website-layout-1{
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+.example-topnav{
+    overflow: hidden;
+    background-color: #333;
+}
+.example-topnav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.example-topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.example-website-column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+  
+.example-website-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.example-math-function{    
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 100px);
+    border: 1px solid black;
+    background-color: yellow;
+    padding: 5px;      
+}
+.example-math-function-2{    
+    background-color: yellow;
+    height: 100px;
+    width: max(50%, 300px);     
+}
+.example-math-function-3{    
+    background-color: yellow;
+    height: 100px;
+    width: min(50%, 300px);     
+}
+
 /* DESKTOP */
 @media all and (min-width: 768px) {
     main{
