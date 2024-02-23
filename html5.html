@@ -4543,38 +4543,6 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
 <h3 class="spacing-y">Como adicionar uma borda</h3>
 <p>Ao adicionar uma borda a uma tabela, você também adiciona bordas ao redor de cada célula da tabela:</p>
 <p>Para adicionar uma borda, use a propriedade CSS <code class="code-inline">border</code> nos elementos <code class="code-inline">table</code>, <code class="code-inline">th</code> e <code class="code-inline">td</code>:</p>
-<table class="table table-dark table-hover" style="border: 3px solid black;">
-  <thead>
-      <tr>
-          <th scope="col"style="border: 3px solid black;">#</th>
-          <th scope="col"style="border: 3px solid black;">Empresa</th>
-          <th scope="col"style="border: 3px solid black;">Nome</th>
-          <th scope="col"style="border: 3px solid black;">País de origem</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <th scope="row"style="border: 3px solid black;">1</th>
-          <td style="border: 3px solid black;">Coca-Cola</td>
-          <td style="border: 3px solid black;">Marcelo</td>
-          <td style="border: 3px solid black;">Brasil</td>
-      </tr>
-      <tr>
-          <th scope="row" style="border: 3px solid black;">2</th>
-          <td style="border: 3px solid black;">Microsoft</td>
-          <td style="border: 3px solid black;">Noah</td>
-          <td style="border: 3px solid black;">Canadá</td>
-      </tr>
-      <tr>
-          <th scope="row" style="border: 3px solid black;">3</th>
-          <td style="border: 3px solid black;">Apple</td>
-          <td style="border: 3px solid black;">Werner</td>
-          <td style="border: 3px solid black;">Alemanha</td>
-      </tr>
-     
-  </tbody>
-</table>
-</table>
 <div class="example-code">
   <div class="code-title d-flex align-items-center justify-content-between">
     <div>
@@ -4603,45 +4571,43 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       </pre>
   </div>
   <div class="code-support col">
-    
+    <table class="table table-dark table-hover" style="border: 3px solid black;">
+      <thead>
+          <tr>
+              <th scope="col"style="border: 3px solid black;">#</th>
+              <th scope="col"style="border: 3px solid black;">Empresa</th>
+              <th scope="col"style="border: 3px solid black;">Nome</th>
+              <th scope="col"style="border: 3px solid black;">País de origem</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th scope="row"style="border: 3px solid black;">1</th>
+              <td style="border: 3px solid black;">Coca-Cola</td>
+              <td style="border: 3px solid black;">Marcelo</td>
+              <td style="border: 3px solid black;">Brasil</td>
+          </tr>
+          <tr>
+              <th scope="row" style="border: 3px solid black;">2</th>
+              <td style="border: 3px solid black;">Microsoft</td>
+              <td style="border: 3px solid black;">Noah</td>
+              <td style="border: 3px solid black;">Canadá</td>
+          </tr>
+          <tr>
+              <th scope="row" style="border: 3px solid black;">3</th>
+              <td style="border: 3px solid black;">Apple</td>
+              <td style="border: 3px solid black;">Werner</td>
+              <td style="border: 3px solid black;">Alemanha</td>
+          </tr>
+         
+      </tbody>
+    </table>
 </div>
 </div>
 </div>
 <h2 class="spacing-y">Bordas da tabela recolhidas</h2>
 <p>Para evitar bordas duplas como no exemplo acima, defina a <code class="code-inline">border-collapse</code> como propriedade CSS <code class="code-inline">collapse</code></p>
 <p>Isso fará com que as bordas colapsem em uma única borda:</p>
-<table class="table table-dark table-hover" style="border: 3px solid black; border-radius: 3px;">
-  <thead>
-      <tr>
-          <th scope="col"style="border: 3px solid black; border-collapse: collapse;">#</th>
-          <th scope="col"style="border: 3px solid black; border-collapse: collapse;">Empresa</th>
-          <th scope="col"style="border: 3px solid black; border-collapse: collapse;">Nome</th>
-          <th scope="col"style="border: 3px solid black; border-collapse: collapse;">País de origem</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <th scope="row"style="border: 3px solid black; border-collapse: collapse;">1</th>
-          <td style="border: 3px solid black; border-collapse: collapse;">Coca-Cola</td>
-          <td style="border: 3px solid black; border-collapse: collapse;">Marcelo</td>
-          <td style="border: 3px solid black; border-collapse: collapse;">Brasil</td>
-      </tr>
-      <tr>
-          <th scope="row" style="border: 3px solid black; border-collapse: collapse;" >2</th>
-          <td style="border: 3px solid black; border-collapse: collapse;">Microsoft</td>
-          <td style="border: 3px solid black; border-collapse: collapse;">Noah</td>
-          <td style="border: 3px solid black; border-collapse: collapse;">Canadá</td>
-      </tr>
-      <tr>
-          <th scope="row" style="border: 3px solid black; border-collapse: collapse;">3</th>
-          <td style="border: 3px solid black; border-collapse: collapse;">Apple</td>
-          <td style="border: 3px solid black; border-collapse: collapse;">Werner</td>
-          <td style="border: 3px solid black; border-collapse: collapse;">Alemanha</td>
-      </tr>
-     
-  </tbody>
-</table>
-</table>
 <div class="example-code">
   <div class="code-title d-flex align-items-center justify-content-between">
     <div>
@@ -4673,7 +4639,29 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       </pre>
   </div>
   <div class="code-support col">
-    
+    <table class="table table-dark table-hover" style="border-collapse: collapse">
+      <thead>
+          <tr>
+              <th scope="col"style="border-collapse: collapse;">Nome</th>
+              <th scope="col"style="border-collapse: collapse;">País de origem</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td style="border-collapse: collapse;">Marcelo</td>
+              <td style="border-collapse: collapse;">Brasil</td>
+          </tr>
+          <tr>
+              <td style="border-collapse: collapse;">Noah</td>
+              <td style="border-collapse: collapse;">Canadá</td>
+          </tr>
+          <tr>
+              <td style="border-collapse: collapse;">Werner</td>
+              <td style="border-collapse: collapse;">Alemanha</td>
+          </tr>
+         
+      </tbody>
+    </table>
 </div>
 </div>
 </div>
@@ -4716,7 +4704,37 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       </pre>
   </div>
   <div class="code-support col">
-    
+    <table class="table table-dark table-hover" style="border: 3px solid white;">
+      <thead>
+          <tr>
+              <th scope="col"style="border: 3px solid #222222;">#</th>
+              <th scope="col"style="border: 3px solid #222222;">Empresa</th>
+              <th scope="col"style="border: 3px solid #222222;">Nome</th>
+              <th scope="col"style="border: 3px solid #222222;">País de origem</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th scope="row"style="border: 3px solid #222222;">1</th>
+              <td style="border: 3px solid #222222;">Coca-Cola</td>
+              <td style="border: 3px solid #222222;">Marcelo</td>
+              <td style="border: 3px solid #222222;">Brasil</td>
+          </tr>
+          <tr>
+              <th scope="row" style="border: 3px solid #222222;">2</th>
+              <td style="border: 3px solid #222222;">Microsoft</td>
+              <td style="border: 3px solid #222222;">Noah</td>
+              <td style="border: 3px solid #222222;">Canadá</td>
+          </tr>
+          <tr>
+              <th scope="row" style="border: 3px solid #222222;">3</th>
+              <td style="border: 3px solid #222222;">Apple</td>
+              <td style="border: 3px solid #222222;">Werner</td>
+              <td style="border: 3px solid #222222;">Alemanha</td>
+          </tr>
+         
+      </tbody>
+    </table>
 </div>
 </div>
 </div>
@@ -4754,7 +4772,12 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       </pre>
   </div>
   <div class="code-support col">
-    
+    <figure class="figure my-auto">
+      <img src="assets/img/Borda Arredondada tabela2.webp"
+          class="figure-img img-fluid rounded" alt="Imamge">
+      <figcaption class="figure-caption text-end mx-2">Legenda da imagem ou algo acima.
+      </figcaption>
+  </figure>
 </div>
 </div>
 </div>
@@ -4802,7 +4825,29 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       </pre>
   </div>
   <div class="code-support col">
-    
+    <table class="table table-dark table-hover" style="border-style: dotted;">
+      <thead>
+          <tr>
+              <th scope="col"style="border-style: dotted;">Nome</th>
+              <th scope="col"style="border-style: dotted;">País de origem</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td style="border-style: dotted;">Marcelo</td>
+              <td style="border-style: dotted;">Brasil</td>
+          </tr>
+          <tr>
+              <td style="border-style: dotted;">Noah</td>
+              <td style="border-style: dotted;">Canadá</td>
+          </tr>
+          <tr>
+              <td style="border-style: dotted;">Werner</td>
+              <td style="border-style: dotted;">Alemanha</td>
+          </tr>
+         
+      </tbody>
+    </table>
 </div>
 </div>
 </div>
@@ -4837,7 +4882,29 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       </pre>
   </div>
   <div class="code-support col">
-    
+    <table class="table table-dark table-hover" style="border: 1px solid blue">
+      <thead>
+          <tr>
+              <th scope="col" style="border-color: blue;">Nome</th>
+              <th scope="col" style="border-color: blue;">País de origem</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td style="border-color: blue;">Marcelo</td>
+              <td style="border-color: blue;">Brasil</td>
+          </tr>
+          <tr>
+              <td style="border-color: blue;">Noah</td>
+              <td style="border-color: blue;">Canadá</td>
+          </tr>
+          <tr>
+              <td style="border-color: blue;">Werner</td>
+              <td style="border-color: blue;">Alemanha</td>
+          </tr>
+         
+      </tbody>
+    </table>
 </div>
 </div>
 </div>
@@ -4937,6 +5004,37 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       </pre>
       </div>
       <div class="code-support col">
+        <table class="table table-dark table-hover" style="border: 3px solid black; width: 100%;">
+          <thead>
+              <tr>
+                  <th scope="col"style="border: 3px solid black;">#</th>
+                  <th scope="col"style="border: 3px solid black;">Empresa</th>
+                  <th scope="col"style="border: 3px solid black;">Nome</th>
+                  <th scope="col"style="border: 3px solid black;">País de origem</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th scope="row"style="border: 3px solid black;">1</th>
+                  <td style="border: 3px solid black;">Coca-Cola</td>
+                  <td style="border: 3px solid black;">Marcelo</td>
+                  <td style="border: 3px solid black;">Brasil</td>
+              </tr>
+              <tr>
+                  <th scope="row" style="border: 3px solid black;">2</th>
+                  <td style="border: 3px solid black;">Microsoft</td>
+                  <td style="border: 3px solid black;">Noah</td>
+                  <td style="border: 3px solid black;">Canadá</td>
+              </tr>
+              <tr>
+                  <th scope="row" style="border: 3px solid black;">3</th>
+                  <td style="border: 3px solid black;">Apple</td>
+                  <td style="border: 3px solid black;">Werner</td>
+                  <td style="border: 3px solid black;">Alemanha</td>
+              </tr>
+             
+          </tbody>
+        </table>
       </div>
   </div>
 </div>
@@ -5038,6 +5136,37 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       </pre>
       </div>
       <div class="code-support col">
+        <table class="table table-dark table-hover" style="border: 3px solid black; width: 100%;">
+          <thead>
+              <tr>
+                  <th scope="col"style="border: 3px solid black;">#</th>
+                  <th scope="col"style="border: 3px solid black; width: 70%;">Empresa</th>
+                  <th scope="col"style="border: 3px solid black;">Nome</th>
+                  <th scope="col"style="border: 3px solid black;">País de origem</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th scope="row"style="border: 3px solid black; ">1</th>
+                  <td style="border: 3px solid black;">Coca-Cola</td>
+                  <td style="border: 3px solid black;">Marcelo</td>
+                  <td style="border: 3px solid black;">Brasil</td>
+              </tr>
+              <tr>
+                  <th scope="row" style="border: 3px solid black;">2</th>
+                  <td style="border: 3px solid black;">Microsoft</td>
+                  <td style="border: 3px solid black;">Noah</td>
+                  <td style="border: 3px solid black;">Canadá</td>
+              </tr>
+              <tr>
+                  <th scope="row" style="border: 3px solid black;">3</th>
+                  <td style="border: 3px solid black;">Apple</td>
+                  <td style="border: 3px solid black;">Werner</td>
+                  <td style="border: 3px solid black;">Alemanha</td>
+              </tr>
+             
+          </tbody>
+        </table>
       </div>
   </div>
 </div>
@@ -5134,6 +5263,37 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       </pre>
       </div>
       <div class="code-support col">
+        <table class="table table-dark table-hover" style="border: 3px solid black;">
+          <thead>
+              <tr>
+                  <th scope="col"style="border: 3px solid black;">#</th>
+                  <th scope="col"style="border: 3px solid black;">Empresa</th>
+                  <th scope="col"style="border: 3px solid black;">Nome</th>
+                  <th scope="col"style="border: 3px solid black;">País de origem</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr style="height: 200px;">
+                  <th scope="row"style="border: 3px solid black;">1</th>
+                  <td style="border: 3px solid black;">Coca-Cola</td>
+                  <td style="border: 3px solid black;">Marcelo</td>
+                  <td style="border: 3px solid black;">Brasil</td>
+              </tr>
+              <tr>
+                  <th scope="row" style="border: 3px solid black;">2</th>
+                  <td style="border: 3px solid black;">Microsoft</td>
+                  <td style="border: 3px solid black;">Noah</td>
+                  <td style="border: 3px solid black;">Canadá</td>
+              </tr>
+              <tr>
+                  <th scope="row" style="border: 3px solid black;">3</th>
+                  <td style="border: 3px solid black;">Apple</td>
+                  <td style="border: 3px solid black;">Werner</td>
+                  <td style="border: 3px solid black;">Alemanha</td>
+              </tr>
+             
+          </tbody>
+        </table>
       </div>
   </div>
 </div>
@@ -5158,11 +5318,27 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       <div class="code-body col">
           <pre>
           <code>
-              
+
 <div class="code-line">
 <span class="code-punctuation">&lt;</span><span class="code-tag">table</span><span class="code-punctuation">&gt;</span>
 </div>
-
+  
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">Empresa</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">Nome</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">País de Origem</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
+</div>
+  
 <div class="code-line">
 <span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
 </div>
@@ -5178,7 +5354,7 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
 <div class="code-line">
 <span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
 </div>
-
+  
 <div class="code-line">
 <span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
 </div>
@@ -5196,12 +5372,59 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
 </div>
 
 <div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Apple</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Werner</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Alemanha</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
+</div>
+
+<div class="code-line">
 <span class="code-punctuation">&lt;</span><span class="code-tag">/table</span><span class="code-punctuation">&gt;</span>
 </div>
           </code>
       </pre>
       </div>
       <div class="code-support col">
+        <table class="table table-dark table-hover" style="border: 3px solid black;">
+          <thead>
+              <tr>
+                  <th scope="col"style="border: 3px solid black;">#</th>
+                  <th scope="col"style="border: 3px solid black;">Empresa</th>
+                  <th scope="col"style="border: 3px solid black;">Nome</th>
+                  <th scope="col"style="border: 3px solid black;">País de origem</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th scope="row"style="border: 3px solid black;">1</th>
+                  <td style="border: 3px solid black;">Coca-Cola</td>
+                  <td style="border: 3px solid black;">Marcelo</td>
+                  <td style="border: 3px solid black;">Brasil</td>
+              </tr>
+              <tr>
+                  <th scope="row" style="border: 3px solid black;">2</th>
+                  <td style="border: 3px solid black;">Microsoft</td>
+                  <td style="border: 3px solid black;">Noah</td>
+                  <td style="border: 3px solid black;">Canadá</td>
+              </tr>
+              <tr>
+                  <th scope="row" style="border: 3px solid black;">3</th>
+                  <td style="border: 3px solid black;">Apple</td>
+                  <td style="border: 3px solid black;">Werner</td>
+                  <td style="border: 3px solid black;">Alemanha</td>
+              </tr>
+             
+          </tbody>
+        </table>
       </div>
   </div>
 </div>
@@ -5227,18 +5450,34 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
 <div class="code-line">
 <span class="code-punctuation">&lt;</span><span class="code-tag">table</span><span class="code-punctuation">&gt;</span>
 </div>
-
+  
 <div class="code-line">
 <span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
 </div>
 <div class="code-line">
-<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">Coca-Cola</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">Primeiro Nome</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
 </div>
 <div class="code-line">
 <span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Marcelo</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
 </div>
 <div class="code-line">
-<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Brasil</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Larissa</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
+</div>
+  
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">Último Nome</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Santos</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+</div>
+<div class="code-line">
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Mello</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
 </div>
 <div class="code-line">
 <span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
@@ -5248,13 +5487,13 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
 <span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
 </div>
 <div class="code-line">
-<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">Microsoft</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">Idade</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
 </div>
 <div class="code-line">
-<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Noah</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">23</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
 </div>
 <div class="code-line">
-<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">Canadá</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
+<span class="code-punctuation">&lt;</span><span class="code-tag">td</span><span class="code-punctuation">&gt;</span><span class="code-text">19</span><span class="code-punctuation">&lt;</span><span class="code-tag">/td</span><span class="code-punctuation">&gt;</span>
 </div>
 <div class="code-line">
 <span class="code-punctuation">&lt;</span><span class="code-tag">/tr</span><span class="code-punctuation">&gt;</span>
@@ -5267,6 +5506,28 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       </pre>
       </div>
       <div class="code-support col">
+        <table class="table table-dark table-hover" style="border: 3px solid black;">
+          <thead>
+              <tr>
+                  <th scope="col"style="border: 3px solid black;">Primeiro Nome</th>
+                  <th scope="col"style="border: 3px solid black;">Último Nome</th>
+                  <th scope="col"style="border: 3px solid black;">Idade</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td style="border: 3px solid black;">Marcelo</td>
+                  <td style="border: 3px solid black;">Santos</td>
+                  <td style="border: 3px solid black;">23</td>
+              </tr>
+              <tr>
+                  <td style="border: 3px solid black;">Larissa</td>
+                  <td style="border: 3px solid black;">Mello</td>
+                  <td style="border: 3px solid black;">19</td>
+              </tr>
+             
+          </tbody>
+        </table>
       </div>
   </div>
 </div>
@@ -5302,7 +5563,37 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       </pre>
   </div>
   <div class="code-support col">
-    
+    <table class="table table-dark table-hover" style="border: 3px solid black;">
+      <thead>
+          <tr>
+              <th scope="col"style="border: 3px solid black; text-align: left;">#</th>
+              <th scope="col"style="border: 3px solid black; text-align: left;">Empresa</th>
+              <th scope="col"style="border: 3px solid black; text-align: left;">Nome</th>
+              <th scope="col"style="border: 3px solid black; text-align: left;">País de origem</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th scope="row"style="border: 3px solid black; text-align: left;">1</th>
+              <td style="border: 3px solid black; text-align: left;">Coca-Cola</td>
+              <td style="border: 3px solid black;">Marcelo</td>
+              <td style="border: 3px solid black;">Brasil</td>
+          </tr>
+          <tr>
+              <th scope="row" style="border: 3px solid black; text-align: left;">2</th>
+              <td style="border: 3px solid black;">Microsoft</td>
+              <td style="border: 3px solid black;">Noah</td>
+              <td style="border: 3px solid black;">Canadá</td>
+          </tr>
+          <tr>
+              <th scope="row" style="border: 3px solid black; text-align: left;">3</th>
+              <td style="border: 3px solid black;">Apple</td>
+              <td style="border: 3px solid black;">Werner</td>
+              <td style="border: 3px solid black;">Alemanha</td>
+          </tr>
+         
+      </tbody>
+    </table>
 </div>
 </div>
 </div>
@@ -5335,7 +5626,7 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
 <span class="code-punctuation">&lt;</span><span class="code-tag">tr</span><span class="code-punctuation">&gt;</span>
 </div>
 <div class="code-line">
-<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">Nome</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
+<span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-attribute"> colspan=</span><span class="code-value">2;</span><span class="code-punctuation">&gt;</span><span class="code-text">Nome</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
 </div>
 <div class="code-line">
 <span class="code-punctuation">&lt;</span><span class="code-tag">th</span><span class="code-punctuation">&gt;</span><span class="code-text">Idade</span><span class="code-punctuation">&lt;</span><span class="code-tag">/th</span><span class="code-punctuation">&gt;</span>
@@ -5384,6 +5675,27 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       </pre>
       </div>
       <div class="code-support col">
+        <table class="table table-dark table-hover" style="border: 3px solid black;">
+          <thead>
+              <tr>
+                  <th scope="col"style="border: 3px solid black;" colspan="2">Primeiro Nome</th>
+                  <th scope="col"style="border: 3px solid black;">Idade</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td style="border: 3px solid black;">Marcelo</td>
+                  <td style="border: 3px solid black;">Santos</td>
+                  <td style="border: 3px solid black;">23</td>
+              </tr>
+              <tr>
+                  <td style="border: 3px solid black;">Larissa</td>
+                  <td style="border: 3px solid black;">Mello</td>
+                  <td style="border: 3px solid black;">19</td>
+              </tr>
+             
+          </tbody>
+        </table>
       </div>
   </div>
 </div>
@@ -5485,6 +5797,38 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       </pre>
       </div>
       <div class="code-support col">
+        <table class="table table-dark table-hover" style="border: 3px solid black;">
+          <thead>
+            <caption>Quadro de Colaboradores</caption>
+              <tr>
+                  <th scope="col"style="border: 3px solid black; text-align: left;">#</th>
+                  <th scope="col"style="border: 3px solid black; text-align: left;">Empresa</th>
+                  <th scope="col"style="border: 3px solid black; text-align: left;">Nome</th>
+                  <th scope="col"style="border: 3px solid black; text-align: left;">País de origem</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th scope="row"style="border: 3px solid black; text-align: left;">1</th>
+                  <td style="border: 3px solid black; text-align: left;">Coca-Cola</td>
+                  <td style="border: 3px solid black;">Marcelo</td>
+                  <td style="border: 3px solid black;">Brasil</td>
+              </tr>
+              <tr>
+                  <th scope="row" style="border: 3px solid black; text-align: left;">2</th>
+                  <td style="border: 3px solid black;">Microsoft</td>
+                  <td style="border: 3px solid black;">Noah</td>
+                  <td style="border: 3px solid black;">Canadá</td>
+              </tr>
+              <tr>
+                  <th scope="row" style="border: 3px solid black; text-align: left;">3</th>
+                  <td style="border: 3px solid black;">Apple</td>
+                  <td style="border: 3px solid black;">Werner</td>
+                  <td style="border: 3px solid black;">Alemanha</td>
+              </tr>
+             
+          </tbody>
+        </table>
       </div>
   </div>
 </div>
@@ -5523,7 +5867,12 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       </pre>
   </div>
   <div class="code-support col">
-    
+    <figure class="figure my-auto">
+      <img src="assets/img/tabela padding2.webp"
+          class="figure-img img-fluid rounded" alt="Imamge">
+      <figcaption class="figure-caption text-end mx-2">Padding na tabela.
+      </figcaption>
+  </figure>
 </div>
 </div>
 </div>
@@ -5566,7 +5915,12 @@ Por 60 anos, o WWF trabalhou para ajudar as pessoas e a natureza a prosperar.
       </pre>
   </div>
   <div class="code-support col">
-    
+    <figure class="figure my-auto">
+      <img src="assets/img/padding2.webp"
+          class="figure-img img-fluid rounded" alt="Imamge">
+      <figcaption class="figure-caption text-end mx-2">Padding na tabela.
+      </figcaption>
+  </figure>
 </div>
 </div>
 </div>
