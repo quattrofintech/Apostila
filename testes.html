@@ -4,44 +4,43 @@
 <style>
 table, th, td {
   border: 1px solid black;
-  border-collapse: collapse;
+  border-spacing: 10px;
 }
-th, td {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 40px;
-}
+
 </style>
 </head>
 <body>
-
-<h2>Cellpadding - top - bottom - left - right </h2>
-<p>We can specify different padding for all fours sides of the cell content.</p>
-
-<table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
-  </tr>
-</table>
-
+  <table>
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Empresa</th>
+            <th scope="col">Nome</th>
+            <th scope="col">País de origem</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Coca-Cola</td>
+            <td>Marcelo</td>
+            <td>Brasil</td>
+        </tr>
+        <tr>
+            <th scope="row" >2</th>
+            <td>Microsoft</td>
+            <td>Noah</td>
+            <td>Canadá</td>
+        </tr>
+        <tr>
+            <th scope="row" >3</th>
+            <td>Apple</td>
+            <td>Werner</td>
+            <td>Alemanha</td>
+        </tr>
+       
+    </tbody>
+  </table>
 </body>
 </html>
 
