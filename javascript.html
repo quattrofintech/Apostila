@@ -1,63 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/assets/style/style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-        <title>JavaScript</title>
-    </head>
-<body>
-    <h1>JAVASCRIPT</h1>
 
-      <!--Menu LAteral-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- GOOGLE FONTS-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- CSS BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- CSS INTERNO DEPOIS DO CSS DO BOOTSTRAP -->
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <!-- ICON -->
+  <link rel="shortcut icon" href="./assets/img/miniLogo.webp" type="image/x-icon">
+  <title>JAVASCRIPT</title>
+</head>
 
-<button class="btn btn-light"type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
-    <img src="/img/menu lateral 1.png" alt="menu" class="menuLateral">
-</button>
+<body class="background">
 
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Apostila Quattro</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    <!--
-    <button type="button" class="btn btn-outline-primary">HTML</button>
-    <button type="button" class="btn btn-outline-primary">CSS</button>
-    <button type="button" class="btn btn-outline-warning">JavaScript</button>
-    <button type="button" class="btn btn-outline-info">Git</button>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    -->
-  </div>
-  <br>
-  <div class="menuMaterias">
-    <a href="./html5.html">HTML</a>
-    <a href="./css3.html">CSS</a>
-    <a href="./javascript.html">JavaScript</a>
-    <a href="./git.html">GIT</a>
-    <a href="#">React</a>
-    <a href="#">C#</a>
-    <a href="#">Python</a>
-    <a href="#">Lua</a>
-    <a href="#">Java</a>
-    <a href="#">Vue.Js</a>
-    <a href="#">C++</a>
-    <a href="#">.Net</a>
-    <a href="#">Php</a>
-    <a href="#">Kottlin</a>
-    <a href="#">Angular</a>
-    <a href="#">Ionic</a>
-    <a href="#"></a>
-  </div>
-  <hr>
-  <div class="offcanvas-body">
-    <p>* CONTEUDO *</p>
-  </div>
-</div>
-    
+  <header class="nav-principal">
+    <!-- NavBar Principal -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-opacity-50 no-padding">
+      <div class="container-fluid">
+        <button class="btn btn-light navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-toggle="collapse"
+          aria-expanded="false" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="./index.html">
+            <img class="img-fluid img-logo" src="./assets/img/logo_quattro_branca.png" alt="Logo Quattro">
+          </a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            </li>
+          </ul>
+          <div class="d-flex" onsubmit="">
+            <button type="button" class="btn btn-theme">
+              <span class="material-icons icon-theme">
+                nightlight
+              </span>
+            </button>
+            <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search">
+            <div class="content-search list-group">
+
+            </div>
+            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar de Matérias -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light nav-matter bg-opacity-50 no-padding">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="./html5.html">HTML 5</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./css3.html">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./git.html">GIT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./javascript.html">JAVASCRIPT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Menu Lateral MOBILE-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+      aria-labelledby="offcanvasWithBackdropLabel">
+      <div class="offcanvas-header">
+        <img class="img-fluid img-logo" src="./assets/img/logo_quattro_branca.png" alt="Logo Quattro">
+        <button type="button" class="btn btn-theme-mobile">
+          <span class="material-icons icon-theme">
+            nightlight
+          </span>
+        </button>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="menuMaterias">
+        <a class="active" href="./html5.html">HTML</a>
+        <a href="./css3.html">CSS</a>
+        <a href="./javascript.html">JavaScript</a>
+        <a href="./git.html">GIT</a>
+        <a href="#">React</a>
+        <a href="#">C#</a>
+        <a href="#">Python</a>
+        <a href="#">Lua</a>
+        <a href="#">Java</a>
+        <a href="#">Vue.Js</a>
+        <a href="#">C++</a>
+        <a href="#">.Net</a>
+        <a href="#">Php</a>
+        <a href="#">Kottlin</a>
+        <a href="#">Angular</a>
+        <a href="#">Ionic</a>
+        <a href="#"></a>
+      </div>
+      <div class="offcanvas-body">
+        <input class="form-control me-2 my-2" id="search-mobile" type="search" placeholder="Search" aria-label="Search">
+        <div class="content-search-mobile list-group">
+
+        </div>
+        <div class="list-group">
+          <a href="?t=introducao" class="list-group-item">Introdução</a>
+        </div>
+      </div>
+    </div>
+    <!--Fim Menu Lateral-->
+  </header>
+
+  <main class="d-flex flex-nowrap">
+    <aside class="p-2 mx-4 ">
+      <ul class="navbar-nav pe-4 mb-4 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="?t=introducao">Introdução</a>
+        </li>
+      </ul>
+    </aside>
+    <article class="p-2 flex-grow-1">
+      <header>
+        <nav class="d-flex justify-content-around">
+          <button class="btn-pages-previous btn btn-primary" type="button" onclick="clickButton(this)">Previous</button>
+          <button class="btn-pages-next btn btn-primary" type="button" onclick="clickButton(this)">Next</button>
+        </nav>
+      </header>
+      <section class="theme" data-title="introducao" data-index="1" hidden>
+
+
+
+
+        <h1>CONTEUDO</h1>
+
+
+
+
+
+
+
+      </section>
+      <!-- Toast -->
+      <div class="position-fixed top-0 end-0 p-3 margin-toast-top" style="z-index: 10000">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="me-auto">Quattro Edtech</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+
+  </footer>
+  <!-- Temas -->
+  <script src="./assets/js/theme.js"></script>
+  <!-- Script do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- Mudar de tema -->
+  <script src="./assets/js/pagination.js"></script>
+  <!-- Botão de copiar -->
+  <script src="./assets/js/copycode.js"></script>
+  <!-- Utilitys do Bootstrap -->
+  <script src="./assets/js/bootstrap.js"></script>
+  <!-- Pesquisa -->
+  <script src="./assets/js/search.js"></script>
 </body>
+
 </html>
